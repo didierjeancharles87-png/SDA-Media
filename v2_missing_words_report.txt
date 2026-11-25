@@ -1,0 +1,891 @@
+================================================================================
+MOTS MANQUANTS DANS V2 PAR RAPPORT À MBP
+================================================================================
+
+Versets où MBP a plus de mots que V2 (même verset, chevauchement >= 40%): 168
+Versets présents dans MBP mais absents de V2: 0
+Chapitres présents dans MBP mais absents de V2: 0
+
+--- Répartition par livre (versets avec mots manquants) ---
+Livre                                   Nb  Mots v2 Mots mbp
+---------------------------------------------------------
+1 Jaona                                  3       53       66
+1 Korintiana                             4      100      123
+1 Petera                                 2       35       42
+1 Samoela                                2       44       58
+1 Timoty                                 1       36       39
+2 Korintiana                             3       63       72
+2 Petera                                 4       91      141
+2 Tantara                                1       17       20
+2 Tesaloniana                            1       14       22
+2 Timoty                                 1       19       23
+Asan'ny Apostoly                         5      138      184
+Daniela                                  3       98      114
+Deoteronomia                             5      121      152
+Eksodosy                                 8      165      209
+Ezekiela                                 8      215      268
+Filipiana                                1       16       19
+Galatiana                                2       45       53
+Genesisy                                14      345      415
+Hebreo                                   5       91      118
+Jakoba                                   1       28       31
+Jaona                                    5       86      116
+Jeremia                                  6      125      157
+Joba                                     1       10       15
+Joda                                     3       55       73
+Josoa                                    3       82      100
+Levitikosy                               2       33       44
+Lioka                                   15      294      384
+Malakia                                  2       54       65
+Marka                                    7      139      200
+Matio                                   12      243      351
+Mpitoriteny                              1       20       27
+Mpitsara                                 1       13       25
+Nomery                                  24      406      505
+Romana                                   8      162      203
+Titosy                                   1       19       23
+Zakaria                                  3       64       87
+
+================================================================================
+DÉTAIL — VERSETS AVEC MOTS MANQUANTS DANS V2
+================================================================================
+
+--- 1 Jaona 4:10 (v2:19mots, mbp:22mots, overlap:65%) ---
+  Mots en plus dans MBP: an'andriamanitra,, avotra, ii.2., izahao
+  v2:  Izao no fitiavana: tsy ny nitiavantsika an'Andriamanitra fa ny nitiavany antsika, ka nirahiny ny Zanany ho avotra'noho ny fahotantsika.
+  mbp: Izao no fitiavana: tsy ny nitiavantsika an’Andriamanitra, fa ny nitiavany antsika, ka nirahiny ny Zanany ho avotra#4.10 Na: fanatitra fampiononam-pahatezerana; izahao ii.2.
+
+--- 1 Jaona 4:12 (v2:24mots, mbp:28mots, overlap:91%) ---
+  Mots en plus dans MBP: fitiavany.
+  v2:  Tsy mbola nisy olona nahita an'Andriamanitra na oviana na oviana. Raha mifankatia isika, dia mitoetra ato amintsika Andriamanitra, ary tanteraka ato amintsika ny fitiavany*.
+  mbp: Tsy mbola nisy olona nahita an’Andriamanitra na oviana na oviana. Raha mifankatia isika, dia mitoetra ato amintsika Andriamanitra, ary tanteraka ato amintsika ny fitiavany.#4.12 Na: ny fitiavana Azy.
+
+--- 1 Jaona 5:17 (v2:10mots, mbp:16mots, overlap:62%) ---
+  Mots en plus dans MBP: amin'ny, fahafatesana., ho, mahafaty.
+  v2:  Ota avokoa ny tsi-fahamarinana rehetra; ary misy ota tsy mahafaty*.
+  mbp: Ota avokoa ny tsi-fahamarinana rehetra; ary misy ota tsy mahafaty.#5.17 Gr. ota tsy ho amin’ny fahafatesana.
+
+--- 1 Korintiana 15:32 (v2:34mots, mbp:37mots, overlap:62%) ---
+  Mots en plus dans MBP: ,,aoka, atsangana, hihinana., maty?
+  v2:  Raha araka ny fanaon'olona no niadiako tamin'ny bibi-dia tany Efesosy, inona no soa azoko amin'izany? Raha tsy hatsangana ny maty, dia aoka isika hihinana sy hisotro, fa rahampitso dia ho faty (Isa. 2
+  mbp: Raha araka ny fanaon’olona no niadiako tamin’ny bibi-dia tany Efesosy, inona no soa azoko amin’izany? Raha tsy hatsangana ny maty, dia ,,aoka isika hihinana#15.32 Na: inona no soa azoko, raha tsy atsa
+
+--- 1 Korintiana 3:17 (v2:17mots, mbp:22mots, overlap:87%) ---
+  Mots en plus dans MBP: hianareo
+  v2:  Raha misy manimba ny tempolin'Andriamanitra, dia mba hosimban'Andriamanitra kosa izy; fa masina ny tempolin'Andriamanitra, dia ianareo izany.
+  mbp: Raha misy manimba ny tempolin’Andriamanitra, dia mba hosimban’Andriamanitra kosa izy; fa masina ny tempolin’Andriamanitra, dia hianareo izany.#3.17 Na: dia masina koa hianareo.
+
+--- 1 Korintiana 6:9 (v2:32mots, mbp:36mots, overlap:84%) ---
+  Mots en plus dans MBP: 22., hianareo:, xviii.
+  v2:  Moa tsy fantatrareo va fa ny olona tsy marina tsy mba handova ny fanjakan'Andriamanitra? Aza mety hofitahina ianareo: fa ny mpijangajanga sy ny mpanompo sampy sy ny mpaka vadin'olona sy ny sodomita
+  mbp: Moa tsy fantatrareo va fa ny olona tsy marina tsy mba handova ny fanjakan’Andriamanitra? Aza mety hofitahina hianareo: fa ny mpijangajanga sy ny mpanompo sampy sy ny mpaka vadin’olona sy ny sodomita#6
+
+--- 1 Korintiana 7:21 (v2:17mots, mbp:28mots, overlap:75%) ---
+  Mots en plus dans MBP: dia, hianao, ihany., manaompo
+  v2:  Nantsoina va ianao raha mbola mpanompo? Aoka tsy hampaninona anao izany; nefa raha misy hahafahanao, aleo izany.
+  mbp: Nantsoina va hianao raha mbola mpanompo? Aoka tsy hampaninona anao izany; nefa raha misy hahafahanao, aleo izany.#7.21 Na: fa na dia misy hahafahanao aza, dia aleo manaompo ihany.
+
+--- 1 Petera 1:22 (v2:19mots, mbp:23mots, overlap:79%) ---
+  Mots en plus dans MBP: fo;, miangatra,
+  v2:  Satria efa nodiovinareo ny fanahinareo tamin'ny fanarahana ny fahamarinana ho amin'ny fitiavan-drahalahy tsy miangatra dia mifankatiava fatratra amin'ny fo*;
+  mbp: Satria efa nodiovinareo ny fanahinareo tamin’ny fanarahana ny fahamarinana ho amin’ny fitiavan-drahalahy tsy miangatra, dia mifankatiava fatratra amin’ny fo;#1.22 Na: [amin’ny fo madio].
+
+--- 1 Petera 2:1 (v2:16mots, mbp:19mots, overlap:77%) ---
+  Mots en plus dans MBP: fihatsarambelatsihy, fitaka
+  v2:  Koa esory ny lolompo rehetra sy ny ny fihatsaram-belatsihy sy ny fialonana ary ny fanaratsiana rehetra,
+  mbp: Koa esory ny lolompo rehetra sy ny fitaka rehetra sy ny fihatsarambelatsihy sy ny fialonana ary ny fanaratsiana rehetra,
+
+--- 1 Timoty 3:16 (v2:36mots, mbp:39mots, overlap:91%) ---
+  Mots en plus dans MBP: tamin'
+  v2:  Ary iaraha-manaiky mihitsy fa lehibe ny zava-miafina ny amin'ny toe-panahy araka an'Andriamanitra, dia Ilay naseho teo amin'ny nofo, nohamarinina tao amin'ny Fanahy; hitan'ny anjely, notorina tany ami
+  mbp: Ary iaraha-manaiky mihitsy fa lehibe ny zava-miafina ny amin’ny toe-panahy araka an’Andriamanitra, dia Ilay naseho teo amin’ny nofo, nohamarinina tao amin’ny Fanahy; hitan’ny anjely, notorina tany ami
+
+--- 2 Korintiana 11:4 (v2:24mots, mbp:27mots, overlap:87%) ---
+  Mots en plus dans MBP: filazantsara, hianareo
+  v2:  Fa raha misy tonga ka mitory Jesosy hafa izay tsy notorinay, na ianareo mandray fanahy hafa izay tsy noraisinareo, hay! tsara ny andeferanareo amin'izany!
+  mbp: Fa raha misy tonga ka mitory Jesosy hafa izay tsy notorinay, na hianareo mandray fanahy hafa na filazantsara hafa izay tsy noraisinareo, hay! tsara ny andeferanareo amin’izany!
+
+--- 2 Korintiana 2:10 (v2:25mots, mbp:28mots, overlap:76%) ---
+  Mots en plus dans MBP: anefa,, imason', raha
+  v2:  Fa izay avelanareo heloka dia mba avelako heloka koa; ary izaho anefa,raha nisy heloka navelako, dia noho ny aminareo no namelako azy teo imason'i Kristy,
+  mbp: Fa izay avelanareo heloka dia mba avelako heloka koa; ary izaho anefa, raha nisy heloka navelako, dia noho ny aminareo no namelako azy teo imason’#2.10 Na: nisolo any.
+
+--- 2 Korintiana 8:20 (v2:14mots, mbp:17mots, overlap:76%) ---
+  Mots en plus dans MBP: amin'ny, ataonay, fanompoanay.
+  v2:  Ary mitandrina izahay mba tsy hisy hanome tsiny anay amin'izao harena be angoninay izao;
+  mbp: Ary mitandrina izahay mba tsy hisy hanome tsiny anay amin’izao harena be angoninay#8.20 Gr. ataonay amin’ny fanompoanay.
+
+--- 2 Petera 1:1 (v2:23mots, mbp:31mots, overlap:91%) ---
+  Mots en plus dans MBP: antsika., mpamonjy
+  v2:  Simona Petera, mpanompo sy Apostolin'i Jesosy Kristy, mamangy izay efa nahazo finoana soa tahaka ny anay amin'ny fahamarinan'i Jesosy Kristy, Andriamanitsika sy Mpamonjy:
+  mbp: SIMONA Petera, mpanompo sy Apostolin’i Jesosy Kristy, mamangy izay efa nahazo finoana soa tahaka ny anay amin’ny fahamarinan’i Jesosy Kristy, Andriamanitsika sy Mpamonjy:#1.1 Na: ny fahamarinan’Andria
+
+--- 2 Petera 1:3 (v2:26mots, mbp:32mots, overlap:91%) ---
+  Mots en plus dans MBP: fahatsarany;
+  v2:  Efa nomen'ny herin'Andriamanitra ho antsika ny zavatra rehetra momba ny fiainana sy ny toe-panahy araka an'Andriamanitra amin'ny fahalalana Ilay niantso antsika tamin'ny voninahiny sy ny fahatsarany*;
+  mbp: Efa nomen’ny herin’Andriamanitra ho antsika ny zavatra rehetra momba ny fiainana sy ny toe-panahy araka an’Andriamanitra amin’ny fahalalana Ilay niantso antsika tamin’ny voninahiny sy ny fahatsarany;#
+
+--- 2 Petera 2:18 (v2:29mots, mbp:62mots, overlap:87%) ---
+  Mots en plus dans MBP: fandokafany, fijejojejoana., intsony;, mitaona
+  v2:  Fa mandoka fatratra ny zava-poana ireo, ka ny filan'ny nofo, dia ny fijejojejoana, no entiny mamitaka ny olona izay saiky afaka tsy ho naman'ny velona eo amin'ny fahadisoana intsony*;
+  mbp: Fa mandoka fatratra ny zava-poana ireo, ka ny filan’ny nofo, dia ny fijejojejoana, no entiny mamitaka ny olona izay saiky afaka tsy ho naman’ny velona eo amin’ny fahadisoana intsony;#2.18 Na: Satria v
+
+--- 2 Petera 2:2 (v2:13mots, mbp:16mots, overlap:64%) ---
+  Mots en plus dans MBP: blasfemia;, hanaovana, ix.3., izahao, mat.
+  v2:  Ary maro no hanaraka ny fijejojejoany; ka ireny no hitenenan-dratsy* ny lalan'ny fahamarinana.
+  mbp: Ary maro no hanaraka ny fijejojejoany; ka ireny no hitenenan-dratsy#2.2 Gr. hanaovana blasfemia; izahao Mat. ix.3.
+
+--- 2 Tesaloniana 2:7 (v2:14mots, mbp:22mots, overlap:73%) ---
+  Mots en plus dans MBP: ihany., tsi-fankatoavan-dalàna,
+  v2:  Fa miasa sahady ny zava-miafina, dia ny tsi-fankatoavan-dalàna. kanefa mandra-panaisotra ilay misakana ankehitriny ihany*.
+  mbp: Fa miasa sahady ny zava-miafina, dia ny tsi-fankatoavan-dalàna, kanefa mandra-panaisotra ilay misakana ankehitriny ihany.#2.7 Na: kanefa ao ihany ilay misakana mandra-panaisotra azy.
+
+--- 2 Timoty 2:15 (v2:19mots, mbp:23mots, overlap:73%) ---
+  Mots en plus dans MBP: amin'., mahitsy, mizotra, na:
+  v2:  Mazotoa manolotra ny tenanao amin'Andriamanitra ho olona voazaha toetra, dia mpiasa tsy mahazo henatra, mizara tsara ny teny fahamarinana.
+  mbp: Mazotoa manolotra ny tenanao amin’Andriamanitra ho olona voazaha toetra, dia mpiasa tsy mahazo henatra, mizara tsara#2.15 Na: mamoaka tsara; na: mizotra mahitsy amin’.
+
+--- Asan'ny Apostoly 13:36 (v2:24mots, mbp:27mots, overlap:50%) ---
+  Mots en plus dans MBP: araka, sitrapon'andriamanitra.
+  v2:  Fa Davida, rehefa nahatanteraka ny sitrapon'Andriamanitra hahasoa ny olona niara-belona taminy, dia nodi-mandry ka nangonina ho any amin'ny razany izy ary tratry ny lò;
+  mbp: Fa Davida, rehefa nahatanteraka ny sitrapon’Andriamanitra hahasoa ny olona niara-belona taminy, dia nodi-mandry#13.36 Na: Fa Davida rehefa nanompo ny olona niara-belona taminy, dia nodi-mandry araka n
+
+--- Asan'ny Apostoly 13:45 (v2:21mots, mbp:27mots, overlap:72%) ---
+  Mots en plus dans MBP: blasfemia;, ix.3., izahao, mat., nanao, paoly
+  v2:  Nefa ny Jiosy kosa, raha nahita ny vahoaka betsaka, dia feno fialonana ka nanohitra ny teny nolazain'i Paoly, sady niteny ratsy.
+  mbp: Nefa ny Jiosy kosa, raha nahita ny vahoaka betsaka, dia feno fialonana ka nanohitra ny teny nolazain’i Paoly sady niteny ratsy.#13.45 Gr. nanao blasfemia; izahao Mat. ix.3.
+
+--- Asan'ny Apostoly 23:30 (v2:28mots, mbp:32mots, overlap:86%) ---
+  Mots en plus dans MBP: atỳ, azy.''
+  v2:  Ary rehefa voalaza tamiko fa nisy nikasa hanotrika hisambotra an-dralehilahy, dia naniraka faingana hitondra azy aminao aho, ary ny mpiampanga koa nasaiko hilaza at? anatrehanao izay iampangany azy.
+  mbp: Ary rehefa voalaza tamiko fa nisy nikasa hanotrika hisambotra an-dralehilahy, dia naniraka faingana hitondra azy atỳ aminao aho, ary ny mpiampanga koa nasaiko hilaza atỳ anatrehanao izay iampangany az
+
+--- Asan'ny Apostoly 27:12 (v2:38mots, mbp:42mots, overlap:94%) ---
+  Mots en plus dans MBP: ririnana,
+  v2:  Ary satria ny fitodian-tsambo teo dia tsy tsara hitoerana amin'ny ririnina, dia nataon'ny maro fa tsara raha miala, fandrao mba ho tonga any Foiniksa ahay handany ny ririnina any; fitodian-tsambo any 
+  mbp: Ary satria ny fitodian-tsambo teo dia tsy tsara hitoerana amin’ny ririnana, dia nataon’ny maro fa tsara raha miala, fandrao mba ho tonga any Foiniksa ahay handany ny ririnina any; fitodian-tsambo any 
+
+--- Asan'ny Apostoly 8:36 (v2:27mots, mbp:56mots, overlap:62%) ---
+  Mots en plus dans MBP: aho, an-dàlana, atao, azo, fa, hoe:, ihany., izy, jesosy, kristy
+  v2:  Ary raha nandeha teny an-dalana izy, dia tonga teo amin'izay nisy rano; ary hoy ilay tandapa: Indro rano, ka inona moa no misakana ahy tsy hatao batisa?
+  mbp: Ary raha nandeha teny an-dàlana izy, dia tonga teo amin’izay nisy rano; ary hoy ilay tandapa: Indro rano, ka inona moa no misakana ahy tsy hatao batisa?#8.36 Amipo hoe: [37 Dia hoy Filipo: Raha mino a
+
+--- Daniela 11:32 (v2:22mots, mbp:27mots, overlap:81%) ---
+  Mots en plus dans MBP: azy., olona
+  v2:  Ary izay mivadika ny fanekena dia hambosiny amin'ny fandroboana; fa ny dona izay mahalala an'Andriamaniny kosa dia hifikitra amin'izany ka hankatò azy*.
+  mbp: Ary izay mivadika ny fanekena dia hambosiny amin’ny fandroboana; fa ny olona izay mahalala an’Andriamaniny kosa dia hifikitra amin’izany ka hankatò azy.#11.32 Na: dia hahery ka hahefa.
+
+--- Daniela 11:6 (v2:56mots, mbp:62mots, overlap:96%) ---
+  Mots en plus dans MBP: izany.
+  v2:  Ary rehefa afaka taona vitsivitsy, dia hikambana izy roa lahy ireo; ary ho avy ny zanakavavin'ny mpanjakan'ny atsimo hankany amin'ny mpanjakan'ny avaratra hahatsara ny fihavanana; nefa tsy hahatana ny
+  mbp: Ary rehefa afaka taona vitsivitsy, dia hikambana izy roa lahy ireo; ary ho avy ny zanakavavin’ny mpanjakan’ny atsimo hankany amin’ny mpanjakan’ny avaratra hahatsara ny fihavanana; nefa tsy hahatana ny
+
+--- Daniela 2:8 (v2:20mots, mbp:25mots, overlap:80%) ---
+  Mots en plus dans MBP: aho., hianareo,
+  v2:  Fa ny mpanjaka namaly ka nanao hoe: Fantatro marimarina fa mandany andro foana ianareo, satria hitanareo fa efa niloa-bava aho.1
+  mbp: Fa ny mpanjaka namaly ka nanao hoe: Fantatro marimarina fa mandany andro foana hianareo, satria hitanareo fa efa niloa-bava aho.#2.8 Na: efa hadinoko ilay nonofisiko.
+
+--- Deoteronomia 16:11 (v2:32mots, mbp:47mots, overlap:50%) ---
+  Mots en plus dans MBP: aminao,, an-tanànanao, anarany., anatrehan'i, andriamanitrao, dia, eo, hampitoerany, hianao, hofidin'i
+  v2:  Ary mifalia amin'ny andro firavoravoanao ianao sy ny zanakao-lahy sy ny zanakao-vavy sy ny ankizilahinao sy ny ankizivavinao ary ny Levita mbamin'ny vahiny sy ny kamboty ary ny mpitondratena izay ao a
+  mbp: ary mifalia eo anatrehan’i Jehovah Andriamanitrao hianao sy ny zanakao-lahy sy ny zanakao-vavy ary ny ankizilahinao sy ny ankizivavinao ary ny Levita izay ao an-tanànanao mbamin’ny vahiny sy ny kambot
+
+--- Deoteronomia 20:5 (v2:36mots, mbp:39mots, overlap:43%) ---
+  Mots en plus dans MBP: ady,, dia, efa, hitokana, ireo, maty, nanao, nefa, nitokanany?, olon-kafa
+  v2:  Ary mbola hiteny amin'ny olona ihany ny mpifehy azy ka hanao hoe: Iza no olona izay matahotra ka osa fo? Aoka handeha hiverina any an-tranony izy, fandrao ho ketraka tahaka ny fony koa ny fon'ny rahal
+  mbp: Dia hiteny amin’ny olona ireo mpifehy azy ka hanao hoe: Iza no olona izay efa nanao trano vaovao, nefa tsy mbola nitokanany? Aoka handeha hiverina any an-tranony izy, fandrao maty any amin’ny ady, ka 
+
+--- Deoteronomia 27:20 (v2:12mots, mbp:17mots, overlap:65%) ---
+  Mots en plus dans MBP: amin'izay, fa, izy., nandrian-drainy, vadin-drainy,
+  v2:  Hozonina izay mandry amin'ny rafozani-vavy. Ary ny vahoaka rehetra hanao hoe: Amena.
+  mbp: Hozonina izay mandry amin’ny vadin-drainy, fa mandry amin’izay nandrian-drainy izy. Ary ny vahoaka rehetra hanao hoe: Amena.
+
+--- Deoteronomia 27:22 (v2:13mots, mbp:18mots, overlap:45%) ---
+  Mots en plus dans MBP: amin'ny, anabaviny,, dia, mandry, na, zanakavavin-drainy,, zanakavavin-dreniny.
+  v2:  Hozonina izay mandray kolikoly hahafaty olo-marina. Ary ny vahoaka rehetra hanao hoe: Amena.
+  mbp: Hozonina izay mandry amin’ny anabaviny, dia ny zanakavavin-drainy, na ny zanakavavin-dreniny. Ary ny vahoaka rehetra hanao hoe: Amena.
+
+--- Deoteronomia 3:4 (v2:28mots, mbp:31mots, overlap:76%) ---
+  Mots en plus dans MBP: (, izany, taminy, –
+  v2:  Dia afatsika ny tanànany rehetra tamin'izany andro izany, tsy nisy tanàna izay tsy nalaintsika taminy, dia tanàna enim-polo, dia ny tany Argoba rehetra, izay fanjakan'i Oga tany Basana.
+  mbp: Dia afatsika ny tanànany rehetra tamin’izany andro izany – tsy nisy tanàna izay tsy nalaintsika taminy – dia tanàna enim-polo, dia ny tany Argoba rehetra, izay fanjakan’i Oga tany Basana. (
+
+--- Eksodosy 10:21 (v2:21mots, mbp:24mots, overlap:90%) ---
+  Mots en plus dans MBP: tànanao,
+  v2:  Ary hoy Jehovah tamin'i Mosesy: Ahinjiro manandrify ny lanitra ny tananao, mba hisy aizina amin'ny tany Egypta, dia aizina azo tsapaina.
+  mbp: ARY hoy Jehovah tamin’i Mosesy: Ahinjiro manandrify ny lanitra ny tànanao, mba hisy aizina amin’ny tany Egypta, dia aizina azo tsapaina.#10.21 Na: aizina mampiraparapa.
+
+--- Eksodosy 12:11 (v2:31mots, mbp:37mots, overlap:72%) ---
+  Mots en plus dans MBP: 12,, 13., an-tànanareo;, and., izahao, paskan'
+  v2:  Ary toy izao no hataonareo, raha mihinana azy: ny valahanareo ho voasikina, ny kapanareo ho eo amin'ny tongotrareo, ary ny tehinareo ho eny an-tananareo; dia hohaninareo faingana izy, fa Paskan'i Jeho
+  mbp: Ary toy izao no hataonareo, raha mihinana azy: ny valahanareo ho voasikina, ny kapanareo ho eo amin’ny tongotrareo, ary ny tehinareo ho eny an-tànanareo; dia hohaninareo faingana izy, fa Paskan’#12.11
+
+--- Eksodosy 17:15 (v2:11mots, mbp:14mots, overlap:83%) ---
+  Mots en plus dans MBP: nisì.
+  v2:  Dia nanorina alitara Mosesy ka nanao ny anarany hoe: Jehovah Nisi.
+  mbp: Dia nanorina alitara Mosesy ka nanao ny anarany hoe: Jehovah Nisì.#17.15 Nisì = Fanevako.
+
+--- Eksodosy 23:18 (v2:31mots, mbp:42mots, overlap:92%) ---
+  Mots en plus dans MBP: hianao,
+  v2:  Aza manatitra ny ran'ny zavatra vonoina hatao fanatitra ho Ahy ianao, raha mbola misy masirasira ao aminao; ary aza avela ho tra-maraina ny saboran'ny zavatra vonoina amin'ny andro firavoravoana ho Ah
+  mbp: Aza manatitra ny ran’ny zavatra vonoina hatao fanatitra ho Ahy hianao, raha mbola misy masirasira ao aminao; ary aza avela ho tra-maraina ny saboran’ny zavatra vonoina amin’ny andro firavoravoana ho A
+
+--- Eksodosy 23:22 (v2:21mots, mbp:27mots, overlap:76%) ---
+  Mots en plus dans MBP: aminy., anarako, ao, hianao, no
+  v2:  Fa raha hihaino ny feony tokoa ianao ka hanao izay rehetra lazaiko, dia ho fahavalon'ny fahavalonao sy ho rafin'ny rafinao Aho.
+  mbp: fa ny anarako no ao aminy. Fa raha hihaino ny feony tokoa hianao ka hanao izay rehetra lazaiko, dia ho fahavalon’ny fahavalonao sy ho rafin’ny rafinao Aho.
+
+--- Eksodosy 34:5 (v2:15mots, mbp:20mots, overlap:80%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary Jehovah nidina tao anatin'ny rahona ka nijanona teo aminy, dia nanonona ny anaran'i Jehovah.
+  mbp: Ary Jehovah nidina tao anatin’ny rahona ka nijanona teo aminy, dia nanonona#34.5 Na: ary Mosesy nijanona teo aminy ka niantso.
+
+--- Eksodosy 35:23 (v2:26mots, mbp:31mots, overlap:72%) ---
+  Mots en plus dans MBP: fantatra., hodi-biby, na, tsy
+  v2:  Ary ny olona rehetra izay nanana manga sy volomparasy sy mena sy rongony fotsy madinika sy volon'osy sy hoditr'ondrilahy efa nomenaina ary hodi-takasy dia nitondra azy.
+  mbp: Ary ny olona rehetra izay nanana manga sy volomparasy sy mena sy rongony fotsy madinika sy volon’osy sy hoditr’ondrilahy efa nomenaina ary hodi-takasy#35.23 Hoditra voasoka ho menamena, na hodi-biby t
+
+--- Eksodosy 35:7 (v2:9mots, mbp:14mots, overlap:42%) ---
+  Mots en plus dans MBP: fantatra., hodi-biby, na, tsy
+  v2:  sy hoditr'ondrilahy efa nomenaina sy hodi-takasy ary hazo akasia,
+  mbp: sy hoditr’ondrilahy efa nomenaina sy hodi-takasy#35.7 Hoditra voasoka ho menamena, na hodi-biby tsy fantatra.
+
+--- Ezekiela 16:54 (v2:13mots, mbp:17mots, overlap:86%) ---
+  Mots en plus dans MBP: azy.
+  v2:  mba hitondranao ny henatrao sy hangaihaizanao noho izay rehetra nataonao amin'ny hampiononanao azy*.
+  mbp: mba hitondranao ny henatrao sy hangaihaizanao noho izay rehetra nataonao amin’ny hampiononanao azy.#16.54 Na: tamin’ny nampiononanao azy.
+
+--- Ezekiela 17:9 (v2:49mots, mbp:64mots, overlap:95%) ---
+  Mots en plus dans MBP: intsony.
+  v2:  Ataovinao hoe: Izao no lazain'i Jehovah Tompo: Ho vanona va izy? Tsy hongotana va ny fakany, ary hotazana ny voany, mba halazo izy? Halazo ny raviny rehetra, raha vao mitsimoka, ka na dia ny sandry ma
+  mbp: Ataovinao hoe: Izao no lazain’i Jehovah Tompo: Ho vanona va izy? Tsy hongotana va ny fakany, ary hotazana ny voany, mba halazo izy? Halazo ny raviny rehetra, raha vao mitsimoka, ka na dia ny sandry ma
+
+--- Ezekiela 33:31 (v2:38mots, mbp:41mots, overlap:74%) ---
+  Mots en plus dans MBP: ataon'ny, kalokalo, na:, vavany,, vavany.
+  v2:  Dia mankao aminao tahaka ny fihavin'ny olona izy ka mipetraka eo anatrehanao toa oloko ary mahare ny teninao, nefa tsy mety mankatò azy; fa, indro, teny mamy no lazain'ny vavany*, nefa ny fony dia las
+  mbp: Dia mankao aminao tahaka ny fihavin’ny olona izy ka mipetraka eo anatrehanao toa oloko ary mahare ny teninao, nefa tsy mety mankatò azy; fa, indro, teny mamy no lazain’ny vavany,#33.31 Na: izay mamy a
+
+--- Ezekiela 40:6 (v2:32mots, mbp:40mots, overlap:76%) ---
+  Mots en plus dans MBP: manatrika, sakany,–dia, sakany.
+  v2:  Dia tonga teo amin'ny vavahady manatrita ny atsinanana izy ka niakatra tamin'ny ambaratongany dia nandrefy ny tokonam-bavahady, ka eran'ny volotara ny sakany, dia ny tokonana voalohany izany, ka eran'
+  mbp: Dia tonga teo amin’ny vavahady manatrika ny atsinanana izy ka niakatra tamin’ny ambaratongany dia nandrefy ny tokonam-bavahady, ka eran’ny volotara ny sakany,–dia ny tokonana voalohany izany, ka eran’
+
+--- Ezekiela 41:8 (v2:17mots, mbp:25mots, overlap:80%) ---
+  Mots en plus dans MBP: ary, dia., paosin-trano
+  v2:  Dia hitako fa nisy tokotany nasandratra manodidina ny trano ho fanorenan'ny paosin-trano, dia* eran'ilay volotara hatramin'ny ifanohizany.
+  mbp: Dia hitako fa nisy tokotany nasandratra manodidina ny trano ho fanorenan’ny paosin-trano, dia#41.8 Na: Dia noheveriko ny hahavon’ny trano manodidina; ary ny fanorenan’ny paosin-trano dia.
+
+--- Ezekiela 43:20 (v2:28mots, mbp:35mots, overlap:77%) ---
+  Mots en plus dans MBP: izahao, lev., rany, viii.15.
+  v2:  Dia hangalanao ny ràny ka hatentinao amin'ny tandrony efatra sy amin'ny zorony efatra amin'ny rindriny ary amin'ny koronosiny manodidina; izany no hanadiovanao* azy sy hanaovanao fanavotana ho azy.
+  mbp: Dia hangalanao ny rany ka hatentinao amin’ny tandrony efatra sy amin’ny zorony efatra amin’ny rindriny ary amin’ny koronosiny manodidina; izany no hanadiovanao#43.20 Ny dikan’ny teny Hebreo amin’ireo 
+
+--- Ezekiela 43:22 (v2:25mots, mbp:30mots, overlap:84%) ---
+  Mots en plus dans MBP: izahao, lev., viii.15.
+  v2:  Ary amin'ny andro faharoa no hanateranao osilahy tsy misy kilema hatao fanatitra noho ny ota; ary hodioviny* ny alitara tahaka ny nanadiovany* azy tamin'ny vantotr'ombilahy.
+  mbp: Ary amin’ny andro faharoa no hanateranao osilahy tsy misy kilema hatao fanatitra noho ny ota; ary hodioviny#43.22 Ny dikan’ny teny Hebreo amin’ireo dia ny manafaka ota azy; izahao Lev. viii.15.
+
+--- Ezekiela 43:26 (v2:13mots, mbp:16mots, overlap:80%) ---
+  Mots en plus dans MBP: hamenoana, ny, tànany.
+  v2:  Hafitoana no hanaovany fanavotana ho an'ny alitara sy hanadiovany azy ary hanokanany* azy.
+  mbp: Hafitoana no hanaovany fanavotana ho an’ny alitara sy hanadiovany azy ary hanokanany#43.26 Heb. hamenoana ny tànany.
+
+--- Filipiana 1:13 (v2:16mots, mbp:19mots, overlap:69%) ---
+  Mots en plus dans MBP: eran'ny, na:, pretoria., pretoriana, rehetra;
+  v2:  ka ao amin'i Kristy ny fifatorako dia fantatry ny mpiambina andriana rehetra* mbamin'ny olona hafa rehetra;
+  mbp: ka ao amin’i Kristy ny fifatorako dia fantatry ny mpiambina andriana rehetra#1.13 Gr. mpiambina pretoriana rehetra; na: eran’ny pretoria.
+
+--- Galatiana 3:2 (v2:20mots, mbp:24mots, overlap:88%) ---
+  Mots en plus dans MBP: finoana?
+  v2:  Izao ihany no tiako holazainareo amiko: Moa ny asan'ny lalàna va no nandraisanareo ny Fanahy, sa ny fitoriana ny finoana*?
+  mbp: Izao ihany no tiako holazainareo amiko: Moa ny asan’ny lalàna va no nandraisanareo ny Fanahy, sa ny fitoriana ny finoana?#3.2 Na: fandrenesana amin’ny finoana.
+
+--- Galatiana 3:5 (v2:25mots, mbp:29mots, overlap:91%) ---
+  Mots en plus dans MBP: finoana?
+  v2:  Ary Izay manome anareo ny Fanahy sy mahavita asa lehibe eo aminareo, moa avy amin'ny asan'ny lalàna va izany, sa avy amin'ny fitoriana ny finoana*?
+  mbp: Ary Izay manome anareo ny Fanahy sy mahavita asa lehibe eo aminareo, moa avy amin’ny asan’ny lalàna va izany, sa avy amin’ny fitoriana ny finoana?#3.5 Na: fandrenesana amin’ny finoana.
+
+--- Genesisy 15:1 (v2:28mots, mbp:35mots, overlap:100%) ---
+  Mots en plus dans MBP: 
+  v2:  Rehefa afaka izany, dia tonga tamin'i Abrama ny tenin'i Jehovah tamin'ny fahitana ka nanao hoe: Aza matahotra, ry Abrama; Izaho no ampinganao sy valim-pitia lehibe indrindra ho anao.
+  mbp: REHEFA afaka izany, dia tonga tamin’i Abrama ny tenin’i Jehovah tamin’ny fahitana ka nanao hoe: Aza matahotra, ry Abrama; Izaho no ampinganao sy valim-pitia lehibe indrindra ho anao.#15.1 Na: ary ho l
+
+--- Genesisy 2:7 (v2:18mots, mbp:23mots, overlap:79%) ---
+  Mots en plus dans MBP: izy, manan-aina, olona.
+  v2:  Ary vovo-tany no namoronan'i Jehovah Andriamanitra ny olona, ary nofofoniny fofonaina mahavelona ny vavorony; dia tonga olombelona izy.
+  mbp: Ary vovo-tany no namoronan’i Jehovah Andriamanitra ny olona, ary nofofoniny fofonaina mahavelona ny vavorony; dia tonga olombelona izy#2.7 Hebreo, tonga manan-aina ny olona.
+
+--- Genesisy 22:18 (v2:15mots, mbp:21mots, overlap:71%) ---
+  Mots en plus dans MBP: 
+  v2:  ary amin'ny taranakao no hitahiana ny firenena rehetra ambonin'ny tany, satria nanaiky ny teniko ianao.
+  mbp: ary amin’ny taranakao no hitahiana ny firenena rehetra ambonin’ny tany,#22.18 Na: ary ny taranakao horaisin’ny firenena rehetra ho fiarahabana ny tenany.
+
+--- Genesisy 25:22 (v2:25mots, mbp:28mots, overlap:69%) ---
+  Mots en plus dans MBP: aho?, izao, toy
+  v2:  Ary nifanosika ny zaza kambana tao an-kibony; ary hoy Rebeka: Raha izao, nahoana re aho no dia mbola velona? Dia lasa nanontany tamin'i Jehovah izy.
+  mbp: Ary nifanosika ny zaza kambana tao an-kibony; ary hoy Rebeka: Raha izao, nahoana re aho no dia mbola velona?#25.22 Na: Raha izany, nahoana no dia toy izao aho?
+
+--- Genesisy 25:30 (v2:25mots, mbp:28mots, overlap:84%) ---
+  Mots en plus dans MBP: edoma, honaniko
+  v2:  Dia hoy Esao tamin'i Jakoba: Mba anomezo ahy hohaniko ny mena, dia io mena io, fa reraka aho (izany no nanaovana ny anarany hoe Edoma).
+  mbp: Dia hoy Esao tamin’i Jakoba: Mba anomezo ahy honaniko ny mena, dia io mena io, fa reraka aho (izany no nanaovana ny anarany hoe Edoma#25.30 Edoma = Mena.
+
+--- Genesisy 29:34 (v2:32mots, mbp:35mots, overlap:93%) ---
+  Mots en plus dans MBP: nanan-anaka
+  v2:  Dia nanan'anaka indray izy ka niteraka zazalahy; ary hoy izy: Ankehitriny izao dia hikambana amiko ny vadiko, fa efa niteraka zazalahy telo ho azy aho; izany no nanaovana ny anarany hoe Levy.
+  mbp: Dia nanan-anaka indray izy ka niteraka zazalahy; ary hoy izy: Ankehitriny izao dia hikambana amiko ny vadiko, fa efa niteraka zazalahy telo ho azy aho; izany no nanaovana ny anarany hoe Levy.#29.34 Le
+
+--- Genesisy 29:35 (v2:26mots, mbp:31mots, overlap:72%) ---
+  Mots en plus dans MBP: hiderana, izay, jehovah., na:, nanan-anaka
+  v2:  Dia nanan'anaka indray izy ka niteraka zazalahy; ary hoy izy: Ankehitriny dia hidera an'i Jehovah aho; izany no nanaovany ny anarany hoe Joda; dia nitsaha-jaza izy.
+  mbp: Dia nanan-anaka indray izy ka niteraka zazalahy; ary hoy izy: Ankehitriny dia hidera an’i Jehovah aho; izany no nanaovany ny anarany hoe Joda;#29.35 Joda = Hoderaina; na: Izay hiderana an’i Jehovah.
+
+--- Genesisy 30:18 (v2:19mots, mbp:24mots, overlap:80%) ---
+  Mots en plus dans MBP: karama., mitondra, na
+  v2:  Ary hoy Lea: Efa nomen'Andriamanitra ny karamako, satria nomeko hovadin'ny vadiko ny ankizivaviko; dia nataony hoe Isakara ny anarany.
+  mbp: Ary hoy Lea: Efa nomen’Andriamanitra ny karamako, satria nomeko hovadin’ny vadiko ny ankizivaviko; dia nataony hoe Isakara#30.18 Isakara = Misy karama, na mitondra karama.
+
+--- Genesisy 30:20 (v2:30mots, mbp:33mots, overlap:90%) ---
+  Mots en plus dans MBP: fonenena., na
+  v2:  Ary hoy Lea: Efa nanome anjara soa ho ahy Andriamanitra; amin'izao vao hitoetra amiko ny vadiko, fa efa niteraka zaza enin-dahy ho azy aho; dia nataony hoe Zebolona ny anarany.
+  mbp: Ary hoy Lea: Efa nanome anjara soa ho ahy Andriamanitra; amin’izao vao hitoetra amiko ny vadiko, fa efa niteraka zaza enin-dahy ho azy aho; dia nataony hoe Zebolona#30.20 Zebolona = Fitoerana, na fone
+
+--- Genesisy 33:17 (v2:28mots, mbp:32mots, overlap:92%) ---
+  Mots en plus dans MBP: aman-ondriny;
+  v2:  Ary Jakoba nifindra nankany Sokota ka nanao trano ho azy ary nanao trano rantsan-kazo maromaro ho an'ny omby aman'ondriny; izany no nanaovana ny anaran'io tany io hoe Sokota.
+  mbp: Ary Jakoba nifindra nankany Sokota ka nanao trano ho azy ary nanao trano rantsan-kazo maromaro ho an’ny omby aman-ondriny; izany no nanaovana ny anaran’io tany io hoe Sokota.#33.17 Sokota = Trano rant
+
+--- Genesisy 39:8 (v2:28mots, mbp:35mots, overlap:51%) ---
+  Mots en plus dans MBP: ahy, an-trano, inona, izy., manana, mihevitra, na, satria, tompoko,
+  v2:  Dia nandà izy ka nanao tamin'ny vadin'ny tompony hoe: Indro, ny tompoko tsy mahalala izay tandremako ato an-trano, fa izay rehetra ananany dia efa natolony ho andraikitro avokoa.
+  mbp: Dia nandà izy ka nanao tamin’ny vadin’ny tompony hoe: Indro, ny tompoko tsy mahalala izay tandremako ato an-trano,#39.8 Na: Indro, satria manana ahy ny tompoko, dia tsy mihevitra na inona na inona ato
+
+--- Genesisy 41:43 (v2:25mots, mbp:32mots, overlap:46%) ---
+  Mots en plus dans MBP: adika, amin'ny, egyptiana, hebreo, hevitra, hoe, izany, izay, ka, mandohaleha.
+  v2:  dia nampitaingeniny teo anatin'ny kalesiny faharoa izy, ary ny vahoaka niantso teo alohany nanao hoe: Mandohaleha; ary notendreny ho mpanapaka ny tany Egypta rehetra izy.
+  mbp: dia nampitaingeniny teo anatin’ny kalesiny faharoa izy, ary ny vahoaka niantso teo alohany nanao hoe: Mandohaleha;#41.43 Abreka; tokony ho teny Egyptiana izany ka mitovitovy hevitra amin’ny teny Hebre
+
+--- Genesisy 41:56 (v2:18mots, mbp:26mots, overlap:70%) ---
+  Mots en plus dans MBP: efa, egypta., egyptiana;, eran'ny, mafy
+  v2:  Ary ny mosary dia tany amin'ny tany rehetra. Ary Josefa namoha ny trano fitehirizam-bary ka nivaro-bary tamin'ny Egyptiana.
+  mbp: Ary ny mosary dia tany amin’ny tany rehetra. Ary Josefa namoha ny trano fitehirizam-bary ka nivaro-bary tamin’ny Egyptiana; ary efa mafy ny mosary eran’ny tany Egypta.
+
+--- Genesisy 50:11 (v2:28mots, mbp:32mots, overlap:67%) ---
+  Mots en plus dans MBP: =, abel-egyptiana, egyptiana,, egyptiana., fisaonan'ny, na, sahan'ny
+  v2:  Ary rehefa hitan'ny Kananita tompon-tany ny fisaonana teo Goren-atada, dia hoy izy: Fisaonana mafy amin'ny Egyptiana izao; izany no nanaovany ny anarany hoe Abel-Egyptiana, izay ao an-dafin'i Jordana.
+  mbp: Ary rehefa hitan’ny Kananita tompon-tany ny fisaonana teo Goren-atada, dia hoy izy: Fisaonana mafy amin’ny Egyptiana izao; izany no nanaovany ny anarany hoe Abel-Egyptiana,#50.11 Heb. Abel-Egyptiana =
+
+--- Hebreo 10:12 (v2:19mots, mbp:24mots, overlap:80%) ---
+  Mots en plus dans MBP: mandrakizay.
+  v2:  fa Izy kosa, rehefa nanao fanatitra iray monja ho mandrakizay noho ny ota, dia efa mipetraka eo an-tanana ankavanan'Andriamanitra,
+  mbp: fa Izy kosa, rehefa nanao fanatitra iray monja ho mandrakizay noho ny ota, dia efa mipetraka#10.12 Na: noho ny ota, dia efa mipetraka mandrakizay.
+
+--- Hebreo 10:30 (v2:17mots, mbp:20mots, overlap:52%) ---
+  Mots en plus dans MBP: (deo., ,,ahy, ,,jehovah, 32.35,, 36)., hamaly;'', olony''
+  v2:  Fa fantatsika Izay nanao hoe: "Ahy ny famaliana; Izaho no hamaly;" ary koa: "Jehovah hitsara ny olony".
+  mbp: Fa fantatsika Izay nanao hoe: ,,Ahy ny famaliana; Izaho no hamaly;’’ ary koa: ,,Jehovah hitsara ny olony’’ (Deo. 32.35, 36).
+
+--- Hebreo 10:34 (v2:23mots, mbp:36mots, overlap:90%) ---
+  Mots en plus dans MBP: hianareo
+  v2:  Fa sady niara-niaritra tamin'izay nifatotra ianareo no nifaly raha norobaina ny fanananareo, satria fantatrareo fa ianareo dia manana fananana tsara lavitra sady maharitra.
+  mbp: Fa sady niara-niaritra tamin’izay nifatotra hianareo no nifaly raha norobaina ny fanananareo, satria fantatrareo fa hianareo dia manana fananana tsara lavitra sady maharitra.#10.34 Na: fa hianareo dia
+
+--- Hebreo 12:20 (v2:17mots, mbp:20mots, overlap:68%) ---
+  Mots en plus dans MBP: (eks., ,,ary, 13),, 19.12,, izany''
+  v2:  fa tsy tohany ilay nandidiana hoe: "Ary raha misy biby aza mikasika ny tendrombohitra, dia hotoraham-bato izany",
+  mbp: fa tsy tohany ilay nandidiana hoe: ,,Ary raha misy biby aza mikasika ny tendrombohitra, dia hotoraham-bato izany’’ (Eks. 19.12, 13),
+
+--- Hebreo 2:13 (v2:15mots, mbp:18mots, overlap:45%) ---
+  Mots en plus dans MBP: (isa., ,,indreto, ,,izaho, 18)., 8.17,, ahy'', azy''.
+  v2:  Ary koa: "Izaho hatoky Azy". Ary indray koa: "Indreto Izaho sy ireo zaza nomen'Andriamanitra Ahy".
+  mbp: Ary koa: ,,Izaho hatoky Azy’’. Ary indray koa: ,,Indreto Izaho sy ireo zaza nomen’Andriamanitra Ahy’’ (Isa. 8.17, 18).
+
+--- Jakoba 2:11 (v2:28mots, mbp:31mots, overlap:55%) ---
+  Mots en plus dans MBP: (eks., ,,aza, 14)., 20.13,, hianao,, hianao., mijangajanga'', olona'', tàhiny
+  v2:  Fa Ilay nanao hoe: "Aza mijangajanga" no nanao hoe koa: "Aza mamono olona". Fa raha tahìny tsy mijangajanga ianao, kanefa mamono olona ihany, dia mpandika ny lalàna ianao.
+  mbp: Fa Ilay nanao hoe: ,,Aza mijangajanga’’ no nanao hoe koa: ,,Aza mamono olona’’ (Eks. 20.13, 14). Fa raha tàhiny tsy mijangajanga hianao, kanefa mamono olona ihany, dia mpandika ny lalàna hianao.
+
+--- Jaona 1:42 (v2:31mots, mbp:34mots, overlap:90%) ---
+  Mots en plus dans MBP: petera
+  v2:  Dia nitondra azy ho any amin'i Jesosy izy. Ary nony nijery azy Jesosy, dia hoy Izy: Hianao no Simona, zanak'i Jaona; ianao hatao hoe Kefasy (izay atao hoe, raha adika, Petera)
+  mbp: Dia nitondra azy ho any amin’i Jesosy izy. Ary nony nijery azy Jesosy, dia hoy Izy: Hianao no Simona, zanak’i Jaona; hianao hatao hoe Kefasy (izay atao hoe, raha adika, Petera#1.42 Petera = Vato.
+
+--- Jaona 14:1 (v2:10mots, mbp:18mots, overlap:90%) ---
+  Mots en plus dans MBP: dia
+  v2:  Aza malahelo ny fonareo; minoa an'Andriamanitra, ary minoa Ahy koa.
+  mbp: AZA malahelo ny fonareo; minoa an’Andriamanitra, ary minoa Ahy koa.#14.1 Na: mino an’Andriamanitra hianareo, dia minoa Ahy koa.
+
+--- Jaona 14:4 (v2:9mots, mbp:20mots, overlap:73%) ---
+  Mots en plus dans MBP: làlana, làlana.]
+  v2:  Ary fantatrareo koa ny lalana ho any amin'izay halehako.
+  mbp: Ary fantatrareo koa ny làlana ho any amin’izay halehako.#14.4 Na: [ary izay alehako dia fantatrareo, ary fantatrareo koa ny làlana.]
+
+--- Jaona 3:7 (v2:12mots, mbp:16mots, overlap:92%) ---
+  Mots en plus dans MBP: 
+  v2:  aza gaga noho ny nilazako taminao hoe: Tsy maintsy hateraka indray ianareo.
+  mbp: Aza gaga noho ny nilazako taminao hoe: Tsy maintsy hateraka indray#3.7 Na: hateraka avy any ambony.
+
+--- Jaona 5:29 (v2:24mots, mbp:28mots, overlap:78%) ---
+  Mots en plus dans MBP: fiainana;, fitsarana.
+  v2:  dia hivoaka izy: izay nanao tsara dia ho any amin'ny fitsanganana ho fiainana fa izay nanao ratsy kosa dia ho any amin'fitsanganana ho fahamelohana.
+  mbp: dia hivoaka izy: izay nanao tsara dia ho any amin’ny fitsanganana ho fiainana; fa izay nanao ratsy kosa dia ho any amin’ny fitsanganana ho fahamelohana.#5.29 Gr. ho fitsarana.
+
+--- Jeremia 1:11 (v2:22mots, mbp:33mots, overlap:69%) ---
+  Mots en plus dans MBP: alohan'ny, hazo, mahatsiaro'',, mahatsiaro,hazo, mamony, sasany., satria
+  v2:  Ary tonga tamiko indray ny tenin'i Jehovah nanao hoe: Ry Jeremia, inona izao hitanao izao? Ary hoy izaho: Rantsan-kazo mahatsiaro* no hitako.
+  mbp: Ary tonga tamiko indray ny tenin’i Jehovah nanao hoe: Ry Jeremia, inona izao hitanao izao? Ary hoy izaho: Rantsan-kazo mahatsiaro#1.11 Ny amygdala no ataon’ny Hebreo hoe ,,hazo mahatsiaro’’, satria ma
+
+--- Jeremia 29:11 (v2:23mots, mbp:27mots, overlap:87%) ---
+  Mots en plus dans MBP: fanantenana., farany., sy
+  v2:  Fa Izaho mahalala ny hevitra iheverako anareo, hoy Jehovah, dia hevitra hahatonga fiadanana, fa tsy loza, mba hanome anareo fanantenana ny amin'ny farany*.
+  mbp: Fa Izaho mahalala ny hevitra iheverako anareo, hoy Jehovah, dia hevitra hahatonga fiadanana, fa tsy loza, mba hanome anareo fanantenana ny amin’ny farany.#29.11 Heb. farany sy fanantenana.
+
+--- Jeremia 29:8 (v2:28mots, mbp:31mots, overlap:92%) ---
+  Mots en plus dans MBP: nofisinareo.
+  v2:  Fa izao no lazain'i Jehovah, Tompon'ny maro, Andriamanitry ny Isiraely: Aza mety hofitahin'ny mpaminaninareo sy ny mpanao fankatovanareo, izay ao aminareo, ary aza mino ny nofinareo izay nofisinareo*.
+  mbp: Fa izao no lazain’i Jehovah, Tompon’ny maro, Andriamanitry ny Isiraely: Aza mety hofitahin’ny mpaminaninareo sy ny mpanao fankatovanareo, izay ao aminareo, ary aza mino ny nofinareo izay nofisinareo.#
+
+--- Jeremia 4:12 (v2:16mots, mbp:22mots, overlap:53%) ---
+  Mots en plus dans MBP: ireny;
+  v2:  Dia ho tonga avy amiko izay rivotra mahery noho ireny*; Ary ankehitriny Izaho kosa hifandahatra aminy.
+  mbp: Dia ho tonga avy amiko izay rivotra mahery noho ireny;#4.12 Na: Dia ho tonga etỳ amiko ny rivotra mahery izay avy amin’ireny.
+
+--- Jeremia 49:25 (v2:10mots, mbp:15mots, overlap:50%) ---
+  Mots en plus dans MBP: efa, lao, malaza,, malaza.
+  v2:  Nahoana re no tsy nilaozana ny tanàna malaza*, tanana fifaliako!
+  mbp: Nahoana re no tsy nilaozana ny tanàna malaza,#49.25 Na: Indrisy! efa lao ny tanàna malaza.
+
+--- Jeremia 52:12 (v2:26mots, mbp:29mots, overlap:78%) ---
+  Mots en plus dans MBP: antrehan'., izay, mpanompon', nitsangana, teo
+  v2:  Ary tamin'ny andro fahafolo tamin'ny volana fahadimy tamin'ny taona fahasivy ambin'ny folo nanjakan'i Nebokadnezara, mpanjakan'i Babylona, dia tonga tany Jerosalema Nebozaradana, lehiben'ny mpiambina,
+  mbp: Ary tamin’ny andro fahafolo tamin’ny volana fahadimy tamin’ny taona fahasivy ambin’ny folo nanjakan’i Nebokadnezara, mpanjakan’i Babylona, dia tonga tany Jerosalema Nebozaradana, lehiben’ny mpiambina,
+
+--- Joba 42:17 (v2:10mots, mbp:15mots, overlap:50%) ---
+  Mots en plus dans MBP: 8., andro;, gen., izahao, niainana., xxv.
+  v2:  Dia maty Joba, rehefa tratrantitra ka ela niainana*.[Heb. voky andro]
+  mbp: Dia maty Joba, rehefa tratrantitra ka ela niainana.#42.17 Heb. voky andro; izahao Gen. xxv. 8.
+
+--- Joda 1:19 (v2:16mots, mbp:21mots, overlap:88%) ---
+  Mots en plus dans MBP: fanahy.
+  v2:  Ireo no mahatonga fisarahana, dia olona araka ny nofo ihany, fa tsy mba manana ny Fanahy*.
+  mbp: Ireo no mahatonga fisarahana, dia olona araka ny nofo ihany, fa tsy mba manana ny Fanahy.#1.19 Na: tsy mba manana fanahy.
+
+--- Joda 1:22 (v2:7mots, mbp:12mots, overlap:75%) ---
+  Mots en plus dans MBP: miahanahana;
+  v2:  Ary amindrao fo ny sasany izay miahanahana*;
+  mbp: Ary amindrao fo ny sasany izay miahanahana;#1.22 Na: raha miady aminareo izy.
+
+--- Joda 1:4 (v2:32mots, mbp:40mots, overlap:80%) ---
+  Mots en plus dans MBP: fanahy,, mandà, tompontsika.
+  v2:  Fa misy olona sasany efa niditra misokosoko, izay voasoratra fahiny ho amin'izany fahamelohana izany, dia olona ratsy fanahy izay mamadika ny fahasoavan'Andriamanitsika ho fijejojejoana sady nandà ny 
+  mbp: Fa misy olona sasany efa niditra misokosoko, izay voasoratra fahiny ho amin’izany fahamelohana izany, dia olona ratsy fanahy, izay mamadika ny fahasoavan’Andriamanitsika ho fijejojejoana sady mandà ny
+
+--- Josoa 13:6 (v2:33mots, mbp:37mots, overlap:73%) ---
+  Mots en plus dans MBP: anoloan'ny, eo, hiala, ireny, misrefota-maima,, rehetra,–izaho, zanak'isiraely;
+  v2:  ary ny mponina rehetra any amin'ny tany havoana hatrany Libanona ka hatrany Misrefota-maima. dia ny Sidoniana rehetra, Izaho no handroaka kanefa zarao amin'ny filokana ho lovan'ny Zanak'Isiraely izy a
+  mbp: ary ny mponina rehetra any amin’ny tany havoana hatrany Libanona ka hatrany Misrefota-maima, dia ny Sidoniana rehetra,–Izaho no handroaka ireny hiala eo anoloan’ny Zanak’Isiraely; kanefa zarao amin’ny
+
+--- Josoa 21:4 (v2:25mots, mbp:32mots, overlap:43%) ---
+  Mots en plus dans MBP: ambin'ny, arona, benjamina., isan'ny, joda, kehatita;, levita, mpisorona, nahazo, simeona
+  v2:  Ary ny loka azon'ny taranak'i Kehata sisa dia tanàna folo, avy tamin'ny fokon'ny firenen'i Efraima sy ny firenen'i Dana ary ny antsasaky ny firenen'i Manase.
+  mbp: Dia nahazo loka ny fokon’ny Kehatita; ary ny loka azon’ny taranak’i Arona mpisorona isan’ny Levita dia tanàna telo ambin’ny folo, avy tamin’ny firenen’i Joda sy ny firenen’i Simeona ary ny firenen’i B
+
+--- Josoa 21:6 (v2:24mots, mbp:31mots, overlap:45%) ---
+  Mots en plus dans MBP: antsasaky, any, asera, basana., firenen'isakara, fokon'ny, gersona, manase, naftaly, telo
+  v2:  Ary ny loka azon'ny taranak'i Merary isam-pokony dia tanàna roa ambin'ny folo, avy tamin'ny firenen'i Robena sy ny firenen'i Gada ary ny firenen'i Zebolona.
+  mbp: Ary ny loka azon’ny taranak’i Gersona dia tanàna telo ambin’ny folo, avy tamin’ny fokon’ny firenen’Isakara sy ny firenen’i Asera sy ny firenen’i Naftaly ary tamin’ny antsasaky ny firenen’i Manase any 
+
+--- Levitikosy 13:24 (v2:16mots, mbp:22mots, overlap:65%) ---
+  Mots en plus dans MBP: fotsy, mangirana, mifaritra, mitarehin-kola-mena,, sady, teramena.
+  v2:  Ary raha misy main'ny afo eo amin'ny hoditry ny nofo, ary hita ny may, fa mitarehi-kola-mena,
+  mbp: Ary raha misy main’ny afo eo amin’ny hoditry ny nofo, ary hita ny may, fa mitarehin-kola-mena,#13.24 Heb. mifaritra fotsy mangirana sady teramena.
+
+--- Levitikosy 23:19 (v2:17mots, mbp:22mots, overlap:93%) ---
+  Mots en plus dans MBP: 
+  v2:  Dia manatera osilahy iray ho fanatitra noho ny ota sy zanak'ondrilahy roa izay iray taona ho fanati-pihavanana.
+  mbp: Dia manatera osilahy iray ho fanatitra noho ny ota sy zanak’ondrilahy roa izay iray taona#23.19 Na: hatramin’ny iray taona no ho midina.
+
+--- Lioka 11:4 (v2:22mots, mbp:26mots, overlap:86%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary mamelà ny helokay; fa izahay koa mamela izay rehetra meloka aminay. Ary aza mitondra anay ho amin'ny fakam-panahy. Ampio hoe: .
+  mbp: Ary mamelà ny helokay; fa izahay koa mamela izay rehetra meloka aminay. Ary aza mitondra anay ho amin’ny fakam-panahy.#11.4 Ampio hoe: [fa manafaha anay amin’ny ratsy].
+
+--- Lioka 12:29 (v2:12mots, mbp:17mots, overlap:82%) ---
+  Mots en plus dans MBP: hianareo,
+  v2:  Koa aza mitady izay hohaninareo na izay hosotroinareo ianareo, ary aza miahanahana.
+  mbp: Koa aza mitady izay hohaninareo na izay hosotroinareo hianareo, ary aza miahanahana.#12.29 Na: aza aingaingain’ny fanantenana foana.
+
+--- Lioka 12:49 (v2:15mots, mbp:25mots, overlap:70%) ---
+  Mots en plus dans MBP: etỳ, izany?, mirehitra, raha, sahady
+  v2:  Tonga hanipy afo et? ambonin'ny tany Aho, ka manao ahoana ny faniriako mba hirehetan'izany sahady?
+  mbp: Tonga hanipy afo etỳ ambonin’ny tany Aho, ka manao ahoana ny faniriako mba hirehetan’izany sahady?#12.49 Na: ary inona intsony no iriko, raha mirehitra sahady izany?
+
+--- Lioka 12:57 (v2:9mots, mbp:21mots, overlap:80%) ---
+  Mots en plus dans MBP: hianareo
+  v2:  Nahoana ianareo no tsy mahalala mitsara araka ny marina?
+  mbp: Nahoana hianareo no tsy mahalala mitsara araka ny marina?#12.57 Na: Nahoana hianareo no tsy mahay mitsara marina avy ao am-ponareo ihany?
+
+--- Lioka 16:21 (v2:21mots, mbp:24mots, overlap:84%) ---
+  Mots en plus dans MBP: 
+  v2:  ary naniry mba hihinana izay latsaka avy tamin'ny latabatr'ilay manan-karena izy, fa ny alika kosa no avy ka nilelaka ny feriny.
+  mbp: ary naniry mba hihinana izay latsaka avy tamin’ny latabatr’ilay manan-karena izy, fa ny alika kosa no avy#16.21 Na: ary ny alika koa dia avy.
+
+--- Lioka 17:21 (v2:18mots, mbp:21mots, overlap:72%) ---
+  Mots en plus dans MBP: erỳ!, etỳ!
+  v2:  Ary ny olona tsy hanao hoe: Indro, et?! na er? ! fa, indro, ny fanjakan'Andriamanitra dia ao anatinareo.
+  mbp: Ary ny olona tsy hanao hoe: Indro, etỳ! na erỳ! fa, indro, ny fanjakan’Andriamanitra dia ao anatinareo.#17.21 Na: efa eo aminareo.
+
+--- Lioka 17:35 (v2:12mots, mbp:27mots, overlap:62%) ---
+  Mots en plus dans MBP: havela.], mitoto, vavy-miara
+  v2:  Hisy roa vavy miara-mitoto vary; ny anankiray horaisina, ary ny anankiray havela.
+  mbp: Hisy roa vavy-miara mitoto vary; ny anankiray horaisina, ary ny anankiray havela.#17.35 Ampio hoe: [36 Hisy roa lahy any an-tsaha; ny anankiray horaisina, ary ny anankiray havela.]
+
+--- Lioka 19:13 (v2:18mots, mbp:21mots, overlap:46%) ---
+  Mots en plus dans MBP: 100, 15., =, drakma, ho, mina, tokony
+  v2:  Dia niantso folo lahy tamin'ny mpanompony izy ary nanome azy farantsa folo ka nanao taminy hoe: Mandrantoa mandra-pihaviko.
+  mbp: Dia niantso folo lahy tamin’ny mpanompony izy ary nanome azy farantsa#19.13 Gr. mina = drakma 100 = tokony ho farantsa 15.
+
+--- Lioka 21:2 (v2:11mots, mbp:22mots, overlap:41%) ---
+  Mots en plus dans MBP: =, dia, ho, iray,, izany, kodranta, lepta, roa,, tokony, varahina
+  v2:  ary nahita mpitondratena malahelo anankiray koa mandatsaka farantsakely roa teo Izy.
+  mbp: ary nahita mpitondratena malahelo anankiray koa mandatsaka farantsakely roa#21.2 Gr. lepta roa, dia farantsakely varahina izany = kodranta iray, tokony ho variroaventy.
+
+--- Lioka 24:18 (v2:30mots, mbp:34mots, overlap:79%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary ny anankiray, izay atao hoe Kleopasy, namaly ka nanao taminy hoe: Hianao irery va no vahiny mitoetra any Jerosalema tsy mba mahalala izay zavatra tonga tao tamin'izao andro izao?
+  mbp: Ary ny anankiray, izay atao hoe Kleopasy, namaly ka nanao taminy hoe: Hianao irery va no vahiny mitoetra any Jerosalema tsy mba mahalala#24.18 Na: Vahiny mitoetra irery angaha Hianao any Jerosalema ka
+
+--- Lioka 24:42 (v2:8mots, mbp:11mots, overlap:88%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary dia nomeny tapaky ny hazandrano voatono Izy.
+  mbp: Ary dia nomeny tapaky ny hazandrano voatono#24.42 Ampio hoe: [sy tantely].
+
+--- Lioka 6:48 (v2:36mots, mbp:41mots, overlap:97%) ---
+  Mots en plus dans MBP: 
+  v2:  Tahaka ny olona nanao trano izy, izay nihady lalina ary nanisy fanorenana teo ambonin'ny vatolampy; ary nony tondraka ny rano, dia namely mafy izany trano izany ny riaka, nefa tsy nahahozongozona azy,
+  mbp: Tahaka ny olona nanao trano izy, izay nihady lalina ary nanisy fanorenana teo ambonin’ny vatolampy; ary nony tondraka ny rano, dia namely mafy izany trano izany ny riaka, nefa tsy nahahozongozona azy,
+
+--- Lioka 6:6 (v2:20mots, mbp:24mots, overlap:71%) ---
+  Mots en plus dans MBP: dia, efa, maina,, malazo., na
+  v2:  Ary nony tamin'ny Sabata hafa koa niditra tao amin'ny synagoga Jesosy ka nampianatra; ary nisy lehilahy anankiray maty tanana tao.
+  mbp: ARY nony tamin’ny Sabata hafa koa dia niditra tao amin’ny synagoga Jesosy ka nampianatra; ary nisy lehilahy anankiray maty#6.6 Gr. efa maina, na malazo.
+
+--- Lioka 7:32 (v2:29mots, mbp:34mots, overlap:77%) ---
+  Mots en plus dans MBP: hianareo., hianareo;, inona, izy?, moa
+  v2:  Tahaka ny ankizy madinika mipetraka eny an-tsena izy, izay mifampiantso hoe: Efa nitsoka sodina taminareo izahay, nefa tsy nandihy ianareo; efa nanao feo fisaonana izahay, nefa tsy nitomany ianareo.
+  mbp: tahaka ny inona moa izy? Tahaka ny ankizy madinika mipetraka eny an-tsena izy, izay mifampiantso hoe: Efa nitsoka sodina taminareo izahay, nefa tsy nandihy hianareo; efa nanao feo fisaonana izahay, ne
+
+--- Lioka 8:28 (v2:33mots, mbp:36mots, overlap:86%) ---
+  Mots en plus dans MBP: izaho, masìna, ry, sy
+  v2:  Fa nony nahita an'i Jesosy izy, dia niantso mafy sady niankohoka teo anatrehany ka niteny tamin'ny feo mahery hoe: Moa mifaninona akory Hianao, Jesosy, Zanak'Andriamanitra Avo Indrindra ô? masina Hian
+  mbp: Fa nony nahita an’i Jesosy izy, dia niantso mafy sady niankohoka teo anatrehany ka niteny tamin’ny feo mahery hoe: Moa mifaninona akory izaho sy Hianao, ry Jesosy, Zanak’Andriamanitra Avo Indrindra ô?
+
+--- Malakia 2:15 (v2:34mots, mbp:42mots, overlap:50%) ---
+  Mots en plus dans MBP: an'andriamanitra, aranaka, fanahy, ihany?, iray?, izy., nahoana, nanana, nitady, sisa
+  v2:  Moa tsy nisy anankiray nanao izany va, nefa mbola nanam-panahy ihany ? Fa inona andrefa no notadiavin'ilay anankiray? Taranaka araka an'Andriamanitra. Koa dia tandremo ny fanahinareo, ary aoka tsy his
+  mbp: Moa tsy nisy anankiray nanao izany va, nefa mbola nanam-panahy ihany? Fa inona andrefa no notadiavin’ilay anankiray? Taranaka araka an’Andriamanitra.#2.15 Na: Moa tsy iray va no nataony? Nefa nanana f
+
+--- Malakia 2:4 (v2:20mots, mbp:23mots, overlap:78%) ---
+  Mots en plus dans MBP: 
+  v2:  Dia ho fantatrareo fa nampitondra izany didy izany ho aminareo Aho, mba haharetan'ny fanekeko amin'i Levy, hoy Jehovah, Tompon'ny maro.
+  mbp: Dia ho fantatrareo fa nampitondra izany didy izany ho aminareo Aho, mba haharetan’ny fanekeko amin’i Levy,#2.4 Na: mba ho fanekeko amin’i Levy izany.
+
+--- Marka 11:25 (v2:23mots, mbp:42mots, overlap:81%) ---
+  Mots en plus dans MBP: hamela, helokareo.], hianareo,, tsy
+  v2:  Ary raha mitsangana mivavaka ianareo, ka misy olona anananareo alahelo, dia mamelà ny helony, mba havelan'ny Rainareo Izay any an-danitra kosa ny helokareo.
+  mbp: Ary raha mitsangana mivavaka hianareo, ka misy olona anananareo alahelo, dia mamelà ny helony, mba havelan’ny Rainareo Izay any an-danitra kosa ny helokareo.#11.25 Ampio hoe: [26 Fa raha hianareo tsy 
+
+--- Marka 12:42 (v2:16mots, mbp:25mots, overlap:41%) ---
+  Mots en plus dans MBP: =, dia, ho, iray, izany, kodranta, lepta, roa,, tokony, varahina
+  v2:  Fa nisy mpitondratena malahelo anankiray kosa tonga teo, ka nandatsaka farantsakely roa an-kevitry ny variroaventy avy.
+  mbp: Fa nisy mpitondratena malahelo anankiray kosa tonga teo, ka nandatsaka farantsakely#12.42 Gr. lepta roa, dia farantsakely varahina izany = kodranta iray = tokony ho variroaventy.
+
+--- Marka 15:27 (v2:20mots, mbp:38mots, overlap:50%) ---
+  Mots en plus dans MBP: (isa., ankaviany.,ary, hazofijaliana, ho, isan'ny, izy'', liii.12).], mpanota, natao
+  v2:  Ary nisy jiolahy roa nohomboany tamin'ny hazo fijaliana koa, ny anankiray teo amin'ny ankavanany, ary ny anankiray teo amin'ny ankaviany.
+  mbp: Ary nisy jiolahy roa nohomboany tamin’ny hazofijaliana koa, ny anankiray teo amin’ny ankavanany, ary ny anankiray teo amin’ny ankaviany.#15.27 Ampio hoe: [28 Dia tanteraka ny Soratra Masina izay manao
+
+--- Marka 3:1 (v2:14mots, mbp:17mots, overlap:65%) ---
+  Mots en plus dans MBP: efa, maina,, malazo., na
+  v2:  Ary niditra tao amin'ny synagoga indray Jesosy: ary nisy lehilahy anankiray maty tanana teo.
+  mbp: ARY niditra tao amin’ny synagoga indray Jesosy: ary nisy lehilahy anankiray maty#3.1 Gr. efa maina, na malazo.
+
+--- Marka 3:18 (v2:19mots, mbp:24mots, overlap:76%) ---
+  Mots en plus dans MBP: izahao, lio., sy,, vi.15.
+  v2:  ary Andrea sy Filipo sy Bartolomeo sy Matio sy Tomasy sy Jakoba, zanak'i Alfeo, sy Tadeo sy Simona Kananeana
+  mbp: ary Andrea sy Filipo sy Bartolomeo sy Matio sy Tomasy sy Jakoba, zanak’i Alfeo, sy Tadeo sy, Simona Kananeana#3.18 Na: Zelota; izahao Lio. vi.15.
+
+--- Marka 6:21 (v2:28mots, mbp:31mots, overlap:96%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary rehefa tonga izay andro antonona, dia ilay nanaovan'i Heroda fanasana ho an'ny lehibe sy ny mpifehy arivo ary ny loholona tany Galilia tamin'ny andro fahatsiarovana ny nahaterahany,
+  mbp: Ary rehefa tonga izay andro antonona, dia ilay nanaovan’i Heroda fanasana ho an’ny lehibe sy ny mpifehy arivo ary ny loholona tany Galilia tamin’ny andro fahatsiarovana ny#6.21 Na: tamin’ny fitsingere
+
+--- Marka 9:29 (v2:19mots, mbp:23mots, overlap:94%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary hoy Izy taminy: Iny karazana iny tsy mba azo avoaka na amin'inona na amin'inona, afa-tsy amin'ny fivavahana ihany..
+  mbp: Ary hoy Izy taminy: Iny karazana iny tsy mba azo avoaka na amin’inona na amin’inona, afa-tsy amin’ny fivavahana#9.29 Ampio hoe: [sy ny fifadian-kanina].
+
+--- Matio 1:22 (v2:14mots, mbp:24mots, overlap:60%) ---
+  Mots en plus dans MBP: ho, mpilaza, olona, profeta, profeta;, teniny., voafidin'andriamanitra
+  v2:  Ary izany rehetra izany dia tonga mba hahatanteraka izay nampilazain'ny Tompo ny mpaminany hoe:
+  mbp: Ary izany rehetra izany dia tonga mba hahatanteraka izay nampilazain’ny Tompo ny mpaminany#1.22 Gr. profeta; ny profeta dia olona voafidin’Andriamanitra ho mpilaza ny teniny.
+
+--- Matio 15:19 (v2:21mots, mbp:25mots, overlap:75%) ---
+  Mots en plus dans MBP: blasfemia;, ix.3., izahao, vonoan-olona,
+  v2:  Fa avy amin'ny fo no ivoahan'ny sain-dratsy, dia ny vonoan'olona, ny fakam-badin'olona, ny fijangajangana, ny halatra, ny ampanga lainga, ny fitenenan-dratsy;
+  mbp: Fa avy amin’ny fo no ivoahan’ny sain-dratsy, dia ny vonoan-olona, ny fakam-badin’olona, ny fijangajangana, ny halatra, ny ampanga lainga, ny fitenenan-dratsy;#15.19 Gr. blasfemia; izahao ix.3.
+
+--- Matio 17:20 (v2:42mots, mbp:58mots, overlap:83%) ---
+  Mots en plus dans MBP: erỳ,, hatao.], hianareo
+  v2:  Ary hoy Jesosy taminy: Noho ny fahakelezan'ny finoanareo ihany; fa lazaiko aminareo marina tokoa: Raha manana finoana hoatra ny voan-tsinapy iray aza ianareo ka hiteny amin'io tendrombohitra io hoe: M
+  mbp: Ary hoy Jesosy taminy: Noho ny fahakelezan’ny finoanareo ihany; fa lazaiko aminareo marina tokoa: Raha manana finoana hoatra ny voan-tsinapy iray aza hianareo ka hiteny amin’io tendrombohitra io hoe: 
+
+--- Matio 18:10 (v2:28mots, mbp:38mots, overlap:85%) ---
+  Mots en plus dans MBP: an-danitra.], hianareo;
+  v2:  Mitandrema, fandrao manao tsinontsinona na dia ny iray aza amin'ireny madinika ireny ianareo; fa lazaiko aminareo: Ny anjeliny any an-danitra mahita mandrakariva ny tavan'ny Raiko Izay any an-danitra.
+  mbp: Mitandrema, fandrao manao tsinontsinona na dia ny iray aza amin’ireny madinika ireny hianareo; fa lazaiko aminareo: Ny anjeliny any an-danitra mahita mandrakariva ny tavan’ny Raiko Izay any an-danitra
+
+--- Matio 18:24 (v2:16mots, mbp:22mots, overlap:67%) ---
+  Mots en plus dans MBP: arivo., ny, sekely, telo, volafotsy
+  v2:  Ary raha vao nidinika izy, dia nisy anankiray nentina teo aminy, izay nitrosa talenta iray alina.
+  mbp: Ary raha vao nidinika izy, dia nisy anankiray nentina teo aminy, izay nitrosa talenta#18.24 Anaram-bola; ny talenta volafotsy dia sekely telo arivo.
+
+--- Matio 19:17 (v2:24mots, mbp:28mots, overlap:46%) ---
+  Mots en plus dans MBP: afa-tsy, andriamanitra.], dia, ihany,, misy, tsara, tsy
+  v2:  Fa hoy Jesosy taminy: Nahoana Aho no anontanianao ny amin'izay tsara? Iray no tsara; fa raha te-hiditra any amin'ny fiainana ianao, tandremo ny didy.
+  mbp: Fa hoy Jesosy taminy: Nahoana Aho no anontanianao ny amin’izay tsara? Iray no tsara;#19.17 Na: [Nahoana Aho no ataonao tsara? Tsy misy tsara afa-tsy iray ihany, dia Andriamanitra.]
+
+--- Matio 23:13 (v2:25mots, mbp:54mots, overlap:52%) ---
+  Mots en plus dans MBP: fahamelohana, fiolahana, hahazoanareo, hianareo, hianareo;, ho, izany, koa, kokoa.], laninareo
+  v2:  Fa lozanareo, mpanora-dalàna sy Fariseo, mpihatsaravelatsihy! fa arindrinareo eo anoloan'ny olona ny fanjakan'ny lanitra; fa ianareo tsy miditra, ary izay miditra dia tsy avelanareo hiditra.
+  mbp: Fa lozanareo, mpanora-dalàna sy Fariseo, mpihatsaravelatsihy! fa arindrinareo eo anoloan’ny olona ny fanjakan’ny lanitra; fa hianareo tsy miditra, ary izay miditra dia tsy avelanareo hiditra.#23.13 Am
+
+--- Matio 25:32 (v2:19mots, mbp:22mots, overlap:79%) ---
+  Mots en plus dans MBP: azy, izy,, zanak'osy.
+  v2:  ary ny firenena rehetra hangonina eo anatrehany, dia hanavaka azy, tahaka ny mpiandry ondry manavaka ny ondry amin'ny osy;
+  mbp: ary ny firenena rehetra hangonina eo anatrehany, dia hanavaka azy Izy, tahaka ny mpiandry ondry manavaka ny ondry amin’ny osy;#25.32 Gr. zanak’osy.
+
+--- Matio 25:7 (v2:10mots, mbp:13mots, overlap:91%) ---
+  Mots en plus dans MBP: rehetra
+  v2:  Dia nitsangana ireo virijina ireo, ka samy namboatra ny fanalany.
+  mbp: Dia nitsangana ireo virijina rehetra ireo, ka samy namboatra ny fanalany.#25.7 Na: fanilony.
+
+--- Matio 27:26 (v2:20mots, mbp:28mots, overlap:47%) ---
+  Mots en plus dans MBP: fikapohana, grika, hoditra, lehibe, milaza, nisy, nokapohina, nokapohiny;, ny, teny
+  v2:  Ary dia nandefa an'i Barabasy ho an'ny olona izy; fa Jesosy nasainy nokapohina, dia natolony mba hohomboana tamin'ny hazo fijaliana.
+  mbp: Ary dia nandefa an’i Barabasy ho an’ny olona izy; fa Jesosy nasainy nokapohina,#27.26 Gr. dia nokapohiny; ny teny Grika milaza ny nokapohina tamin’ny fikapohana hoditra lehibe nisy varahina.
+
+--- Matio 4:1 (v2:11mots, mbp:14mots, overlap:77%) ---
+  Mots en plus dans MBP: mpanendrikendrika., na
+  v2:  Ary Jesosy dia nentin'ny Fanahy nankany an-efitra, mba halain'ny devoly fanahy.
+  mbp: ARY Jesosy dia nentin’ny Fanahy nankany an-efitra, mba halain’ny devoly#4.1 Devoly= mpiampanga, na mpanendrikendrika.
+
+--- Matio 9:3 (v2:13mots, mbp:25mots, overlap:40%) ---
+  Mots en plus dans MBP: amin'andriamanitra,, blasfemia,, dia, fa, fomban'andriamanitra., hanana, indrindra, izay, manao, mihambo
+  v2:  Ary, indreo, ny mpanora-dalàna sasany nanao anakampo hoe: Miteny ratsy ity Lehilahy ity.
+  mbp: Ary, indreo, ny mpanora-dalàna sasany nanao anakampo hoe: Miteny ratsy#9.3 Gr. manao blasfemia, dia miteny ratsy, indrindra fa ny amin’Andriamanitra, na mihambo hanana izay fomban’Andriamanitra.
+
+--- Mpitoriteny 1:7 (v2:20mots, mbp:27mots, overlap:74%) ---
+  Mots en plus dans MBP: reni
+  v2:  Ny renirano rehetra dia samy mankamin'ny ranomasina, nefa tsy tondraka ny ranomasina; any amin'izay falehan'ny renirano ihany no iverenany indray.
+  mbp: Ny renirano rehetra dia samy mankamin’ny ranomasina, nefa tsy tondraka ny ranomasina; any amin’izay falehan’ny reni#1.7 Na: Feno fahasasarana ny zavatra rehetra ka tsy hain’ny olona lazaina.
+
+--- Mpitsara 11:27 (v2:13mots, mbp:25mots, overlap:48%) ---
+  Mots en plus dans MBP: amona, anio., aoka, hianao, hitsara, jehovah, mpitsara, ny, sy, taranak'i
+  v2:  Izaho tsy nanota taminao, fa ianao no manisy ratsy ahy, fa miady amiko;
+  mbp: Izaho tsy nanota taminao, fa hianao no manisy ratsy ahy, fa miady amiko; aoka Jehovah Mpitsara no hitsara ny Zanak’Isiraely sy ny taranak’i Amona anio.
+
+--- Nomery 11:5 (v2:15mots, mbp:23mots, overlap:53%) ---
+  Mots en plus dans MBP: dia, maimaimpoana, voantango, voantangom-bazaha.
+  v2:  Tsaroanay ny hazandrano izay nohaninay, maimaim-poana tany Egypta mbamin'ny voatango sy tongolo samy hafa karazana.
+  mbp: Tsaroanay ny hazandrano izay nohaninay, maimaimpoana tany Egypta mbamin’ny voatango#11.5 Voantango roa karazana no lazain’ny teny Hebreo, dia ny voantango sy ny voantangom-bazaha.
+
+--- Nomery 15:1 (v2:8mots, mbp:12mots, overlap:73%) ---
+  Mots en plus dans MBP: amin'ny, mitenena, zanak'isiraely
+  v2:  Ary Jehovah niteny tamin'i Mosesy ka nanao hoe:
+  mbp: ARY Jehovah niteny tamin’i Mosesy ka nanao hoe: Mitenena amin’ny Zanak’Isiraely hoe:
+
+--- Nomery 28:11 (v2:27mots, mbp:30mots, overlap:83%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary izao no atero amin'ny voaloham-bolanareo ho fanatitra dorana ho an'i Jehovah: vantotr'ombilahy roa sy ondrilahy iray ary zanak'ondry fito, izay iray taona sady tsy misy kilema,
+  mbp: Ary izao no atero amin’ny voaloham-bolanareo ho fanatitra dorana ho an’i Jehovah: vantotr’ombilahy roa sy ondrilahy iray ary zanak’ondry fito, izay iray taona#28.11 Na: hatramin’ny iray taona no ho mi
+
+--- Nomery 28:27 (v2:25mots, mbp:31mots, overlap:86%) ---
+  Mots en plus dans MBP: dorana
+  v2:  ary izao no atero ho fanatitra odorana ho hanitra ankasitrahana ho an'i Jehovah: vantotr'ombilahy roa sy ondrilahy iray sy zanak'ondry fito, izay iray taona avy,
+  mbp: ary izao no atero ho fanatitra dorana ho hanitra ankasitrahana ho an’i Jehovah: vantotr’ombilahy roa sy ondrilahy iray sy zanak’ondry fito, izay iray taona#28.27 Na: hatramin’ny iray taona no ho midin
+
+--- Nomery 29:17 (v2:25mots, mbp:28mots, overlap:82%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary amin'ny andro faharoa koa dia vantotr'ombilahy roa ambin'ny folo sy ondrilahy roa ary zanak'ondry efatra ambin'ny folo, izay iray taona sady tsy misy kilema,
+  mbp: Ary amin’ny andro faharoa koa dia vantotr’ombilahy roa ambin’ny folo sy ondrilahy roa ary zanak’ondry efatra ambin’ny folo, izay iray taona#29.17 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 29:20 (v2:25mots, mbp:28mots, overlap:83%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary amin'ny andro fahatelo koa dia vantotr'ombilahy iraika ambin'ny folo sy ondrilahy roa ary zanak'ondry efatra ambin'ny folo, izay iray taona sady tsy misy kilema,
+  mbp: Ary amin’ny andro fahatelo koa dia vantotr’ombilahy iraika ambin’ny folo sy ondrilahy roa ary zanak’ondry efatra ambin’ny folo, izay iray taona#29.20 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 29:23 (v2:23mots, mbp:26mots, overlap:82%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary amin'ny andro fahefatra koa dia vantotr'ombilahy folo sy ondrilahy roa ary zanak'ondry efatra ambin'ny folo, izay iray taona sady tsy misy kilema,
+  mbp: Ary amin’ny andro fahefatra koa dia vantotr’ombilahy folo sy ondrilahy roa ary zanak’ondry efatra ambin’ny folo, izay iray taona#29.23 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 29:26 (v2:23mots, mbp:26mots, overlap:82%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary amin'ny andro fahadimy koa dia vantotr'ombilahy sivy sy ondrilahy roa ary zanak'ondry efatra ambin'ny folo, izay iray taona sady tsy misy kilema,
+  mbp: Ary amin’ny andro fahadimy koa dia vantotr’ombilahy sivy sy ondrilahy roa ary zanak’ondry efatra ambin’ny folo, izay iray taona#29.26 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 29:29 (v2:23mots, mbp:26mots, overlap:82%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary amin'ny andro fahenina koa dia vantotr'ombilahy valo sy ondrilahy roa ary zanak'ondry efatra ambin'ny folo, izay iray taona sady tsy misy kilema,
+  mbp: Ary amin’ny andro fahenina koa dia vantotr’ombilahy valo sy ondrilahy roa ary zanak’ondry efatra ambin’ny folo, izay iray taona#29.29 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 29:32 (v2:23mots, mbp:26mots, overlap:82%) ---
+  Mots en plus dans MBP: 
+  v2:  Ary amin'ny andro fahafito koa dia vantotr'ombilahy fito sy ondrilahy roa ary zanak'ondry efatra ambin'ny folo, izay iray taona sady tsy misy kilema,
+  mbp: Ary amin’ny andro fahafito koa dia vantotr’ombilahy fito sy ondrilahy roa ary zanak’ondry efatra ambin’ny folo, izay iray taona#29.32 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 32:41 (v2:17mots, mbp:24mots, overlap:76%) ---
+  Mots en plus dans MBP: havota-jaïra., jaïra,
+  v2:  Ary Jaira, zanak'i Manase, nandeha ka nahafaka ny tanàna madinika teo, ary ny anarany nataony hoe Havota-jaira.
+  mbp: Ary Jaïra, zanak’i Manase, nandeha ka nahafaka ny tanàna madinika teo, ary ny anarany nataony hoe Havota-jaïra.#32.41 Na: Havota-jaïra = Tanàna madinika an’i Jaïra.
+
+--- Nomery 4:5 (v2:22mots, mbp:26mots, overlap:89%) ---
+  Mots en plus dans MBP: vavolombelona
+  v2:  Ary raha hifindra ny toby, dia hiditra Arona sy ny zanany ka hampidina ny efitra lamba fanakonana; ary hasarony ny fiaran'ny Vavolombelona'izany;
+  mbp: Ary raha hifindra ny toby, dia hiditra Arona sy ny zanany ka hampidina ny efitra lamba fanakonana; ary hasarony ny fiaran’ny Vavolombelona#4.5 Dia ny Didy Folo.
+
+--- Nomery 7:15 (v2:15mots, mbp:19mots, overlap:73%) ---
+  Mots en plus dans MBP: 
+  v2:  ary vantotr'ombilahy iray sy ondrilahy iray ary zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: ary vantotr’ombilahy iray sy ondrilahy iray ary zanak’ondry iray izay iray taona,#7.15 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:21 (v2:15mots, mbp:19mots, overlap:73%) ---
+  Mots en plus dans MBP: 
+  v2:  ary vantotr'ombilahy iray sy ondrilahy iray sy zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: ary vantotr’ombilahy iray sy ondrilahy iray sy zanak’ondry iray izay iray taona,#7.21 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:27 (v2:12mots, mbp:17mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.27 Na: hatramin’ny ny iray taona no ho midina.
+
+--- Nomery 7:33 (v2:12mots, mbp:16mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.33 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:39 (v2:12mots, mbp:16mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.39 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:45 (v2:12mots, mbp:16mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.45 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:51 (v2:12mots, mbp:16mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.51 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:57 (v2:12mots, mbp:16mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.57 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:63 (v2:12mots, mbp:16mots, overlap:55%) ---
+  Mots en plus dans MBP: taona,
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.63 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:69 (v2:12mots, mbp:16mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.69 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:75 (v2:12mots, mbp:16mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra dorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.75 Na: hatramin’ny iray taona no ho midina.
+
+--- Nomery 7:81 (v2:12mots, mbp:16mots, overlap:70%) ---
+  Mots en plus dans MBP: 
+  v2:  vantotr'ombilahy iray, ondrilahy iray, zanak'ondry iray izay iray taona, ho fanatitra odorana;
+  mbp: vantotr’ombilahy iray, ondrilahy iray, zanak’ondry iray izay iray taona,#7.81 Na: hatramin’ny iray taona no ho midina.
+
+--- Romana 1:17 (v2:28mots, mbp:31mots, overlap:68%) ---
+  Mots en plus dans MBP: ,,ny, finoana.'', velon'ny, velona'',ny
+  v2:  Fa amin'izany no anehoana fahamarinana avy amin'Andriamanitra avy amin'ny finoana sy ho amin'ny finoana, araka ny voasoratra hoe: Ny marina amin'ny finoana no ho velona (Hab. 2. 4).
+  mbp: Fa amin’izany no anehoana fahamarinana avy amin’Andriamanitra avy amin’ny finoana sy ho amin’ny finoana, araka ny voasoratra hoe: ,,Ny marina amin’ny finoana no ho velona’’#1.17 Na: ,,Ny marina ho vel
+
+--- Romana 1:20 (v2:30mots, mbp:33mots, overlap:96%) ---
+  Mots en plus dans MBP: 
+  v2:  Fa ny fombany tsy hita, dia ny heriny mandrakizay sy ny mah'Andriamanitra Azy, dia miseho hatramin'ny nanaovana izao tontolo izao, fa fantatra amin'ny zavatra nataony; ka dia tsy manan-kalahatra ireo;
+  mbp: Fa ny fombany tsy hita, dia ny heriny mandrakizay sy ny mah’Andriamanitra Azy, dia miseho hatramin’ny nanaovana izao tontolo izao, fa fantatra amin’ny zavatra nataony; ka dia tsy manan-kalahatra#1.20 
+
+--- Romana 11:17 (v2:29mots, mbp:32mots, overlap:81%) ---
+  Mots en plus dans MBP: fàkan'ny, hianao, ka
+  v2:  Fa raha notapahina ny sampany sasany, ary ianao izay tahaka ny hazo oliva maniry ho azy kosa no natsofoka teo aminy mba niombona ny fakan'ny menaky ny hazo oliva
+  mbp: Fa raha notapahina ny sampany sasany, ary hianao izay tahaka ny hazo oliva maniry ho azy kosa no natsofoka teo aminy ka mba niombona ny fàkan’ny menaky#11.17 Na: [fàkany sy ny menaky].
+
+--- Romana 14:16 (v2:9mots, mbp:12mots, overlap:43%) ---
+  Mots en plus dans MBP: blasfemia;, hanaovana, ix.3., izahao, mat.
+  v2:  Aoka ary tsy mba hotenenina ratsy ny fahasoavana azonareo.
+  mbp: Aoka ary tsy mba hotenenina ratsy#14.16 Gr. hanaovana blasfemia; izahao Mat. ix.3.
+
+--- Romana 14:21 (v2:15mots, mbp:19mots, overlap:86%) ---
+  Mots en plus dans MBP: hahalemy].
+  v2:  Fa tsara ny tsy mihinana hena, na misotro divay, na manao izay hahatafintohina ny rahalahinao.
+  mbp: Fa tsara ny tsy mihinana hena, na misotro divay, na manao izay hahatafintohina#14.21 Ampio hoe: [na hahalavo, na hahalemy].
+
+--- Romana 15:14 (v2:17mots, mbp:22mots, overlap:79%) ---
+  Mots en plus dans MBP: fahalalana, hianareo,, rehetra
+  v2:  Fa izaho koa, ry rahalahiko, dia matoky ny aminareo fa feno fahatsarana ianareo sady mahay mifananatra koa.
+  mbp: Fa izaho koa, ry rahalahiko, dia matoky ny aminareo fa feno fahatsarana hianareo, dia feno ny fahalalana rehetra sady mahay mifananatra koa.
+
+--- Romana 7:21 (v2:16mots, mbp:22mots, overlap:67%) ---
+  Mots en plus dans MBP: 
+  v2:  Koa hitako izao lalàna izao: raha ta-hanao ny marina aho, dia ato amiko ihany ny ratsy.
+  mbp: Koa hitako izao lalàna izao: raha ta-hanao ny marina aho,#7.21 Na: Koa hitako fa raha ta-hanaraka ny lalàna aho hanaovako ny marina.
+
+--- Romana 9:5 (v2:18mots, mbp:32mots, overlap:70%) ---
+  Mots en plus dans MBP: ambonin, andriamanitra,, anie, izy, mandrakizay, rehetra.
+  v2:  azy koa ny razana, sady avy taminy araka ny nofo Kristy, Izay ambonin'izy rehetra, Andriamanitra isaorana mandrakizay. Amena.
+  mbp: azy koa ny razana, sady avy taminy araka ny nofo Kristy, Izay ambonin’izy rehetra, Andriamanitra isaorana mandrakizay.#9.5 Na: avy taminy araka ny nofo Kristy. Isaorana mandrakizay anie Andriamanitra,
+
+--- 1 Samoela 16:8 (v2:15mots, mbp:19mots, overlap:55%) ---
+  Mots en plus dans MBP: abinadaba, anatrehan'i, azy, ka, niantso, samoela., teo
+  v2:  Ary Jese dia nampandalo an'i Sama indray. Fa hoy izy: Tsy ity no nofidin'i Jehovah.
+  mbp: Ary Jese niantso an’i Abinadaba ka nampandalo azy teo anatrehan’i Samoela. Fa hoy izy: Tsy ity no nofidin’i Jehovah.
+
+--- 1 Samoela 28:22 (v2:29mots, mbp:39mots, overlap:68%) ---
+  Mots en plus dans MBP: aho., fa, hianao,, hianao., hihinana, hoy, izy,, izy:, nety, tsy
+  v2:  Koa ankehitriny, masìna ianao, mba henoy kosa ny tenin'ny ankizivavinao, ary aoka aho handroso sombin-kanina kely eo anoloanao; dia hano izany mba hahatanjaka anao, raha handeha amin'ny alehanao ianao
+  mbp: Koa ankehitriny, masìna hianao, mba henoy kosa ny tenin’ny ankizivavinao, ary aoka aho handroso sombin-kanina kely eo anoloanao; dia hano izany mba hahatanjaka anao, raha handeha amin’ny alehanao hian
+
+--- 2 Tantara 3:13 (v2:17mots, mbp:20mots, overlap:68%) ---
+  Mots en plus dans MBP: ary, ireo,, izy,, tongony
+  v2:  Nivelatra ny elatr'ireo kerobima Ireo. ka roa-polo hakiho ny halavany; nijoro tamin'ny tongony, tarehiny nanatrika ny trano.
+  mbp: Nivelatra ny elatr’ireo kerobima ireo, ka roa-polo hakiho ny halavany; nijoro tamin’ny tongony izy, ary ny tarehiny nanatrika ny trano.
+
+--- Titosy 2:5 (v2:19mots, mbp:23mots, overlap:73%) ---
+  Mots en plus dans MBP: blasfemia;, hanaovana, ix.3., izahao, mat.
+  v2:  hahonon-tena, ho madio toe-panahy, hiasa ao an-tranony, ho tsara fanahy, hanaiky ny vadiny, mba tsy hitenenana ratsy ny tenin'Andriamanitra.
+  mbp: hahonon-tena, ho madio toe-panahy, hiasa ao an-tranony, ho tsara fanahy, hanaiky ny vadiny, mba tsy hitenenana ratsy#2.5 Gr. hanaovana blasfemia; izahao Mat. ix.3.
+
+--- Zakaria 6:13 (v2:33mots, mbp:36mots, overlap:85%) ---
+  Mots en plus dans MBP: 
+  v2:  Eny, Izy no hanao ny tempolin'i Jehovah, ary Izy no hitondra voninahitra ka hipetraka sy hanapaka eo amin'ny seza fiandrianany; ary ho mpisorona eo amin'ny seza fiandrianany Izy; ary hisy fisainam-pih
+  mbp: Eny, Izy no hanao ny tempolin’i Jehovah, ary Izy no hitondra voninahitra ka hipetraka sy hanapaka eo amin’ny seza fiandrianany; ary ho mpisorona eo amin’ny seza fiandrianany Izy;#6.13 Na: ary hisy mpi
+
+--- Zakaria 7:2 (v2:14mots, mbp:24mots, overlap:62%) ---
+  Mots en plus dans MBP: ., dia, naniraka.
+  v2:  ary Betela efa naniraka an'i Serezera sy Regema-meleka sy ny olony hifona amin'i Jehovah
+  mbp: ary Betela efa naniraka an’i Serezera sy Regema-meleka sy ny olony#7.2 Na: ary ny any Betela, dia Serezera . . . . efa naniraka.
+
+--- Zakaria 7:6 (v2:17mots, mbp:27mots, overlap:75%) ---
+  Mots en plus dans MBP: hianareo,, hianareo?
+  v2:  Ary raha mihinana sy misotro ianareo. moa tsy mihinana sy misotro ho an'ny tenanareo ihany va ianareo?
+  mbp: Ary raha mihinana sy misotro hianareo, moa tsy mihinana sy misotro ho an’ny tenanareo ihany va hianareo?#7.6 Na: Moa tsy hianareo ihany va no mihinana sy misotro.

@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Media SDA Ambolokandrina</title>
+<meta name="theme-color" content="#0A0F1E">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="logoslide.png">
+<script src="salamo_data.js"></script>
+<style>
+/* ═══ iOS 26 LIQUID GLASS — VARIABLES ═══ */
+:root{
+  --spring:.55s cubic-bezier(0.34,1.56,0.64,1);
+  --spring-fast:.38s cubic-bezier(0.34,1.56,0.64,1);
+  --spring-slow:.75s cubic-bezier(0.25,1.4,0.35,1);
+  --ease-out:.4s cubic-bezier(0.22,1,0.36,1);
+  --ease-in-out:.45s cubic-bezier(0.4,0,0.2,1);
+  --glass-bg:rgba(255,255,255,0.08);
+  --glass-border:rgba(255,255,255,0.18);
+  --glass-blur:blur(28px) saturate(180%);
+  --glass-blur-heavy:blur(48px) saturate(200%);
+  --glass-shadow:0 8px 32px rgba(0,0,0,0.35),inset 0 1px 0 rgba(255,255,255,0.12);
+  --glass-shadow-hover:0 20px 60px rgba(0,0,0,0.5),inset 0 1.5px 0 rgba(255,255,255,0.2);
+  --blue:#0A84FF;
+  --blue-light:#5AC8FA;
+  --radius-pill:999px;
+  --radius-card:22px;
+  --radius-btn:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;
+  background:#0A0F1E;color:rgba(255,255,255,0.97);
+  min-height:100vh;overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+  /* GPU layer for smooth compositing */
+  transform:translateZ(0);
+}
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â SPLASH ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â */
+.splash{
+  position:fixed;inset:0;z-index:1000;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:linear-gradient(145deg,#0A0F1E 0%,#0D2140 50%,#0A1628 100%);
+  transition:opacity .8s cubic-bezier(0.22,1,0.36,1),transform .8s cubic-bezier(0.22,1,0.36,1),filter .8s ease;
+  will-change:opacity,transform,filter;
+}
+.splash.exit{opacity:0;transform:scale(1.08);filter:blur(8px) brightness(1.4);pointer-events:none}
+.splash-logo{
+  width:110px;height:110px;
+  border-radius:28px;overflow:hidden;
+  box-shadow:0 0 60px rgba(10,132,255,.5),0 0 120px rgba(10,132,255,.2),inset 0 1px 0 rgba(255,255,255,0.2);
+  animation:logoPulse 2.4s cubic-bezier(0.4,0,0.6,1) infinite;margin-bottom:24px;
+  backdrop-filter:var(--glass-blur);
+  border:1px solid rgba(255,255,255,0.15);
+}
+.splash-logo img{width:100%;height:100%;object-fit:cover;display:block}
+@keyframes logoPulse{
+  0%,100%{transform:scale(1) translateY(0);box-shadow:0 0 60px rgba(10,132,255,.5),0 0 120px rgba(10,132,255,.2),inset 0 1px 0 rgba(255,255,255,0.15)}
+  50%{transform:scale(1.05) translateY(-4px);box-shadow:0 8px 80px rgba(10,132,255,.7),0 0 160px rgba(10,132,255,.35),inset 0 1px 0 rgba(255,255,255,0.25)}
+}
+.splash-typing{display:flex;flex-direction:column;align-items:center;gap:4px;min-height:100px;margin-bottom:36px}
+.splash-line{font-size:26px;font-weight:500;letter-spacing:1px;color:rgba(255,255,255,.7);height:34px;white-space:nowrap}
+.splash-line.highlight{font-size:36px;font-weight:700;letter-spacing:-.5px;background:linear-gradient(135deg,#fff 0%,rgba(90,200,250,.9) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.splash-cursor{display:inline-block;font-weight:300;color:#5AC8FA;-webkit-text-fill-color:#5AC8FA;width:2px;animation:cursorBlink .6s step-end infinite}
+@keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
+.splash-loader{width:200px;height:3px;background:rgba(255,255,255,.08);border-radius:var(--radius-pill);overflow:hidden;box-shadow:0 0 8px rgba(0,0,0,0.3)}
+.splash-loader-bar{height:100%;background:linear-gradient(90deg,#0A84FF,#5AC8FA,#34C759);border-radius:var(--radius-pill);width:0%;transition:width .3s ease;box-shadow:0 0 10px rgba(10,132,255,0.6)}
+.splash-skip{
+  position:absolute;top:40px;right:24px;z-index:10;
+  font-size:13px;font-weight:600;letter-spacing:1px;
+  color:rgba(255,255,255,.6);cursor:pointer;
+  padding:8px 18px;border-radius:var(--radius-pill);
+  background:rgba(255,255,255,0.09);
+  border:1px solid rgba(255,255,255,0.16);
+  backdrop-filter:blur(20px) saturate(160%);
+  -webkit-backdrop-filter:blur(20px) saturate(160%);
+  box-shadow:0 4px 16px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.1);
+  transition:background var(--spring-fast),color var(--spring-fast),transform var(--spring-fast),box-shadow var(--spring-fast);
+}
+.splash-skip:hover{background:rgba(255,255,255,0.18);color:#fff;transform:scale(1.06);box-shadow:0 8px 24px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.2)}
+.splash-skip:active{transform:scale(0.95)}
+.splash-sig{position:absolute;bottom:40px;font-size:13px;color:#1A3A6B;font-weight:900;letter-spacing:2px;text-transform:uppercase;text-shadow:0 0 8px rgba(26,58,107,.9)}
+
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â MAIN HOME ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â */
+/* ═══ HOME — PHOTO BACKGROUND ALWAYS VISIBLE + SUBTLE GEOMETRIC ACCENTS ═══ */
+.home-geo-bg{
+  position:fixed;inset:0;z-index:0;opacity:0;pointer-events:none;overflow:hidden;
+  transition:opacity .7s ease;
+}
+body.home-active .home-geo-bg{opacity:1}
+/* Soft darkening so the photo stays visible but text/cards stay legible */
+.home-geo-bg::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,9,20,.35) 0%,rgba(6,9,20,.15) 30%,rgba(6,9,20,.45) 100%);
+}
+.geo-shape{position:absolute;pointer-events:none;opacity:.4;mix-blend-mode:multiply}
+.geo-shape.tl-black{top:-8%;left:-12%;width:42%;height:55%;background:#0b0f1c;clip-path:polygon(0 0,68% 0,26% 100%,0 100%)}
+.geo-shape.tl-blue{top:-6%;left:-10%;width:26%;height:58%;background:linear-gradient(160deg,#1d3fc4,#0e2380);clip-path:polygon(0 0,42% 0,10% 100%,0 100%);opacity:.7;mix-blend-mode:normal}
+.geo-shape.br-black{bottom:-10%;right:-12%;width:40%;height:50%;background:#0b0f1c;clip-path:polygon(100% 100%,32% 100%,74% 0,100% 0)}
+.geo-shape.br-blue{bottom:-8%;right:-10%;width:24%;height:52%;background:linear-gradient(-20deg,#1d3fc4,#0e2380);clip-path:polygon(100% 100%,58% 100%,90% 0,100% 0);opacity:.7;mix-blend-mode:normal}
+.geo-dots{position:absolute;width:120px;height:96px;background-image:radial-gradient(rgba(255,255,255,.55) 2px,transparent 2px);background-size:16px 16px;opacity:.5}
+.geo-dots.dots-tr{top:8%;right:4%}
+.geo-dots.dots-bl{bottom:9%;left:2%}
+
+/* ═══ HOME — LAYOUT ═══ */
+.main-home{
+  position:relative;z-index:1;min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:24px;opacity:0;
+  transition:opacity .8s cubic-bezier(0.22,1,0.36,1),transform .8s cubic-bezier(0.22,1,0.36,1);
+  transform:translateY(20px) scale(0.98);
+}
+.main-home.visible{opacity:1;transform:translateY(0) scale(1)}
+.main-home-title{text-align:center;margin-bottom:32px}
+.main-home-title h1{
+  font-size:44px;font-weight:900;letter-spacing:-1.5px;margin-bottom:10px;
+  color:#ffffff;text-shadow:0 3px 18px rgba(0,0,0,.6),0 1px 4px rgba(0,0,0,.5);
+}
+.main-home-title p{
+  font-size:14px;color:rgba(255,255,255,.9);font-weight:700;letter-spacing:4px;text-transform:uppercase;text-shadow:0 2px 10px rgba(0,0,0,.5);
+  display:inline-block;position:relative;padding-bottom:12px;
+}
+.main-home-title p::after{
+  content:'';position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:44px;height:3px;border-radius:2px;background:linear-gradient(90deg,#1d3fc4,#5AC8FA);
+}
+.home-cards{
+  display:grid;grid-template-columns:repeat(3,minmax(200px,260px));gap:22px;
+  justify-content:center;max-width:900px;
+}
+.home-card{
+  padding:26px 22px 24px;border-radius:18px;cursor:pointer;overflow:hidden;
+  background:rgba(255,255,255,0.14);
+  border:1px solid rgba(255,255,255,0.22);
+  backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  box-shadow:0 10px 30px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,0.16);
+  transition:transform var(--spring),box-shadow var(--ease-out),background var(--ease-in-out);
+  text-align:left;position:relative;will-change:transform;
+  animation:cardIn .6s cubic-bezier(0.22,1,0.36,1) both;
+}
+.home-card::after{
+  content:'';position:absolute;right:-2px;bottom:-2px;width:62%;height:52%;
+  background:linear-gradient(135deg,rgba(29,63,196,.55),rgba(14,35,128,.55));
+  clip-path:polygon(100% 100%,100% 0,0 100%);pointer-events:none;
+}
+.home-card.dark{background:rgba(10,14,26,0.42);border-color:rgba(255,255,255,0.12);box-shadow:0 10px 30px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,0.08)}
+.home-card .card-dots{
+  position:absolute;top:16px;right:16px;width:30px;height:22px;
+  background-image:radial-gradient(rgba(255,255,255,.7) 1.6px,transparent 1.6px);background-size:9px 9px;
+  opacity:.6;z-index:1;
+}
+.home-card.dark .card-dots{background-image:radial-gradient(#5AC8FA 1.6px,transparent 1.6px);opacity:.6}
+.home-card:nth-child(1){animation-delay:.08s}
+.home-card:nth-child(2){animation-delay:.16s}
+.home-card:nth-child(3){animation-delay:.24s}
+.home-card:nth-child(4){animation-delay:.32s}
+.home-card:nth-child(5){animation-delay:.40s}
+.home-card:nth-child(6){animation-delay:.48s}
+@keyframes cardIn{from{opacity:0;transform:translateY(36px) scale(.93)}to{opacity:1;transform:translateY(0) scale(1)}}
+.home-card:hover{
+  transform:translateY(-10px) scale(1.04);
+  box-shadow:var(--glass-shadow-hover),0 0 32px var(--glow);
+  background:rgba(255,255,255,0.12);
+  border-color:rgba(255,255,255,0.22);
+}
+.home-card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 20px 44px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,0.2);background:rgba(255,255,255,0.2)}
+.home-card.dark:hover{box-shadow:0 20px 44px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,0.1);background:rgba(10,14,26,0.55)}
+.home-card:active{transform:scale(.97);transition:transform .1s ease}
+.home-card .card-border{display:none}
+.hc-icon{
+  width:52px;height:52px;font-size:24px;margin-bottom:16px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:13px;background:linear-gradient(135deg,#1d3fc4,#0e2380);
+  box-shadow:0 6px 16px rgba(29,63,196,.5);
+  filter:none;transition:transform var(--spring-fast);position:relative;z-index:1;
+}
+.home-card:hover .hc-icon{transform:scale(1.08) translateY(-2px)}
+.hc-title{font-size:19px;font-weight:800;margin-bottom:6px;color:#ffffff;text-shadow:0 2px 10px rgba(0,0,0,.6);line-height:1.25;position:relative;z-index:1}
+.home-card.dark .hc-title{color:#ffffff}
+.hc-sub{font-size:13px;color:rgba(255,255,255,.85);margin-bottom:16px;font-weight:500;line-height:1.4;position:relative;z-index:1;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.home-card.dark .hc-sub{color:rgba(255,255,255,.75)}
+.hc-badge{
+  display:inline-block;padding:5px 14px;border-radius:var(--radius-pill);font-size:12px;font-weight:700;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,0.28);color:#fff;
+  position:relative;z-index:1;
+}
+.home-card.dark .hc-badge{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.16);color:#fff}
+.home-sig{position:relative;margin-top:32px;font-size:12px;color:rgba(255,255,255,.7);font-weight:700;letter-spacing:2px;text-transform:uppercase;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.home-visit{position:relative;margin-top:8px;font-size:13px;color:rgba(255,255,255,.75);font-weight:500;text-align:center;padding:0 24px;max-width:600px;line-height:1.5;letter-spacing:.3px;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+/* Welcome screen */
+.welcome{
+  position:fixed;inset:0;z-index:100;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+   background:#0A0F1E url('bgfirst.png') center/cover fixed;
+  padding:40px 24px;
+  transition:opacity .9s cubic-bezier(0.22,1,0.36,1),transform .9s cubic-bezier(0.22,1,0.36,1),filter .9s ease;
+  will-change:opacity,transform;
+}
+.welcome::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(145deg,rgba(10,15,30,.25) 0%,rgba(13,33,64,.2) 50%,rgba(10,22,40,.25) 100%);
+}
+.welcome.exit{opacity:0;transform:scale(1.1);filter:blur(10px) brightness(1.3);pointer-events:none}
+.welcome-logo{
+  width:100px;height:100px;
+  border-radius:24px;overflow:hidden;
+  margin-bottom:28px;
+  box-shadow:0 0 60px rgba(10,132,255,.5);
+  animation:logoPulse 2s ease-in-out infinite;position:relative;z-index:1;
+}
+.welcome-logo img{width:100%;height:100%;object-fit:cover;display:block}
+.welcome h1{
+  font-size:clamp(19px,4vw,26px);font-weight:900;font-style:normal;text-align:left;
+  line-height:1.2;letter-spacing:.5px;margin:0;
+  position:absolute;top:16px;left:16px;z-index:2;
+  color:rgba(255,255,255,0.92);
+  text-transform:uppercase;
+  text-shadow:0 2px 12px rgba(0,0,0,.5);
+  padding:8px 14px;border-radius:12px;
+  max-width:40vw;
+}
+.welcome p{
+  font-size:15px;color:rgba(255,255,255,.85);text-align:center;position:relative;z-index:1;
+  letter-spacing:1px;margin-bottom:36px;max-width:450px;line-height:1.5;
+  text-shadow:0 2px 12px rgba(0,0,0,.8);
+  background:rgba(0,0,0,.3);padding:8px 20px;border-radius:12px;
+}
+.welcome-btn{
+  padding:16px 52px;border-radius:var(--radius-pill);border:none;cursor:pointer;
+  background:linear-gradient(135deg,#0A84FF,#5AC8FA);
+  color:#fff;font-size:18px;font-weight:700;letter-spacing:2px;
+  transition:transform var(--spring),box-shadow var(--ease-out);
+  box-shadow:0 4px 24px rgba(10,132,255,.45),inset 0 1px 0 rgba(255,255,255,0.25);
+  position:relative;z-index:1;
+  backdrop-filter:blur(10px);
+}
+.welcome-btn:hover{transform:scale(1.07) translateY(-2px);box-shadow:0 12px 40px rgba(10,132,255,.55),inset 0 1px 0 rgba(255,255,255,0.3)}
+.welcome-btn:active{transform:scale(.95);transition:transform .1s ease}
+.welcome-sig{position:absolute;bottom:32px;font-size:12px;color:rgba(255,255,255,.3);font-weight:700;letter-spacing:2px;text-transform:uppercase}
+
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â BG ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â */
+.bg-canvas{
+  position:fixed;inset:0;z-index:0;
+  background:#0A0F1E url('mainbg.png') center/cover fixed;
+}
+@keyframes bgPulse{0%{filter:hue-rotate(0deg) brightness(1)}50%{filter:hue-rotate(10deg) brightness(1.05)}100%{filter:hue-rotate(-5deg) brightness(.98)}}
+
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â SLIDESHOW ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â */
+.slideshow{
+  position:fixed;inset:0;z-index:2000;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s ease;
+}
+.slideshow.open{opacity:1;pointer-events:all}
+
+.slide{
+  position:absolute;inset:0;z-index:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+  opacity:0;padding:40px 24px;pointer-events:none;
+}
+.slide.active{z-index:2;opacity:1;pointer-events:all}
+.slide.exit{z-index:3;pointer-events:none}
+/* Enter transitions */
+.slide.enter-fade{animation:fadeIn .6s ease both}
+.slide.enter-zoomIn{animation:zoomIn .7s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-zoomOut{animation:zoomOut .7s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-slideLeft{animation:slideInRight .6s ease both}
+.slide.enter-slideRight{animation:slideInLeft .6s ease both}
+.slide.enter-blur{animation:blurIn .7s ease both}
+.slide.enter-rotate{animation:rotateIn .8s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-flip{animation:flipIn .7s ease both}
+/* Exit transitions */
+.slide.exit-fade{animation:fadeOut .5s ease both}
+.slide.exit-zoomIn{animation:fadeOut .4s ease both}
+.slide.exit-zoomOut{animation:zoomOutBig .6s ease both}
+.slide.exit-slideLeft{animation:slideOutLeft .5s ease both}
+.slide.exit-slideRight{animation:slideOutRight .5s ease both}
+.slide.exit-blur{animation:blurOut .5s ease both}
+.slide.exit-rotate{animation:rotateOut .6s ease both}
+.slide.exit-flip{animation:flipOut .5s ease both}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+@keyframes zoomIn{from{opacity:0;transform:scale(1.4)}to{opacity:1;transform:scale(1)}}
+@keyframes zoomOut{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+@keyframes zoomOutBig{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(1.5)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(120px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideOutLeft{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-120px)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideOutRight{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(120px)}}
+@keyframes blurIn{from{opacity:0;filter:blur(24px)}to{opacity:1;filter:blur(0)}}
+@keyframes blurOut{from{opacity:1;filter:blur(0)}to{opacity:0;filter:blur(24px)}}
+@keyframes rotateIn{from{opacity:0;transform:rotate(-12deg) scale(.8)}to{opacity:1;transform:rotate(0) scale(1)}}
+@keyframes rotateOut{from{opacity:1;transform:rotate(0) scale(1)}to{opacity:0;transform:rotate(12deg) scale(.8)}}
+@keyframes flipIn{from{opacity:0;transform:perspective(800px) rotateY(90deg)}to{opacity:1;transform:rotateY(0)}}
+@keyframes flipOut{from{opacity:1;transform:perspective(800px) rotateY(0)}to{opacity:0;transform:rotateY(-90deg)}}
+@keyframes slideContentIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.slide h1{
+  font-size:clamp(52px,8vw,96px);font-weight:900;letter-spacing:-1px;
+  line-height:1.15;margin-bottom:16px;
+  text-shadow:0 4px 32px rgba(0,0,0,.9),0 2px 8px rgba(0,0,0,.8),0 0 80px rgba(0,0,0,.5);
+  background:rgba(0,0,0,.45);padding:10px 28px;border-radius:16px;display:inline-block;
+  -webkit-text-stroke:1.5px rgba(0,0,0,.3);
+  animation:textFloat 3s ease-in-out infinite;
+  color:#ffffff;
+}
+.slide .sub{
+  font-size:clamp(26px,3.5vw,44px);font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;color:#fff;
+  text-shadow:0 3px 20px rgba(0,0,0,.8),0 2px 6px rgba(0,0,0,.7);
+  background:rgba(0,0,0,.4);padding:8px 20px;border-radius:12px;display:inline-block;
+  -webkit-text-stroke:.5px rgba(0,0,0,.2);
+  animation:textFloat 3s ease-in-out 0.3s infinite;
+}
+@keyframes textFloat{
+  0%,100%{transform:translateY(0);opacity:1}
+  50%{transform:translateY(-6px);opacity:0.92}
+}
+.slide-deco{
+  position:absolute;top:50%;right:0%;z-index:-1;
+  width:70%;height:70%;
+  transform:translateY(-50%);
+  border-radius:40px;
+  object-fit:cover;
+  opacity:0.7;
+  pointer-events:none;
+  box-shadow:0 4px 20px rgba(0,0,0,.3);
+  border:2px solid rgba(255,255,255,.15);
+}
+.slide-deco.full{
+  width:100%;height:100%;
+  right:0;top:0;transform:none;
+  border-radius:0;border:none;
+  opacity:0.5;
+  object-fit:contain;
+}
+.slide-logo{
+  position:absolute;top:16px;right:16px;z-index:6;
+  width:120px;height:120px;border-radius:24px;
+  object-fit:cover;box-shadow:0 2px 12px rgba(0,0,0,.4);
+  border:2px solid rgba(255,255,255,.3);
+}
+.slide .number{
+  position:absolute;top:20px;right:24px;z-index:5;
+  font-size:15px;font-weight:700;letter-spacing:2px;
+  color:rgba(255,255,255,.5);text-shadow:0 2px 8px rgba(0,0,0,.4);
+}
+.slide-signature{
+  position:absolute;bottom:80px;left:50%;transform:translateX(-50%);z-index:5;
+  text-align:center;
+  font-size:14px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.92);
+  text-shadow:0 2px 16px rgba(0,0,0,.8);
+  white-space:nowrap;
+  transition:opacity .5s cubic-bezier(0.22,1,0.36,1),transform .5s cubic-bezier(0.22,1,0.36,1);
+  background:rgba(255,255,255,0.07);
+  backdrop-filter:blur(28px) saturate(180%);
+  -webkit-backdrop-filter:blur(28px) saturate(180%);
+  padding:6px 16px;border-radius:var(--radius-pill);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 4px 16px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* Timer */
+.timer{
+  font-size:clamp(72px,14vw,140px);font-weight:800;letter-spacing:6px;
+  font-variant-numeric:tabular-nums;
+  text-shadow:0 4px 40px rgba(0,0,0,.7);margin:12px 0 6px;
+  color:#ffffff;
+  -webkit-text-stroke:2px rgba(0,0,0,.3);
+  transition:transform .15s ease;
+}
+.timer.pop{transform:scale(1.06)}
+.timer-bar-wrap{
+  width:min(300px,70vw);height:6px;
+  background:rgba(255,255,255,.15);border-radius:3px;overflow:hidden;
+  margin:12px auto 0;
+}
+.timer-bar{
+  height:100%;
+  background:linear-gradient(90deg,#0A84FF,#5AC8FA,#34C759);
+  border-radius:var(--radius-pill);width:100%;transition:width 1s cubic-bezier(0.4,0,0.2,1);
+  box-shadow:0 0 12px rgba(10,132,255,0.5);
+}
+
+
+
+/* Controls */
+.slide-controls{
+  position:absolute;bottom:0;left:0;right:0;z-index:10;
+  padding:20px 24px 36px;
+  background:linear-gradient(0deg,rgba(0,0,0,.7) 0%,transparent 100%);
+  backdrop-filter:blur(4px);
+  transition:opacity .5s cubic-bezier(0.22,1,0.36,1);
+}
+.ctrl-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.ctrl-btn{
+  width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(24px) saturate(180%);
+  -webkit-backdrop-filter:blur(24px) saturate(180%);
+  color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;
+  transition:transform var(--spring-fast),background var(--ease-in-out),box-shadow var(--ease-in-out);
+  flex-shrink:0;
+  border:1px solid rgba(255,255,255,0.15);
+  box-shadow:0 4px 16px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.ctrl-btn:hover{background:rgba(255,255,255,0.2);transform:scale(1.1);box-shadow:0 8px 24px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.15)}
+.ctrl-btn:active{transform:scale(.88);transition:transform .08s ease}
+.ctrl-btn.exit{background:rgba(255,59,48,.2);border-color:rgba(255,59,48,0.3)}
+.ctrl-btn.exit:hover{background:rgba(255,59,48,.4)}
+.ctrl-progress{
+  flex:1;height:4px;background:rgba(255,255,255,.1);border-radius:var(--radius-pill);overflow:hidden;cursor:pointer;
+  box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);
+}
+.ctrl-progress-fill{height:100%;background:linear-gradient(90deg,#0A84FF,#5AC8FA);border-radius:var(--radius-pill);transition:width .4s cubic-bezier(0.4,0,0.2,1)}
+.ctrl-label{font-size:13px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:1px;white-space:nowrap;min-width:50px;text-align:center}
+.play-btn{
+  width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;
+  background:linear-gradient(135deg,#0A84FF,#5AC8FA);
+  color:#fff;font-size:26px;display:flex;align-items:center;justify-content:center;
+  transition:transform var(--spring),box-shadow var(--ease-out);
+  flex-shrink:0;
+  box-shadow:0 4px 20px rgba(10,132,255,.45),inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.play-btn:hover{transform:scale(1.1) translateY(-1px);box-shadow:0 10px 32px rgba(10,132,255,.55),inset 0 1px 0 rgba(255,255,255,0.25)}
+.play-btn:active{transform:scale(.9);transition:transform .08s ease}
+
+/* Hint overlay */
+.slide-hint{
+  position:absolute;top:16px;left:50%;transform:translateX(-50%);z-index:25;
+  font-size:12px;font-weight:500;letter-spacing:.5px;
+  color:rgba(255,255,255,.7);
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(28px) saturate(180%);
+  -webkit-backdrop-filter:blur(28px) saturate(180%);
+  padding:8px 20px;border-radius:var(--radius-pill);
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 4px 20px rgba(0,0,0,0.35),inset 0 1px 0 rgba(255,255,255,0.1);
+  white-space:nowrap;pointer-events:none;
+  transition:opacity .7s cubic-bezier(0.22,1,0.36,1),transform .7s cubic-bezier(0.22,1,0.36,1);
+}
+.slide-hint.hide{opacity:0;transform:translateX(-50%) translateY(-14px)}
+
+/* Close btn */
+.slide-close{
+  position:absolute;top:16px;left:16px;z-index:20;
+  width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(24px) saturate(180%);
+  -webkit-backdrop-filter:blur(24px) saturate(180%);
+  border:1px solid rgba(255,255,255,0.14);
+  color:rgba(255,255,255,.8);font-size:20px;display:flex;align-items:center;justify-content:center;
+  transition:opacity .5s cubic-bezier(0.22,1,0.36,1),background var(--spring-fast),transform var(--spring-fast),box-shadow var(--ease-in-out);
+  box-shadow:0 4px 16px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.slide-close:hover{background:rgba(255,59,48,.45);color:#fff;transform:scale(1.1) rotate(90deg);box-shadow:0 8px 24px rgba(255,59,48,0.35)}
+
+/* Float Nav — iOS 26 Dynamic Island style */
+#floatNav{
+  position:fixed;
+  /* Position will be set by JS / existing rules */
+}
+/* Add liquid glass pill style via injection */
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:768px){
+  .main-home{padding:16px}
+  .main-home-title h1{font-size:clamp(24px,6vw,34px)}
+  .main-home-title p{font-size:clamp(12px,2.5vw,14px)}
+  .home-card{min-width:160px;max-width:240px;padding:20px 16px}
+  .hc-icon{font-size:clamp(28px,6vw,36px)}
+  .slide.liturgie h1{font-size:clamp(28px,5vw,48px)}
+  .slide .sub{font-size:clamp(18px,2.8vw,30px)}
+  .slide-signature{font-size:clamp(10px,1.8vw,13px);bottom:60px;padding:4px 10px}
+}
+@media(max-width:500px){
+  .splash-line{font-size:18px}
+  .splash-line.highlight{font-size:26px}
+  .main-home-title h1{font-size:28px}
+  .home-card{min-width:160px;padding:20px 16px}
+  .hc-icon{font-size:32px}
+  .ctrl-btn{width:40px;height:40px;font-size:18px}
+  .play-btn{width:48px;height:48px;font-size:22px}
+  #floatNav{gap:3px;padding:5px 8px}
+  #floatNav a{width:32px;height:32px;font-size:14px}
+  .slide h1{font-size:clamp(28px,7vw,44px)}
+  .welcome{padding:24px 16px}
+  .welcome-btn{padding:14px 36px;font-size:16px}
+  .splash{padding:24px 16px}
+  .splash-logo{width:90px;height:90px;font-size:40px}
+  .slide-logo{width:80px;height:80px;top:10px;right:10px}
+  .themes-overlay{padding:40px 14px}
+  .theme-opt{min-width:140px;max-width:200px;padding:14px 12px}
+  .theme-opt .to-num{font-size:22px}
+  .theme-opt .to-label{font-size:15px}
+  .fihirana-overlay{padding:40px 14px 80px}
+  .fihirana-nav{right:12px;gap:8px}
+  .fihirana-nav .ctrl-btn{width:36px;height:36px;font-size:16px}
+  .ps-fs-btns{right:8px}
+  .ps-fs-btn{width:34px;height:34px;font-size:14px}
+  .slide-close{width:36px;height:36px;font-size:16px;top:10px;left:10px}
+  .slide-fs{bottom:80px;right:12px}
+  .slide-fs .ctrl-btn{width:36px;height:36px;font-size:14px}
+}
+@media(max-width:420px){
+  .main-home-title h1{font-size:clamp(20px,6vw,24px)}
+  .home-cards{gap:10px}
+  .home-card{min-width:130px;max-width:200px;padding:14px 10px}
+  .hc-icon{font-size:clamp(24px,6vw,28px)}
+  .hc-title{font-size:clamp(16px,4.5vw,18px)}
+  .hc-sub{font-size:12px}
+  .hc-badge{font-size:11px;padding:3px 10px}
+  #floatNav{gap:2px;padding:4px 6px}
+  #floatNav a{width:28px;height:28px;font-size:12px}
+  .slide h1{font-size:clamp(22px,6vw,32px);padding:6px 14px}
+  .slide-text{font-size:clamp(18px,4vw,26px);padding:8px 14px}
+  .slide .sub{font-size:clamp(14px,3vw,20px);letter-spacing:1px}
+  .slide-logo{display:none}
+  .slide-signature{font-size:10px;bottom:50px}
+  .slide-deco{opacity:0.3}
+   .welcome h1{font-size:clamp(12px,3vw,16px);padding:6px 10px;top:10px;left:10px;max-width:50vw}
+  .welcome-btn{padding:12px 28px;font-size:15px}
+  .splash-logo{width:70px;height:70px;font-size:32px}
+  .splash-line{font-size:15px}
+  .splash-line.highlight{font-size:22px}
+  .splash-loader{width:140px}
+  .theme-opt{min-width:120px;max-width:180px;padding:12px 10px}
+  .theme-opt .to-num{font-size:18px}
+  .theme-opt .to-label{font-size:13px}
+  .fihirana-text{font-size:clamp(22px,5vw,32px);padding:10px 14px}
+  .fihirana-overlay{padding:30px 10px 70px}
+  .ctrl-label{font-size:11px;min-width:40px}
+  .ctrl-progress{height:3px}
+}
+@media(max-width:360px){
+  .main-home-title h1{font-size:clamp(18px,5.5vw,22px)}
+  .home-cards{gap:8px}
+  .home-card{min-width:100%;max-width:100%;padding:12px 10px}
+  .hc-icon{font-size:24px}
+  #floatNav{overflow-x:auto;gap:2px;padding:4px;justify-content:flex-start;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  #floatNav::-webkit-scrollbar{display:none}
+  #floatNav a{flex-shrink:0;width:26px;height:26px;font-size:11px}
+  .slide h1{font-size:clamp(18px,5vw,26px);padding:4px 10px}
+  .slide .sub{font-size:clamp(12px,3vw,16px)}
+  .slide-text{font-size:clamp(15px,4vw,22px);padding:6px 10px}
+  .slide-signature{font-size:8px;bottom:40px;padding:3px 8px}
+  .ctrl-btn{width:34px;height:34px;font-size:15px}
+  .play-btn{width:40px;height:40px;font-size:19px}
+  .ctrl-row{gap:8px}
+  .slide-controls{padding:12px 12px 20px}
+  .splash{padding:16px 10px}
+  .splash-logo{width:60px;height:60px;font-size:28px}
+  .splash-line{font-size:13px}
+  .splash-line.highlight{font-size:18px}
+  .splash-skip{top:16px;right:10px;font-size:11px;padding:5px 10px}
+  .welcome{padding:16px 12px}
+  .welcome h1{font-size:clamp(18px,5vw,22px);padding:8px 12px}
+  .welcome p{font-size:12px;padding:6px 12px;margin-bottom:20px}
+  .themes-overlay{padding:30px 10px}
+  .theme-opt{padding:10px 8px;min-width:100px}
+  .fihirana-text{font-size:clamp(18px,4.5vw,26px)}
+  .fihirana-overlay{padding:24px 8px 60px}
+  .timer{font-size:clamp(48px,12vw,80px)}
+  .timer-bar-wrap{width:min(160px,60vw)}
+  .slide-hint{font-size:10px;padding:5px 12px}
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg-canvas" aria-hidden="true"></div>
+<div class="home-geo-bg" aria-hidden="true">
+  <div class="geo-shape tl-black"></div>
+  <div class="geo-shape tl-blue"></div>
+  <div class="geo-shape br-black"></div>
+  <div class="geo-shape br-blue"></div>
+  <div class="geo-dots dots-tr"></div>
+  <div class="geo-dots dots-bl"></div>
+</div>
+<div id="root"></div>
+
+<script>
+(function(){
+  const slides = [
+    { id:1, title:"FANAHIN'NY FAMINANIANA", sub:"Fanahin'ny faminaniana", bg:"img1.jpg", subs:["Fanahin'ny faminaniana","Spirit of Prophecy","Esprit de Prophétie","Geist der Weissagung","Espíritu de Profecía","Espírito de Profecia","Spirito di Profezia","Дух Пророчества","预言之灵"], deco:"fanompoana.jpg", decoFull:true },
+    { id:2, title:"DIA-BE", sub:"Famakiana soratra masina", bg:"img2.jpg", subs:["Famakiana soratra masina","Bible Reading","Lecture biblique","Bibellesung","Lectura Bíblica","Leitura Bíblica","Lettura biblica","Чтение Библии","读经"], deco:"diabe.png" },
+    { id:3, title:"DIMY MINITRA", sub:"----", timer:300, type:"themes", themes:["FAHATERAHANA / FITSINGERENANA","FITAHIANA","FITORIANA","FAMANGIANA"], bg:"img3.jpg", subs:["Fidio ny lohahevitra","Choose a topic","Choisissez un thème","Wählen Sie ein Thema","Elija un tema","Escolha um tema","Scegli un tema","Выберите тему","选择主题"], deco:"mangina.png" },
+    { id:4, title:"SEKOLY SABATA", sub:"Famerenan-desona", timer:1800, bg:"img4.jpg", subs:["Famerenan-desona","Lesson Review","Révision de la leçon","Lektionswiederholung","Repaso de la Lección","Revisão da Lição","Ripasso della lezione","Обзор урока","学课复习"], deco:"sekoly sabata.png" },
+    { id:5, title:"FOLO MINITRA", sub:"Asa fitoriana", timer:600, bg:"img5.jpg", subs:["Asa fitoriana","Missionary Work","Œuvre missionnaire","Missionsarbeit","Obra Misionera","Obra Missionária","Opera missionaria","Миссионерская работа","布道工作"], deco:"folo minitra.png" },
+    { id:6, title:"TATITRA SEKOLY SABATA", sub:"Tatitra", bg:"img6.jpg", subs:["Tatitra","Report","Rapport","Bericht","Informe","Relatório","Rapporto","Отчёт","报告"], deco:"tatitra.png" },
+    { id:7, title:"FILAZANA", sub:"Filazana", bg:"img7.jpg", subs:["Filazana","Announcements","Annonces","Ankündigungen","Anuncios","Anúncios","Annunci","Объявления"," announcements"], deco:"filazana.png" },
+    { id:8, title:"MANGINA! MANGINA!", sub:"Fihirana Advantista 203", type:"fihirana", numero:203, bg:"img7.jpg", subs:["Mangina! Mangina!","Mangina! Mangina!","Mangina! Mangina!","Mangina! Mangina!","Mangina! Mangina!","Mangina! Mangina!","Mangina! Mangina!","Mangina! Mangina!","安静！安静！"], deco:"mangina.png" },
+    { id:9, title:"SALAMO", sub:"Fikarohana Salamo", type:"salamo", bg:"img8.jpg", subs:["Fikarohana Salamo","Psalms Search","Recherche des Psaumes","Psalmensuche","Búsqueda de Salmos","Pesquisa de Salmos","Ricerca dei Salmi","Поиск Псалмов","诗篇搜索"] },
+    { id:10, title:"SONG 2", sub:"Derainay Ianao ry Ray", bg:"img8.jpg", text:"Derainay Ianao ry Ray,\nDerainay Jeso Tomponay,\nDerainay ny Fanahy koa,\nDerainay fa Mpanisy soa.", hideTitle:true, subs:["Derainay Ianao ry Ray","Derainay Ianao ry Ray","Derainay Ianao ry Ray","Derainay Ianao ry Ray","Derainay Ianao ry Ray","Derainay Ianao ry Ray","Derainay Ianao ry Ray","Derainay Ianao ry Ray","Derainay Ianao ry Ray"] },
+    { id:11, title:"FIARAHABANA", sub:"Fiarahabana", bg:"img9.jpg", subs:["Fiarahabana","Welcome","Bienvenue","Begrüßung","Bienvenida","Boas-vindas","Benvenuto","Приветствие","欢迎"], deco:"fiarahabana.png" },
+    { id:12, title:"ANDININY FOTOTRA", sub:"Andininy Fototra", bg:"img10.png", subs:["Andininy Fototra","Key Text","Texte clé","Schlüsseltext","Texto Clave","Texto-chave","Testo chiave","Ключевой текст","关键经文"], deco:"andininy fototra.png" },
+    { id:13, title:"VAVAKA MANDOHALIKA", sub:"Vavaka", bg:"img11.png", subs:["Vavaka","Prayer","Prière","Gebet","Oración","Oração","Preghiera","Молитва","祷告"], deco:"vavaka mandohalika.png" },
+    { id:14, title:"FANENTANANA FANATITRA sy AMPAHAFOLONY", sub:"Fanatitra sy Ampahafolony", bg:"img12.png", subs:["Fanatitra sy Ampahafolony","Offerings and Tithes","Offrandes et Dîmes","Gaben und Zehnten","Ofrendas y Diezmos","Ofertas e Dízimos","Offerte e Decime","Приношения и десятины","捐献与十分之一"], deco:"fanatitra.png" },
+    { id:15, title:"TORITENY HOAN'NY ANKIZY", sub:"Toriteny hoan'ny ankizy", bg:"img13.png", subs:["Toriteny hoan'ny ankizy","Children's Sermon","Sermon pour les enfants","Kinderpredigt","Sermón para niños","Sermão para crianças","Sermone per bambini","Проповедь для детей","儿童讲道"], deco:"ankizy.png" },
+    { id:16, title:"CHORALE FE.ZA.SI.A", sub:"Chorale", bg:"img14.png", subs:["Chorale","Choir","Chorale","Chor","Coro","Coral","Coro","Хор","合唱"] },
+    { id:17, title:"TORITENY ANTOANDRO", sub:"Toriteny", bg:"img15.jpg", subs:["Toriteny","Sermon","Sermon","Predigt","Sermón","Sermão","Sermone","Проповедь","讲道"] },
+    { id:18, title:"MIRARY TOHINY SABATA MAHAFINARITRA", sub:"Amin'ny 14h30 indray", bg:"img16.png", subs:["Amin'ny 14h30 indray","At 2:30 PM again","À 14h30","Um 14:30 Uhr","A las 14:30","Às 14:30","Alle 14:30","В 14:30","下午2:30再见"] }
+  ];
+
+  const subLangs=["Malagasy","English","Français","Deutsch","Español","Português","Italiano","Русский","中文"];
+  let subLangIdx=0;
+  function cycleSubs(){
+    subLangIdx=(subLangIdx+1)%subLangs.length;
+    var el=document.getElementById('sub'+currentSlide);
+    var s=slides[currentSlide];
+    if(el && s.subs && s.subs[subLangIdx]){
+      el.textContent=s.subs[subLangIdx];
+    }
+  }
+  setInterval(cycleSubs,5000);
+
+  const root=document.getElementById('root');
+  let currentSlide=0, timerInterval=null, timerRemaining=0, isPlaying=false;
+  let slideShowEl=null, timerDisplay=null, timerBar=null, progressFill=null, labelEl=null, playBtn=null;
+  const transTypes=['fade','zoomIn','zoomOut','slideLeft','slideRight','blur','rotate','flip'];
+  let transIdx=0;
+  const sigTexts=[
+    "FIANGONANA ADVANTISTA AMBOLOKANDRINA",
+    "AMBOLOKANDRINA ADVENTIST CHURCH",
+    "ÉGLISE ADVENTISTE D'AMBOLOKANDRINA",
+    "ADVENTISTISCHE GEMEINDE AMBOLOKANDRINA",
+    "CHIESA AVVENTISTA DI AMBOLOKANDRINA",
+    "IGLESIA ADVENTISTA DE AMBOLOKANDRINA",
+    "АДВЕНТИСТСКАЯ ЦЕРКОВЬ АМБОЛОКАНДРИНА",
+    "كنيسة السبتيين أمبولوكاندري",
+    "安伯洛坎德里纳基督复临安息日会"
+  ];
+  let sigIdx=0,sigTimer=null;
+
+  const texts=[
+    {text:"Hello",cls:"splash-line"},
+    {text:"Arahabaina fa nahatratra izao fotoana izao",cls:"splash-line"},
+    {text:"Mifantoha, ka hitahy anao ny Tompo!",cls:"splash-line highlight"}
+  ];
+  const splash=document.createElement('div');splash.className='splash';
+  splash.innerHTML=`
+    <div class="splash-logo"><img src="logoslide.png" alt="SDA"></div>
+    <div class="splash-typing" id="splashType"></div>
+    <div class="splash-loader"><div class="splash-loader-bar" id="splashBar"></div></div>
+    <div class="splash-skip" id="splashSkip">Skip &#x2716;</div>
+    <div class="splash-sig">Media SDA Ambolokandrina</div>
+  `;
+  root.appendChild(splash);
+  const tc=document.getElementById('splashType'),bar=document.getElementById('splashBar');
+  let ti=0,ci=0,done=false;
+  function typeNext(){
+    if(ti>=texts.length){if(!done){done=true;bar.style.width='100%';setTimeout(()=>{splash.classList.add('exit');setTimeout(()=>{splash.style.display='none';showHome()},700)},400)}return}
+    const c=texts[ti];
+    if(ci===0){const l=document.createElement('div');l.className=c.cls;l.id='activeLine';tc.appendChild(l)}
+    const l=document.getElementById('activeLine');
+    if(ci<c.text.length){l.textContent=c.text.substring(0,ci+1)+'|';ci++;setTimeout(typeNext,c.text[ci-1]===' '?80:60)}
+    else{l.textContent=c.text;ti++;ci=0;setTimeout(typeNext,500)}
+  }
+
+  function skipSplash(){
+    if(done)return;
+    done=true;ti=texts.length;
+    splash.classList.add('exit');
+    setTimeout(function(){splash.style.display='none';showHome()},400);
+  }
+  document.getElementById('splashSkip').addEventListener('click',skipSplash);
+
+  function showHome(){
+    const welc=document.createElement('div');welc.className='welcome';welc.id='welcomeScreen';
+    welc.innerHTML=`
+      <div class="welcome-logo"><img src="logoslide.png" alt="SDA"></div>
+      <h1>FIANGONANA ADVANTISTA MITANDRINA NY ANDRO FAHAFITO<br>AMBOLOKANDRINA</h1>
+
+      <button class="welcome-btn" onclick="startMain()">START &#x25B6;</button>
+      <div class="welcome-sig">Media SDA Ambolokandrina</div>
+    `;
+    root.appendChild(welc);
+    requestAnimationFrame(()=>welc.classList.add('visible'));
+    try{localStorage.setItem('splashReady','1')}catch(e){}
+  }
+  window.startMain=function(){
+    document.getElementById('welcomeScreen').classList.add('exit');
+    var c=document.createElement('canvas');
+    c.style.cssText='position:fixed;inset:0;z-index:9999;pointer-events:none';
+    c.width=window.innerWidth;c.height=window.innerHeight;
+    document.body.appendChild(c);
+    var ctx=c.getContext('2d');
+    var cx=c.width/2,cy=c.height/2;
+    var ripples=[],start=performance.now(),duration=3000;
+    var maxDist=Math.sqrt(cx*cx+cy*cy);
+    for(var i=0;i<14;i++){ripples.push({r:0,alpha:1,speed:maxDist/(duration-i*130),delay:i*100})}
+    function anim(t){
+      var dt=t-start;
+      ctx.clearRect(0,0,c.width,c.height);
+      for(var i=0;i<ripples.length;i++){
+        var rp=ripples[i];
+        if(dt<rp.delay)continue;
+        var elapsed=dt-rp.delay;
+        var radius=elapsed*rp.speed;
+        var alpha=Math.max(0,1-elapsed/1600);
+        ctx.beginPath();
+        ctx.arc(cx,cy,radius,0,Math.PI*2);
+        ctx.strokeStyle='rgba(255,255,255,'+(alpha*0.85)+')';
+        ctx.lineWidth=6+radius*0.025;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(cx,cy,radius*0.85,0,Math.PI*2);
+        ctx.strokeStyle='rgba(255,255,255,'+(alpha*0.4)+')';
+        ctx.lineWidth=3+radius*0.018;
+        ctx.stroke();
+      }
+      if(dt<duration){requestAnimationFrame(anim)}
+      else{
+        c.remove();
+        var home=document.createElement('div');home.className='main-home';home.id='mainHome';
+        home.innerHTML=`
+            <div class="main-home-title">
+            <h1>SDA Ambolokandrina</h1>
+            <p>Church Control Panel</p>
+        </div>
+          <div class="home-cards">
+            <div class="home-card" onclick="location.href='baibolyMG_v2.html'">
+              <div class="card-dots"></div>
+              <div class="hc-icon">&#x1F4D6;</div>
+              <div class="hc-title">Baiboly Masina</div>
+              <div class="hc-sub">Testamenta Taloha sy Vaovao</div>
+              <div class="hc-badge">66 boky</div>
+            </div>
+            <div class="home-card dark" onclick="location.href='fihirana_advantista.html'">
+              <div class="card-dots"></div>
+              <div class="hc-icon">&#x1F3B5;</div>
+              <div class="hc-title">Fihirana Advantista</div>
+              <div class="hc-sub">Hira fiderana 001\u2013800</div>
+              <div class="hc-badge">798 hira</div>
+            </div>
+            <div class="home-card" onclick="openSlides()">
+              <div class="card-dots"></div>
+              <div class="hc-icon">&#x2630;</div>
+              <div class="hc-title">Programa Sabata</div>
+              <div class="hc-sub">Filaharan'ny fanompoam-pivavahana</div>
+              <div class="hc-badge">18 fizarana</div>
+            </div>
+            <div class="home-card dark" onclick="location.href='robia_hariva.html'">
+              <div class="card-dots"></div>
+              <div class="hc-icon">&#x1F4D6;</div>
+              <div class="hc-title">Robia Hariva</div>
+              <div class="hc-sub">Fanompoana Kristianina</div>
+              <div class="hc-badge">27 toko</div>
+            </div>
+            <div class="home-card" onclick="location.href='sabata_hariva.html'">
+              <div class="card-dots"></div>
+              <div class="hc-icon">&#x23F1;</div>
+              <div class="hc-title">SABATA HARIVA</div>
+              <div class="hc-sub">Fandaharam-potoana sabata hariva</div>
+              <div class="hc-badge">Programa</div>
+            </div>
+            <div class="home-card dark" onclick="location.href='annonce.html'">
+              <div class="card-dots"></div>
+              <div class="hc-icon">&#x1F4E2;</div>
+              <div class="hc-title">Annonce</div>
+              <div class="hc-sub">Fanoratana filazana</div>
+              <div class="hc-badge">vaovao</div>
+            </div>
+          </div>
+          <div class="home-sig">Media SDA Ambolokandrina</div>
+          <div class="home-visit" id="homeVisit"></div>
+        `;
+        root.appendChild(home);
+        document.body.classList.add('home-active');
+        requestAnimationFrame(()=>home.classList.add('visible'));
+        try{localStorage.setItem('splashReady','1')}catch(e){}
+        try{var n=parseInt(localStorage.getItem('visitCount'))||0;n++;localStorage.setItem('visitCount',n);var v=document.getElementById('homeVisit');if(v){var verses=["Fa fitiavan'Andriamanitra toy izao no nasehony tamin'izao tontolo izao: nomeny ny Zanany lahitokany","Mba tsy hisy ho very, fa hanana fiainana mandrakizay","Tsarovy ny andro Sabata hanamasinana azy","Ny Tompo no Mpiandry ahy, tsy hitoetra ho sahirana aho","Mifankatiava hianareo tahaka ny efa tia anareo aho","Mangataha dia homena anareo, mitadiava dia hahita hianareo","Aza manahy ny rahampitso, fa ny rahampitso no hanahy ny azy","Ny fahamarinana no hahafaka anareo","Mankanesa aty amiko hianareo rehetra izay miasa fatratra","Miposaka ho anareo izay matahotra ny anarako ny Masoandron'ny fahamarinana"];v.textContent='\u2767 '+verses[Math.floor(Math.random()*verses.length)];v.style.fontStyle='italic'}}catch(e){}
+      }
+    }
+    requestAnimationFrame(anim);
+  }
+
+
+
+  
+  /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ SLIDESHOW ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ */
+  window.openSlides=function(){
+    isPlaying=false;
+    try{var saved=parseInt(localStorage.getItem('sabataSlide'));currentSlide=(!isNaN(saved)&&saved>=0&&saved<slides.length)?saved:0}catch(e){currentSlide=0}
+    if(slideShowEl){slideShowEl.remove();slideShowEl=null}
+    slideShowEl=document.createElement('div');slideShowEl.className='slideshow';
+
+    let slidesHTML='';
+    slides.forEach((s,i)=>{
+      let inner;
+      if(s.type==='salamo'){
+        inner=`<div class="psalms-overlay" id="psalmsOverlay">
+          <div class="h1">${s.title}</div>
+          <div class="sub" id="sub${i}">${s.subs?s.subs[0]:s.sub}</div>
+          <div class="psalms-search-wrap"><input type="text" id="psalmsSearch" placeholder="Teny na andianteny..." autocomplete="off"></div>
+          <div class="psalms-results" id="psalmsResults"><div class="psalms-empty">Soraty ny teny na andianteny hikarohana</div></div>
+          <div class="psalms-verse-view" id="psalmsVerseView" style="display:none">
+            <button class="verse-back" onclick="psalmsBack()">&#x2190;</button>
+            <div class="verse-ref" id="verseRef"></div>
+            <div class="verse-text" id="verseText"></div>
+            <div class="verse-nav">
+              <button onclick="psalmsPrevVerse()" title="Teo aloha (&#x2190;)">&#x25C0;</button>
+              <button onclick="psalmsNextVerse()" title="Manaraka (&#x2192;)">&#x25B6;</button>
+            </div>
+            <div class="ps-fs-btns" id="psFsBtns">
+              <button class="ps-fs-btn" onclick="psalmsFontDown()" title="Henao kely">A&#x2212;</button>
+              <button class="ps-fs-btn" onclick="psalmsFontUp()" title="Henao be">A+</button>
+            </div>
+          </div>
+        </div>`;
+      } else if(s.type==='themes'){
+        var opts=s.themes.map(function(t,j){return'<div class="theme-opt" onclick="selectTheme('+j+',this)" data-idx="'+j+'"><span class="to-num">'+(j+1)+'</span><span class="to-label">'+t+'</span></div>'}).join('');
+        inner=`<div class="themes-overlay">
+          <div class="themes-top">
+            <div class="timer-wrap">
+              <svg class="timer-circle" viewBox="0 0 100 100" width="80" height="80">
+                <circle class="tc-bg" cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="6"/>
+                <circle class="tc-fg" id="tcFg${i}" cx="50" cy="50" r="42" fill="none" stroke="#5AC8FA" stroke-width="6" stroke-linecap="round" stroke-dasharray="263.9" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+                <text x="50" y="56" text-anchor="middle" class="tc-text" id="timer${i}" font-size="18" font-weight="700" fill="#fff">05:00</text>
+              </svg>
+            </div>
+          </div>
+          <div class="h1">${s.title}</div>
+          <div class="sub" id="sub${i}">${s.subs?s.subs[0]:'Fidio ny lohahevitra'}</div>
+          <div class="themes-grid">${opts}</div>
+          <div class="theme-selected" id="themeSelected" style="display:none">
+            <div class="ts-label" id="tsLabel"></div>
+            <button class="ts-change" onclick="resetTheme()">HOVAO</button>
+          </div>
+          <div class="timer-bar-wrap"><div class="timer-bar" id="timerBar${i}"></div></div>
+          <div class="slide-signature">FIANGONANA ADVANTISTA AMBOLOKANDRINA</div>
+        </div>`;
+      } else if(s.type==='fihirana'){
+        inner=`<div class="fihirana-overlay">
+          <div class="fihirana-top">
+            <div class="h1">${s.title}</div>
+            <div class="sub" id="sub${i}">${s.subs?s.subs[0]:s.sub}</div>
+          </div>
+          <div class="fihirana-lyrics" id="fihiranaLyrics">
+            <div class="fihirana-text" id="fihiranaText"></div>
+          </div>
+          <div class="fihirana-nav">
+            <button class="ctrl-btn" onclick="fihiranaPrev()" aria-label="Teo aloha">&#x25C0;</button>
+            <span class="fihirana-info" id="fihiranaInfo"></span>
+            <button class="ctrl-btn" onclick="fihiranaNext()" aria-label="Manaraka">&#x25B6;</button>
+            <button class="ctrl-btn fs-btn" onclick="lyricsFontDown()" title="Henao kely">A−</button>
+            <button class="ctrl-btn fs-btn" onclick="lyricsFontUp()" title="Henao be">A+</button>
+          </div>
+          <div class="slide-signature">FIANGONANA ADVANTISTA AMBOLOKANDRINA</div>
+        </div>`;
+      } else {
+        inner=`<div class="slide-content">`;
+        if(s.timer){
+          const m=Math.floor(s.timer/60),sec=s.timer%60;
+          inner+=`<h1>${s.title}</h1><div class="sub" id="sub${i}">${s.subs?s.subs[0]:s.sub}</div>
+            <div class="timer" id="timer${i}">${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}</div>
+            <div class="timer-bar-wrap"><div class="timer-bar" id="timerBar${i}"></div></div>`;
+        } else {
+          if(!s.hideTitle) inner+=`<h1>${s.title}</h1><div class="sub" id="sub${i}">${s.subs?s.subs[0]:s.sub}</div>`;
+          if(s.text) inner+=`<div class="slide-text">${s.text.replace(/\n/g,'<br>')}</div><div class="slide-fs"><button class="ctrl-btn fs-btn" onclick="lyricsFontDown()" title="Henao kely">A−</button><button class="ctrl-btn fs-btn" onclick="lyricsFontUp()" title="Henao be">A+</button></div>`;
+        }
+        inner+=`<div class="slide-signature">FIANGONANA ADVANTISTA AMBOLOKANDRINA</div>`;
+      }
+      if(s.type!=='salamo'&&s.type!=='themes'&&s.type!=='fihirana')inner+=`</div>`;
+      inner+=`<div class="number">${String(s.id).padStart(2,'0')} / ${slides.length}</div>`;
+
+      var decoCls='slide-deco'+(s.decoFull?' full':'');var decoTag=s.deco?'<img class="'+decoCls+'" src="'+s.deco+'" alt="">':'';
+      slidesHTML+=`<div class="slide${i===0?' active':''}" id="slide${i}" style="background-image:url('${s.bg}')">${inner}${decoTag}<img class="slide-logo" src="logoslide.png" alt=""></div>`;
+    });
+
+    slideShowEl.innerHTML=`
+      <button class="slide-close" onclick="closeSlides()" aria-label="Hidy">&#x2716;</button>
+      <div class="slide-hint" id="slideHint">&#x2190; &#x2192; na swipe &#x2022; Espace: lecture auto &#x2022; Esc: hivoaka</div>
+      ${slidesHTML}
+      <div class="slide-controls">
+        <div class="ctrl-row">
+          <button class="ctrl-btn" onclick="prevSlide()" aria-label="Teo aloha">&#x25C0;</button>
+          <button class="play-btn" id="playBtn" onclick="togglePlay()" aria-label="Lalao / Hijanona">&#x25B6;</button>
+          <button class="ctrl-btn" onclick="nextSlide()" aria-label="Manaraka">&#x25B6;</button>
+          <div class="ctrl-progress" onclick="seekSlide(event)"><div class="ctrl-progress-fill" id="progressFill"></div></div>
+          <div class="ctrl-label" id="ctrlLabel">01 / 18</div>
+          <button class="ctrl-btn exit" onclick="closeSlides()" aria-label="Hivoaka">&#x2716;</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(slideShowEl);
+    requestAnimationFrame(()=>slideShowEl.classList.add('open'));
+    try{setTimeout(function(){var h=document.getElementById('slideHint');if(h)h.classList.add('hide')},3000)}catch(e){}
+    try{if(document.documentElement.requestFullscreen&&!document.fullscreenElement)document.documentElement.requestFullscreen()}catch(e){}
+
+    timerDisplay=document.getElementById('timer0');
+    timerBar=document.getElementById('timerBar0');
+    progressFill=document.getElementById('progressFill');
+    labelEl=document.getElementById('ctrlLabel');
+    playBtn=document.getElementById('playBtn');
+    updateControls();
+    if(slides[currentSlide]&&slides[currentSlide].type==='salamo')setTimeout(initPsalmsSearch,400);
+    if(slides[currentSlide]&&slides[currentSlide].type==='fihirana')setTimeout(fihiranaInit,400);
+    if(slides[currentSlide]&&slides[currentSlide].text)setTimeout(applyLyricsFontSize,400);
+    resetHideTimer();
+    sigIdx=0;if(sigTimer)clearInterval(sigTimer);
+    sigTimer=setInterval(function(){
+      sigIdx=(sigIdx+1)%sigTexts.length;
+      document.querySelectorAll('.slide-signature').forEach(function(el){
+        el.style.opacity='0';el.style.transform='translateX(-50%) translateY(8px)';
+        setTimeout(function(){
+          el.textContent=sigTexts[sigIdx];
+          el.style.opacity='1';el.style.transform='translateX(-50%) translateY(0)';
+        },400);
+      });
+    },5000);
+
+  };
+
+  let hideTimeout=null,hintTimeout=null;
+  function resetHideTimer(){
+    if(!slideShowEl)return;
+    const ctrl=slideShowEl.querySelector('.slide-controls');
+    const close=slideShowEl.querySelector('.slide-close');
+    const hint=document.getElementById('slideHint');
+    if(ctrl)ctrl.style.opacity='1';if(close)close.style.opacity='1';
+    if(hint)hint.classList.remove('hide');
+    if(hideTimeout)clearTimeout(hideTimeout);
+    if(hintTimeout)clearTimeout(hintTimeout);
+    hideTimeout=setTimeout(()=>{
+      if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+      if(ctrl)ctrl.style.opacity='0';if(close)close.style.opacity='0';
+    },2000);
+    hintTimeout=setTimeout(()=>{
+      if(hint)hint.classList.add('hide');
+    },3000);
+  }
+
+  document.addEventListener('keydown',function(e){
+    if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+    var tag=e.target.tagName,inp=(tag==='INPUT'||tag==='TEXTAREA'||tag==='SELECT');
+    if(inp)return;
+    if(e.key==='ArrowRight'){nextSlide();resetHideTimer()}
+    if(e.key==='ArrowLeft'){prevSlide();resetHideTimer()}
+    if(e.key===' '||e.key==='Spacebar'){e.preventDefault();togglePlay();resetHideTimer()}
+    if(e.key==='Escape'){closeSlides()}
+  });
+
+  document.addEventListener('mousemove',function(){
+    if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+    resetHideTimer();
+  });
+
+  var touchStartX=0,touchStartY=0;
+  document.addEventListener('touchstart',function(e){
+    if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+    touchStartX=e.changedTouches[0].screenX;
+    touchStartY=e.changedTouches[0].screenY;
+  },{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+    var dx=e.changedTouches[0].screenX-touchStartX;
+    var dy=e.changedTouches[0].screenY-touchStartY;
+    if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5){
+      if(dx<0){nextSlide()}else{prevSlide()}
+      resetHideTimer();
+    }
+  },{passive:true});
+
+  window.closeSlides=function(){
+    try{localStorage.setItem('sabataSlide',currentSlide)}catch(e){}
+    if(sigTimer){clearInterval(sigTimer);sigTimer=null}
+    if(timerInterval){clearInterval(timerInterval);timerInterval=null}
+    try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}
+    slideShowEl.classList.remove('open');
+    setTimeout(()=>{if(slideShowEl){slideShowEl.remove();slideShowEl=null}},500);
+  };
+
+  window.nextSlide=function(){
+    if(currentSlide<slides.length-1){goTo(currentSlide+1)}
+  };
+  window.prevSlide=function(){
+    if(currentSlide>0){goTo(currentSlide-1)}
+  };
+  window.seekSlide=function(e){
+    const rect=e.currentTarget.getBoundingClientRect();
+    const x=e.clientX-rect.left;
+    const p=x/rect.width;
+    const idx=Math.round(p*(slides.length-1));
+    goTo(Math.max(0,Math.min(slides.length-1,idx)));
+  };
+
+  window.goTo=function goTo(idx){
+    if(timerInterval){clearInterval(timerInterval);timerInterval=null;isPlaying=false;if(playBtn)playBtn.innerHTML='&#x25B6;'}
+    if(currentSlide===idx)return;
+    subLangIdx=0;
+    const oldEl=document.getElementById('slide'+currentSlide);
+    const t=transTypes[transIdx%transTypes.length];transIdx++;
+    const dir=idx>currentSlide?1:-1;
+    oldEl.classList.remove('active');
+    if(dir>0)oldEl.classList.add('exit','exit-'+t);
+    else oldEl.classList.add('exit','exit-'+t);
+    currentSlide=idx;
+    const newEl=document.getElementById('slide'+currentSlide);
+    newEl.classList.add('active');
+    if(dir>0)newEl.classList.add('enter-'+t);
+    else newEl.classList.add('enter-'+t);
+    setTimeout(()=>{oldEl.classList.remove('exit','exit-'+t);newEl.classList.remove('enter-'+t)},800);
+    timerDisplay=document.getElementById('timer'+currentSlide);
+    timerBar=document.getElementById('timerBar'+currentSlide);
+    updateControls();
+    const s=slides[currentSlide];
+    if(s.timer){
+      timerRemaining=s.timer;
+      setTimeout(()=>togglePlay(),300);
+    }
+    if(s.type==='salamo')setTimeout(initPsalmsSearch,400);
+    if(s.type==='fihirana')setTimeout(fihiranaInit,400);
+    if(s.text)setTimeout(applyLyricsFontSize,400);
+    try{localStorage.setItem('sabataSlide',currentSlide)}catch(e){}
+  }
+
+  window.togglePlay=function(){
+    const s=slides[currentSlide];
+    if(!s.timer){return}
+    if(timerInterval){clearInterval(timerInterval);timerInterval=null;isPlaying=false;playBtn.innerHTML='&#x25B6;';return}
+    isPlaying=true;playBtn.innerHTML='&#x23F8;';
+    if(timerRemaining<=0)timerRemaining=s.timer;
+    timerInterval=setInterval(()=>{
+      timerRemaining--;
+      if(timerRemaining<=0){clearInterval(timerInterval);timerInterval=null;isPlaying=false;playBtn.innerHTML='&#x25B6;';timerRemaining=0}
+      updateTimer();
+    },1000);
+  };
+
+  function updateTimer(){
+    if(!timerDisplay)return;
+    const m=Math.floor(timerRemaining/60),sec=timerRemaining%60;
+    timerDisplay.textContent=String(m).padStart(2,'0')+':'+String(sec).padStart(2,'0');
+    timerDisplay.classList.remove('pop');
+    void timerDisplay.offsetWidth;
+    timerDisplay.classList.add('pop');
+    if(timerBar){
+      const s=slides[currentSlide];
+      const p=s.timer?timerRemaining/s.timer*100:0;
+      timerBar.style.width=p+'%';
+    }
+    const sc=slides[currentSlide];
+    if(sc&&sc.type==='themes'){
+      const fg=document.getElementById('tcFg'+currentSlide);
+      if(fg){
+        const circ=263.9;
+        const p=sc.timer?timerRemaining/sc.timer:0;
+        fg.setAttribute('stroke-dashoffset',Math.round(circ*(1-p)*100)/100);
+      }
+    }
+  }
+
+  function updateControls(){
+    if(progressFill)progressFill.style.width=((currentSlide+1)/slides.length*100)+'%';
+    if(labelEl)labelEl.textContent=String(currentSlide+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
+    const s=slides[currentSlide];
+    if(s.timer){
+      timerRemaining=s.timer;
+      if(timerDisplay){
+        const m=Math.floor(s.timer/60),sec=s.timer%60;
+        timerDisplay.textContent=String(m).padStart(2,'0')+':'+String(sec).padStart(2,'0');
+      }
+      if(timerBar)timerBar.style.width='100%';
+      if(playBtn)playBtn.style.display='flex';
+      if(s.type==='themes'){
+        var fg2=document.getElementById('tcFg'+currentSlide);
+        if(fg2)fg2.setAttribute('stroke-dashoffset','0');
+      }
+    } else {
+      if(playBtn)playBtn.style.display='none';
+    }
+  }
+
+  /* Psalms search engine */
+  var psalmsSearchTimeout=null;
+  window._psAll=[];window._psRes=[];window._psIdx=0;
+  function normalizeText(t){return t.toLowerCase().replace(/[àáâãäåāăą]/g,'a').replace(/[èéêëēĕėę]/g,'e').replace(/[ìíîïīĭį]/g,'i').replace(/[òóôõöōŏő]/g,'o').replace(/[ùúûüūŭů]/g,'u').replace(/[ñńņňŉ]/g,'n').replace(/[çćĉċč]/g,'c').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim()}
+  function buildAllPsalms(){
+    var book=window.SALAMO_DATA;if(!book)return;
+    window._psAll=[];
+    for(var ch in book.chapters){
+      for(var v in book.chapters[ch]){
+        window._psAll.push({chapter:parseInt(ch),verse:parseInt(v),text:book.chapters[ch][v]});
+      }
+    }
+  }
+  function findGlobalIdx(ch,v){
+    for(var i=0;i<window._psAll.length;i++){
+      var p=window._psAll[i];
+      if(p.chapter===ch&&p.verse===v)return i;
+    }
+    return -1;
+  }
+  function searchPsalms(q){
+    if(!q||!q.trim())return[];
+    var nq=normalizeText(q);
+    var words=nq.split(/\s+/).filter(function(w){return w.length>0});
+    if(words.length===0)return[];
+    var book=window.SALAMO_DATA;if(!book)return[];
+    var res=[];
+    try{
+      for(var ch in book.chapters){
+        for(var v in book.chapters[ch]){
+          var text=book.chapters[ch][v];
+          var nt=normalizeText(text);
+          var exact=nt.indexOf(nq)>=0;
+          var allWords=words.every(function(w){return nt.indexOf(w)>=0});
+          if(exact||allWords){
+            var score=exact?2:1;
+            if(exact&&allWords)score=3;
+            res.push({chapter:parseInt(ch),verse:parseInt(v),text:text,score:score});
+          }
+        }
+      }
+    }catch(e){}
+    res.sort(function(a,b){return b.score-a.score});
+    return res;
+  }
+  function doSearch(){
+    var inp=document.getElementById('psalmsSearch');if(!inp)return;
+    var q=inp.value;if(!q.trim()){document.getElementById('psalmsResults').innerHTML='<div class="psalms-empty">Soraty ny teny na andianteny hikarohana</div>';return}
+    window._psRes=searchPsalms(q);
+    var el=document.getElementById('psalmsResults');if(!el)return;
+    if(window._psRes.length===0){el.innerHTML='<div class="psalms-empty">Tsy nisy valiny. Andramo amin\'ny teny hafa.</div>';return}
+    var html='';
+    for(var i=0;i<Math.min(window._psRes.length,50);i++){
+      var r=window._psRes[i],ref='Salamo '+r.chapter+':'+r.verse;
+      var gi=findGlobalIdx(r.chapter,r.verse);
+      var esc=q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+      var hl='';
+      if(r.score>=2&&esc.split(/\s+/).length>1)hl=esc;
+      else hl=esc.split(/\s+/).join('|');
+      var txt=r.text.replace(new RegExp('('+hl+')','gi'),'<b>$1</b>');
+      html+='<div class="psalm-result" onclick="psalmsSelect('+gi+')"><div class="ref">'+ref+'</div><div class="txt">'+txt+'</div></div>';
+    }
+    if(window._psRes.length>50)html+='<div class="psalms-empty">Hita '+window._psRes.length+' valiny. 50 voalohany no aseho.</div>';
+    el.innerHTML=html;
+  }
+  window.psalmsSelect=function(gi){
+    if(gi<0||gi>=window._psAll.length)return;
+    window._psIdx=gi;
+    var r=window._psAll[gi];
+    document.getElementById('psalmsVerseView').style.display='flex';
+    document.getElementById('verseRef').textContent='Salamo '+r.chapter+':'+r.verse;
+    document.getElementById('verseText').textContent=r.text;
+    document.getElementById('psalmsResults').innerHTML='';
+    setTimeout(applyFontSize,50);
+  };
+  window.psalmsBack=function(){
+    document.getElementById('psalmsVerseView').style.display='none';
+    doSearch();
+  };
+  window.psalmsPrevVerse=function(){
+    if(window._psIdx>0){
+      window._psIdx--;
+      var r=window._psAll[window._psIdx];
+      document.getElementById('verseRef').textContent='Salamo '+r.chapter+':'+r.verse;
+      document.getElementById('verseText').textContent=r.text;
+      setTimeout(applyFontSize,50);
+    }
+  };
+  window.psalmsNextVerse=function(){
+    if(window._psIdx<window._psAll.length-1){
+      window._psIdx++;
+      var r=window._psAll[window._psIdx];
+      document.getElementById('verseRef').textContent='Salamo '+r.chapter+':'+r.verse;
+      document.getElementById('verseText').textContent=r.text;
+      setTimeout(applyFontSize,50);
+    }
+  };
+  window._psFS=36;var _psFsTimer=null;
+  function applyFontSize(){
+    var el=document.getElementById('verseText');
+    if(el)el.style.fontSize=window._psFS+'px';
+    var btns=document.getElementById('psFsBtns');
+    if(btns){btns.classList.remove('hide');if(_psFsTimer)clearTimeout(_psFsTimer);_psFsTimer=setTimeout(function(){if(btns)btns.classList.add('hide')},3000)}
+  }
+  window.psalmsFontUp=function(){window._psFS=Math.min(80,window._psFS+4);applyFontSize()};
+  window.psalmsFontDown=function(){window._psFS=Math.max(14,window._psFS-4);applyFontSize()};
+  document.addEventListener('mousemove',function(){
+    var vv=document.getElementById('psalmsVerseView');
+    if(!vv||vv.style.display==='none')return;
+    var btns=document.getElementById('psFsBtns');
+    if(!btns)return;
+    btns.classList.remove('hide');
+    if(_psFsTimer)clearTimeout(_psFsTimer);
+    _psFsTimer=setTimeout(function(){btns.classList.add('hide')},3000);
+  });
+  function initPsalmsSearch(){
+    buildAllPsalms();
+    var inp=document.getElementById('psalmsSearch');
+    if(inp){
+      inp.value='';window._psRes=[];window._psIdx=0;
+      document.getElementById('psalmsVerseView').style.display='none';
+      document.getElementById('psalmsResults').innerHTML='<div class="psalms-empty">Soraty ny teny na andianteny hikarohana</div>';
+      if(psalmsSearchTimeout)clearTimeout(psalmsSearchTimeout);
+      inp.oninput=null;
+      psalmsSearchTimeout=setTimeout(function(){
+        inp.oninput=function(){
+          if(window._psDeb)clearTimeout(window._psDeb);
+          window._psDeb=setTimeout(doSearch,350);
+        };
+      },100);
+    }
+  }
+
+  window.selectTheme=function(idx,el){
+    var s=slides[currentSlide];
+    if(s.type!=='themes'||!s.themes||!s.themes[idx])return;
+    document.getElementById('tsLabel').textContent=s.themes[idx];
+    document.getElementById('themeSelected').style.display='block';
+    var grid=document.querySelector('.themes-grid');
+    if(grid)grid.classList.add('hide');
+  };
+  window.resetTheme=function(){
+    document.getElementById('themeSelected').style.display='none';
+    var grid=document.querySelector('.themes-grid');
+    if(grid)grid.classList.remove('hide');
+  };
+  document.addEventListener('mousemove',function(){
+    var s=slides[currentSlide];
+    if(!s||s.type!=='themes')return;
+    var grid=document.querySelector('.themes-grid');
+    if(grid&&grid.classList.contains('hide')){
+      grid.classList.remove('hide');
+      if(window._thTimer)clearTimeout(window._thTimer);
+      window._thTimer=setTimeout(function(){
+        var sel=document.getElementById('themeSelected');
+        if(sel&&sel.style.display==='block'&&grid)grid.classList.add('hide');
+      },3000);
+    }
+  });
+
+  /* Fihirana song display */
+  window._fihiranaData={"203":{"numero":203,"titre":"Mangina! Mangina!","tonony":"Rajoelison","feony":"W.H. Doane","paroles":[{"couplet":"1","texte":"Mangina! Mangina!\nHenoy fa injao,\nIlay Tompo irina\nManatona anao.\nHenoy fa mandona\nAm-ponao izao;\nMiandry, mifona,\nTe hiditra ao.","slides":["Mangina! Mangina!\nHenoy fa injao,\nIlay Tompo irina\nManatona anao.","Henoy fa mandona\nAm-ponao izao;\nMiandry, mifona,\nTe hiditra ao."]},{"couplet":"2","texte":"Mangina! Mangina!\nMoa henonao ve ?\n\u2018Lay feo fifaliana\nMiantso hoe:\n\u00ab Avia, ry mpania,\nOmeko anao,\nAnao ho doria,\nNy lanitra izao\u00bb.","slides":["Mangina! Mangina!\nMoa henonao ve ?\n\u2018Lay feo fifaliana\nMiantso hoe:","\u00ab Avia, ry mpania,\nOmeko anao,\nAnao ho doria,\nNy lanitra izao\u00bb."]},{"couplet":"3","texte":"Mangina! Mangina!\nMandalo ny et\u1efd.\nAndrao dia sondriana,\nKatsaho ny ar\u1efd.\nAnio aza ela,\nHenoy re \u2018lay feo.\nNy Tompo mamela\nKa raiso ekeo.","slides":["Mangina! Mangina!\nMandalo ny et\u1efd.\nAndrao dia sondriana,\nKatsaho ny ar\u1efd.","Anio aza ela,\nHenoy re \u2018lay feo.\nNy Tompo mamela\nKa raiso ekeo."]},{"couplet":"4","texte":"Mangina! Mangina!\nFeo mamy tokoa,\nMitory hafaliana\n\u2018Njao re ao am-po.\nEkeko, ry Tompo,\nMangina aho izao;\nMangina ny foko\nHihaino Anao.","slides":["Mangina! Mangina!\nFeo mamy tokoa,\nMitory hafaliana\n\u2018Njao re ao am-po.","Ekeko, ry Tompo,\nMangina aho izao;\nMangina ny foko\nHihaino Anao."]}]}};
+  window._fihiranaPages=[];
+  window._fihiranaPageIdx=0;
+
+  function fihiranaInit(){
+    var s=slides[currentSlide];
+    if(!s||s.type!=='fihirana')return;
+    var song=window._fihiranaData[String(s.numero)];
+    if(!song){document.getElementById('fihiranaText').textContent='Tsy hita ilay hira';return}
+    var pages=[];
+    for(var c=0;c<song.paroles.length;c++){
+      var cp=song.paroles[c];
+      for(var p=0;p<cp.slides.length;p++){
+        pages.push({text:cp.slides[p],couplet:parseInt(cp.couplet),total:song.paroles.length});
+      }
+    }
+    window._fihiranaPages=pages;
+    window._fihiranaPageIdx=0;
+    fihiranaDisplay();
+  }
+
+  function fihiranaDisplay(){
+    var pages=window._fihiranaPages;
+    var idx=window._fihiranaPageIdx;
+    var el=document.getElementById('fihiranaText');
+    var info=document.getElementById('fihiranaInfo');
+    if(!pages||pages.length===0||!el){if(el)el.textContent='';return}
+    var p=pages[idx];
+    el.textContent=p.text;
+    if(info)info.textContent=p.couplet+'/'+p.total+'  '+(idx+1)+'/'+pages.length;
+    applyLyricsFontSize();
+  }
+
+  window.fihiranaNext=function(){
+    if(window._fihiranaPageIdx<window._fihiranaPages.length-1){
+      window._fihiranaPageIdx++;
+      fihiranaDisplay();
+    }
+  };
+  window.fihiranaPrev=function(){
+    if(window._fihiranaPageIdx>0){
+      window._fihiranaPageIdx--;
+      fihiranaDisplay();
+    }
+  };
+
+  /* Font size controls for lyrics */
+  window._lyricsFontSize=parseInt(localStorage.getItem('lyricsFontSize'))||44;
+  function applyLyricsFontSize(){
+    var els=document.querySelectorAll('.fihirana-text,.slide-text');
+    for(var i=0;i<els.length;i++)els[i].style.fontSize=window._lyricsFontSize+'px';
+  }
+  window.lyricsFontUp=function(){
+    window._lyricsFontSize=Math.min(80,window._lyricsFontSize+4);
+    applyLyricsFontSize();
+    try{localStorage.setItem('lyricsFontSize',window._lyricsFontSize)}catch(e){}
+  };
+  window.lyricsFontDown=function(){
+    window._lyricsFontSize=Math.max(16,window._lyricsFontSize-4);
+    applyLyricsFontSize();
+    try{localStorage.setItem('lyricsFontSize',window._lyricsFontSize)}catch(e){}
+  };
+  try{if(location.search.indexOf('slideshow')>=0){
+    history.replaceState(null,'','index.html');
+    var sp=document.querySelector('.splash');
+    if(sp)sp.style.display='none';
+    showHome();
+    setTimeout(function(){if(typeof openSlides==='function')openSlides()},100);
+  }else{setTimeout(typeNext,400)}
+}catch(e){setTimeout(typeNext,400)}
+})();
+</script>
+<style>
+/* floating nav */
+#floatNav{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:99999;display:flex;align-items:center;gap:4px;padding:6px 10px;border-radius:var(--radius-pill);background:rgba(255,255,255,0.08);backdrop-filter:blur(40px) saturate(200%);-webkit-backdrop-filter:blur(40px) saturate(200%);border:1px solid rgba(255,255,255,.16);box-shadow:0 8px 32px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,0.12);transition:opacity .5s cubic-bezier(0.22,1,0.36,1),transform .5s cubic-bezier(0.22,1,0.36,1);opacity:1}
+#floatNav.hide{opacity:0;transform:translateX(-50%) translateY(16px);pointer-events:none}
+#floatNav a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;text-decoration:none;font-size:16px;transition:transform var(--spring-fast),background var(--ease-in-out),box-shadow var(--ease-in-out);color:rgba(255,255,255,.55);background:transparent}
+#floatNav a:hover{background:rgba(255,255,255,.12);color:rgba(255,255,255,.95);transform:scale(1.15) translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+#floatNav a:active{transform:scale(.88);transition:transform .08s ease}
+#floatNav a.active{background:rgba(10,132,255,.25);color:#5AC8FA;box-shadow:0 0 12px rgba(10,132,255,0.3)}
+#floatNav .sabata-link{background:rgba(52,199,89,.12);color:#34C759}
+#floatNav .sabata-link:hover{background:rgba(52,199,89,.25);color:#34C759}
+/* psalms search */
+.psalms-overlay{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;padding:60px 20px 20px;background:rgba(0,0,0,.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.psalms-overlay .h1{font-size:clamp(28px,5vw,48px);font-weight:800;letter-spacing:-.5px;text-align:center;text-shadow:0 2px 24px rgba(0,0,0,.8);color:#fff}
+.psalms-overlay .sub{font-size:clamp(16px,2.5vw,22px);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;text-align:center;margin-bottom:12px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.psalms-search-wrap{position:relative;max-width:500px;width:100%;margin:0 auto 12px}
+.psalms-search-wrap input{width:100%;padding:12px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.1);color:#fff;font-size:16px;outline:none;transition:all .25s;backdrop-filter:blur(4px)}
+.psalms-search-wrap input:focus{border-color:#5AC8FA;background:rgba(255,255,255,.15);box-shadow:0 0 20px rgba(90,200,250,.15)}
+.psalms-search-wrap input::placeholder{color:rgba(255,255,255,.4)}
+.psalms-results{flex:1;overflow-y:auto;max-width:600px;width:100%;margin:0 auto;padding:4px 0}
+.psalms-results::-webkit-scrollbar{width:4px}
+.psalms-results::-webkit-scrollbar-track{background:transparent}
+.psalms-results::-webkit-scrollbar-thumb{background:rgba(255,255,255,.2);border-radius:2px}
+.psalm-result{padding:10px 14px;border-radius:12px;cursor:pointer;transition:all .2s;border:1px solid transparent;margin-bottom:4px}
+.psalm-result:hover,.psalm-result.active{background:rgba(90,200,250,.12);border-color:rgba(90,200,250,.25)}
+.psalm-result .ref{font-size:13px;font-weight:700;color:#5AC8FA;letter-spacing:.5px;margin-bottom:2px}
+.psalm-result .txt{font-size:14px;color:rgba(255,255,255,.85);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.psalm-result .txt b,.psalm-result .txt strong{color:#FFD60A;font-weight:600}
+.psalms-empty{text-align:center;color:rgba(255,255,255,.4);font-size:14px;padding:40px 0}
+.psalms-verse-view{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 24px;background:rgba(0,0,0,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.psalms-verse-view .verse-ref{font-size:clamp(18px,3vw,26px);font-weight:800;color:#5AC8FA;letter-spacing:1px;margin-bottom:12px;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.psalms-verse-view .verse-text{font-size:clamp(44px,8vw,72px);font-weight:700;line-height:1.6;text-align:center;max-width:800px;color:#fff;text-shadow:0 4px 32px rgba(0,0,0,.9),0 2px 8px rgba(0,0,0,.8)}
+.psalms-verse-view .verse-nav{display:flex;gap:16px;margin-top:24px;align-items:center}
+.psalms-verse-view .verse-nav button{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-size:18px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.psalms-verse-view .verse-nav button:hover{background:rgba(255,255,255,.18);transform:scale(1.06)}
+.psalms-verse-view .verse-nav button:active{transform:scale(.92)}
+.psalms-verse-view .verse-back{position:absolute;top:16px;left:16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.4);color:rgba(255,255,255,.7);font-size:20px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.psalms-verse-view .verse-back:hover{background:rgba(255,255,255,.1);color:#fff}
+.ps-fs-btns{position:absolute;top:50%;right:16px;z-index:10;display:flex;flex-direction:column;gap:8px;transform:translateY(-50%);transition:opacity .4s ease;opacity:1}
+.ps-fs-btns.hide{opacity:0;transform:translateY(10px);pointer-events:none}
+.ps-fs-btn{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.5);color:#fff;font-size:16px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(8px)}
+.ps-fs-btn:hover{background:rgba(255,255,255,.15);transform:scale(1.08)}
+/* themes */
+.themes-overlay{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 24px;background:rgba(0,0,0,.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.themes-overlay .h1{font-size:clamp(32px,6vw,52px);font-weight:800;letter-spacing:-.5px;text-shadow:0 2px 24px rgba(0,0,0,.8);margin-bottom:4px;color:#fff}
+.themes-overlay .sub{font-size:clamp(16px,2.5vw,22px);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:20px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.themes-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:520px;width:100%}
+.themes-grid.hide{opacity:0;pointer-events:none;transition:opacity .35s ease}
+.theme-opt{flex:1;min-width:180px;max-width:240px;padding:20px 18px;border-radius:var(--radius-card);cursor:pointer;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);transition:transform var(--spring),background var(--ease-in-out),box-shadow var(--ease-in-out),border-color var(--ease-in-out);text-align:center;box-shadow:var(--glass-shadow)}
+.theme-opt:hover{background:rgba(90,200,250,.15);border-color:rgba(90,200,250,.5);transform:scale(1.05) translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,0.4),0 0 20px rgba(90,200,250,0.2)}
+.theme-opt:active{transform:scale(.95);transition:transform .08s ease}
+.theme-opt .to-num{display:block;font-size:28px;font-weight:800;color:#5AC8FA;margin-bottom:6px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.theme-opt .to-label{font-size:18px;font-weight:700;color:#ffffff;line-height:1.3;text-shadow:0 2px 8px rgba(0,0,0,.7)}
+.theme-selected{margin-top:16px;padding:14px 24px;border-radius:14px;background:rgba(90,200,250,.1);border:1px solid rgba(90,200,250,.25);text-align:center}
+.theme-selected .ts-label{font-size:clamp(18px,3vw,26px);font-weight:700;color:#5AC8FA;letter-spacing:.5px}
+.theme-selected .ts-change{margin-top:8px;padding:6px 18px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;letter-spacing:1px}
+.theme-selected .ts-change:hover{background:rgba(255,255,255,.15);color:#fff}
+.themes-top{position:absolute;top:16px;left:0;right:0;display:flex;justify-content:center;z-index:5}
+.timer-wrap{position:relative;display:flex;align-items:center;justify-content:center}
+.timer-circle{display:block}
+.tc-text{font-family:inherit;font-variant-numeric:tabular-nums}
+.themes-overlay .timer-bar-wrap{position:absolute;top:106px;left:50%;transform:translateX(-50%);width:min(200px,50vw)}
+/* fihirana */
+.fihirana-overlay{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;padding:60px 24px 90px;background:rgba(0,0,0,.5);backdrop-filter:var(--glass-blur-heavy);-webkit-backdrop-filter:var(--glass-blur-heavy)}
+.fihirana-top{text-align:center;flex-shrink:0}
+.fihirana-top .h1{font-size:clamp(32px,6vw,52px);font-weight:800;letter-spacing:-.5px;text-shadow:0 2px 24px rgba(0,0,0,.8);margin-bottom:4px;color:#fff}
+.fihirana-top .sub{font-size:clamp(16px,2.5vw,22px);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.fihirana-lyrics{flex:1;display:flex;align-items:center;justify-content:center;max-width:800px;width:100%;margin:0 auto;max-height:70vh}
+.fihirana-text{font-size:clamp(32px,5vw,56px);font-weight:700;line-height:1.5;text-align:center;color:#fff;text-shadow:0 4px 32px rgba(0,0,0,.9),0 2px 8px rgba(0,0,0,.8);white-space:pre-line;padding:16px 24px;background:rgba(0,0,0,.3);border-radius:16px;max-width:100%}
+.fihirana-nav{position:absolute;top:50%;right:24px;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;z-index:5}
+.fihirana-info{font-size:14px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:1px;min-width:60px;text-align:center}
+.fs-btn{font-size:15px!important;font-weight:800!important;font-family:serif}
+.slide-fs{position:absolute;bottom:100px;right:24px;display:flex;flex-direction:column;gap:8px;z-index:5}
+/* slide-text for regular slides with lyrics */
+.slide-text{font-size:clamp(24px,3.5vw,44px);font-weight:600;line-height:1.6;text-align:center;color:#fff;text-shadow:0 3px 20px rgba(0,0,0,.8),0 2px 6px rgba(0,0,0,.7);background:rgba(0,0,0,.4);padding:12px 24px;border-radius:12px;display:inline-block;animation:textFloat 3s ease-in-out 0.3s infinite;max-width:90%;white-space:pre-line}
+
+/* ===== Responsive breakpoints ===== */
+@media(max-width:768px){
+  .main-home{padding:16px}
+  .main-home-title h1{font-size:clamp(24px,6vw,34px)}
+  .main-home-title p{font-size:clamp(12px,2.5vw,14px)}
+  .home-cards{grid-template-columns:repeat(2,minmax(150px,230px));gap:16px}
+  .home-card{padding:20px 16px}
+  .hc-icon{width:44px;height:44px;font-size:20px;margin-bottom:12px}
+  .slide.liturgie h1{font-size:clamp(28px,5vw,48px)}
+  .slide .sub{font-size:clamp(18px,2.8vw,30px)}
+  .slide-signature{font-size:clamp(10px,1.8vw,13px);bottom:60px;padding:4px 10px}
+}
+@media(max-width:500px){
+  .splash-line{font-size:18px}
+  .splash-line.highlight{font-size:26px}
+  .main-home-title h1{font-size:28px}
+  .home-cards{grid-template-columns:repeat(2,minmax(130px,1fr));gap:12px}
+  .home-card{padding:18px 14px}
+  .hc-icon{width:40px;height:40px;font-size:18px}
+  .ctrl-btn{width:40px;height:40px;font-size:18px}
+  .play-btn{width:48px;height:48px;font-size:22px}
+  #floatNav{gap:3px;padding:5px 8px}
+  #floatNav a{width:32px;height:32px;font-size:14px}
+  .slide h1{font-size:clamp(28px,7vw,44px)}
+  .welcome{padding:24px 16px}
+  .welcome-btn{padding:14px 36px;font-size:16px}
+  .splash{padding:24px 16px}
+  .splash-logo{width:90px;height:90px;font-size:40px}
+  .slide-logo{width:80px;height:80px;top:10px;right:10px}
+  .themes-overlay{padding:40px 14px}
+  .theme-opt{min-width:140px;max-width:200px;padding:14px 12px}
+  .theme-opt .to-num{font-size:22px}
+  .theme-opt .to-label{font-size:15px}
+  .fihirana-overlay{padding:40px 14px 80px}
+  .fihirana-nav{right:12px;gap:8px}
+  .fihirana-nav .ctrl-btn{width:36px;height:36px;font-size:16px}
+  .ps-fs-btns{right:8px}
+  .ps-fs-btn{width:34px;height:34px;font-size:14px}
+  .slide-close{width:36px;height:36px;font-size:16px;top:10px;left:10px}
+  .slide-fs{bottom:80px;right:12px}
+  .slide-fs .ctrl-btn{width:36px;height:36px;font-size:14px}
+}
+@media(max-width:420px){
+  .main-home-title h1{font-size:clamp(20px,6vw,24px)}
+  .home-cards{grid-template-columns:repeat(2,minmax(120px,1fr));gap:10px}
+  .home-card{padding:14px 12px;border-radius:14px}
+  .hc-icon{width:36px;height:36px;font-size:16px;margin-bottom:10px;border-radius:10px}
+  .hc-title{font-size:clamp(15px,4.2vw,17px)}
+  .hc-sub{font-size:11px;margin-bottom:12px}
+  .hc-badge{font-size:11px;padding:3px 10px}
+  #floatNav{gap:2px;padding:4px 6px}
+  #floatNav a{width:28px;height:28px;font-size:12px}
+  .slide h1{font-size:clamp(22px,6vw,32px);padding:6px 14px}
+  .slide-text{font-size:clamp(18px,4vw,26px);padding:8px 14px}
+  .slide .sub{font-size:clamp(14px,3vw,20px);letter-spacing:1px}
+  .slide-logo{display:none}
+  .slide-signature{font-size:10px;bottom:50px}
+  .slide-deco{opacity:0.3}
+   .welcome h1{font-size:clamp(12px,3vw,16px);padding:6px 10px;top:10px;left:10px;max-width:50vw}
+  .welcome-btn{padding:12px 28px;font-size:15px}
+  .splash-logo{width:70px;height:70px;font-size:32px}
+  .splash-line{font-size:15px}
+  .splash-line.highlight{font-size:22px}
+  .splash-loader{width:140px}
+  .theme-opt{min-width:120px;max-width:180px;padding:12px 10px}
+  .theme-opt .to-num{font-size:18px}
+  .theme-opt .to-label{font-size:13px}
+  .fihirana-text{font-size:clamp(22px,5vw,32px);padding:10px 14px}
+  .fihirana-overlay{padding:30px 10px 70px}
+  .ctrl-label{font-size:11px;min-width:40px}
+  .ctrl-progress{height:3px}
+}
+@media(max-width:360px){
+  .main-home-title h1{font-size:clamp(18px,5.5vw,22px)}
+  .home-cards{grid-template-columns:1fr;gap:12px;max-width:280px}
+  .home-card{padding:16px 14px}
+  .hc-icon{width:38px;height:38px;font-size:17px}
+  #floatNav{overflow-x:auto;gap:2px;padding:4px;justify-content:flex-start;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  #floatNav::-webkit-scrollbar{display:none}
+  #floatNav a{flex-shrink:0;width:26px;height:26px;font-size:11px}
+  .slide h1{font-size:clamp(18px,5vw,26px);padding:4px 10px}
+  .slide .sub{font-size:clamp(12px,3vw,16px)}
+  .slide-text{font-size:clamp(15px,4vw,22px);padding:6px 10px}
+  .slide-signature{font-size:8px;bottom:40px;padding:3px 8px}
+  .ctrl-btn{width:34px;height:34px;font-size:15px}
+  .play-btn{width:40px;height:40px;font-size:19px}
+  .ctrl-row{gap:8px}
+  .slide-controls{padding:12px 12px 20px}
+  .splash{padding:16px 10px}
+  .splash-logo{width:60px;height:60px;font-size:28px}
+  .splash-line{font-size:13px}
+  .splash-line.highlight{font-size:18px}
+  .splash-skip{top:16px;right:10px;font-size:11px;padding:5px 10px}
+  .welcome{padding:16px 12px}
+  .welcome h1{font-size:clamp(18px,5vw,22px);padding:8px 12px}
+  .welcome p{font-size:12px;padding:6px 12px;margin-bottom:20px}
+  .themes-overlay{padding:30px 10px}
+  .theme-opt{padding:10px 8px;min-width:100px}
+  .fihirana-text{font-size:clamp(18px,4.5vw,26px)}
+  .fihirana-overlay{padding:24px 8px 60px}
+  .timer{font-size:clamp(48px,12vw,80px)}
+  .timer-bar-wrap{width:min(160px,60vw)}
+  .slide-hint{font-size:10px;padding:5px 12px}
+}
+
+/* Animated tricolor top stripe */
+@keyframes stripeShimmer{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+</style>
+<div id="floatNav">
+  <a href="index.html" class="active" title="Fandraisana">🏠</a>
+  <a href="javascript:void(0)" class="sabata-link" id="sabataNavBtn" title="Programa Sabata">▶</a>
+  <a href="baibolyMG_v2.html" title="Baiboly">✝</a>
+  <a href="fihirana_advantista.html" title="Fihirana">🎵</a>
+  <a href="robia_hariva.html" title="Robia Hariva" style="color:#5AC8FA">📜</a>
+  <a href="readme.html" title="Fampahalalana" style="color:rgba(255,255,255,.5)">ℹ</a>
+  <a href="sabata_hariva.html" title="Sampana" style="color:#FF9F0A">⏱</a>
+  <a href="annonce.html" title="Annonce" style="color:#FF3B30">📢</a>
+</div>
+<script>
+(function(){var n=document.getElementById('floatNav'),t=null;function s(){n.classList.remove('hide');if(t)clearTimeout(t);t=setTimeout(function(){n.classList.add('hide')},3000)}document.addEventListener('mousemove',s);document.addEventListener('touchstart',s);document.addEventListener('click',s);s()})();
+document.getElementById('sabataNavBtn').addEventListener('click',function(){
+  if(typeof openSlides==='function')openSlides();
+});
+</script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')</script>
+<script>
+// Autohide curseur après 2 secondes d'inactivité
+(function(){var s=document.createElement('style');s.textContent='body.cursor-hide,body.cursor-hide *{cursor:none!important}';document.head.appendChild(s);var t=null;function h(){document.body.classList.remove('cursor-hide');if(t)clearTimeout(t);t=setTimeout(function(){document.body.classList.add('cursor-hide')},2000)}h();document.addEventListener('mousemove',h);document.addEventListener('touchstart',h)})();
+</script>
+<script>
+
+</script>
+<script defer src="hira-data.js?v=3"></script>
+<script defer src="bible-data.js?v=3"></script>
+<script defer src="bible-search-engine.js?v=3"></script>
+<script defer src="search-bar.js?v=3"></script>
+<script src="projector.js?v=7"></script>
+<script>
+// ── Hooks diaporama index.html → projection immédiate ──
+(function(){
+  function projSlide(){
+    if(!window.SDAProjector||!window.SDAProjector.isOpen())return;
+    var ss=document.querySelector('.slideshow.open');if(!ss)return;
+    var el=ss.querySelector('.slide.active');if(!el)return;
+    var clone=el.cloneNode(true);
+    clone.classList.remove('exit');clone.classList.add('active');
+    clone.classList.remove('enter-fade','enter-zoomIn','enter-zoomOut','enter-slideLeft','enter-slideRight','enter-blur','enter-rotate','enter-flip');
+    clone.style.position='absolute';clone.style.opacity='1';
+    window.SDAProjector.showSlide(clone.outerHTML);
+  }
+  ['nextSlide','prevSlide','goTo'].forEach(function(fn){
+    var orig=window[fn];
+    if(typeof orig==='function'){window[fn]=function(){orig.apply(null,arguments);setTimeout(projSlide,420)};}
+  });
+  var _os=window.openSlides;if(_os)window.openSlides=function(){_os.apply(null,arguments);setTimeout(projSlide,500)};
+  var _cs=window.closeSlides;if(_cs)window.closeSlides=function(){_cs.apply(null,arguments);if(window.SDAProjector)window.SDAProjector.clear()};
+})();
+</script>
+<script src="alpine.min.js"></script>
+<script src="voice-search.js"></script>
+</body>
+</html>
+

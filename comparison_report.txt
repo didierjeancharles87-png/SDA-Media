@@ -1,0 +1,4303 @@
+HTML songs: 801
+PDF songs: 748
+Common songs: 748
+Differences: 463
+
+
+=== Song 2: Deraiko   Ianao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  4 verses - ['2', '3', '4', '5']
+
+=== Song 3: Ny Tompo ankalazao ===
+Issue: verse_count
+HTML: 2 verses - ['1', '2']
+PDF:  1 verses - ['2']
+
+=== Song 6: Ry Tompo o, Mpamindra fo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 8: Midera an'i Jehovah ry firenena ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,:Midera an'i Jehovah,
+Ry firenena rehatra
+Midera Azy ry olona rehetra
+Fa lehibe ny famindrampony amintsika:,:
+:,:Ary mandrakizay ny fahamarinan'i
+Je
+  [verse_extra]
+    HTML: :,:Midera an'i Jehovah,
+Ry firenena rehatra
+Midera Azy ry olona rehetra
+Fa lehibe ny famindrampony amintsika:,:
+:,:Ary mandrakizay ny fahamarinan'i Je
+    PDF:  
+
+=== Song 9: Iza no hiakatra ? ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Feo 4            :,: Iza no hiakatra  an-
+tendrombohitra ?
+Feo 1,2,3      An-tendrobohitr'i Jehovah,
+Feo 4            Hiakatra any an-tendrombohitra?
+
+  [verse_extra]
+    HTML: Feo 4            :,: Iza no hiakatra  an-tendrombohitra ?
+Feo 1,2,3      An-tendrobohitr'i Jehovah,
+Feo 4            Hiakatra any an-tendrombohitra?
+F
+    PDF:  
+
+=== Song 11: Faly aho raha hoy izy ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Faly aho,faly aho
+Raha hoy izy ireo tamiko:
+Andeha isika ho any,
+Any an-tranon'i Jehovah.
+Ny tongotray efa mijoro
+Ao anatin'ny vavahadinao,
+Ry Jerosal
+  [verse_extra]
+    HTML: Faly aho,faly aho
+Raha hoy izy ireo tamiko:
+Andeha isika ho any,
+Any an-tranon'i Jehovah.
+Ny tongotray efa mijoro
+Ao anatin'ny vavahadinao,
+Ry Jerosal
+    PDF:  
+
+=== Song 12: O! mamindra fo amiko ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 19: Tsara,mahafinaritra ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 22: Moa fantatrao ry namako ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 24: Iza no nanao ny lanitra ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Iza no nanao ny lanitra
+Ny renirano sy lohasaha,
+'Zao tany aman-danitra hita izao?
+Ilay Mahery noho 'zaho sy ianao
+'Reo voninkazo tsara tarehy,
+Ny vor
+  [verse_extra]
+    HTML: Iza no nanao ny lanitra
+Ny renirano sy lohasaha,
+'Zao tany aman-danitra hita izao?
+Ilay Mahery noho 'zaho sy ianao
+'Reo voninkazo tsara tarehy,
+Ny vor
+    PDF:  
+
+=== Song 25: Jeso Mpanjaka malaza ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 26: O! mahagaga Raiko ô ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 33: Saotra atolotra Anao re ry Raiko ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 34: Zanahary lehibe ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 41: Isaoranay ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,:Isaoranay,
+Isaoranay,Ianao
+Andriamanitra ô!:,:
+:,:Eny isaoranay Ianao:,:
+Isaoranay Ianao
+Isaoranay Ianao
+Andriamanitra ô !
+:,:Fa akaiky ny anaranao
+  [verse_extra]
+    HTML: :,:Isaoranay,
+Isaoranay,Ianao
+Andriamanitra ô!:,:
+:,:Eny isaoranay Ianao:,:
+Isaoranay Ianao
+Isaoranay Ianao
+Andriamanitra ô !
+:,:Fa akaiky ny anaranao
+    PDF:  
+
+=== Song 42: DERAO NY TOMPO ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,:Derao ny Tompo
+O! derao
+Asandrato avo ny feo
+Ka miderá.:,:
+  [verse_extra]
+    HTML: :,:Derao ny Tompo
+O! derao
+Asandrato avo ny feo
+Ka miderá.:,:
+    PDF:  
+
+=== Song 44: Ry Tomponay ô ! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 45: Mihirà fihiram-baovao ho an’i Jehovah ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,:Mihirà fihiram-baovao ho an’i Jehovah
+Mihirà, Mihirà ho an’i Jehovah, ry tany rehetra
+Mihirà ho an’i Jehovah
+Mihirà ho an’i Jehovah,
+Misaora ny ana
+  [verse_extra]
+    HTML: :,:Mihirà fihiram-baovao ho an’i Jehovah
+Mihirà, Mihirà ho an’i Jehovah, ry tany rehetra
+Mihirà ho an’i Jehovah
+Mihirà ho an’i Jehovah,
+Misaora ny ana
+    PDF:  
+
+=== Song 46: Dera, laza ho Anao ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Dera,laza ho AnaoRay Tsitoha mandrakizay
+Hery koa, haja soa, no atolotray Anao:,:
+Ny haja ’zay entinay ho fisaorana Anao Tompo ô,
+Raisonao, raiso 
+  [verse_extra]
+    HTML: :,: Dera,laza ho AnaoRay Tsitoha mandrakizay
+Hery koa, haja soa, no atolotray Anao:,:
+Ny haja ’zay entinay ho fisaorana Anao Tompo ô,
+Raisonao, raiso 
+    PDF:  
+
+=== Song 50: Jesosy ô ! anilanao ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 51: Inona Jeso no hoentiko? ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 52: Jehovah ô ! Ny lanitra ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Jehovah ô, Jehovah ô !
+Ny lanitra sy ny tanyMitory ny fiandriananao
+Ny volana aman-kintana
+Manambara ny voninahitrao
+Ny zava-manana aina; ny hita 
+  [verse_extra]
+    HTML: :,: Jehovah ô, Jehovah ô !
+Ny lanitra sy ny tanyMitory ny fiandriananao
+Ny volana aman-kintana
+Manambara ny voninahitrao
+Ny zava-manana aina; ny hita 
+    PDF:  
+
+=== Song 54: Dera, laza, hery, haja ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 57: Asandrato ny hôsana ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 60: ENDREY, TSY TAKATRY NY SAINA ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 63: O! Andriamanitra Tsitoha ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 64: Endrey mahagaga loatra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 65: Indro ny Tompo Mpamonjy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 67: Ny hiranao ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 68: ‘Lay zaza izay matory ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 72: Indro ny Tompo Jesosy, jereo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 73: Toa manjombona ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 76: Irery ny Mpamonjiko ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 77: Tompo malala ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 78: Tsy mendrika ny fitiavany aho ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 79: Tonga ny Tompo hitady ny mania ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 81: Maniry mafy aho ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  2 verses - ['1', '3']
+
+=== Song 84: Raiko ô! avia esory ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Feo 1         :  Ray ô, avia esory ‘ty kapoakako itỳ.
+Feo  2,3,4  :  Raiko ô,avia esory ‘ty kapoakako itỳ.
+Feo 1         :  He ny dinitro manjary ra,
+
+  [verse_extra]
+    HTML: Feo 1         :  Ray ô, avia esory ‘ty kapoakako itỳ.
+Feo  2,3,4  :  Raiko ô,avia esory ‘ty kapoakako itỳ.
+Feo 1	        :  He ny dinitro manjary ra,
+
+    PDF:  
+
+=== Song 86: ‘Zay rehetra tsara sady soa ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 87: Jesosy no asandratro ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 88: Jeso Tompo lehibe ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 92: Voavidy tamin-dra ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 93: Miady ho anao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 94: Moa ve tsy ho lazaiko ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 96: Vaovao mahafaly ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 97: Iriko mba hambara! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 99: Moa fantatrao ‘lay Mpamonjy mahery. ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 101: Haleloia, fa lehibe ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Haleloia, (in-3)
+Fa lehibe tokoany voninahitrao.
+Endrey! Ny fahagagana nataonao.
+Feo     1     : Fa lehibe, lehibe tokoa tokoa
+Feo  2,3,4 : Fa, lehibe
+  [verse_extra]
+    HTML: Haleloia, (in-3)
+Fa lehibe tokoany voninahitrao.
+Endrey! Ny fahagagana nataonao.
+Feo     1     : Fa lehibe, lehibe tokoa tokoa
+Feo  2,3,4 : Fa, lehibe
+    PDF:  
+
+=== Song 102: Anao ny laza ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 103: Jeso natsangana ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 105: Tafatsangana tokoa ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 106: Eran’ny tany sy lanitra izao ny hoby ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 107: Tonga Jeso  Zanaky ny Ray ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 109: He mahagaga Ianao ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: He mahagaga Ianao
+Mpamonjy Tomponay,
+O! voavotra tokoa ‘zahay
+Fa voaloa ny trosanay.
+Kanto loatra Jeso
+Ny namonjenao anay,
+Mahagaga Ianao
+Fa Mpamonjy 
+    PDF:  He mahagaga Ianao
+Mpamonjy Tomponay,
+O! voavotra tokoa ‘zahay
+Fa voaloa ny trosanay.
+Kanto loatra Jeso
+Ny namonjenao anay,
+Mahagaga Ianao
+Fa Mpamonjy 
+  [verse_2]
+    HTML: Ankalazainay Ianao
+Noho ‘lay ra manadio,
+‘Zay nampihavana anay
+Taminao sy taminay.
+Kanto loatra Jeso
+Ny namonjenao anay,
+Mahagaga Ianao
+Fa Mpamonjy ma
+    PDF:  Ankalazainay Ianao
+Noho ‘lay ra manadio,
+‘Zay nampihavana anay
+Taminao sy taminay.
+Kanto loatra Jeso
+Ny namonjenao anay,
+Mahagaga Ianao
+Fa Mpamonjy ma
+  [verse_3]
+    HTML: Te hiara-mamindra Aminao
+Izahay Jeso tia ô,
+Tsy hivily na hania
+Fa ho tody soa arỳ.
+Kanto loatra Jeso
+Ny namonjenao anay,
+Mahagaga Ianao
+Fa Mpamonjy m
+    PDF:  Te hiara-mamindra Aminao
+Izahay Jeso tia ô,
+Tsy hivily na hania
+Fa ho tody soa arỳ.
+Kanto loatra Jeso
+Ny namonjenao anay,
+Mahagaga Ianao
+Fa Mpamonjy m
+
+=== Song 112: Tsara indrindra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 113: He mamiko indrindra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 114: Efa anananao ve ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 115: Tsy takatry ny saiko ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 116: He ampy ahy ‘zao ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_3_line_5]
+    HTML: Dieny etỳ izao.
+    PDF:  Dieny et? izao.
+    Missing words: ['et?']
+    Extra words: ['etỳ']
+  [verse_3_line_6]
+    HTML: Kanefa ny fetra dia tsy mba etỳ.
+    PDF:  Kanefa ny fetra dia tsy mba et?.
+    Missing words: ['et?.']
+    Extra words: ['etỳ.']
+  [verse_3_line_8]
+    HTML: Ho tonga erỳ
+    PDF:  Ho tonga er?
+    Missing words: ['er?']
+    Extra words: ['erỳ']
+
+=== Song 118: Jeso re no sakaiza ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 119: Nomeko anao ny aiko ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 120: Voavono toy ny olon-dratsy  Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 121: Eny tontolo eny ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 122: ‘Njao re manako ato am-po ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 123: Moa mba fantatrao ve ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 125: Voagejan’ny saina tsy nino ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 126: Jeso ‘lay inoako ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  2 verses - ['2', '3']
+
+=== Song 127: Ho Haiko ve  ? ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 128: Moa ve Jeso fantatrao ? ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 131: Manonja malefaka ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 133: Efa ela Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 135: Faingana ry Mpanjaka ===
+Issue: word_diff
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+  [verse_1_line_0]
+    HTML: Faingàna ry Mpanjaka!
+    PDF:  Mpanjaka!
+    Missing words: []
+    Extra words: ['faingàna', 'ry']
+  [verse_2_line_1]
+    HTML: Atỳ ny olonao;
+    PDF:  At? ny olonao;
+    Missing words: ['at?']
+    Extra words: ['atỳ']
+
+=== Song 135: Faingana ry Mpanjaka ===
+Issue: verse_content
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+  [verse_3]
+    HTML: Ny tendrombohitra avo,
+Ny lohasaha koa,
+Ho tonga ravoravo
+Sy tretrika avokoa;
+Ny be tsy haka an-kery,
+Ny kely afa-po,
+Tsy hisy ‘zay ho very,
+Tsy hisy 
+    PDF:  Ny tendrombohitra
+avo,
+Ny lohasaha koa,
+Ho tonga ravoravo
+Sy tretrika avokoa;
+Ny be tsy haka an-
+kery,
+Ny kely afa-po,
+Tsy hisy ‘zay ho very,
+Tsy hisy
+  [verse_4]
+    HTML: Mpanjaka sy Mpiaro
+Mahery Ianao;
+Ny firenena maro
+Hitoky Aminao;
+Ho avy lalandava
+Izao rehetra izao
+Hitondra harem-bevava
+Ho eo an-tongotrao.
+    PDF:  Mpanjaka sy Mpiaro
+Mahery Ianao;
+Ny firenena maro
+Hitoky Aminao;
+Ho avy lalandava
+Izao rehetra izao
+Hitondra harem-
+bevava
+Ho eo an-tongotrao.
+  [verse_5]
+    HTML: Faingàna ry Mpamonjy!
+Ry Tompo be fitia;
+Ny olonao tra-bonjy
+Miantso hoe: Avia!
+Anao ny fiderana,
+Anao ny laza be,
+Anao ny fanjakana
+Sy arahaba e!
+    PDF:  Faingàna ry
+Mpamonjy!
+Ry Tompo be fitia;
+Ny olonao tra-bonjy
+Miantso hoe: Avia!
+Anao ny fiderana,
+Anao ny laza be,
+Anao ny fanjakana
+Sy arahaba e!
+
+=== Song 137: Indro Jeso ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_2]
+    HTML: Indro Jeso Toky sy Hery,
+Mivonona ho avy indray
+Haka ny Azy amin-kery
+Ho eo amin’ny Ray.
+Ho sambatra, ho tretrika koa Izay manaiky, mankatò.
+Fa ny olo
+    PDF:  Indro Jeso Toky sy Hery,
+Mivonona ho avy indray
+Haka ny Azy amin-kery
+Ho eo amin’ny Ray.
+Ho sambatra, ho tretrika koa Izay manaiky,
+mankatò.
+Fa ny olo
+
+=== Song 138: Ho avy indray ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 139: Angamba anio ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 141: Iza moa ireto ho avy? ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 144: Omàny ny fanilo ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 145: RY ZANAK’ANDRIAMANITRA ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 146: INJAY TROMPETRA ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 147: ‘NJAY MANAKO ANY ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 148: RAHA TONGA ANIO ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_3_line_5]
+    HTML: Ary hakariny ianao ho arỳ,
+    PDF:  Ary hakariny ianao ho ar?,
+    Missing words: ['ar?,']
+    Extra words: ['arỳ,']
+  [verse_3_line_7]
+    HTML: Ny ra nalatsany tatỳ?
+    PDF:  Ny ra nalatsany tat??
+    Missing words: ['tat??']
+    Extra words: ['tatỳ?']
+
+=== Song 149: O! HAFALIANA MAMENO NY FO ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 153: AVIA JESOSY TOMPO ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,:Avia Jesosy Tompo
+Fa miandry Anao ‘zahay.
+Eny, avy faingana Aho, mahareta ianao.
+Hoy Izay manambara: Ho avy Aho,
+Ho sambatra izay manasa ny akanjon
+  [verse_extra]
+    HTML: :,:Avia Jesosy Tompo
+Fa miandry Anao ‘zahay.
+Eny, avy faingana Aho, mahareta ianao.
+Hoy Izay manambara: Ho avy Aho,
+Ho sambatra izay manasa ny akanjon
+    PDF:  
+
+=== Song 155: INDRO MAZAVA ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 156: TSY HO ELA DIA HISAVA ===
+Issue: word_diff
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '2', '3', '4']
+  [verse_1_line_1]
+    HTML: Ny fahoriana etỳ;
+    PDF:  Ny fahoriana et?;
+    Missing words: ['et?;']
+    Extra words: ['etỳ;']
+  [verse_2_line_1]
+    HTML: Ny mavesatra etỳ,
+    PDF:  Ny mavesatra et?,
+    Missing words: ['et?,']
+    Extra words: ['etỳ,']
+  [verse_3_line_1]
+    HTML: Ny ota mamely etỳ;
+    PDF:  Ny ota mamely et?;
+    Missing words: ['et?;']
+    Extra words: ['etỳ;']
+  [verse_4_line_1]
+    HTML: Ny rivotra mafy etỳ;
+    PDF:  Ny rivotra mafy et?;
+    Missing words: ['et?;']
+    Extra words: ['etỳ;']
+
+=== Song 158: Misy re tany soa ===
+Issue: verse_content
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '2', '3', '4']
+  [verse_1]
+    HTML: Misy re tany soa ary an-koatra arỳ
+Hasambarana no ao fa tsy toy ny etỳ,
+Anatrehan’ny Ray, tena mamy tokoa
+Izay irin’ny fo lavorary avokoa. Fiadanana b
+    PDF:  Misy re tany soa ary an-koatra arỳ
+Hasambarana no ao fa tsy toy ny etỳ,
+Anatrehan’ny Ray, tena mamy tokoa
+Izay irin’ny fo lavorary avokoa. Fiadanana b
+  [verse_2]
+    HTML: Misy koa lapa soa tena kanto ery,
+Volamena avokoa tsy hiofo doria
+Vatosoa marobe mitomaratra koa
+Handravahana re an’ireo tody soa. Fiadanana be no mia
+    PDF:  Misy koa lapa soa tena kanto ery,
+Volamena avokoa tsy hiofo doria
+Vatosoa marobe mitomaratra koa
+Handravahana re an’ireo tody soa. Fiadanana be
+no mia
+
+=== Song 159: Indro tazako ilay lovako ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 160: Efa nampiomana ahy sy ianao Kristy ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 161: O! mivonona ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 162: Any andro izay hahitako ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Any andro izay hahitako
+‘Reo anjely mitsoka trompetra,
+Ka ny lanitra hanakoako
+Fa handray ‘reo voavonjy rehetra.
+Amin’izay ho hitako
+‘Lay Jesosy izay 
+  [verse_extra]
+    HTML: Any andro izay hahitako
+‘Reo anjely mitsoka trompetra,
+Ka ny lanitra hanakoako
+Fa handray ‘reo voavonjy rehetra.
+Amin’izay ho hitako
+‘Lay Jesosy izay 
+    PDF:  
+
+=== Song 163: Raha ho avy indray Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 164: Ho avy indray ny Tomponao ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 169: Raha tonga anio ny Tompo ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 171: Jesosy ô, arotsahy ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 175: O, baboy ‘zahay ho Anao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 177: Izay misy ny Fanahin’ny Tompo ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Izay misy ny Fanahin’ny Tompo
+Dia misy hery sy fiadanana,
+Ka na dia manjombona aza re izany fiainana
+Tsy ho kivy, manana
+‘Lay Fanahy mampahery ‘zany f
+  [verse_extra]
+    HTML: Izay misy ny Fanahin’ny Tompo
+Dia misy hery sy fiadanana,
+Ka na dia manjombona aza re izany fiainana
+Tsy ho kivy, manana
+‘Lay Fanahy mampahery ‘zany f
+    PDF:  
+
+=== Song 180: Raiso ny fonay, Fanahy ô ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 181: He injao mamelombelona ahy ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 182: Efa ivelomako tokoa Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 183: Ry Fanahy Masina  ô ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1_line_6]
+    HTML: Hiantso hoe: « avia atỳ !»
+    PDF:  Hiantso hoe: «  avia aty !»
+    Missing words: ['aty']
+    Extra words: ['atỳ']
+  [verse_3_line_7]
+    HTML: An’i Jeso be fitia.
+    PDF:  An’i Jeso be ﬁtia.
+    Missing words: ['ﬁtia.']
+    Extra words: ['fitia.']
+
+=== Song 184: Avia, Fanahy Masina ô ===
+Issue: verse_content
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+  [verse_5]
+    HTML: Tahio mba hitiavanay
+Ny Ray sy Jeso Zanany,
+Sy hitokianay Anao
+Izay Fanahy Masina.
+    PDF:  Tahio mba hitiavanay
+Ny Ray sy Jeso Zanany,
+Sy hitokianay Anao
+Izay Fanahy Masina.
+A . J a m ina
+
+=== Song 185: Ny Teninao rehetra ===
+Issue: word_diff
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '2', '3', '4']
+  [verse_4_line_1]
+    HTML: Ny haizim-be atỳ,
+    PDF:  Ny haizim-be aty,
+    Missing words: ['aty,']
+    Extra words: ['atỳ,']
+  [verse_4_line_3]
+    HTML: Ny dia ho arỳ;
+    PDF:  Ny dia ho ary;
+    Missing words: ['ary;']
+    Extra words: ['arỳ;']
+
+=== Song 186: Jiro mazava ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 190: Mitenena, ry Jehovah ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Mitenena, ry Jehôvah,
+Fa mihaino izahay.
+Ambarao ny sitrakao
+Ho amin’ny mpanomponao.
+Aoka ny Fanahinao
+Ho ao anatinay izao,
+Mitenena, ry Jehôvah,
+Fa m
+  [verse_extra]
+    HTML: Mitenena, ry Jehôvah,
+Fa mihaino izahay.
+Ambarao ny sitrakao
+Ho amin’ny mpanomponao.
+Aoka ny Fanahinao
+Ho ao anatinay izao,
+Mitenena, ry Jehôvah,
+Fa m
+    PDF:  
+
+=== Song 192: He, toy ny tanimboly soa ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1_line_0]
+    HTML: He, toy ny tanimboly soa,
+    PDF:  Efa ivelomako tokoa, Jeso,
+    Missing words: ['ivelomako', 'tokoa,', 'jeso,', 'efa']
+    Extra words: ['tanimboly', 'toy', 'ny', 'he,', 'soa,']
+  [verse_1_line_1]
+    HTML: Jeso, ny Teninao.
+    PDF:  Ato am-poko ny fitiavanao,
+    Missing words: ['am-poko', 'fitiavanao,', 'ato']
+    Extra words: ['jeso,', 'teninao.']
+  [verse_1_line_2]
+    HTML: ‘Zay vonona hitady moa
+    PDF:  Nefa tiako koa raha izao tontolo izao
+    Missing words: ['tontolo', 'koa', 'tiako', 'raha', 'nefa']
+    Extra words: ['‘zay', 'hitady', 'moa', 'vonona']
+  [verse_1_line_3]
+    HTML: Mahazo mioty ao.
+    PDF:  No handray ny fahasoavanao.
+    Missing words: ['no', 'handray', 'fahasoavanao.', 'ny']
+    Extra words: ['mioty', 'ao.', 'mahazo']
+  [verse_1_line_4]
+    HTML: Ny voninkazo mamiratra,
+    PDF:  O! reseo anio ny halemeko.
+    Missing words: ['halemeko.', 'anio', 'reseo', 'o!']
+    Extra words: ['voninkazo', 'mamiratra,']
+  [verse_1_line_5]
+    HTML: Mamerovero ao,
+    PDF:  Mihainoa ny vavako, Jeso,
+    Missing words: ['mihainoa', 'vavako,', 'jeso,', 'ny']
+    Extra words: ['ao,', 'mamerovero']
+  [verse_1_line_6]
+    HTML: Hanjary amboara fatratra
+    PDF:  Ampidino eto ny Fanahinao
+    Missing words: ['ampidino', 'fanahinao', 'eto', 'ny']
+    Extra words: ['fatratra', 'hanjary', 'amboara']
+  [verse_1_line_7]
+    HTML: Manome aina vao.
+    PDF:  Hampahery ny olonao Jeso
+    Missing words: ['olonao', 'hampahery', 'jeso', 'ny']
+    Extra words: ['vao.', 'aina', 'manome']
+
+=== Song 192: He, toy ny tanimboly soa ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_2]
+    HTML: Toa kintana mamiratra
+Ny teninao Kristy,
+Ka he mandefa taratra
+Mitsilo ‘zany dia.
+He sabatra maranitra
+‘Zay anafihana,
+Hambabo ho ao an-danitra
+Ny fo 
+    PDF:  Ny fahalalako ny fitiavanao
+Sy ny famonjena atolotrao,
+Hanameloka ahy raha izao tontolo izao
+Tsy hilazako ny fitiavanao.
+  [verse_3]
+    HTML: Izay iriko, Tompo soa,
+Ho tia ny Teninao;
+Fitaovam-piadiana koa
+Hoenti-miady ao,
+Ho jiro hanazava ahy
+An-dàlana izao,
+Hitarika ireo fanahy
+Hiandany Am
+    PDF:  Tompo ô, henoy ny vavaka ao am-po
+O! irao ny Fanahinao
+Hanafana anay sy hampahery anay
+Ary koa hitari-dalana.
+
+=== Song 193: O, sambatra ny fo, Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 196: Andeha isika hanandra-peo ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Andeha isika hanandram-peo hoe:
+Masina Jehovah Ray
+Masina, masina ,masina, Jehovah Ray
+Vavaka mandohalika
+Masina, masina, masina
+Jehovah Ray. Amen.
+  [verse_extra]
+    HTML: Andeha isika hanandram-peo hoe:
+Masina Jehovah Ray
+Masina, masina ,masina, Jehovah Ray
+Vavaka mandohalika
+Masina, masina, masina
+Jehovah Ray. Amen.
+    PDF:  
+
+=== Song 197: O! Ray malala asehoy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 199: Ry Jeso! Vory izahay ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', '6']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 200: Mihirà fihiram-pifaliana ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 201: Indro ny faharetan’ny olona masina ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,:Indro ny faharetan’ny
+Olo-masina.:,:
+Dia izay mitandrina
+Ny didin’Andriamanitra
+Sy ny finoana an’i Jesosy.
+:;: Amena, Amena, Amena.:,:
+  [verse_extra]
+    HTML: :,:Indro ny faharetan’ny
+Olo-masina.:,:
+Dia izay mitandrina
+Ny didin’Andriamanitra
+Sy ny finoana an’i Jesosy.
+:;: Amena, Amena, Amena.:,:
+    PDF:  
+
+=== Song 203: Mangina! Mangina! ===
+Issue: word_diff
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '2', '3', '4']
+  [verse_2_line_2]
+    HTML: 'Lay feo fifaliana
+    PDF:  ‘Lay feo fifaliana
+    Missing words: ['‘lay']
+    Extra words: ["'lay"]
+  [verse_3_line_5]
+    HTML: Henoy re 'lay feo.
+    PDF:  Henoy re ‘lay feo.
+    Missing words: ['‘lay']
+    Extra words: ["'lay"]
+  [verse_4_line_3]
+    HTML: 'Njao re ao am-po.
+    PDF:  ‘Njao re ao am-po.
+    Missing words: ['‘njao']
+    Extra words: ["'njao"]
+
+=== Song 206: O! henoy ny antson’ny Mpamonjy soa ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 207: O, ny fanatitra entinay ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  O, ny fanatitra entinay
+Raiso, ekeo ry Ray
+Mba arotsahy aminay
+Ny fitahianao. Amen!
+  [verse_extra]
+    HTML: O, ny fanatitra entinay
+Raiso, ekeo ry Ray
+Mba arotsahy aminay
+Ny fitahianao. Amen!
+    PDF:  
+
+=== Song 209: Misy toerana mamin’ny foko ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 210: O! toera-mahafinaritra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 211: Aoka homban’ny elatrao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 214: Eo amin’ i Jeso ===
+Issue: verse_content
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '2', '3', '4']
+  [verse_1]
+    HTML: Eo amin’i Jeso,
+Na dia eto an-tany,
+Mifaly re ny fo
+Fa voavonjiny.
+Eo amin’ny hazo
+‘Zay nijalian’ny Tompo,
+Ny fo ho sambatra
+Sy tretrika tokoa.
+    PDF:  Eo amin’i Jeso, Na dia eto an-tany,
+Mifaly re ny fo
+Fa voavonjiny.
+Eo amin’ny hazo
+‘Zay nijalian’ny Tompo,
+Ny fo ho sambatra
+Sy tretrika tokoa.
+
+=== Song 217: Tsaroanay tokoa izao sabata ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 218: Midera Anao ‘zahay ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 219: Tsaroanay maivana ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 220: Sabata masinao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 224: Indro fa misoka izao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 226: Fotoana soa sy mamiko ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 228: Eo an-tongotrao ry Jeso ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 230: O! teny fikasana soa indrindra ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 235: Mba mamindrà fo aminay Tompo ô ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Mba mamindrà fo aminay, Tompo ô!
+Fa mila ho reraka ny fonay.
+He ! Indro miankohoka eo amin’ny tongotrao ‘zahay,
+Mitady fiainana.
+Ny fitianao no ianteh
+    PDF:  Mba mamindrà fo aminay, Tompo ô!
+Fa mila ho reraka ny fonay.
+He ! Indro miankohoka eo amin’ny tongotrao
+‘zahay,
+Mitady fiainana.
+Ny fitianao no ianteh
+
+=== Song 236: Tompo malala ô! Jereo ‘zahay ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 242: Raha mivavaka ianao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 244: Tompo mahery, henoy ‘zahay ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 248: Tsapako, Raiko ô ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  3 verses - ['1', '3', '4']
+
+=== Song 249: Manantòna ry mpania ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 252: Jeso ô, ampianaro! ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 254: Jeso no miantso ahy izao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 258: ‘Njay reko Tompo ò! ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', '6']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 260: Ianao ry Jeso! ===
+Issue: verse_content
+HTML: 7 verses - ['1', '2', '3', '4', '5', '6', '7']
+PDF:  7 verses - ['1', '2', '3', '4', '5', '6', '7']
+  [verse_1]
+    HTML: Ianao ry Jeso ô!
+No mba hatoninay,
+:,: Tompon’ny aina :,:
+Mba mihainoa ka avia.
+    PDF:  Ianao ry Jeso ô!
+No mba hatoninay,
+:,: Tompon’ny aina :,:
+Mba mihainoa ka avia.
+Raiso aho, Tompo ô!
+Fa te ho mpanomponao;
+Raiso koa ny androko,
+Ka ana
+  [verse_2]
+    HTML: Mba ampangino re
+Ny ao anatinay,
+:,: Tsy hisy renay :,:
+Raha tsy feonao.
+    PDF:  Mba ampangino re
+Ny ao anatinay,
+:,: Tsy hisy renay :,:
+Raha tsy feonao.
+Raiso re ny tanako
+Mba hanao ny asanao;
+Raiso koa ny tongotro
+Ho fanirakiraka
+  [verse_3]
+    HTML: Aoka izahay handray
+Ny fanavaozanao,
+:,: Ka mba hitovy :,:
+Toe-tsaina Aminao.
+    PDF:  Aoka izahay handray
+Ny fanavaozanao,
+:,: Ka mba hitovy :,:
+Toe-tsaina Aminao.
+Raiso ny fahaizako
+Ento mba hanaja Anao,
+Raiso koa ny volako
+Ho Anao tok
+  [verse_4]
+    HTML: Mafy ny adinay,
+Ka be ny tahotray;
+:,: Nefa tsy resy :,:
+‘Zay miankina Aminao.
+    PDF:  Mafy ny adinay,
+Ka be ny tahotray;
+:,: Nefa tsy resy :,:
+‘Zay miankina Aminao.
+Raiso re ny vavako
+Hampiseho ny hafatrao;
+Raiso koa ny feoko
+Ho mpanand
+  [verse_5]
+    HTML: Dia tafionao
+Amin’ny herinao,
+:,: Mba ho mpandresy :,:
+‘Zahay mpianatrao.
+    PDF:  Dia tafionao
+Amin’ny herinao,
+:,: Mba ho mpandresy :,:
+‘Zahay mpianatrao.
+Raiso ny fanahiko
+Diovy ho tempolinao,
+Raiso aho, Tompo ô!
+Ho Anao mihitsy ‘
+  [verse_6]
+    HTML: Ny fonay hafanao,
+Mba hirehetanay
+:,: Amin’ny asa :,:
+‘Zay omenao hatao.
+    PDF:  Ny fonay hafanao,
+Mba hirehetanay
+:,: Amin’ny asa :,:
+‘Zay omenao hatao.
+Ho Anao manokana.
+Ry Mpamonjy, Tompo soa
+Ho Anao dia Anao tokoa
+Ho Anao mandr
+
+=== Song 261: Raiso aho, Tompo  ô! ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', '6']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 262: ‘Lay ora tao Getsemane ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 263: Aina no fetra, ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 264: O !  Fifaliam-be ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 265: Ary raha nandeha ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Ary raha nandeha teny an-dalana izy
+Dia tonga teny amin’izay nisy rano.
+(Ary hoy ilay tandapa:)
+:,: Indro rano (indro rano) :,:
+(Ka inona moa no misak
+  [verse_extra]
+    HTML: Ary raha nandeha teny an-dalana izy
+Dia tonga teny amin’izay nisy rano.
+(Ary hoy ilay tandapa:)
+:,: Indro rano (indro rano) :,:
+(Ka inona moa no misak
+    PDF:  
+
+=== Song 267: Ny voady atao anio ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 268: Ekeko anio ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 269: Raha mbola velona aho ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1_line_0]
+    HTML: Raha mbola velona aho ka miaina etỳ
+    PDF:  Raha mbola velona aho ka miaina ety
+    Missing words: ['ety']
+    Extra words: ['etỳ']
+  [verse_1_line_1]
+    HTML: :,: Ampy ahy Jeso :,:
+    PDF:  :,::,:
+    Missing words: [':,::,:']
+    Extra words: ['ampy', 'ahy', ':,:', 'jeso']
+  [verse_1_line_3]
+    HTML: Ny hirakitra ao am-poko fa ampy ahy Jeso;
+    PDF:  Ny hirakitra ao am -poko fa ampy ahy Jeso;
+    Missing words: ['-poko', 'am']
+    Extra words: ['am-poko']
+  [verse_2_line_0]
+    HTML: Raha mbola velona aho ka miaina etỳ;
+    PDF:  Raha mbola velona aho ka miaina ety;
+    Missing words: ['ety;']
+    Extra words: ['etỳ;']
+  [verse_2_line_3]
+    HTML: Ny hirakitra ao am-poko fa ampy ahy Jeso
+    PDF:  Ny hirakitra ao am -poko fa ampy ahy Jeso
+    Missing words: ['-poko', 'am']
+    Extra words: ['am-poko']
+  [verse_2_line_4]
+    HTML: Tano mafy aho mba hifikirako Aminao
+    PDF:  Tano mafy aho mba hiﬁkirako Aminao
+    Missing words: ['hiﬁkirako']
+    Extra words: ['hifikirako']
+  [verse_3_line_0]
+    HTML: Raha mbola velona ka miaina etỳ
+    PDF:  Raha mbola velona ka miaina ety
+    Missing words: ['ety']
+    Extra words: ['etỳ']
+  [verse_3_line_1]
+    HTML: :,: Ampy ahy Jeso :,:
+    PDF:  :,: Am py ahy Jeso :,:
+    Missing words: ['am', 'py']
+    Extra words: ['ampy']
+  [verse_3_line_3]
+    HTML: Ny hirakitra ao am-poko fa ampy ahy Jeso.
+    PDF:  Ny hirakitra ao am -poko fa ampy ahy Jeso.
+    Missing words: ['-poko', 'am']
+    Extra words: ['am-poko']
+
+=== Song 270: Tomponay ô ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 271: Tazanao ve ny Mpamonjy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 274: Ianao ry Tompo Mpamonjy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 275: Fitiavana tsy hay lazaina ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 277: Arovy aho Tompo ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Arovy aho Tompo
+Atolotro izao
+Ny tenako hanompo
+Sy hankalaza Anao;
+Omeo ahy hery
+Sy faharetam-po
+Arovy tsy ho very
+Izay anjarako.
+  [verse_extra]
+    HTML: Arovy aho Tompo
+Atolotro izao
+Ny tenako hanompo
+Sy hankalaza Anao;
+Omeo ahy hery
+Sy faharetam-po
+Arovy tsy ho very
+Izay anjarako.
+    PDF:  
+
+=== Song 280: Ry Jeso, Tompo ny hasoavanao ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', '6']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 281: Ny fahasoavan’i Jeson Kristy ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Ny fahasoavan’i Jeso Kristy
+Tompo anie,
+Ny fitiavan’ny Raintsika
+Sy ny firaisana amin’ny Fanahy,
+:,: Ho amintsika :,:
+Amena!
+  [verse_extra]
+    HTML: Ny fahasoavan’i Jeso Kristy
+Tompo anie,
+Ny fitiavan’ny Raintsika
+Sy ny firaisana amin’ny Fanahy,
+:,: Ho amintsika :,:
+Amena!
+    PDF:  
+
+=== Song 283: Ny fitiavanao ry Ray ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Ny fitiavanao ry Ray
+Aoka ho aminay;
+Ny fahasoavanao
+Omeo koa Jeso.
+Ry Fanahy ô!
+Masina Ianao
+Ny firaisana Aminao
+Tanteraho izao.
+  [verse_extra]
+    HTML: Ny fitiavanao ry Ray
+Aoka ho aminay;
+Ny fahasoavanao
+Omeo koa Jeso.
+Ry Fanahy ô!
+Masina Ianao
+Ny firaisana Aminao
+Tanteraho izao.
+    PDF:  
+
+=== Song 284: Voninahitra ho Anao ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Voninahitra ho Anao
+Ray, Zanaka, Fanahy Masina
+Anao hatry ny taloha,
+Ho Anao mandrakizay
+Mandrakizay Amen !
+Amen.
+  [verse_extra]
+    HTML: Voninahitra ho Anao
+Ray, Zanaka, Fanahy Masina
+Anao hatry ny taloha,
+Ho Anao mandrakizay
+Mandrakizay Amen !
+Amen.
+    PDF:  
+
+=== Song 286: Ziona ô! Mifohaza ianao ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 288: ‘Njao mibitsika mangina ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 290: Feo miantso mafy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 292: O! andao mitsangàna izao ianao ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_3]
+    HTML: Mifohaza izao ka ovay ny fanao
+Fa andrao na mitory, hatory ianao,
+Ialao ny otanao ka ny Tomponao no araho, Dia hadio sy ho vao ka hahomby ianao
+Mijoro
+    PDF:  Mifohaza izao ka ovay ny fanao
+Fa andrao na mitory, hatory ianao,
+Ialao ny otanao ka ny Tomponao no araho, Dia
+hadio sy ho vao ka hahomby ianao
+Mijoro
+
+=== Song 296: Raha mangoraka ny fo ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 298: Jesosy Tompo no mandefa ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 300: Ry olom-bery ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 301: Anio dia mandona ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 303: Ry mahantra mahonena ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 304: Fantatrao ve namako? ===
+Issue: verse_content
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '3', '2', '4']
+  [verse_4]
+    HTML: Moa tsy tianao, valio,
+Namako mijaly,
+Hiandrandra ankehitrio
+’Lay tanàna faly?
+Ry mpanota sasatra,
+Ho anao ny lanitra,
+Koa ekeonao tsy terena
+Re ny fa
+    PDF:  Moa tsy tianao, valio,
+Namako mijaly,
+Hiandrandra ankehitrio
+’Lay tanàna faly?
+Ry mpanota sasatra,
+Ho anao ny lanitra,
+Koa ekeonao tsy terena
+Re ny fa
+
+=== Song 305: Antso malefaka feno fitia ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1_line_0]
+    HTML: Antso malefaka feno fitia,
+    PDF:  Antso malefaka feno ﬁtia,
+    Missing words: ['ﬁtia,']
+    Extra words: ['fitia,']
+  [verse_1_line_4]
+    HTML: Avia, (avia) avia atỳ
+    PDF:  Avia, (avia) avia aty
+    Missing words: ['aty']
+    Extra words: ['atỳ']
+  [verse_2_line_4]
+    HTML: Avia, (avia) avia atỳ
+    PDF:  Avia, (avia) avia aty
+    Missing words: ['aty']
+    Extra words: ['atỳ']
+  [verse_3_line_0]
+    HTML: Etỳ an-tany mandalo avokoa,
+    PDF:  Et? an-tany mandalo avokoa,
+    Missing words: ['et?']
+    Extra words: ['etỳ']
+  [verse_3_line_4]
+    HTML: Avia, (avia) avia atỳ
+    PDF:  Avia, (avia) avia aty
+    Missing words: ['aty']
+    Extra words: ['atỳ']
+
+=== Song 306: He! Fitiavan-dehibe! ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 308: Ry mpanota mijanona ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 316: Raha re ny feon’i Jeso tia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 320: Madiva ho lasa ny andro ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 321: Onena ny Mpamonjy re ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Onena ny Mpamonjy re,
+Onena ny mpanota
+Atsotrany ny tanany handray anao mpanota.
+Ny sandriny mahery no mitantana ny dia
+Hanavotra ny very, hamonjy ire
+    PDF:  Onena ny Mpamonjy re,Onena ny mpanota
+Atsotrany ny tanany handray anao mpanota.
+Ny sandriny mahery no mitantana ny dia
+Hanavotra ny very, hamonjy ireo
+
+=== Song 322: Moa misy famonjena ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 323: Henoy, henoy ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 326: Modia, modia ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 327: Ny Mpamonjy te hiditra am-ponao ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 328: Miantso  anao Jesosy izao ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Miantso anao Jesosy izao
+(Njao miantso anao Jesosy izao)
+Hanolo-tena ho Azy anio.
+Miangavy koa, (ô!) mitalaho
+Am-pitiavana re ka mba valio,
+Miantso an
+  [verse_extra]
+    HTML: Miantso anao Jesosy izao
+(Njao miantso anao Jesosy izao)
+Hanolo-tena ho Azy anio.
+Miangavy koa, (ô!) mitalaho
+Am-pitiavana re ka mba valio,
+Miantso an
+    PDF:  
+
+=== Song 329: ‘Ndeha hilazako ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 331: Reraka tao an’efitry ny ota aho ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 334: Fotoana toy inona no efa lasa ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 335: Jeso Tompo no miantso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 337: Jesosy fitsaharana ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 338: O! ry mahantra sy ory ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 340: O! henoy, O! henoy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 343: Manantòna ry mpanota ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  4 verses - ['2', '3', '4', '1']
+
+=== Song 344: Moa renao ve? ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 347: Ny androm-pahasambarana ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 348: ‘Zaho te ho tia Anao tokoa ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 349: Endrey ny faniriako ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 351: Nandao anao ela aho ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 352: O, hitako ka fantatro ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_3]
+    HTML: Izaho ’zay naniasia
+Dia notadiavinao,
+Nomenao hery mba ho tia
+Ny famonjena izao,
+Ho zanakao manokana,
+Jeso no Rahalahy,
+Ny ran’ny fihavanana
+No nanafa
+    PDF:  Izaho ’zay naniasia
+Dia notadiavinao,
+Nomenao hery mba ho tia
+Ny famonjena izao,
+Ho zanakao manokana,
+Jeso no Rahalahy,
+Ny ran’ny fihavanana
+No nanafa
+
+=== Song 353: Hiara-mandeha Aminao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 354: He! Reko ‘zao ny antsonao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 355: Reko androany, Jesosy tia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 356: Apetrako an-tananao, ry Raiko ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Apetrako an-tananao, ry Raiko,
+Ny fiainako tontolo hatrizao;
+Tsy misy izay mahafa-po ny saiko
+Izay rehetra hita sy atao. Eo Aminao no iononako,
+Eo ami
+    PDF:  Apetrako an-tananao, ry Raiko,
+Ny fiainako tontolo hatrizao;
+Tsy misy izay mahafa-po ny saiko
+Izay rehetra hita sy atao. Eo Aminao no
+iononako,
+Eo ami
+  [verse_3]
+    HTML: Apetrako mba ho Anao, ry Tompo,
+Apetrako tsy hanenenako, Hanara-dia Anao sy mba hanompo,
+Ny tenako sy ny fanahiko.
+Ka raiso ho fanati-tsitrakao.
+Na di
+    PDF:  Apetrako mba ho Anao, ry Tompo,
+Apetrako tsy hanenenako, Hanara-dia Anao sy
+mba hanompo,
+Ny tenako sy ny fanahiko.
+Ka raiso ho fanati-tsitrakao.
+Na di
+
+=== Song 357: Tsy manana atolotra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 359: O! fantatrao ry Tompo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 360: Ao am-poko ry Jeso ny fitiavanao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 362: Efa ela no nikasa mba handao ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 363: Apetrako eo an-tananao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 364: Efa ela Ianao Jeso ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,:Efa ela Ianao Jeso no nandona tato am-poko
+Niangavy am-pitiavana mba honina ato am-poko
+Be ‘reo zavatra taloha ireo rendrarendra sy
+filana,
+Niboses
+  [verse_extra]
+    HTML: :,:Efa ela Ianao Jeso no nandona tato am-poko
+Niangavy am-pitiavana mba honina ato am-poko
+Be ‘reo zavatra taloha ireo rendrarendra sy filana,
+Niboses
+    PDF:  
+
+=== Song 365: Mamin’ny foko ry Jeso ô! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 366: Mamafaza voa ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 367: Misy baiko re tonga aminao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 368: Lazao ‘lay tantaran’ny vonjy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 375: Moa mba henonao va re? ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 376: Feon’i Kristy no miantso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 378: Mahantra aho ka mba aiza ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 379: Ray ô, todihonao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 380: Avy aho manatona ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 381: Ry Zanak’ondry voavono ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 383: He ny sandry ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 384: Ny fahotana ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 385: Endrey ny hamaroan’ny soa ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 386: O! ny tananao Tompo tia ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 388: Faly aho tretrika aho ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 391: Zanaka adala ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 392: Jeso hany fiereko ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 393: Ry Mpamonjy, Tompo soa ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 394: Mihirà, ry mponina ao an-danitra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 396: Moa ve Jeso, dia mihevitra ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 397: Raha ny fitsapana ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 398: Raha maizim-be ny lalana ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 399: Iza no any an-danitra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 400: Tsy fantatrao anio izao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 401: Raha sendra zava-mahory ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 403: Ataon’ny fo ahoana ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 404: Jeso re no heriko ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 405: Tsy misy sakaiza mamiko ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 407: Amim-pinoana ny Tompo ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 408: Tsy mahalala ny ampitso aho ===
+Issue: verse_content
+HTML: 2 verses - ['1', '2']
+PDF:  2 verses - ['1', '2']
+  [verse_1]
+    HTML: Tsy mahalala ny ampitso aho
+Fa ny androany ihany no ahy
+Jeso no hivelomako anio
+Sy mitari-dalana ahy.
+Tsy mba fantatro ny ho avy;
+Nefa kosa inoako iza
+    PDF:  Tsy mahalala ny ampitso aho
+Fa ny androany ihany no ahy
+Jeso no hivelomako anio
+Sy mitari-dalana ahy.
+Tsy mba fantatro ny ho avy;
+Nefa kosa inoako iza
+  [verse_2]
+    HTML: Raho-mainty mitatao,
+Entam-be mavesatra,
+Mitambaby ao an-tsorokao
+Amin-dray mandingana.
+Nefa ao Jesosy toky,
+Ampy ho anao ny Heriny
+Hampisava ny haizi
+    PDF:  Raho-mainty mitatao,
+Entam-be mavesatra,
+Mitambaby ao an-tsorokao
+Amin-dray mandingana.
+Nefa ao Jesosy toky,
+Ampy ho anao ny Heriny
+Hampisava ny haizi
+
+=== Song 410: Raha maizina ny alehanao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 411: He! matoky aho, Tompo ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  4 verses - ['2', '3', '4', '5']
+
+=== Song 414: Irinay Jeso tia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 418: Nananan-trosa aho e! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 419: Ny eo akaikinao ry Ray. ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 421: Eo Aminao ry Mpamonjy malala ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 423: Jesosy irery no famonjena ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_3]
+    HTML: Jesosy irery no andrandraina,
+Ampy ’zay, ampy ’zay!
+Izy no herin’ny fo sy saina,
+Ampy ’zay, ampy ’zay!
+Izy ihany no vatolampy
+‘Zay mafy tsy mihetsika,
+    PDF:  Jesosy irery no andrandraina,
+Ampy ’zay, ampy ’zay!
+Izy no herin’ny fo sy saina,
+Ampy ’zay, ampy ’zay!
+Izy ihany no vatolampy
+‘Zay mafy tsy mihetsika,
+
+=== Song 424: Ny fiainan’ny lanitra ambony ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1_line_0]
+    HTML: Ny fiainan’ny lanitra ambony
+    PDF:  Ny ﬁainan’ny lanitra ambony
+    Missing words: ['ﬁainan’ny']
+    Extra words: ['fiainan’ny']
+  [verse_1_line_1]
+    HTML: Dia andramako sahady etỳ;
+    PDF:  Dia andramako sahady ety;
+    Missing words: ['ety;']
+    Extra words: ['etỳ;']
+  [verse_1_line_2]
+    HTML: Fa fiainana kanto sy tony,
+    PDF:  Fa ﬁainana kanto sy tony,
+    Missing words: ['ﬁainana']
+    Extra words: ['fiainana']
+  [verse_1_line_3]
+    HTML: Hasanbarana fatratra erỳ.
+    PDF:  Hasanbarana fatratra ery.
+    Missing words: ['ery.']
+    Extra words: ['erỳ.']
+  [verse_2_line_4]
+    HTML: Ny fisaorana ataony any koa
+    PDF:  Ny ﬁsaorana ataony any koa
+    Missing words: ['ﬁsaorana']
+    Extra words: ['fisaorana']
+  [verse_3_line_5]
+    HTML: Hotahafiko eto indray,
+    PDF:  Hotahaﬁko eto indray,
+    Missing words: ['hotahaﬁko']
+    Extra words: ['hotahafiko']
+
+=== Song 425: Ny fahasoavanao ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Ny fahasoavanao no tononkirako
+Fa avy Aminao ny fahafahako.
+Tsy takatro, nahoana aho no maminao,
+Nohadinoinao koa ny otako?
+Nifantoka teo Kalvarỳ ny m
+  [verse_extra]
+    HTML: Ny fahasoavanao no tononkirako
+Fa avy Aminao ny fahafahako.
+Tsy takatro, nahoana aho no maminao,
+Nohadinoinao koa ny otako?
+Nifantoka teo Kalvarỳ ny m
+    PDF:  
+
+=== Song 426: Misy mameno ny fiainany ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 428: Na aizim-be ’zay mandratra fo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 429: He! Nahita Mpamonjy aho ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 432: Aingao ny hiranao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 433: Te hiaraka irery aminao ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Te hiaraka irery Aminao,
+Hiresaka Aminao Jeso,
+Ny soa mahafaly omenao
+Tsy tapaka amiko tokoa.
+Esorinao ny tahotro
+Sy ny mahory.
+Hamaivaninao koa
+Ny en
+    PDF:  Te hiaraka irery Aminao,
+Hiresaka Aminao Jeso,
+Ny soa mahafaly omenao
+Tsy tapaka amiko tokoa.
+Esorinao ny tahotro
+Sy ny mahory.
+Hamaivaninao koa
+Ny en
+  [verse_2]
+    HTML: Tiako hiaraka irery aminy
+Izy no mba hareko ety
+Faly aho mandre ny Teniny:
+«  ’Zaho tsy hamela anao ’rery
+’Zaho tsy handao
+Na hahafoy anao akory
+Homba
+    PDF:  Tiako hiaraka irery aminy
+Izy no mba hareko ety
+Faly aho mandre ny Teniny:
+«  ’Zaho tsy hamela anao ’rery
+’Zaho tsy handao
+Na hahafoy anao akory
+Homba
+  [verse_3]
+    HTML: Jesosy irery no hany soa,
+Hery Izy tsy mitandro
+Lilia an-dohasaha, Jeso,
+Kintana fitarikandro,
+Fialofana, tilikambo
+Sy vatolampy,
+Loharanom-pitahiana
+
+    PDF:  Jesosy irery no hany soa,
+Hery Izy tsy mitandro
+Lilia an-dohasaha, Jeso,
+Kintana fitarikandro,
+Fialofana, tilikambo
+Sy vatolampy,
+Loharanom-pitahiana
+
+
+=== Song 436: Mandreraka izany dia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  2 verses - ['2', '3']
+
+=== Song 437: Mazana misy feo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 440: Ario ny tahotrao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 444: Ny tsintsina aza ahiany ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 445: Mahatoky Ianao, ry Tompo tia ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 446: Raha semban-drahona ny andro ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 448: Iza Tompo haharombaka ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 449: Tompo o! an-tananao tokoa ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_3_line_0]
+    HTML: Mamy re ny teny fikasana
+    PDF:  Mamy re ny teny ﬁkasana
+    Missing words: ['ﬁkasana']
+    Extra words: ['fikasana']
+  [verse_3_line_1]
+    HTML: Ivelomako an-tany etỳ,
+    PDF:  Ivelomako an-tany ety,
+    Missing words: ['ety,']
+    Extra words: ['etỳ,']
+  [verse_3_line_3]
+    HTML: ’Zay miandry ao an-koatra arỳ.
+    PDF:  ’Zay miandry ao an-koatra ary.
+    Missing words: ['ary.']
+    Extra words: ['arỳ.']
+
+=== Song 452: Ry Tompo o, atolotro anao ===
+Issue: verse_count
+HTML: 7 verses - ['1', '2', '3', '4', '5', '6', '7']
+PDF:  6 verses - ['2', '3', '4', '5', '6', '7']
+
+=== Song 453: Nitady ’lay mpiandry ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 454: Jesosy no manjaka ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 455: Azoko anio ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 456: Reko  ’zao ===
+Issue: verse_count
+HTML: 7 verses - ['1', '2', '3', '4', '5', '6', '7']
+PDF:  6 verses - ['1', '2', '4', '5', '6', '7']
+
+=== Song 457: Hanaraka  Anao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 458: Ry Jesosy Masina ô ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 460: An-tananao ry Ray Malala ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 463: Ataovy ao am-bavako ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 464: Diso ny lalan’ny fiainana ===
+Issue: verse_content
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '2', '3', '4']
+  [verse_4]
+    HTML: Nampanantena aho
+Fa hanompo Anao
+Na aiza anendrenao,
+Ho any aho.
+Izay hataoko
+Ho voninahitrao
+Hanara-dia Anao
+Ry Mpampianatro
+    PDF:  Nampanantena aho
+Fa hanompo Anao
+Na aiza anendrenao,
+Ho any aho.Izay hataoko
+Ho voninahitrao Hanara-dia Anao
+Ry Mpampianatro
+
+=== Song 465: Toa manontany tena aho ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Toa manontany tena aho, Jeso,;
+’Zay soa mba vitako ho Anao
+Izay nanetry tena ka voaeso,
+Maty, nanavotra ahy toy izao.Moa mba mikaroka ny very ve aho,
+
+    PDF:  Toa manontany tena aho, Jeso,;
+’Zay soa mba vitako ho Anao
+Izay nanetry tena ka voaeso,
+Maty, nanavotra ahy toy izao.Moa mba
+mikaroka ny very ve aho,
+
+  [verse_2]
+    HTML: Be ny fotoana verivery foana
+Fa vitsy ny nomena Anao
+Ny fitiavako Anao tsy lalim-paka
+Fa voasinton’izao tontolo izao.Moa mba mikaroka ny very ve aho,
+
+    PDF:  Be ny fotoana verivery foana
+Fa vitsy ny nomena Anao
+Ny fitiavako Anao tsy lalim-paka
+Fa voasinton’izao tontolo izao.Moa mba
+mikaroka ny very ve aho,
+
+
+=== Song 469: Ry Jeso Kristy Tompo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 470: Iriko e, ry Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 471: Mba omeo ahy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 472: He manolon-tena aho ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 473: Raha azoko izao tany izao ===
+Issue: verse_content
+HTML: 2 verses - ['1', '2']
+PDF:  2 verses - ['1', '2']
+  [verse_1]
+    HTML: Raha azoko izao tany izao,
+Nefa tsy azoko Jeso Mpamonjy,
+Dia ho aiza re no hisy ahy
+Raha ho rava izao tontolo izao?
+Raha azoko izao tany izao, Nefa ts
+    PDF:  Raha azoko izao tany izao,
+Nefa tsy azoko Jeso Mpamonjy,
+Dia ho aiza re no hisy ahy
+Raha ho rava izao tontolo izao?
+Raha azoko izao tany izao, Nefa ts
+
+=== Song 476: Ao Ziona ao ambony ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 477: Raha ny fiainana ety ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 478: ’Njany misy antso mafy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 480: O! ry namako avia ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 482: Mpivahiny nanjenjeny aho ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 486: Aiza ilay Edena fahizay? ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 487: Raha sendra fahakiviana ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 488: Hangina aho, ry Tompo ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Hangina aho, ry Tompo, hangina tokoa
+Fa mamolivoly ny fo,
+Tsy haiko lazaina, tsy tratry ny saiko
+Izay niaretanao ho fanavotana ahy.
+Ho takatry ny saik
+  [verse_extra]
+    HTML: Hangina aho, ry Tompo, hangina tokoa
+Fa mamolivoly ny fo,
+Tsy haiko lazaina, tsy tratry ny saiko
+Izay niaretanao ho fanavotana ahy.
+Ho takatry ny saik
+    PDF:  
+
+=== Song 489: Ry miaramila mandrosoa izao ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 490: Tsy haiko intsony, Jeso tia ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 491: Hiady, Jeso ô ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 492: Na dia mafy ny ady ataoko, ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 493: Aza mba mandalo ahy ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 496: O, aza matahotra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 497: Ampidino eto anio ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 498: Raha mandia lalan-tsarotra ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 499: Moa mafy izany alahelo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 500: Jeso sakaizanay ===
+Issue: verse_content
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+  [verse_2]
+    HTML: Jeso sakaizanay,
+Sakaiza be fitia!
+Tariho izahay hanao
+Ny zava-tianao;
+Jeso Sakaizanay, (Jeso),
+Sakaiza rahateo (Jeso),
+Indreto izahay, vonjeo,
+Fa be 
+    PDF:  Jeso sakaizanay,
+Sakaiza be fitia!
+Tariho izahay hanao
+Ny zava-tianao;
+  [verse_3]
+    HTML: Jeso sakaizanay,
+Sakaiza tsy mandao!
+Na dia mpanota aza re
+Izahay mpanomponao:
+Jeso Sakaizanay, (Jeso),
+Sakaiza rahateo (Jeso),
+Indreto izahay, vonjeo
+    PDF:  Jeso sakaizanay,
+Sakaiza tsy mandao!
+Na dia mpanota aza re
+Izahay mpanomponao:
+  [verse_4]
+    HTML: Jeso sakaizanay,
+Sakaiza tsy mamoy,
+Na ory na finaritra
+Izahay ankehitrio.
+Jeso Sakaizanay, (Jeso),
+Sakaiza rahateo (Jeso),
+Indreto izahay, vonjeo,
+Fa
+    PDF:  Jeso sakaizanay,
+Sakaiza tsy mamoy,
+Na ory na finaritra
+Izahay ankehitrio.
+  [verse_5]
+    HTML: Jeso sakaizanay,
+Omaly sy anio,
+Ka mbola ho sakaizanay
+Mandrakizay doria.
+Jeso Sakaizanay, (Jeso),
+Sakaiza rahateo (Jeso),
+Indreto izahay, vonjeo,
+Fa 
+    PDF:  Jeso sakaizanay,
+Omaly sy anio,
+Ka mbola ho sakaizanay
+Mandrakizay doria.
+
+=== Song 503: Ny eo akaikinao ry Ray,akaikin’ny fonao ===
+Issue: verse_count
+HTML: 8 verses - ['1', '2', '3', '4', '5', '6', '7', '8']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 505: Ny Tompo anie no hanome ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Ny Tompo anie no hanome  ny ala-olana ilaiko.
+Izy nampanantena ahy  ny fanampiany.
+Izy anie hiaraka amiko raha maizina ny lalako
+Aza matahotra hoy Izy
+  [verse_extra]
+    HTML: Ny Tompo anie no hanome  ny ala-olana ilaiko.
+Izy nampanantena ahy  ny fanampiany.
+Izy anie hiaraka amiko raha maizina ny lalako
+Aza matahotra hoy Izy
+    PDF:  
+
+=== Song 506: Jesosy Tompo  Ianao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 509: Mihainoa Mpamonjy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 512: Mandako Jehovah ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 513: Iza no ampy hampahery ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 514: Maniry izahay ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 515: He tazako Jerosalema ===
+Issue: verse_content
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '2', '3', '4']
+  [verse_4]
+    HTML: Jesosy ô, tantano aho
+Mba ho tody soa Aminao
+Hamasino sy hatanjaho
+Handresy ny ota toa Anao,
+Hiara-monina Aminao
+    PDF:  Jesosy ô, tantano aho
+Mba ho tody soa Aminao
+Hamasino sy hatanjaho
+Handresy ny ota toa Anao,
+Hiara-monina Aminao
+A . J a m ina
+
+=== Song 516: Misy antenaiko intsony ve ety ? ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 517: Mizotra izao ny dianay ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Mizotra izao ny dianay
+Hankany Aminao,
+Jerosalema tianay,
+Tanàna masina.
+Tsy miatoato izahay;
+Fa miezaka hankaminao.
+Ilaozanay izao ny trano lay
+Nonen
+    PDF:  Mizotra izao ny dianay
+Hankany Aminao,
+Jerosalema tianay,
+Tanàna masina.
+Tsy miatoato izahay;
+Fa miezaka hankaminao.
+Ilaozanay izao ny trano lay
+Nonen
+  [verse_2]
+    HTML: Tsy andrinay hahita Anao,
+Jerosalema soa.
+Ny hatsaran’ny endrikao,
+Manintona tokoa.
+Ny etỳ efa ho rava izao,
+Tsy ho ela dia hifarana,
+Ny fonay kosa ef
+    PDF:  Tsy andrinay hahita Anao,
+Jerosalema soa.
+Ny hatsaran’ny endrikao,
+Manintona tokoa.
+Ny etỳ efa ho rava izao,
+Tsy ho ela dia hifarana,
+Ny fonay kosa ef
+  [verse_3]
+    HTML: Tongava haingana, ry andro
+Mahasambatra.
+Hanaovanay hira hoe:
+Haleloia, Amen.
+Eny, tsy ho ela intsony re
+Dia hiakatra an-danitra,
+Hiara-monina amin’i 
+    PDF:  Tongava haingana, ry andro
+Mahasambatra.
+Hanaovanay hira hoe:
+Haleloia, Amen.
+Eny, tsy ho ela intsony re
+Dia hiakatra an-danitra,
+Hiara-monina amin’i 
+
+=== Song 519: Rahoviana re ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 520: Ary an-koatra ary ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 522: Mba mivavaha ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 523: Ary ankoatra ary ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 525: Tsy misy intsony ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 526: Tsy haiko re rahoviana ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 527: Sady manantena no mampahafaingana ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  MAMPAHAFAINGANA Clé Eb
+Sady manantena no mampahafaingana
+Ny fiavian’ny Tompontsika (ho avy)
+Koa mitsangàna mba hamonjy namana
+Fa ho avy ’Lay andrasant
+  [verse_extra]
+    HTML: Sady manantena no mampahafaingana
+Ny fiavian’ny Tompontsika (ho avy)
+Koa mitsangàna mba hamonjy namana
+Fa ho avy ’Lay andrasantsika
+:,: Mifohaza, mias
+    PDF:  
+
+=== Song 529: Noho ny fahasoavanao ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 530: Tsara lova, ry Jeso o ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 531: Aza mangina ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Aza mangina ô! Mifohaza
+Efa akaiky re Jeso
+Miraisa hina hifampilaza
+Fa efa akaiky re Jeso
+Aza variana na be ahiana
+Efa akaiky re Jeso
+Aza sondriana, m
+  [verse_extra]
+    HTML: Aza mangina ô! Mifohaza
+Efa akaiky re Jeso
+Miraisa hina hifampilaza
+Fa efa akaiky re Jeso
+Aza variana na be ahiana
+Efa akaiky re Jeso
+Aza sondriana, m
+    PDF:  
+
+=== Song 533: Ao am-ponay ’zao ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 534: Ny alina ho lasa ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 536: Mazava sy mamiratra ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 538: Henoinao ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Henoinao anie (Mba henonao anie)
+Ny feon’ny Tompo mandona ao am-ponao izao
+Mitady anao ka miangavy indrindra, vohay izao
+Ny Tomponao.
+Na ela aza i
+  [verse_extra]
+    HTML: :,: Henoinao anie (Mba henonao anie)
+Ny feon’ny Tompo mandona ao am-ponao izao
+Mitady anao ka miangavy indrindra, vohay izao
+Ny Tomponao.
+Na ela aza i
+    PDF:  
+
+=== Song 539: He! miposaka ao am-po ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 540: Hidera an’Andriamanitra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 551: Taona  maro  efa  lasa ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 552: Ray ô isaoranay Anao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 555: Nohamarinina aho ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Nohamarinina aho, afaka aho Jeso
+Na dia meloka aho dia nodiovinao (dia nodiovinao)
+Sahy koa milaza fa voavonjy re
+Nosaonanao (Nosaonanao) ny fahotako 
+    PDF:  Nohamarinina aho, afaka aho Jeso
+Na dia meloka aho dia nodiovinao (dia
+nodiovinao)
+Sahy koa milaza fa voavonjy re
+Nosaonanao (Nosaonanao) ny fahotako 
+
+=== Song 558: Entinay aminao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 559: Misaotra Anao izahay ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 560: Mihainoa Jeso ô ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 561: Jesosy ô! Mpanavotra ahy ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 562: Izay mahakolokolo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 563: Tsy hangina ny fo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 565: Misy feo mirindraia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 569: ’Zay iriko Tompo tsara ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 572: Ry Jeso zoky be fitia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 574: Venteso ’zao rankizy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 578: Tsarovy e! rankizy ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  2 verses - ['1', '2']
+
+=== Song 579: Ry sakaizan’ny tanora ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 582: He falifaly izahay ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  He! Falifaly izahay
+Tratr’izao Sabata izao
+Hirahira maminay
+No asandratray ho Anao
+He! Falifaly izahay
+Tratr’izao Sabata izao.
+  [verse_extra]
+    HTML: He! Falifaly izahay
+Tratr’izao Sabata izao
+Hirahira maminay
+No asandratray ho Anao
+He! Falifaly izahay
+Tratr’izao Sabata izao.
+    PDF:  
+
+=== Song 583: ’Zaho hitady ny Mpamonjy ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 584: Tomoera aminay ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 585: Mafy toa onja ’ zay manafotra ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Mafy toa onja
+’Zay manafotra
+Ny fitian’i Jeso
+’Lay Mpanavotra.
+Na mafy re, ny onja be,
+Jeso mamily ny samboko
+Na mafy re, ny onja be,
+Izy no tokiko (t
+  [verse_extra]
+    HTML: Mafy toa onja
+’Zay manafotra
+Ny fitian’i Jeso
+’Lay Mpanavotra.
+Na mafy re, ny onja be,
+Jeso mamily ny samboko
+Na mafy re, ny onja be,
+Izy no tokiko (t
+    PDF:  
+
+=== Song 587: Falifaly avokoa ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 589: Mifalia re rankizy ô ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 590: Fahatokiana ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 591: Nanaiky Jeso fa ho mpiandry ahy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 592: Tiako Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 593: Jesosy be fitia ===
+Issue: verse_count
+HTML: 7 verses - ['1', '2', '3', '4', '5', '6', 'extra']
+PDF:  5 verses - ['2', '3', '4', '5', '6']
+
+=== Song 595: Ry zanako mania ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 596: Indro ny Tompo ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 597: Tanora o, avia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 600: ‘Zao no andron’ny hatanorana ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 601: Miasa re izao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 602: Inona no tianao, Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 603: Ry tanora misehoa ===
+Issue: word_diff
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  4 verses - ['1', '2', '3', '4']
+  [verse_4_line_0]
+    HTML: Hoy Jesosy raha tetỳ:
+    PDF:  Hoy Jesosy raha tet?:
+    Missing words: ['tet?:']
+    Extra words: ['tetỳ:']
+
+=== Song 605: Ny hatanorana dia toa voninkazo ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 606: Mandrosoa izao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 607: Ry tanora voninkazo ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_2_line_3]
+    HTML: Tsy ny eto fa ny arỳ.
+    PDF:  Tsy ny eto fa ny ar?.
+    Missing words: ['ar?.']
+    Extra words: ['arỳ.']
+
+=== Song 608: Fahiny fony aho mbola zaza ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Fahiny fony aho mbola zaza
+Hariva vao mitsaha-milalao
+Nanaraka ny lala-mahazatra
+Tsy ela dia ny antso no injao:«Modia fa hisakafo izao
+Hariva ny andro
+    PDF:  Fahiny fony aho mbola zaza
+Hariva vao mitsaha-milalao
+Nanaraka ny lala-mahazatra
+Tsy ela dia ny antso no injao:«Modia fa hisakafo
+izao
+Hariva ny andro
+
+=== Song 609: O! ry mpino ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 610: Ry tanora voninkazo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 611: Ny andronao tanora ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 612: ’Lay tanana masina ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 614: Eny ho satriko ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 615: O! ry tanora ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 616: Manindry ato am-poko ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 617: Amboary aho Jeso ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  2 verses - ['2', '3']
+
+=== Song 618: Iriko Jeso ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 619: Tsaroako  Ray o! ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 620: Fihino mafy aho Jeso o! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  2 verses - ['2', '3']
+
+=== Song 621: Tano aho ry Tompo Andriamanitra  ô! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 622: Hifidy aho ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  2 verses - ['2', '3']
+
+=== Song 623: Eo an-tananao ry Tompo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 624: Fankatoavana ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Fankatoavana, fankatoavana,
+Fankatoavana an’Andriamanitra
+No filamatra arahiko,
+Arahintsika rehetra
+Fankatoavana.
+Fankatoavana an’Andriamanitra
+Ma
+  [verse_extra]
+    HTML: :,: Fankatoavana, fankatoavana,
+Fankatoavana an’Andriamanitra
+No filamatra arahiko,
+Arahintsika rehetra
+Fankatoavana.
+Fankatoavana an’Andriamanitra
+Ma
+    PDF:  
+
+=== Song 626: Fony aho mbola kely ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 627: Henoy ange ny hira ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 628: Andro maro efa lasa ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 629: ’Zay mandresy ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: ’Zay mandresy, ’zay mandresy,  hihira ny
+hiran’i Mosesy
+Sambatra (He sambatra); tretrika  (He tretrika)
+Ka tsy hitomany intsony.
+Fanjakana tsy ho 
+  [verse_extra]
+    HTML: :,: ’Zay mandresy, ’zay mandresy,  hihira ny hiran’i Mosesy
+Sambatra (He sambatra); tretrika  (He tretrika)
+Ka tsy hitomany intsony.
+Fanjakana tsy ho 
+    PDF:  
+
+=== Song 630: Fa fitiavako Ianao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 631: Raha  mafy ny ady atao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 634: O! Atsangano ’zao ny fanevanao ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_2]
+    HTML: Izao tontolo izao no halehanao
+Misikìna re ny herim-po
+Ady sarotra manoloana anao;
+Aoka ho vonona re ianao
+Ambarao (tanora ô!), sy lazao (ry tanora ô!
+    PDF:  Izao tontolo izao no halehanao
+Misikìna re ny herim-po
+Ady sarotra manoloana anao;
+Aoka ho vonona re ianao
+Ambarao (tanora ô!), sy lazao (ry tanora ô!
+  [verse_3]
+    HTML: Tsy ho ela izao dia ho avy an-danitra
+Ilay Tompon’ny asanao
+Milofosa re, ô! Miezaha
+Sy miezaha fatratra
+O! torio (tanora ô!),
+(torio re anio)
+Ilay Jes
+    PDF:  Tsy ho ela izao dia ho avy an-danitra
+Ilay Tompon’ny asanao
+Milofosa re, ô! Miezaha
+Sy miezaha fatratra
+O! torio (tanora ô!),
+(torio re anio)
+
+=== Song 638: Ry tanora mijoroa ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Ry tanora mijoroa
+Ho vavolombelona
+Kristy no mibaiko anao
+Mijoroa, mijoroa
+Asandrato avo be
+Ny fanilo ho tazana e!
+Mijoroa, mijoroa ianao.
+Kristy eo a
+  [verse_extra]
+    HTML: Ry tanora mijoroa
+Ho vavolombelona
+Kristy no mibaiko anao
+Mijoroa, mijoroa
+Asandrato avo be
+Ny fanilo ho tazana e!
+Mijoroa, mijoroa ianao.
+Kristy eo a
+    PDF:  
+
+=== Song 639: Ry mpitory an-tsitrapo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 640: Fantatrao ve fa ny andro ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 641: Atrehonao ry Tompo ô! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 642: Ry mpitilin’i Jesosy ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 643: Tantara mamiko ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 645: Miaingà izao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 647: Any lavitra any ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  2 verses - ['2', '3']
+
+=== Song 648: Jeso no miantso ka ekeo ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 650: Tompo ampio aho hitaona ===
+Issue: verse_count
+HTML: 6 verses - ['1', '2', '3', '4', '5', 'extra']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+
+=== Song 651: Inona kosa no omeko? ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_2_line_0]
+    HTML: Hozakaiko ny vokovoko
+    PDF:  Inona kosa no homeko
+    Missing words: ['no', 'kosa', 'inona', 'homeko']
+    Extra words: ['vokovoko', 'hozakaiko', 'ny']
+  [verse_2_line_1]
+    HTML: Izay efa nihomboanao
+    PDF:  An’i Jesosy Mpamonjiko.
+    Missing words: ['jesosy', 'an’i', 'mpamonjiko.']
+    Extra words: ['izay', 'nihomboanao', 'efa']
+  [verse_2_line_2]
+    HTML: Mba hanaisotra ’reo otako
+    PDF:  Izy izay nanavotra ny aiko
+    Missing words: ['izay', 'aiko', 'ny', 'nanavotra', 'izy']
+    Extra words: ['’reo', 'hanaisotra', 'mba', 'otako']
+  [verse_2_line_3]
+    HTML: ’Zay nataoko taminao.
+    PDF:  Aron’ny fanahiko.
+    Missing words: ['aron’ny', 'fanahiko.']
+    Extra words: ['taminao.', 'nataoko', '’zay']
+  [verse_2_line_4]
+    HTML: Nefa anie izaho dia malemy,
+    PDF:  Moa mendrika Azy ve ny foko
+    Missing words: ['ve', 'foko', 'moa', 'ny', 'mendrika']
+    Extra words: ['izaho', 'dia', 'malemy,', 'nefa', 'anie']
+  [verse_2_line_5]
+    HTML: Ka moa hahazaka izany memy?
+    PDF:  ’Zay vesaran-tsento sy toloko
+    Missing words: ['sy', 'toloko', 'vesaran-tsento', '’zay']
+    Extra words: ['ka', 'moa', 'hahazaka', 'memy?', 'izany']
+  [verse_2_line_6]
+    HTML: Feno ahiahy sy tahotra,
+    PDF:  Ka mazàna velon-taraina,
+    Missing words: ['mazàna', 'ka', 'velon-taraina,']
+    Extra words: ['feno', 'tahotra,', 'sy', 'ahiahy']
+  [verse_2_line_7]
+    HTML: Raha misy sarotra.
+    PDF:  Noho ny adin-tsaina.
+    Missing words: ['noho', 'adin-tsaina.', 'ny']
+    Extra words: ['sarotra.', 'raha', 'misy']
+  [verse_3_line_0]
+    HTML: Teo an-tampon’ilay Kalvarỳ
+    PDF:  Teo an-tampon’ilay Kalvar?
+    Missing words: ['kalvar?']
+    Extra words: ['kalvarỳ']
+
+=== Song 653: Alina ny andro ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 654: Maty Jesosy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 655: Ry Mpanjakam-boninahitra ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 656: Na dia maizina ny dia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 657: Fiadanana  feno ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 658: Raha manjenjena foana ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Raha manjenjena foana
+Mila toky izany fo,
+Fa ny ora manoloana,
+No manjombona tokoa:
+
+Indro! Jeso (Indro! Jeso)
+Mitomany, (Mitomany)
+Fa ny fony tia ana
+    PDF:  Raha manjenjena foana
+Mila toky izany fo,
+Fa ny ora manoloana,
+No manjombona tokoa:
+Indro! Jeso (Indro! Jeso)
+Mitomany, (Mitomany)
+Fa ny fony tia anao
+
+=== Song 659: Tiako ho re lalandava ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_2_line_7]
+    HTML: Ahy hatretỳ sy doria!
+    PDF:  Ahy hatret? sy doria!
+    Missing words: ['hatret?']
+    Extra words: ['hatretỳ']
+
+=== Song 659: Tiako ho re lalandava ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_3]
+    HTML: Tiako hiara-mitepo
+Amin’ny Anao re ny fo
+Dia hisava ny sento
+Ary ho lao ny manjo.
+Eny, hiara-mamindra
+Aminao, tsy hania,
+Ary rehefa hifindra
+Ho eo Ami
+    PDF:  Tiako hiara-mitepo
+Amin’ny Anao re ny fo
+Dia hisava ny sento
+Ary ho lao ny manjo.
+Eny, hiara-mamindra
+Aminao, tsy hania,
+Ary rehefa hifindra
+Ho eo Ami
+
+=== Song 660: Toy ny rano ===
+Issue: word_diff
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+  [verse_1_line_1]
+    HTML: Ny fiainako izao
+    PDF:  Ny ﬁainako izao
+    Missing words: ['ﬁainako']
+    Extra words: ['fiainako']
+
+=== Song 660: Toy ny rano ===
+Issue: verse_content
+HTML: 5 verses - ['1', '2', '3', '4', '5']
+PDF:  5 verses - ['1', '2', '3', '4', '5']
+  [verse_2]
+    HTML: Raha mihantona ny andro
+Tsy manahy aho izao,
+Na migaina ny hainandro,
+Ampy ny hasoavanao.
+Sambatra aho re
+(Sambatra aho, re)
+Tompo tia ô!
+(Tompo tia ô
+    PDF:  Raha mihantona ny andro
+Tsy manahy aho izao,
+Na migaina ny hainandro,
+Ampy ny hasoavanao.
+  [verse_3]
+    HTML: Eny, na dia karakaina
+Ny efitra vakiko izao,
+Misy loharanon’aina
+Dia ny hasoavanao.
+Sambatra aho re
+(Sambatra aho, re)
+Tompo tia ô!
+(Tompo tia ô!)
+Fit
+    PDF:  Eny, na dia karakaina
+Ny eﬁtra vakiko izao,
+Misy loharanon’aina
+Dia ny hasoavanao.
+  [verse_4]
+    HTML: Ny iriko dia ho ony
+Onim-pitiavana
+Hampahery, hampitony
+’Reo mangetaheta izao.
+Sambatra aho re
+(Sambatra aho, re)
+Tompo tia ô!
+(Tompo tia ô!)
+Fitahian
+    PDF:  Ny iriko dia ho ony
+Onim-pitiavana
+Hampahery, hampitony
+’Reo mangetaheta izao.
+  [verse_5]
+    HTML: Ary ny ho fara-diako,
+Raha ho tapitra ny etỳ
+Dia ’Lay rano niaviako:
+Ianao, Mpamonjy tia.
+Sambatra aho re
+(Sambatra aho, re)
+Tompo tia ô!
+(Tompo tia ô
+    PDF:  Ary ny ho fara-diako,
+Raha ho tapitra ny ety
+Dia ’Lay rano niaviako:
+Ianao, Mpamonjy tia.
+
+=== Song 662: Fotoam-bolamena tokoa ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 663: Anarana ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 664: Tantanonao ny dianay ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 666: Raiso Tompo ô! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 667: Ento moramora ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 668: Mpamonjiko feno hanitra ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 669: Ray malala asehoy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 670: Eo an-tsandrinao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 671: Andraso Jeso ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 673: Eo anivon’ahiahy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 676: Meteza Ray ô! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 677: He tsara ny fonenana eto ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: He! Tsara ny fonenana eto  (Kanefa)
+Ny eo anilanao no tiako  (Raha lavitra)
+Lavitra Anao ny fo misento  (Sento, Sento)
+Ka ny eo Anilanao no tiako 
+  [verse_extra]
+    HTML: :,: He! Tsara ny fonenana eto  (Kanefa)
+Ny eo anilanao no tiako  (Raha lavitra)
+Lavitra Anao ny fo misento  (Sento, Sento)
+Ka ny eo Anilanao no tiako 
+    PDF:  
+
+=== Song 679: Ray ô, tsy mba takatry ny saina ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 680: Miverena Jeso ô! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 681: Miderà an’i Jehovah ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Miderà an’i Jehovah,  miantsoa ny Anarany
+Ataovy fantatra any amin’ny firenena ny asany
+Mihirà ho Azy, mankalazà Azy
+Saintsaino ny fahagagana rehe
+  [verse_extra]
+    HTML: :,: Miderà an’i Jehovah,  miantsoa ny Anarany
+Ataovy fantatra any amin’ny firenena ny asany
+Mihirà ho Azy, mankalazà Azy
+Saintsaino ny fahagagana rehe
+    PDF:  
+
+=== Song 683: Jeso zoky ’zay modely ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 684: Hitady Anao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 685: Ianao tanora no fanilo ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 686: Vonona aho ry Mpamonjy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 687: Vonona aho ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 688: Jesosy mpiandry tsara ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 689: Indreto fa vonon-kanompo ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 690: Tsy mba renao ve? ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 691: ’Zao no hirantsika ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 692: Ry Tompo ô, tariho ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 693: Jesosy irery ihany ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  2 verses - ['2', '3']
+
+=== Song 694: Jesosy ô! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 695: Ry Madagasikara soa ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 697: Mihobia ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Mihobia, mihobia
+O, ry mponina eto an-tany
+(Eny) mihobia
+Manompoa, manompoa
+An’i Jehovah am-pifaliam-be.
+Mankanesa eo (eny ho eo)
+Mihobia (ka hobi
+  [verse_extra]
+    HTML: :,: Mihobia, mihobia
+O, ry mponina eto an-tany
+(Eny) mihobia
+Manompoa, manompoa
+An’i Jehovah am-pifaliam-be.
+Mankanesa eo (eny ho eo)
+Mihobia (ka hobi
+    PDF:  
+
+=== Song 699: Hanandratra Anao. ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Hanandratra  Anao Tompo ô!
+Hanandratra  Anao Tompo ô!
+Eo amin’izao rehetra izao
+Hihoby ny Anaranao,
+Hihira ny fitiavanao
+Amin’ny zava-boary.
+Feo1 
+  [verse_extra]
+    HTML: :,: Hanandratra  Anao Tompo ô!
+Hanandratra  Anao Tompo ô!
+Eo amin’izao rehetra izao
+Hihoby ny Anaranao,
+Hihira ny fitiavanao
+Amin’ny zava-boary.
+Feo1 
+    PDF:  
+
+=== Song 700: Tsaroako eto izao ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Tsaroako eto izao ny otako, be (dia be) tokoa,
+Ka valaka sy trotraka, ity nofo mahantra ity.
+Lalina, maizina, O! ry tany ô (ry tany ô)
+Nefa injay tsap
+  [verse_extra]
+    HTML: Tsaroako eto izao ny otako, be (dia be) tokoa,
+Ka valaka sy trotraka, ity nofo mahantra ity.
+Lalina, maizina, O! ry tany ô (ry tany ô)
+Nefa injay tsap
+    PDF:  
+
+=== Song 701: Vohay ny fo ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Vohay ny fo, vohay ny fo,
+Vohay ka mba ampandrosoy Jeso
+Raha lavinao (lavinao), tsy raisinao (tsy raisinao).
+Ho lasa Izy ka ho neninao
+Raiso Jeso, rai
+  [verse_extra]
+    HTML: Vohay ny fo, vohay ny fo,
+Vohay ka mba ampandrosoy Jeso
+Raha lavinao (lavinao), tsy raisinao (tsy raisinao).
+Ho lasa Izy ka ho neninao
+Raiso Jeso, rai
+    PDF:  
+
+=== Song 702: Henoy, henoy ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Henoy, henoy (’Njay lakolosy)Feon-dakolosy re
+(Manakoako mafy)
+Ndi, Ndao,   ’Njay lakolosy, manakoako mafy
+Henoy, o! henoy, o! henoy, ndao
+Ry foko mba
+  [verse_extra]
+    HTML: Henoy, henoy (’Njay lakolosy)Feon-dakolosy re (Manakoako mafy)
+Ndi, Ndao,   ’Njay lakolosy, manakoako mafy
+Henoy, o! henoy, o! henoy, ndao
+Ry foko mba
+    PDF:  
+
+=== Song 703: Onja vaventy ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 704: Jehovah no fahazavako ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Jehovah no fahazavako
+Sady toky, Mpamonjiko
+Tsy misy ’zay tokony hatahorako
+Raha miankina Aminao.
+Ka na dia mifofofofo
+Ny tafio-drivotra
+Ka feno tebit
+  [verse_extra]
+    HTML: Jehovah no fahazavako
+Sady toky, Mpamonjiko
+Tsy misy ’zay tokony hatahorako
+Raha miankina Aminao.
+Ka na dia mifofofofo
+Ny tafio-drivotra
+Ka feno tebit
+    PDF:  
+
+=== Song 705: Ho avy indray ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Ho avy indray ny Tompo, Haleloia. :,:
+:,: Ho avy indray. (Indro avy Izy ka tsenao). :,:
+Avy amin-kery eny an-danitra avo, handray
+antsika olony.
+M
+  [verse_extra]
+    HTML: :,: Ho avy indray ny Tompo, Haleloia. :,:
+:,: Ho avy indray. (Indro avy Izy ka tsenao). :,:
+Avy amin-kery eny an-danitra avo, handray antsika olony.
+M
+    PDF:  
+
+=== Song 706: Moa ve mba tazanao? ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Moa ve mba tazanao?    Ilay Jerosalema
+Moa ve mba tazanao?   ’Lay tany vaovao
+Hotronin’ireo anjely maro be!  Mampientana
+izany fo
+Ny mahita anaory Jer
+  [verse_extra]
+    HTML: Moa ve mba tazanao?    Ilay Jerosalema
+Moa ve mba tazanao?   ’Lay tany vaovao
+Hotronin’ireo anjely maro be!  Mampientana izany fo
+Ny mahita anaory Jer
+    PDF:  
+
+=== Song 708: Mitsangàna, mihazavà ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  (Mitsangàna, mihazavà).     Mitsangàna,
+mihazavà
+(Fa tonga ny fahazavanao)
+Mitsangàna, mitsangàna, mihazavà
+:,: Fa tonga ny fahazavanao :,:
+Mitsangàna
+  [verse_extra]
+    HTML: (Mitsangàna, mihazavà).     Mitsangàna, mihazavà
+(Fa tonga ny fahazavanao)
+Mitsangàna, mitsangàna, mihazavà
+:,: Fa tonga ny fahazavanao :,:
+Mitsangàna
+    PDF:  
+
+=== Song 709: Mba miverena ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 711: Jehovah Tomponay o! ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Jehovah Tomponay ô! Ray mandrakizay,
+Andriamanitra Mpanjakanay, manerana izao
+rehetra izao ny herinao,
+Tsy tratry ny fisainanay ny voninahitra ao an-
+
+  [verse_extra]
+    HTML: Jehovah Tomponay ô! Ray mandrakizay,
+Andriamanitra Mpanjakanay, manerana izao rehetra izao ny herinao,
+Tsy tratry ny fisainanay ny voninahitra ao an-d
+    PDF:  
+
+=== Song 712: Dera, dera, laza ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Dera, dera, laza,
+Laza voninahitra ho Anao ry Tompo Avo
+indrindra,
+Sady masina (Tomponay, Tomponay, Tomponay)
+:,: Andriamanitray, :,:
+(Tompo sy Andria
+  [verse_extra]
+    HTML: Dera, dera, laza,
+Laza voninahitra ho Anao ry Tompo Avo indrindra,
+Sady masina (Tomponay, Tomponay, Tomponay)
+:,: Andriamanitray, :,:
+(Tompo sy Andria
+    PDF:  
+
+=== Song 713: Hody aho, Raiko ô. ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 714: Mamela heloka Jeso tia ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 715: Fantatro ===
+Issue: verse_content
+HTML: 2 verses - ['1', '2']
+PDF:  2 verses - ['1', '2']
+  [verse_1]
+    HTML: Fantatro fa nandona hatry ny ela
+Tato am-poko Ianao, Jesosy ô,
+Ary reko hatry ny ela koa, ny feonao’zay mitalaho
+Te hanolotra ho ahy ny famonjena izay
+    PDF:  Fantatro fa nandona hatry ny ela
+Tato am-poko Ianao, Jesosy ô,
+Ary reko hatry ny ela koa, ny feonao’zay
+mitalaho
+Te hanolotra ho ahy ny famonjena izay
+  [verse_2]
+    HTML: Mino aho fa ho sorona ho ahy
+No nijalianao, Jesosy ô,
+Ary inoako koa fa famonjena ho ahy ny ra nalatsakao
+Ka ny hetahetam-po; ’zay velona ao anatiko a
+    PDF:  Mino aho fa ho sorona ho ahy
+No nijalianao, Jesosy ô,
+Ary inoako koa fa famonjena ho ahy ny ra
+nalatsakao
+Ka ny hetahetam-po; ’zay velona ao anatiko a
+
+=== Song 716: O! Jehovah ô, Ianao no hiandry ahy ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 717: He mahagaga loatra ny fitia ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 718: Endrey nivezivezy aho ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 719: Ry Tompo, ’ndreto ny tanoranao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 720: Tompo Jeso no mandona ao am-po ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 721: Jehovah ô! ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 723: Aoka hiray saina ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,:  Aoka hiray saina isika, isika, isika
+Isika rehetra olony ’zay mpianatry ny Tompo
+Fa izany no famantarana
+Fa samy mpianatra isika, isika rehetra i
+  [verse_extra]
+    HTML: :,:  Aoka hiray saina isika, isika, isika
+Isika rehetra olony ’zay mpianatry ny Tompo
+Fa izany no famantarana
+Fa samy mpianatra isika, isika rehetra i
+    PDF:  
+
+=== Song 725: Ry Tompo Andriamanitray ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Ry Tompo Andriamanitray ô,
+Ho an’izao tontolo izao,
+Ho an’ireo mitady Anao, ary ny Fiangonanao
+No angatahanay ny fitiavanao, Andriamanitray
+ô.
+Mpihain
+  [verse_extra]
+    HTML: Ry Tompo Andriamanitray ô,
+Ho an’izao tontolo izao,
+Ho an’ireo mitady Anao, ary ny Fiangonanao
+No angatahanay ny fitiavanao, Andriamanitray ô.
+Mpihain
+    PDF:  
+
+=== Song 726: Reraka ny fo ===
+Issue: verse_content
+HTML: 2 verses - ['1', '2']
+PDF:  2 verses - ['1', '2']
+  [verse_1]
+    HTML: Reraka ny fo, mafy loatra ny ady atao etỳ
+Mbola nofo ihany moa mora resy fa malia.
+Fantatrao, Jeso, fa milofo izao tontolo izao
+Te handrombaka ny ondr
+    PDF:  Reraka ny fo, mafy loatra ny ady atao ety
+Mbola nofo ihany moa mora resy fa malia.
+Fantatrao, Jeso, fa milofo izao tontolo izao
+Te handrombaka ny ondr
+  [verse_2]
+    HTML: Hamafisiko, hamafisiko anio Jeso,
+Ny voady ’zay natao, ’zay nataoko Taminao
+Tsy hihemotra aho fa tsy misy ataoko rehareha
+Afa-tsy ny fitiavanao; sy ny
+    PDF:  Hamaﬁsiko, hamaﬁsiko anio Jeso,
+Ny voady ’zay natao, ’zay nataoko Taminao
+Tsy hihemotra aho fa tsy misy ataoko rehareha
+Afa-tsy ny ﬁtiavanao; sy ny ra
+
+=== Song 727: Ny mitoetra eo anilanao ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 728: Raha miseho … ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 729: ’Zao tontolo ’zao ===
+Issue: word_diff
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1_line_1]
+    HTML: Matory (in-3) avokoa
+    PDF:  Matory (in -3) avokoa
+    Missing words: ['-3)', '(in']
+    Extra words: ['(in-3)']
+  [verse_1_line_3]
+    HTML: Sondriana erỳ matory
+    PDF:  Sondriana ery matory
+    Missing words: ['ery']
+    Extra words: ['erỳ']
+  [verse_1_line_4]
+    HTML: Sasaka alim-be kanefa ny lanitra erỳ,
+    PDF:  Sasaka alim -be kanefa ny lanitra ery,
+    Missing words: ['alim', '-be', 'ery,']
+    Extra words: ['erỳ,', 'alim-be']
+  [verse_2_line_1]
+    HTML: Matory (in-3) avokoa
+    PDF:  Matory (in -3) avokoa
+    Missing words: ['-3)', '(in']
+    Extra words: ['(in-3)']
+  [verse_2_line_3]
+    HTML: Sondriana erỳ matory
+    PDF:  Sondriana ery matory
+    Missing words: ['ery']
+    Extra words: ['erỳ']
+  [verse_2_line_4]
+    HTML: Nefa erỳ an-danitra indreo mihira avokoa
+    PDF:  Nefa ery an -danitra indreo mihira avokoa
+    Missing words: ['an', '-danitra', 'ery']
+    Extra words: ['erỳ', 'an-danitra']
+  [verse_2_line_5]
+    HTML: (Mihira) ’Reo anjely sady faly erỳ
+    PDF:  (Mihira) ’Reo anjely sady faly ery
+    Missing words: ['ery']
+    Extra words: ['erỳ']
+  [verse_3_line_1]
+    HTML: Matory (in-3) avokoa
+    PDF:  Matory (in -3) avokoa
+    Missing words: ['-3)', '(in']
+    Extra words: ['(in-3)']
+  [verse_3_line_3]
+    HTML: Sondriana erỳ matory.
+    PDF:  Sondriana ery matory.
+    Missing words: ['ery']
+    Extra words: ['erỳ']
+  [verse_3_line_5]
+    HTML: (Nomena) ary koa ny fitahian’ny Ray
+    PDF:  (Nomena) ary koa ny tahian’ny Ray
+    Missing words: ['tahian’ny']
+    Extra words: ['fitahian’ny']
+
+=== Song 730: Hamakivaky habakabaka ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Hamakivaky habakabaka
+Hiaraka Aminao, ry Jeso tia
+Fanantenako izany ka ifikirako mafy
+Ireo teny fikasanao.
+Tsara dia ’zay miaraka Aminao
+Hamakivaky la
+  [verse_extra]
+    HTML: Hamakivaky habakabaka
+Hiaraka Aminao, ry Jeso tia
+Fanantenako izany ka ifikirako mafy
+Ireo teny fikasanao.
+Tsara dia ’zay miaraka Aminao
+Hamakivaky la
+    PDF:  
+
+=== Song 731: Ilay aviavy tsy mamoa ===
+Issue: verse_count
+HTML: 1 verses - ['extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 734: Tsaroako anio ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  2 verses - ['1', '2']
+
+=== Song 735: Sambatra izay mitoetra ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: (Fa) Sambatra izay mitoetra  ao an -tranon’ny
+Avo indrindra
+(Ao an-tranon’i Jehovah)
+Sambatra izay manan-kery, izay manan -kery avy
+Aminao,
+Andria
+  [verse_extra]
+    HTML: :,: (Fa) Sambatra izay mitoetra  ao an-tranon’ny Avo indrindra
+(Ao an-tranon’i Jehovah)
+Sambatra izay manan-kery, izay manan-kery avy Aminao,
+Andriama
+    PDF:  
+
+=== Song 736: Toy ny diera ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  Toy ny diera maniry rano
+No anirian’ny fanahiko
+No aniriako, aniriako  Anao
+Eto an-tany, eto an-tany
+No aniriako Anao ry Tompo ô
+Eto an-tany, eto an-t
+  [verse_extra]
+    HTML: Toy ny diera maniry rano
+No anirian’ny fanahiko
+No aniriako, aniriako  Anao
+Eto an-tany, eto an-tany
+No aniriako Anao ry Tompo ô
+Eto an-tany, eto an-t
+    PDF:  
+
+=== Song 737: Tsy misy tantara ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 738: Nivezivezy aho ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 740: Fitiavana re! ===
+Issue: verse_count
+HTML: 3 verses - ['1', '2', '3']
+PDF:  2 verses - ['2', '3']
+
+=== Song 742: Fantatrao va re ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', 'extra']
+PDF:  3 verses - ['1', '2', '3']
+
+=== Song 743: He mpivahiny ety ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']
+
+=== Song 744: Moa ve renao manako any ===
+Issue: verse_count
+HTML: 7 verses - ['1', '2', '3', '4', '5', '6', 'extra']
+PDF:  6 verses - ['1', '2', '3', '4', '5', '6']
+
+=== Song 745: Efa ela no nandao ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 746: Halaloia! Midera ===
+Issue: verse_content
+HTML: 1 verses - ['extra']
+PDF:  1 verses - ['1']
+  [verse_1]
+    HTML: 
+    PDF:  :,: Haleloia (in-4)
+Midera an’Andriamanitra
+Miderà an’Andriamanitra (in-2)
+Eo amin’ny fitoerany masina :,:
+:,: Miderà Azy
+Azy  (in-4)
+Eo amin’ny habak
+  [verse_extra]
+    HTML: :,: Haleloia (in-4)
+Midera an’Andriamanitra
+Miderà an’Andriamanitra (in-2)
+Eo amin’ny fitoerany masina :,:
+:,: Miderà Azy
+Azy  (in-4)
+Eo amin’ny habak
+    PDF:  
+
+=== Song 747: Ry Tompo ô, tariho ny Tanindrazanay ===
+Issue: verse_content
+HTML: 3 verses - ['1', '2', '3']
+PDF:  3 verses - ['1', '2', '3']
+  [verse_1]
+    HTML: Ry Tompo ô, tariho ny tanindrazanay,
+Ny sainay atodiho fa tena tianay, hanaiky ny mazava omen’ny Teninao,
+Ka tsy hisalasala hanara-dia Anao.
+Tantano r
+    PDF:  Ry Tompo ô, tariho ny tanindrazanay,
+Ny sainay atodiho fa tena tianay, hanaiky ny
+mazava omen’ny Teninao,
+Ka tsy hisalasala hanara-dia Anao.
+Tantano r
+
+=== Song 751: ‘Lay Jesosy no Sakaiza ===
+Issue: verse_count
+HTML: 4 verses - ['1', '2', '3', '4']
+PDF:  3 verses - ['2', '3', '4']
+
+=== Song 756: Sambatra sy tretrika ===
+Issue: verse_count
+HTML: 5 verses - ['1', '2', '3', '4', 'extra']
+PDF:  4 verses - ['1', '2', '3', '4']

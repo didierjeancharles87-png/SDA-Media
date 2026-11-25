@@ -1,0 +1,22 @@
+{
+  "name": "Baiboly SDA Ambolokandrina",
+  "short_name": "Baiboly SDA",
+  "description": "Baiboly Malagasy, Fihirana Advantista, Programa Sabata — tsy mila Internet",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A0F1E",
+  "theme_color": "#0A0F1E",
+  "icons": [
+    {
+      "src": "logoslide.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "../baiboly_app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

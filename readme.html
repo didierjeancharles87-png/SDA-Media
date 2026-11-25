@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fampahalalana - Media SDA Ambolokandrina</title>
+<meta name="theme-color" content="#0A0F1E">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;
+  background:#0A0F1E;color:rgba(255,255,255,0.92);
+  min-height:100vh;padding:0;-webkit-font-smoothing:antialiased;
+}
+.bg-canvas{
+  position:fixed;inset:0;z-index:0;
+  background:#0A0F1E url('mainbg.png') center/cover fixed;
+}
+.wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:40px 24px 80px}
+.header{
+  text-align:center;padding:40px 0 28px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:20px
+}
+.header img{width:80px;height:80px;border-radius:20px;margin-bottom:12px;border:2px solid rgba(255,255,255,.2)}
+.header h1{font-size:28px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(135deg,#fff,rgba(90,200,250,.9));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{font-size:14px;color:rgba(255,255,255,.5);margin-top:6px;letter-spacing:1px}
+.lang-bar{text-align:center;margin-bottom:24px;display:flex;justify-content:center;gap:8px}
+.lang-btn{
+  padding:8px 20px;border-radius:20px;border:1px solid rgba(255,255,255,.15);cursor:pointer;
+  background:rgba(255,255,255,.06);color:rgba(255,255,255,.5);font-size:13px;font-weight:600;
+  transition:all .2s;letter-spacing:.5px;
+}
+.lang-btn:hover{background:rgba(255,255,255,.1);color:#fff}
+.lang-btn.active{background:rgba(10,132,255,.2);border-color:rgba(10,132,255,.4);color:#5AC8FA}
+.section{
+  background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;padding:24px 28px;margin-bottom:20px;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.section h2{
+  font-size:18px;font-weight:700;color:#5AC8FA;letter-spacing:.5px;
+  margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid rgba(90,200,250,.15);
+}
+.section p,.section li{font-size:15px;line-height:1.7;color:rgba(255,255,255,.82);margin-bottom:8px}
+.section ul{padding-left:20px}
+.section li{margin-bottom:4px}
+.section li strong{color:#fff}
+.lang-content{display:none}
+.lang-content.active{display:block}
+.tag{
+  display:inline-block;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:600;
+  background:rgba(10,132,255,.15);border:1px solid rgba(10,132,255,.2);color:#5AC8FA;margin:2px 3px;
+}
+.footer{
+  text-align:center;padding:24px 28px;border:1px solid rgba(255,255,255,.1);margin-top:32px;
+  font-size:13px;color:rgba(255,255,255,.4);line-height:1.6;
+  background:rgba(0,0,0,.55);border-radius:16px;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.footer strong{color:rgba(255,255,255,.6)}
+.rule-box{
+  background:rgba(255,59,48,.08);border:1px solid rgba(255,59,48,.2);
+  border-radius:12px;padding:16px 20px;margin-top:12px;
+}
+.rule-box p{color:rgba(255,255,255,.75);font-size:14px;margin-bottom:4px}
+.rule-box strong{color:#FF3B30}
+@media(max-width:500px){
+  .wrap{padding:20px 16px 60px}
+  .section{padding:18px 16px}
+  .header h1{font-size:22px}
+}
+@media(max-width:420px){
+  .wrap{padding:16px 12px 40px}
+  .section{padding:14px 12px;border-radius:12px}
+  .section h2{font-size:16px}
+  .section p,.section li{font-size:14px}
+  .header{padding:24px 0 16px}
+  .header img{width:60px;height:60px}
+  .header h1{font-size:20px}
+  .header p{font-size:12px}
+  .tag{font-size:11px;padding:3px 8px}
+  .footer{padding:16px 14px;font-size:12px}
+}
+@media(max-width:360px){
+  .wrap{padding:12px 8px 32px}
+  .section{padding:12px 10px}
+  .section h2{font-size:14px}
+  .section p,.section li{font-size:13px}
+  .header{padding:16px 0 12px}
+  .header img{width:50px;height:50px}
+  .header h1{font-size:18px}
+  .lang-btn{padding:5px 12px;font-size:11px}
+}
+</style>
+</head>
+<body>
+<div class="bg-canvas"></div>
+<div class="wrap">
+  <div class="header">
+    <img src="logoslide.png" alt="">
+    <h1>Media SDA Ambolokandrina</h1>
+    <p id="headerSub">Fampahalalana momba ny fampiharana</p>
+  </div>
+
+  <div class="lang-bar">
+    <div class="lang-btn active" data-lang="mg" onclick="switchLang('mg')">Malagasy</div>
+    <div class="lang-btn" data-lang="en" onclick="switchLang('en')">English</div>
+    <div class="lang-btn" data-lang="fr" onclick="switchLang('fr')">Fran&ccedil;ais</div>
+  </div>
+
+    <div class="section">
+    <h2 lang-head="mg">Momba ny fampiharana</h2>
+    <h2 lang-head="en">About the application</h2>
+    <h2 lang-head="fr">&Agrave; propos de l'application</h2>
+    <div class="lang-content active" data-lang="mg">
+      <p><strong>Kinova:</strong> 1.0.0</p>
+      <p><strong>Daty fanamboarana:</strong> Jona 2026</p>
+      <p><strong>Namorona:</strong> RANDRIANALAINA Francito</p>
+      <p><strong>Fikambanana:</strong> Team Media SDA Ambolokandrina</p>
+      <p><strong>Antoko:</strong> Baiboly amin'ny fiteny Malagasy, Fihirana Advantista (hira 001&ndash;800), Programa Sabata, Robia Hariva</p>
+      <p><strong>Fampiasana:</strong> Ity fampiharana ity dia natokana ho an'ny fiangonana advantista mitandrina ny andro fahafito <strong>Ambolokandrina Antananarivo</strong>.</p>
+      <p><strong>Fifandraisana:</strong> <a href="https://github.com/anomalyco" style="color:#5AC8FA">github.com/anomalyco</a></p>
+    </div>
+    <div class="lang-content" data-lang="en">
+      <p><strong>Version:</strong> 1.0.0</p>
+      <p><strong>Build date:</strong> June 2026</p>
+      <p><strong>Developer:</strong> RANDRIANALAINA Francito</p>
+      <p><strong>Organization:</strong> Team Media SDA Ambolokandrina</p>
+      <p><strong>Content:</strong> Malagasy Bible, Adventist Hymnal (001&ndash;800), Sabbath Program, Robia Hariva</p>
+      <p><strong>Usage:</strong> Reserved for the Seventh-day Adventist Church of <strong>Ambolokandrina Antananarivo</strong>.</p>
+      <p><strong>Contact:</strong> <a href="https://github.com/anomalyco" style="color:#5AC8FA">github.com/anomalyco</a></p>
+    </div>
+    <div class="lang-content" data-lang="fr">
+      <p><strong>Version:</strong> 1.0.0</p>
+      <p><strong>Date de construction:</strong> Juin 2026</p>
+      <p><strong>D&eacute;veloppeur:</strong> RANDRIANALAINA Francito</p>
+      <p><strong>Organisation:</strong> Team Media SDA Ambolokandrina</p>
+      <p><strong>Contenu:</strong> Bible en malgache, Hymnaire Adventiste (001&ndash;800), Programme du Sabbat, Robia Hariva</p>
+      <p><strong>Utilisation:</strong> R&eacute;serv&eacute;e &agrave; l'&eacute;glise adventiste du septi&egrave;me jour d'<strong>Ambolokandrina Antananarivo</strong>.</p>
+      <p><strong>Contact:</strong> <a href="https://github.com/anomalyco" style="color:#5AC8FA">github.com/anomalyco</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 lang-head="mg">Fiteny programa nampiasaina</h2>
+    <h2 lang-head="en">Programming languages used</h2>
+    <h2 lang-head="fr">Langages de programmation utilis&eacute;s</h2>
+    <div class="lang-content active" data-lang="mg">
+      <p>Ireto ny fiteny sy tekn&ocirc;l&ocirc;jia nampiasaina tamin'ny famoronana ity fampiharana ity :</p>
+    </div>
+    <div class="lang-content" data-lang="en">
+      <p>These are the languages and technologies used to create this application :</p>
+    </div>
+    <div class="lang-content" data-lang="fr">
+      <p>Voici les langages et technologies utilis&eacute;s pour cr&eacute;er cette application :</p>
+    </div>
+    <p style="margin-top:8px">
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+      <span class="tag">JavaScript (ES5/ES6)</span>
+      <span class="tag">JSON</span>
+      <span class="tag">Service Worker</span>
+      <span class="tag">PWA</span>
+      <span class="tag">Manifest JSON</span>
+      <span class="tag">PowerShell</span>
+      <span class="tag">Python</span>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2 lang-head="mg">Fomba fampiasana</h2>
+    <h2 lang-head="en">How to use</h2>
+    <h2 lang-head="fr">Mode d'emploi</h2>
+    <div class="lang-content active" data-lang="mg">
+      <ul>
+        <li><strong>Fandraisana</strong> &mdash; Pejy fandraisana misy karatra telo : Baiboly Masina, Fihirana Advantista, Programa Sabata.</li>
+        <li><strong>Baiboly Masina</strong> &mdash; Tsindrio ny karatra "Baiboly Masina" hankanesana amin'ny Baiboly Malagasy feno.</li>
+        <li><strong>Fihirana Advantista</strong> &mdash; Tsindrio ny karatra "Fihirana Advantista" hijerena hira 001&ndash;800.</li>
+        <li><strong>Programa Sabata</strong> &mdash; Tsindrio ny karatra "Programa Sabata" hanombohana ny filaharan'ny fanompoam-pivavahana.<br>
+          &nbsp;&nbsp;&#x25B6; Ampiasao ny zoro &#x2190; &#x2192; na swipe hifindra slide.<br>
+          &nbsp;&nbsp;&#x25B6; Tsindrio ny bokotra Play ho an'ny slide misy timer.<br>
+          &nbsp;&nbsp;&#x25B6; Ao amin'ny slide SALAMO, soraty ny teny hikarohana andininy.<br>
+          &nbsp;&nbsp;&#x25B6; Ao amin'ny slide MANGINA! MANGINA!, ampiasao ny &#x25C0; &#x25B6; hifindra andininy.
+        </li>
+        <li><strong>Robia Hariva</strong> &mdash; Tsindrio ny karatra "Robia Hariva" ho an'ny fanompoana kristianina.</li>
+        <li><strong>Navigation</strong> &mdash; Misy tsipika fanampiny eo ambany ny efijery ahafahana miverina any amin'ny pejy fandraisana sy ny pejy hafa.</li>
+      </ul>
+    </div>
+    <div class="lang-content" data-lang="en">
+      <ul>
+        <li><strong>Home</strong> &mdash; Welcome page with three cards : Holy Bible, Adventist Hymnal, Sabbath Program.</li>
+        <li><strong>Holy Bible</strong> &mdash; Click the "Holy Bible" card to open the full Malagasy Bible.</li>
+        <li><strong>Adventist Hymnal</strong> &mdash; Click the "Adventist Hymnal" card to browse hymns 001&ndash;800.</li>
+        <li><strong>Sabbath Program</strong> &mdash; Click the "Sabbath Program" card to start the worship service slideshow.<br>
+          &nbsp;&nbsp;&#x25B6; Use arrow keys &#x2190; &#x2192; or swipe to navigate slides.<br>
+          &nbsp;&nbsp;&#x25B6; Press the Play button on timer slides.<br>
+          &nbsp;&nbsp;&#x25B6; On the SALAMO slide, type keywords to search verses.<br>
+          &nbsp;&nbsp;&#x25B6; On the MANGINA! MANGINA! slide, use &#x25C0; &#x25B6; to navigate verses.
+        </li>
+        <li><strong>Robia Hariva</strong> &mdash; Click the "Robia Hariva" card for Christian service.</li>
+        <li><strong>Navigation</strong> &mdash; A floating navigation bar at the bottom lets you return to any page.</li>
+      </ul>
+    </div>
+    <div class="lang-content" data-lang="fr">
+      <ul>
+        <li><strong>Accueil</strong> &mdash; Page d'accueil avec trois cartes : Sainte Bible, Hymnaire Adventiste, Programme du Sabbat.</li>
+        <li><strong>Sainte Bible</strong> &mdash; Cliquez sur la carte "Sainte Bible" pour ouvrir la Bible malgache compl&egrave;te.</li>
+        <li><strong>Hymnaire Adventiste</strong> &mdash; Cliquez sur la carte "Hymnaire Adventiste" pour parcourir les cantiques 001&ndash;800.</li>
+        <li><strong>Programme du Sabbat</strong> &mdash; Cliquez sur la carte "Programme du Sabbat" pour lancer le diaporama du culte.<br>
+          &nbsp;&nbsp;&#x25B6; Utilisez les fl&egrave;ches &#x2190; &#x2192; ou le balayage pour naviguer.<br>
+          &nbsp;&nbsp;&#x25B6; Appuyez sur le bouton Lecture pour les diapositives avec minuteur.<br>
+          &nbsp;&nbsp;&#x25B6; Sur la diapositive SALAMO, tapez des mots-cl&eacute;s pour chercher des versets.<br>
+          &nbsp;&nbsp;&#x25B6; Sur la diapositive MANGINA! MANGINA!, utilisez &#x25C0; &#x25B6; pour naviguer entre les couplets.
+        </li>
+        <li><strong>Robia Hariva</strong> &mdash; Cliquez sur la carte "Robia Hariva" pour le service chr&eacute;tien.</li>
+        <li><strong>Navigation</strong> &mdash; Une barre de navigation flottante en bas permet de revenir &agrave; n'importe quelle page.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 lang-head="mg">Politique de confidentialit&eacute;</h2>
+    <h2 lang-head="en">Privacy policy</h2>
+    <h2 lang-head="fr">Politique de confidentialit&eacute;</h2>
+    <div class="lang-content active" data-lang="mg">
+      <p>Ity fampiharana ity dia natokana ho an'ny fiangonana advantista mitandrina ny andro fahafito <strong>Ambolokandrina Antananarivo</strong> ihany.</p>
+      <p>Tsy manangona na mizara mombamomba ny mpampiasa ity fampiharana ity. Ny angon-drakitra rehetra (Baiboly, fihirana, fanompoana) dia voatahiry eo an-toerana (local) ary tsy misy fifandraisana amin'ny Internet ilaina.</p>
+      <p>Ny fampiharana dia miasa tsy misy Internet (offline) rehefa voavoha voalohany.</p>
+    </div>
+    <div class="lang-content" data-lang="en">
+      <p>This application is reserved exclusively for the Seventh-day Adventist Church of <strong>Ambolokandrina Antananarivo</strong>.</p>
+      <p>It does not collect or share any personal data. All data (Bible, hymns, services) is stored locally and does not require an Internet connection.</p>
+      <p>The application works offline after the first load.</p>
+    </div>
+    <div class="lang-content" data-lang="fr">
+      <p>Cette application est r&eacute;serv&eacute;e exclusivement &agrave; l'&eacute;glise adventiste du septi&egrave;me jour d'<strong>Ambolokandrina Antananarivo</strong>.</p>
+      <p>Elle ne collecte ni ne partage aucune donn&eacute;e personnelle. Toutes les donn&eacute;es (Bible, cantiques, offices) sont stock&eacute;es localement et ne n&eacute;cessitent aucune connexion Internet.</p>
+      <p>L'application fonctionne hors ligne apr&egrave;s le premier chargement.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 lang-head="mg">R&egrave;glement</h2>
+    <h2 lang-head="en">Terms of use</h2>
+    <h2 lang-head="fr">R&egrave;glement</h2>
+    <div class="lang-content active" data-lang="mg">
+      <div class="rule-box">
+        <p><strong>&#x26A0; FADY</strong> &mdash; Ity fampiharana ity dia <strong>voaro</strong> ary tsy azo :</p>
+        <ul>
+          <li><strong>Hanova</strong> ny kaody na ny votoatiny raha tsy nahazo alalana.</li>
+          <li><strong>Mandika</strong> na manaparitaka amin'ny tsy nahazoana alalana.</li>
+          <li><strong>Mivarotra</strong> na mampiasa amin'ny fikambanana hafa.</li>
+        </ul>
+        <p style="margin-top:8px">Raha te hanova na hanatsara dia mangataha alalana amin'ny <strong>Team Media SDA Ambolokandrina</strong>.</p>
+      </div>
+    </div>
+    <div class="lang-content" data-lang="en">
+      <div class="rule-box">
+        <p><strong>&#x26A0; PROHIBITED</strong> &mdash; This application is <strong>protected</strong> and may not :</p>
+        <ul>
+          <li>Be <strong>modified</strong> without authorization.</li>
+          <li>Be <strong>copied</strong> or distributed without permission.</li>
+          <li>Be <strong>sold</strong> or used by other organizations.</li>
+        </ul>
+        <p style="margin-top:8px">To modify or improve, please request authorization from <strong>Team Media SDA Ambolokandrina</strong>.</p>
+      </div>
+    </div>
+    <div class="lang-content" data-lang="fr">
+      <div class="rule-box">
+        <p><strong>&#x26A0; INTERDIT</strong> &mdash; Cette application est <strong>prot&eacute;g&eacute;e</strong> et ne peut pas :</p>
+        <ul>
+          <li>&Ecirc;tre <strong>modifi&eacute;e</strong> sans autorisation.</li>
+          <li>&Ecirc;tre <strong>copi&eacute;e</strong> ou distribu&eacute;e sans permission.</li>
+          <li>&Ecirc;tre <strong>vendue</strong> ou utilis&eacute;e par d'autres organisations.</li>
+        </ul>
+        <p style="margin-top:8px">Pour modifier ou am&eacute;liorer, veuillez demander l'autorisation aupr&egrave;s de <strong>Team Media SDA Ambolokandrina</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p lang-text="mg">Noforonina sy novolavolain'ny <strong>Team Media SDA Ambolokandrina</strong></p>
+    <p lang-text="en">Created and developed by <strong>Team Media SDA Ambolokandrina</strong></p>
+    <p lang-text="fr">Cr&eacute;&eacute; et d&eacute;velopp&eacute; par <strong>Team Media SDA Ambolokandrina</strong></p>
+    <p><strong>RANDRIANALAINA Francito</strong></p>
+    <p style="margin-top:4px;font-size:12px;color:rgba(255,255,255,.3)">Kinova 1.0.0 &mdash; Jona 2026</p>
+    <p style="margin-top:8px">&copy; 2026 Media SDA Ambolokandrina &mdash; <span lang-text="mg">Zo rehetra voatokana</span><span lang-text="en">All rights reserved</span><span lang-text="fr">Tous droits r&eacute;serv&eacute;s</span></p>
+  </div>
+</div>
+
+<script>
+var _currentLang='mg';
+function switchLang(l){
+  _currentLang=l;
+  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});
+  document.querySelectorAll('.lang-content').forEach(function(c){c.classList.toggle('active',c.getAttribute('data-lang')===l)});
+  document.querySelectorAll('[lang-head]').forEach(function(h){h.style.display=h.getAttribute('lang-head')===l?'block':'none'});
+  document.querySelectorAll('[lang-text]').forEach(function(t){t.style.display=t.getAttribute('lang-text')===l?'inline':'none'});
+  var subs={mg:'Fampahalalana momba ny fampiharana',en:'Application information',fr:'Informations sur l\'application'};
+  document.getElementById('headerSub').textContent=subs[l];
+}
+switchLang('mg');
+</script>
+<script defer src="projector.js?v=7"></script>
+<script src="alpine.min.js"></script>
+<script src="voice-search.js"></script>
+</body>
+</html>
+

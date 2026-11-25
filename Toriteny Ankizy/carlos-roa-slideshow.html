@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carlos Roa — Le gardien qui a choisi la foi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch-deep: #0F3D2E;
+    --pitch-line: #1C5C43;
+    --night: #0B1B2B;
+    --night-2: #142B42;
+    --parchment: #F2E9D8;
+    --parchment-2: #E8DCC4;
+    --gold: #C9A227;
+    --lechuga: #7CA84B;
+    --ink: #1B1712;
+    --cream-text: #F7F4EC;
+    --font-display: 'Fraunces', serif;
+    --font-body: 'Newsreader', serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* liquid glass tokens */
+    --glass-radius: 26px;
+    --glass-radius-sm: 16px;
+    --glass-bg: rgba(255,255,255,0.07);
+    --glass-bg-strong: rgba(255,255,255,0.12);
+    --glass-border: rgba(255,255,255,0.28);
+    --glass-highlight: rgba(255,255,255,0.55);
+    --glass-shadow: 0 12px 40px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{
+    font-family: var(--font-body);
+    background: var(--night);
+    color: var(--cream-text);
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .app{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* ============ LIQUID GLASS CORE ============ */
+  /* iOS 26 -style glass: translucent layer, refractive edge highlight,
+     specular sweep, and gentle depth shadow. Text/content always sits
+     on a solid layer above the glass, never blended into it. */
+  .glass{
+    position: relative;
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(28px) saturate(180%);
+    backdrop-filter: blur(28px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.35),
+      inset 0 0 22px rgba(255,255,255,0.05),
+      var(--glass-shadow);
+    isolation: isolate;
+  }
+  .glass::before{
+    content:'';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(112deg,
+      rgba(255,255,255,0.4) 0%,
+      rgba(255,255,255,0.05) 22%,
+      rgba(255,255,255,0) 55%,
+      rgba(255,255,255,0.08) 85%,
+      rgba(255,255,255,0.22) 100%);
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .glass-pill{ border-radius: 999px; }
+  .glass-dark{
+    background: rgba(20,25,20,0.06);
+    border-color: rgba(20,20,15,0.14);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.6),
+      inset 0 0 18px rgba(255,255,255,0.15),
+      0 10px 30px rgba(60,50,20,0.12);
+  }
+  .glass-dark::before{
+    background: linear-gradient(112deg,
+      rgba(255,255,255,0.55) 0%,
+      rgba(255,255,255,0.08) 22%,
+      rgba(255,255,255,0) 55%,
+      rgba(255,255,255,0.1) 85%,
+      rgba(255,255,255,0.3) 100%);
+  }
+  .glass-shimmer{ overflow: hidden; }
+  .glass-shimmer::after{
+    content:'';
+    position: absolute;
+    top:0; bottom:0;
+    left: -60%;
+    width: 40%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,0.16), transparent);
+    transform: skewX(-18deg);
+    animation: glassSweep 7s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes glassSweep{
+    0%{ left: -60%; }
+    35%{ left: 130%; }
+    100%{ left: 130%; }
+  }
+
+  /* --- scoreboard header --- */
+  .scoreboard{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(14px, 3vw, 26px) clamp(16px, 4vw, 48px);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cream-text);
+    pointer-events: none;
+  }
+  .scoreboard .team{
+    display:flex; align-items:center; gap:10px;
+    padding: 10px 18px;
+    opacity: 0.95;
+  }
+  .scoreboard .dot{
+    width:7px; height:7px; border-radius:50%;
+    background: var(--gold);
+    box-shadow: 0 0 8px var(--gold);
+  }
+  .scoreboard .clock{
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    padding: 10px 16px;
+    min-width: 46px;
+    text-align: center;
+  }
+
+  /* --- slides --- */
+  .slides{
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .slide{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(24px, 6vw, 90px);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(28px) scale(0.985);
+    transition: opacity 0.75s cubic-bezier(.22,.61,.19,1), transform 0.85s cubic-bezier(.22,.61,.19,1), visibility 0.85s;
+    will-change: opacity, transform;
+  }
+  .slide.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    z-index: 2;
+  }
+
+  .slide-inner{
+    max-width: 880px;
+    width: 100%;
+  }
+
+  /* staggered entrance for list items + paragraphs once a slide is active */
+  .slide .eyebrow, .slide h1, .slide h2, .slide .sub, .slide > .slide-inner > p,
+  .slide ul.points li, .slide .stat-card, .slide .clause-card, .slide .tag-row, .slide .church-name{
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  .slide.active .eyebrow{ animation: riseIn 0.7s cubic-bezier(.22,.61,.19,1) 0.05s forwards; }
+  .slide.active h1{ animation: riseIn 0.8s cubic-bezier(.22,.61,.19,1) 0.12s forwards; }
+  .slide.active h2{ animation: riseIn 0.8s cubic-bezier(.22,.61,.19,1) 0.12s forwards; }
+  .slide.active .sub{ animation: riseIn 0.7s cubic-bezier(.22,.61,.19,1) 0.22s forwards; }
+  .slide.active > .slide-inner > p{ animation: riseIn 0.7s cubic-bezier(.22,.61,.19,1) 0.2s forwards; }
+  .slide.active ul.points li{ animation: riseIn 0.6s cubic-bezier(.22,.61,.19,1) forwards; }
+  .slide.active ul.points li:nth-child(1){ animation-delay: 0.26s; }
+  .slide.active ul.points li:nth-child(2){ animation-delay: 0.36s; }
+  .slide.active ul.points li:nth-child(3){ animation-delay: 0.46s; }
+  .slide.active ul.points li:nth-child(4){ animation-delay: 0.56s; }
+  .slide.active ul.points li:nth-child(5){ animation-delay: 0.66s; }
+  .slide.active .stat-card{ animation: riseIn 0.7s cubic-bezier(.22,.61,.19,1) 0.42s forwards; }
+  .slide.active .clause-card{ animation: riseIn 0.7s cubic-bezier(.22,.61,.19,1) 0.38s forwards; }
+  .slide.active .tag-row{ animation: riseIn 0.7s cubic-bezier(.22,.61,.19,1) 0.5s forwards; }
+  .slide.active .church-name{ animation: riseIn 0.7s cubic-bezier(.22,.61,.19,1) 0.55s forwards; }
+
+  @keyframes riseIn{
+    from{ opacity:0; transform: translateY(14px); }
+    to{ opacity:1; transform: translateY(0); }
+  }
+
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 16px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px 10px 16px;
+    width: fit-content;
+  }
+  .eyebrow::before{
+    content:'';
+    width: 20px; height: 1px;
+    background: var(--gold);
+    display:inline-block;
+  }
+
+  h1, h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  h1{ font-size: clamp(58px, 12vw, 130px); text-shadow: 0 3px 12px rgba(0,0,0,0.7); }
+  h2{ font-size: clamp(44px, 8vw, 86px); margin-bottom: 26px; text-shadow: 0 3px 12px rgba(0,0,0,0.7); }
+
+  .sub{
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(26px, 3.8vw, 42px);
+    color: var(--parchment);
+    opacity: 0.9;
+    margin-top: 14px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  }
+
+  p{
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.6;
+    color: var(--parchment);
+    max-width: 62ch;
+    font-weight: 600;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  }
+
+  ul.points{ list-style: none; margin-top: 28px; display: flex; flex-direction: column; gap: 20px; }
+  ul.points li{
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.55;
+    color: var(--parchment);
+    max-width: 64ch;
+    font-weight: 600;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  }
+  ul.points li .mark{
+    font-family: var(--font-mono);
+    font-size: 16px;
+    color: var(--gold);
+    border: 1px solid rgba(201,162,39,0.5);
+    border-radius: 3px;
+    padding: 3px 6px;
+    margin-top: 4px;
+    flex-shrink: 0;
+    letter-spacing: 0.05em;
+  }
+
+  .tag-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top: 26px; }
+  .tag{
+    font-family: var(--font-mono);
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 12px 22px;
+    color: var(--cream-text);
+    transition: border-color 0.3s, background 0.3s, transform 0.3s;
+  }
+  .tag:hover{ border-color: var(--gold); background: rgba(201,162,39,0.16); transform: translateY(-2px); }
+
+  .stat-card{
+    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 22px 30px;
+    border-radius: var(--glass-radius-sm);
+    transition: transform 0.35s cubic-bezier(.22,.61,.19,1), border-color 0.35s, box-shadow 0.35s;
+  }
+  .stat-card:hover{ transform: translateY(-3px); border-color: rgba(201,162,39,0.55); }
+  .stat-card .num{
+    font-family: var(--font-display);
+    font-size: clamp(42px, 6vw, 68px);
+    color: var(--gold);
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .stat-card .label{
+    font-family: var(--font-mono);
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--parchment);
+    opacity: 0.75;
+  }
+
+  .clause-card{
+    margin-top: 30px;
+    color: var(--ink);
+    padding: 30px clamp(20px, 4vw, 40px);
+    position: relative;
+    max-width: 620px;
+    background: rgba(242,233,216,0.75);
+    transition: transform 0.35s cubic-bezier(.22,.61,.19,1), box-shadow 0.35s;
+  }
+  .clause-card:hover{ transform: translateY(-3px); }
+  .clause-card::before{
+    content: '§ CLAUSE CONTRACTUELLE';
+    font-family: var(--font-mono);
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: var(--pitch-deep);
+    display: block;
+    margin-bottom: 14px;
+    opacity: 0.7;
+  }
+  .clause-card p{
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(26px, 3.5vw, 38px);
+    line-height: 1.45;
+  }
+
+  /* title slide photo diptych — large, anchored left & right */
+  .title-photos{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 clamp(16px, 4vw, 60px);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .photo-frame{
+    position: relative;
+    width: clamp(260px, 32vw, 540px);
+    height: clamp(360px, 80vh, 780px);
+    border-radius: var(--glass-radius);
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(.22,.61,.19,1), box-shadow 0.4s;
+  }
+  .photo-frame:nth-child(1){ transform: rotate(-2deg); }
+  .photo-frame:nth-child(2){ transform: rotate(2deg); }
+  .photo-frame:hover{ transform: rotate(0deg) scale(1.02); box-shadow: 0 26px 65px rgba(0,0,0,0.55); }
+  .photo-frame img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .photo-frame .photo-fallback{
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(247,244,236,0.4);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .club-slide h2{ font-size: clamp(52px, 9vw, 96px); font-weight: 700; text-shadow: 0 3px 12px rgba(0,0,0,0.7); }
+  .club-slide p{ font-size: clamp(28px, 3.5vw, 38px); font-weight: 600; text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+  .club-slide .club-years{ font-size: 26px; letter-spacing: 0.15em; font-weight: 700; color: #FFFFFF; text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+  .club-slide .club-country{ font-size: 18px; }
+
+  /* backgrounds per act */
+  .bg-title{ background:
+    radial-gradient(circle at 20% 15%, rgba(201,162,39,0.14), transparent 45%),
+    radial-gradient(circle at 80% 85%, rgba(124,168,75,0.10), transparent 50%),
+    var(--night);
+  }
+  .bg-pitch{ background:
+    linear-gradient(180deg, rgba(11,27,43,0.55), rgba(15,61,46,0.92)),
+    repeating-linear-gradient(90deg, var(--pitch-deep) 0 90px, var(--pitch-line) 90px 92px),
+    var(--pitch-deep);
+  }
+  .bg-night{ background:
+    radial-gradient(circle at 50% 30%, rgba(255,255,255,0.05), transparent 55%),
+    var(--night-2);
+  }
+  .bg-parchment{ background: var(--parchment-2); }
+  .bg-close{ background:
+    radial-gradient(circle at 50% 40%, rgba(201,162,39,0.16), transparent 55%),
+    var(--night);
+  }
+  .bg-dawn{ background:
+    radial-gradient(circle at 30% 20%, rgba(201,162,39,0.22), transparent 50%),
+    linear-gradient(160deg, var(--night-2) 0%, #1e3a2b 100%);
+  }
+
+  .bg-parchment h2, .bg-parchment .eyebrow-ink{ color: var(--ink); }
+  .bg-parchment p, .bg-parchment ul.points li{ color: #3a3226; }
+  .bg-parchment .eyebrow{ color: var(--pitch-deep); }
+  .bg-parchment .eyebrow::before{ background: var(--pitch-deep); }
+  .bg-parchment ul.points li .mark{ color: var(--pitch-deep); border-color: rgba(15,61,46,0.4); }
+
+  /* moon / stars for night slides */
+  .stars{
+    position: absolute; inset: 0; overflow: hidden; pointer-events:none;
+  }
+  .star{
+    position: absolute;
+    width: 2px; height: 2px;
+    background: var(--parchment);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: twinkle 3.5s ease-in-out infinite;
+  }
+  @keyframes twinkle{
+    0%, 100%{ opacity: 0.15; }
+    50%{ opacity: 0.75; }
+  }
+  .moon{
+    position: absolute;
+    top: 12%; right: 10%;
+    width: 90px; height: 90px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fdf6e3, #C9A227 70%);
+    box-shadow: 0 0 70px rgba(201,162,39,0.35);
+    opacity: 0.85;
+    animation: moonGlow 6s ease-in-out infinite;
+  }
+  @keyframes moonGlow{
+    0%, 100%{ box-shadow: 0 0 70px rgba(201,162,39,0.35); }
+    50%{ box-shadow: 0 0 95px rgba(201,162,39,0.55); }
+  }
+
+  /* individual club slides */
+  .club-watermark{
+    position: absolute;
+    right: clamp(0px, 2vw, 30px);
+    bottom: clamp(-60px, -6vw, -20px);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(160px, 30vw, 360px);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    letter-spacing: -0.03em;
+    background: linear-gradient(155deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.02) 40%, rgba(255,255,255,0.05) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.08);
+  }
+  .club-progress{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+  .club-progress .tick{
+    width: 26px; height: 4px;
+    border-radius: 2px;
+    background: rgba(247,244,236,0.2);
+  }
+  .club-progress .tick.on{ background: var(--gold); box-shadow: 0 0 8px rgba(201,162,39,0.5); }
+  .club-years{
+    font-family: var(--font-mono);
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .club-country{
+    font-family: var(--font-mono);
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--parchment);
+    opacity: 0.75;
+    margin-top: 6px;
+  }
+
+  .net-pattern{
+    display: none;
+  }
+
+  /* close slide */
+  .church-name{
+    font-family: var(--font-mono);
+    font-size: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(201,162,39,0.3);
+    display:inline-block;
+  }
+
+  /* --- navigation --- */
+  .nav{
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 18px clamp(16px, 4vw, 48px) calc(env(safe-area-inset-bottom, 0px) + 22px);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: auto;
+  }
+  .nav.hidden{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .progress{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 26px;
+  }
+  .progress .step{
+    width: 8px; height: 8px;
+    background: rgba(247,244,236,0.3);
+    border-radius: 50%;
+    transition: background 0.3s, width 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  .progress .step.active{
+    background: var(--gold);
+    width: 22px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(201,162,39,0.6);
+  }
+  .progress.compact .step{ width: 6px; height: 6px; }
+  .progress.compact .step.active{ width: 16px; }
+
+  .arrows{ display:flex; gap: 10px; }
+  .arrow-btn{
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    color: var(--cream-text);
+    font-size: 18px;
+    display:flex; align-items:center; justify-content:center;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s, border-color 0.25s;
+    pointer-events: auto;
+  }
+  .arrow-btn:hover{ border-color: var(--gold); background: rgba(201,162,39,0.16); }
+  .arrow-btn:active{ transform: scale(0.92); }
+  .arrow-btn:disabled{ opacity: 0.25; cursor: default; }
+  .arrow-btn:disabled:hover{ background: var(--glass-bg); border-color: var(--glass-border); }
+
+  @media (prefers-reduced-motion: reduce){
+    .slide{ transition: opacity 0.2s linear; transform: none !important; }
+    .slide *{ animation: none !important; opacity: 1 !important; transform: none !important; }
+  }
+
+  @media (max-width: 640px){
+    .scoreboard .team span.txt{ display:none; }
+    .nav{ padding: 16px 16px 20px; }
+    .slide{ padding: clamp(16px, 4vw, 40px); }
+    .slide-inner{ max-width: 100%; }
+    h1{ font-size: clamp(36px, 10vw, 60px); }
+    h2{ font-size: clamp(28px, 8vw, 48px); }
+    .sub{ font-size: clamp(18px, 4vw, 28px); }
+    p{ font-size: clamp(16px, 3.5vw, 22px); line-height: 1.5; }
+    ul.points li{ font-size: clamp(16px, 3.5vw, 22px); gap: 12px; }
+    .eyebrow{ font-size: 11px; padding: 8px 14px; }
+    .tag{ font-size: 11px; padding: 8px 14px; }
+    .stat-card .num{ font-size: clamp(28px, 8vw, 44px); }
+    .stat-card .label{ font-size: 11px; }
+    .stat-card{ padding: 16px 20px; }
+    .clause-card p{ font-size: clamp(16px, 4vw, 22px); }
+    .club-slide h2{ font-size: clamp(32px, 9vw, 56px); }
+    .club-slide p{ font-size: clamp(16px, 3.5vw, 22px); }
+    .club-slide .club-years{ font-size: 18px; }
+    .club-slide .club-country{ font-size: 13px; }
+    .club-slide .slide-inner{ padding: 20px; }
+    .photo-frame{ width: clamp(120px, 30vw, 200px); height: clamp(180px, 45vh, 300px); }
+    .title-photos{ padding: 0 12px; }
+    .font-controls{ right: 8px; gap: 8px; }
+    .font-btn{ width: 40px; height: 40px; font-size: 16px; }
+    .arrow-btn{ width: 42px; height: 42px; font-size: 16px; }
+    .progress .step{ width: 6px; height: 6px; }
+    .progress .step.active{ width: 16px; }
+    .progress{ gap: 8px; padding: 10px 16px; }
+    .club-watermark{ font-size: clamp(100px, 25vw, 200px); }
+    .moon{ width: 60px; height: 60px; }
+    .church-name{ font-size: 12px; }
+    ul.points li .mark{ font-size: 12px; padding: 2px 5px; }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px){
+    h1{ font-size: clamp(44px, 10vw, 90px); }
+    h2{ font-size: clamp(34px, 7vw, 64px); }
+    p{ font-size: clamp(18px, 2.6vw, 28px); }
+    ul.points li{ font-size: clamp(18px, 2.6vw, 28px); }
+    .club-slide h2{ font-size: clamp(40px, 8vw, 72px); }
+    .club-slide p{ font-size: clamp(20px, 3vw, 30px); }
+    .photo-frame{ width: clamp(160px, 24vw, 340px); height: clamp(220px, 55vh, 500px); }
+  }
+
+  .font-controls{
+    position: fixed;
+    top: 50%;
+    right: clamp(10px, 2vw, 30px);
+    transform: translateY(-50%);
+    z-index: 60;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: auto;
+  }
+  .font-controls.hidden{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .font-btn{
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    color: var(--cream-text);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s, border-color 0.25s;
+    pointer-events: auto;
+  }
+  .font-btn:hover{ border-color: var(--gold); background: rgba(201,162,39,0.16); }
+  .font-btn:active{ transform: scale(0.92); }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <div class="scoreboard">
+    <div class="team glass glass-pill" style="pointer-events:auto;"><span class="dot"></span></div>
+    <div class="clock glass glass-pill" id="clockDisplay" style="pointer-events:auto;">00'</div>
+  </div>
+
+  <div class="slides" id="slides">
+
+    <!-- SLIDE 1 : TITLE -->
+    <section class="slide active bg-title">
+      <div class="stars" id="starsField"></div>
+      <div class="title-photos">
+        <div class="photo-frame glass glass-shimmer">
+          <img src="img1.png" alt="Carlos Roa — photo 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-fallback" style="display:none;">img1.png</div>
+        </div>
+        <div class="photo-frame glass glass-shimmer">
+          <img src="img2.png" alt="Carlos Roa — photo 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-fallback" style="display:none;">img2.png</div>
+        </div>
+      </div>
+      <div class="slide-inner" style="text-align:center; position:relative; z-index:2;">
+        <div class="eyebrow glass glass-pill" style="justify-content:center;">Portrait spirituel</div>
+        <h1>Carlos Roa</h1>
+        <p class="sub" style="max-width: none; background: #2E7D32; padding: 6px 18px; border-radius: 8px; display: inline-block;">Le gardien qui a choisi la foi avant le ballon</p>
+        <div class="church-name"></div>
+      </div>
+    </section>
+
+    <!-- SLIDE : CAREER PATH — INTRO -->
+    <section class="slide bg-pitch" style="background: url('bg.jpg') center/cover no-repeat, var(--pitch-deep);">
+      <div class="net-pattern"></div>
+      <div class="slide-inner" style="max-width: 1100px;">
+        <div class="eyebrow glass glass-pill" style="font-size: 18px;">Un parcours argentino-espagnol</div>
+        <h2 style="font-size: clamp(54px, 10vw, 100px);">Du Racing Club aux sommets d'Europe</h2>
+        <p style="font-size: clamp(28px, 3.8vw, 40px);">Dix-huit ans de carrière, deux pays, cinq clubs — le parcours d'un gardien qui traversera l'Atlantique pour atteindre l'élite européenne, avant d'y renoncer par conviction.</p>
+        <div class="tag-row">
+          <span class="tag glass glass-pill" style="font-size: 18px; padding: 14px 26px;">🇦🇷 Argentine</span>
+          <span class="tag glass glass-pill" style="font-size: 18px; padding: 14px 26px;">🇪🇸 Espagne</span>
+          <span class="tag glass glass-pill" style="font-size: 18px; padding: 14px 26px;">1988 – 2006</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE : CLUB 1 — RACING CLUB -->
+    <section class="slide bg-pitch club-slide" style="background: url('bg1.jpg') center/cover no-repeat, var(--pitch-deep);">
+      <div class="net-pattern"></div>
+      <img src="racing-club.png" alt="Racing Club" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:clamp(180px,20vw,280px); z-index:0; opacity:0.75;">
+      <img src="racing.jpg" alt="Racing Club" style="position:absolute; top:clamp(60px,10vh,100px); left:clamp(20px,4vw,50px); width:520px; z-index:0; opacity:0.85; border-radius:12px;">
+      <img src="roa.png" alt="Carlos Roa" style="position:absolute; top:clamp(60px,10vh,100px); right:clamp(20px,4vw,50px); width:520px; z-index:0; opacity:0.85; border-radius:12px;">
+      <img src="rc1.png" alt="Racing Club" style="position:absolute; bottom:clamp(20px,4vh,60px); left:clamp(20px,4vw,50px); width:520px; z-index:0; opacity:0.85; border-radius:12px;">
+
+      <div class="slide-inner" style="background: #5DADE2; padding: 36px 40px; border-radius: 20px;">
+        <div class="club-progress">
+          <div class="tick on"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div>
+        </div>
+        <div class="club-years">1988 — 1993</div>
+        <h2>Racing Club</h2>
+        <p style="color:#FFFFFF; font-weight:700; text-shadow:0 2px 8px rgba(0,0,0,0.7);">Ses débuts professionnels. C'est à Avellaneda, dans l'un des clubs historiques du football argentin, que Carlos Roa fait ses premiers pas entre les perches au plus haut niveau.</p>
+        <div class="club-country">🇦🇷 Argentine · Chapitre 1 / 5</div>
+      </div>
+    </section>
+
+    <!-- SLIDE : CLUB 2 — LANÚS -->
+    <section class="slide bg-pitch club-slide" style="background: url('bg1.jpg') center/cover no-repeat, var(--pitch-deep);">
+      <div class="net-pattern"></div>
+      <img src="Lanús.jpg" alt="Lanús" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:clamp(250px,30vw,400px); z-index:0; opacity:0.75;">
+      <img src="roa1.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); right:clamp(20px,4vw,50px); width:520px; z-index:0; opacity:0.85; border-radius:12px;">
+
+      <div class="slide-inner">
+        <div class="club-progress">
+          <div class="tick on"></div><div class="tick on"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div>
+        </div>
+        <div class="club-years">1994 — 1997</div>
+        <h2>Lanús</h2>
+        <p>Un premier sommet continental : Roa remporte avec Lanús la Copa CONMEBOL 1996, son premier grand titre international et la confirmation de son talent.</p>
+        <div class="stat-card glass">
+          <div class="num">1996</div>
+          <div class="label">Vainqueur de la Copa CONMEBOL</div>
+        </div>
+        <div class="club-country">🇦🇷 Argentine · Chapitre 2 / 5</div>
+      </div>
+    </section>
+
+    <!-- SLIDE : CLUB 3 — RCD MALLORCA -->
+    <section class="slide bg-pitch club-slide" style="background: url('bg1.jpg') center/cover no-repeat, var(--pitch-deep);">
+      <div class="net-pattern"></div>
+      <img src="8Fts7A4Z_400x400.jpg" alt="RCD Mallorca" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:clamp(250px,30vw,400px); z-index:0; opacity:0.75;">
+      <img src="roa2.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); left:clamp(20px,4vw,50px); width:520px; z-index:0; opacity:0.85; border-radius:12px;">
+      <img src="roa3.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); right:clamp(20px,4vw,50px); width:520px; z-index:0; opacity:0.85; border-radius:12px;">
+
+      <div class="slide-inner">
+        <div class="club-progress">
+          <div class="tick on"></div><div class="tick on"></div><div class="tick on"></div><div class="tick"></div><div class="tick"></div>
+        </div>
+        <div class="club-years">1997 — 2002</div>
+        <h2>RCD Mallorca</h2>
+        <p>L'apogée de sa carrière européenne. En Liga espagnole, Roa devient l'un des gardiens les plus respectés du continent — un statut qui attirera bientôt l'attention des plus grands clubs d'Europe.</p>
+        <div class="club-country">🇪🇸 Espagne · Chapitre 3 / 5</div>
+      </div>
+    </section>
+
+    <!-- SLIDE : CLUB 4 — ALBACETE BALOMPIÉ -->
+    <section class="slide bg-pitch club-slide" style="background: url('bg1.jpg') center/cover no-repeat, var(--pitch-deep);">
+      <div class="net-pattern"></div>
+      <img src="44117345579.jpg" alt="Albacete" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:clamp(250px,30vw,400px); z-index:0; opacity:0.75;">
+      <img src="roa4.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); right:clamp(20px,4vw,50px); width:520px; z-index:0; opacity:0.85; border-radius:12px;">
+
+      <div class="slide-inner">
+        <div class="club-progress">
+          <div class="tick on"></div><div class="tick on"></div><div class="tick on"></div><div class="tick on"></div><div class="tick"></div>
+        </div>
+        <div class="club-years">2002 — 2004</div>
+        <h2>Albacete Balompié</h2>
+        <p>Un retour en Liga après une montée, et le début d'une reconstruction personnelle autant que sportive — la carrière de Roa va bientôt être bouleversée par une nouvelle épreuve.</p>
+        <div class="club-country">🇪🇸 Espagne · Chapitre 4 / 5</div>
+      </div>
+    </section>
+
+    <!-- SLIDE : CLUB 5 — OLIMPO -->
+    <section class="slide bg-pitch club-slide" style="background: url('bg1.jpg') center/cover no-repeat, var(--pitch-deep);">
+      <div class="net-pattern"></div>
+      <img src="olimpo.jpg" alt="Olimpo" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:clamp(250px,30vw,400px); z-index:0; opacity:0.75;">
+      <img src="roa5.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); right:clamp(20px,4vw,50px); width:520px; z-index:0; opacity:0.85; border-radius:12px;">
+
+      <div class="slide-inner">
+        <div class="club-progress">
+          <div class="tick on"></div><div class="tick on"></div><div class="tick on"></div><div class="tick on"></div><div class="tick on"></div>
+        </div>
+        <div class="club-years">2005 — 2006</div>
+        <h2>Olimpo</h2>
+        <p>Le dernier club avant la retraite. Roa referme la boucle dans son pays natal, mettant un terme à une carrière de dix-huit ans marquée par la foi autant que par le talent.</p>
+        <div class="club-country">🇦🇷 Argentine · Chapitre 5 / 5</div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 : EDEN DIET -->
+    <section class="slide bg-pitch">
+      <div class="net-pattern"></div>
+      <img src="roa6.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); right:clamp(20px,4vw,50px); width:740px; z-index:0; opacity:0.85; border-radius:12px;">
+      <div class="slide-inner">
+        <div class="eyebrow glass glass-pill">Un temple, pas une machine</div>
+        <h2>Un végétarien strict</h2>
+        <p>L'Église adventiste met l'accent sur une santé globale : le corps y est considéré comme un temple à respecter.</p>
+        <ul class="points">
+          <li><span class="mark">01</span> Le « régime d'Éden » : une alimentation végétale inspirée du jardin d'Éden biblique.</li>
+          <li><span class="mark">02</span> Roa évitait strictement viande, produits laitiers et aliments transformés.</li>
+          <li><span class="mark">03</span> Ses coéquipiers lui donnèrent un surnom affectueux : <em>« El Lechuga »</em> (la Laitue).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 : ATHLETIC IMPACT -->
+    <section class="slide bg-pitch">
+      <div class="net-pattern"></div>
+      <div class="slide-inner">
+        <div class="eyebrow glass glass-pill">Champion malgré tout</div>
+        <h2>La forme au sommet</h2>
+        <p>Malgré les exigences physiques du football professionnel européen, Roa a conservé une condition physique optimale grâce à ce mode de vie.</p>
+        <div class="stat-card glass">
+          <div class="num">Trophée Zamora</div>
+          <div class="label">Meilleur gardien de but d'Espagne</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE : 1998 WORLD CUP -->
+    <section class="slide bg-pitch">
+      <div class="net-pattern"></div>
+      <img src="roa8.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); right:clamp(20px,4vw,50px); width:650px; z-index:0; opacity:0.85; border-radius:12px;">
+      <img src="roa7.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); left:clamp(20px,4vw,50px); width:650px; z-index:0; opacity:0.85; border-radius:12px;">
+      <div class="slide-inner" style="max-width:900px;">
+        <div class="eyebrow glass glass-pill" style="font-size:14px;">France, 1998 — son unique Mondial</div>
+        <h2 style="font-size:clamp(36px,7vw,78px);">Le héros de Saint-Étienne</h2>
+        <p style="font-size:clamp(20px,2.8vw,30px); max-width:58ch;">Roa ne disputera qu'une seule Coupe du Monde de sa carrière. Titulaire incontesté de l'Argentine, il garde ses cages inviolées durant toute la phase de groupes, face au Japon, à la Jamaïque et à la Croatie.</p>
+        <ul class="points" style="gap:16px; margin-top:22px;">
+          <li style="font-size:clamp(18px,2.4vw,26px);"><span class="mark">✓</span> En huitièmes de finale contre l'Angleterre, le match se termine 2-2 après prolongation.</li>
+          <li style="font-size:clamp(18px,2.4vw,26px);"><span class="mark">✓</span> Lors de la séance de tirs au but, il repousse les tentatives de Paul Ince et David Batty.</li>
+          <li style="font-size:clamp(18px,2.4vw,26px);"><span class="mark">✓</span> L'Argentine se qualifie 4-3, et Roa devient une légende instantanée dans son pays.</li>
+        </ul>
+        <div class="stat-card glass" style="margin-top:22px;">
+          <div class="num" style="font-size:clamp(36px,5vw,60px);">4 – 3</div>
+          <div class="label">Tirs au but · Argentine bat l'Angleterre</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE : QUARTER-FINAL ELIMINATION -->
+    <section class="slide bg-pitch">
+      <div class="net-pattern"></div>
+      <div class="slide-inner">
+        <div class="eyebrow glass glass-pill">Marseille, 4 juillet 1998</div>
+        <h2>Le but de trop</h2>
+        <p>En quarts de finale, l'Argentine affronte les Pays-Bas. Après un but pour chaque équipe, le score reste bloqué à 1-1 jusqu'à la 90e minute.</p>
+        <ul class="points">
+          <li><span class="mark">✗</span> Dennis Bergkamp contrôle un long ballon et fusille Roa d'une frappe devenue légendaire : 2-1, l'Argentine est éliminée.</li>
+          <li><span class="mark">✗</span> Roa retourne en Argentine, son unique Mondial déjà terminé — l'année suivante, il quitte le football pour sa foi et ne rejouera plus jamais de Coupe du Monde.</li>
+        </ul>
+        <div class="stat-card glass">
+          <div class="num">1 – 2</div>
+          <div class="label">Pays-Bas élimine l'Argentine</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE : COPA DEL REY 1998 -->
+    <section class="slide bg-pitch">
+      <div class="net-pattern"></div>
+      <div class="slide-inner">
+        <div class="eyebrow glass glass-pill">Mestalla, 29 avril 1998</div>
+        <h2>Héroïque, même dans la défaite</h2>
+        <p>En finale de la Coupe du Roi face au FC Barcelone, le Mallorca de Roa termine à dix contre onze après deux exclusions, mais tient bon jusqu'aux tirs au but.</p>
+        <ul class="points">
+          <li><span class="mark">★</span> Roa repousse trois penaltys — dont ceux de Rivaldo et Figo — et va même marquer le sien.</li>
+          <li><span class="mark">★</span> Malgré cette performance individuelle exceptionnelle, le Mallorca s'incline 5-4.</li>
+        </ul>
+        <div class="stat-card glass">
+          <div class="num">5 – 4</div>
+          <div class="label">Tirs au but · FC Barcelone bat Mallorca</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 : YEAR 2000 PROPHECY -->
+    <section class="slide bg-night">
+      <div class="stars" id="starsField2"></div>
+      <div class="moon"></div>
+      <img src="roa9.png" alt="Carlos Roa" style="position:absolute; bottom:clamp(20px,4vh,60px); left:clamp(20px,4vw,50px); width:650px; z-index:0; opacity:0.85; border-radius:12px;">
+      <div class="slide-inner">
+        <div class="eyebrow glass glass-pill">1999 — Un choix radical</div>
+        <h2>La prophétie de l'an 2000</h2>
+        <ul class="points">
+          <li><span class="mark">✦</span> En 1999, Roa était l'un des gardiens les plus convoités d'Europe — Manchester United voulait qu'il succède à Peter Schmeichel.</li>
+          <li><span class="mark">✦</span> Convaincu par les prophéties bibliques sur la fin des temps, il croyait que le passage à l'an 2000 marquerait l'Apocalypse et le retour du Christ.</li>
+          <li><span class="mark">✦</span> Persuadé que l'argent et le football perdraient bientôt tout leur sens, il renonça à un contrat de plusieurs millions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SLIDE 5 : THE RETREAT -->
+    <section class="slide bg-night">
+      <div class="stars" id="starsField3"></div>
+      <div class="slide-inner">
+        <div class="eyebrow glass glass-pill">Le retrait du monde</div>
+        <h2>Se préparer, puis revenir</h2>
+        <ul class="points">
+          <li><span class="mark">→</span> Il installa sa famille dans un village isolé de la province de Córdoba, en Argentine, pour prier et se préparer.</li>
+          <li><span class="mark">→</span> L'an 2000 arriva — et le monde ne prit pas fin.</li>
+          <li><span class="mark">→</span> Roa revint alors sereinement au football professionnel.</li>
+        </ul>
+        <div class="stat-card glass" style="display:block; max-width: 560px;">
+          <div class="label" style="margin-bottom:8px;">SES MOTS, DES ANNÉES PLUS TARD</div>
+          <p style="color:var(--parchment); font-size: 26px; margin:0;">Sur le plan spirituel, c'était la bonne décision. Mais sur le plan sportif, il reconnaîtra avoir quitté le football au sommet de sa carrière.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6 : SABBATH CLAUSE -->
+    <section class="slide bg-parchment">
+      <div class="slide-inner">
+        <div class="eyebrow glass glass-dark glass-pill">Le repos du sabbat</div>
+        <h2 style="color:var(--ink);">Fidèle au quatrième commandement</h2>
+        <p style="color:#3a3226;">De retour au RCD Mallorca en 2000, sa pratique religieuse posa un défi logistique inédit pour son club : les adventistes observent le sabbat du vendredi au coucher du soleil jusqu'au samedi au coucher du soleil, période durant laquelle le travail séculier — et la compétition sportive — sont mis de côté.</p>
+        <div class="clause-card glass glass-dark glass-shimmer">
+          <p>« Je ne jouerai jamais un match le samedi. »</p>
+        </div>
+        <p style="margin-top:18px; color:#3a3226;">La Liga programmant souvent ses grandes rencontres le samedi soir, Roa acceptait de se mettre lui-même sur le banc — quitte à perdre sa place de titulaire et ses primes.</p>
+      </div>
+    </section>
+
+    <!-- SLIDE : CANCER AND RESILIENCE -->
+    <section class="slide bg-dawn">
+      <div class="slide-inner">
+        <div class="eyebrow glass glass-pill">Albacete, 2004</div>
+        <h2>Une autre épreuve</h2>
+        <p>En pleine reconstruction de sa carrière à Albacete, Roa reçoit un diagnostic de cancer des testicules. Lui qui n'avait jamais bu ni fumé peine à comprendre ce nouveau coup du sort.</p>
+        <ul class="points">
+          <li><span class="mark">+</span> Une année entière est consacrée à la chimiothérapie et à la rééducation.</li>
+          <li><span class="mark">+</span> Il guérit, revient au jeu, puis termine sa carrière en Argentine avec le club Olimpo en 2006.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SLIDE 7 : CLOSING / REFLECTION -->
+    <section class="slide bg-close">
+      <div class="slide-inner" style="text-align:center;">
+        <div class="eyebrow glass glass-pill" style="justify-content:center;">Une question pour nous</div>
+        <h2>Qu'est-ce que je suis prêt<br>à mettre de côté pour ma foi ?</h2>
+        <p style="margin: 0 auto;">Malgré ses regrets sportifs assumés, Carlos Roa a choisi, à répétition — la prophétie de l'an 2000, le sabbat, la maladie — de faire passer sa foi avant sa réussite terrestre.</p>
+        <div class="tag-row" style="justify-content:center;">
+          <span class="tag glass glass-pill">Sobriété</span>
+          <span class="tag glass glass-pill">Fidélité au sabbat</span>
+          <span class="tag glass glass-pill">Priorités</span>
+        </div>
+        <div class="church-name"></div>
+      </div>
+    </section>
+
+    <!-- SLIDE FINAL : FOI ET SABBAT -->
+    <section class="slide" style="background: radial-gradient(circle at 50% 40%, rgba(201,162,39,0.25), transparent 55%), linear-gradient(160deg, #0B1B2B 0%, #0F3D2E 100%);">
+      <div class="stars" id="starsField4"></div>
+      <div class="moon"></div>
+      <div class="slide-inner" style="text-align:center; max-width:900px;">
+        <div class="eyebrow glass glass-pill" style="justify-content:center; font-size:15px;">Un héritage éternel</div>
+        <h2 style="font-size:clamp(38px,7.5vw,82px); line-height:1.1;">Le monde offrit des millions.<br><span style="color:var(--gold);">Dieu demandait un jour.</span></h2>
+        <p style="margin:24px auto 0; font-size:clamp(20px,2.8vw,30px); max-width:56ch; font-weight:600;">
+          Carlos Roa a compris quelque chose que le football ne pouvait jamais enseigner : la vraie grandeur ne se mesure pas en trophées, mais en fidélité. Chaque samedi, en posant son maillot, il a témoigné que Dieu passe avant le monde.
+        </p>
+        <div style="margin-top:36px; padding:30px clamp(20px,4vw,50px); background:rgba(201,162,39,0.12); border:1px solid rgba(201,162,39,0.3); border-radius:20px; max-width:680px; margin-left:auto; margin-right:auto;">
+          <p style="color:var(--gold); font-family:var(--font-display); font-style:italic; font-size:clamp(22px,3.2vw,34px); line-height:1.45; margin:0; font-weight:600;">
+            « Souviens-toi du jour du sabbat, pour le sanctifier. »
+          </p>
+          <p style="margin-top:12px; font-size:clamp(13px,1.6vw,16px); opacity:0.7; letter-spacing:0.08em;">
+            — Exode 20:8
+          </p>
+        </div>
+        <p style="margin-top:30px; font-size:clamp(18px,2.4vw,26px); font-weight:700; max-width:52ch; margin-left:auto; margin-right:auto;">
+          Aujourd'hui, Dieu te fait la même question : <span style="color:var(--gold);">m'auras-tu pour sacré ?</span>
+        </p>
+        <div class="tag-row" style="justify-content:center; margin-top:28px;">
+          <span class="tag glass glass-pill" style="font-size:14px;">Foi</span>
+          <span class="tag glass glass-pill" style="font-size:14px;">Sabbat</span>
+          <span class="tag glass glass-pill" style="font-size:14px;">Sacrifice</span>
+          <span class="tag glass glass-pill" style="font-size:14px;">Éternité</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE CONCLUSION FINALE -->
+    <section class="slide" style="background: url('final.png') center/cover no-repeat, #0B1B2B;">
+      <div class="slide-inner" style="max-width:1100px; display:flex; align-items:center; gap:clamp(20px,4vw,60px);">
+        <div style="flex:1; text-align:left;">
+          <h2 style="font-size:clamp(28px,5vw,72px); line-height:1.08; text-shadow:0 4px 20px rgba(0,0,0,0.8); margin:0;">
+            Il a tout quitté pour Dieu.<br><span style="color:var(--gold);">Et Dieu ne l'a jamais abandonné.</span>
+          </h2>
+        </div>
+        <div style="flex:1; text-align:right;">
+          <p style="font-size:clamp(16px,2.2vw,26px); font-weight:600; max-width:40ch; margin-left:auto; text-shadow:0 3px 12px rgba(0,0,0,0.8); margin-top:0;">
+            Carlos Roa n'a jamais regretté sa décision. Le sacrifice pour la foi n'est jamais une perte — c'est un investissement pour l'éternité.
+          </p>
+          <div style="margin-top:24px; padding:clamp(16px,3vw,28px) clamp(14px,3vw,40px); background:rgba(0,0,0,0.5); border:1px solid rgba(201,162,39,0.4); border-radius:20px; max-width:480px; margin-left:auto;">
+            <p style="color:var(--gold); font-family:var(--font-display); font-style:italic; font-size:clamp(16px,2.6vw,32px); line-height:1.4; margin:0; font-weight:700;">
+              « Ce que tu semes pour Dieu,<br>tu le moissonneras pour l'éternité. »
+            </p>
+            <p style="margin-top:8px; font-size:clamp(10px,1.2vw,15px); opacity:0.75; letter-spacing:0.1em;">
+              — Galates 6:7-9
+            </p>
+          </div>
+          <p style="margin-top:20px; font-size:clamp(14px,1.8vw,22px); font-weight:700; max-width:38ch; margin-left:auto; text-shadow:0 2px 8px rgba(0,0,0,0.7);">
+            Le sabbat n'est pas une perte.<br>C'est <span style="color:var(--gold);">la preuve que Dieu est plus grand</span><br>que tout ce que le monde peut offrir.
+          </p>
+          <div class="tag-row" style="justify-content:flex-end; margin-top:20px;">
+            <span class="tag glass glass-pill" style="font-size:12px;">Grâce</span>
+            <span class="tag glass glass-pill" style="font-size:12px;">Témoignage</span>
+            <span class="tag glass glass-pill" style="font-size:12px;">Sabbat</span>
+            <span class="tag glass glass-pill" style="font-size:12px;">Espérance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="font-controls" id="fontControls">
+    <button class="font-btn glass" id="fontUp" aria-label="Agrandir le texte">A+</button>
+    <button class="font-btn glass" id="fontDown" aria-label="Réduire le texte">A−</button>
+  </div>
+
+  <div class="nav">
+    <button class="arrow-btn glass" id="prevBtn" aria-label="Diapositive précédente">&#8592;</button>
+    <div class="progress glass glass-pill" id="progress"></div>
+    <button class="arrow-btn glass" id="nextBtn" aria-label="Diapositive suivante">&#8594;</button>
+  </div>
+
+</div>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const progressEl = document.getElementById('progress');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const clockDisplay = document.getElementById('clockDisplay');
+  let current = 0;
+
+  // build progress steps
+  slides.forEach((_, i) => {
+    const step = document.createElement('div');
+    step.className = 'step' + (i === 0 ? ' active' : '');
+    step.addEventListener('click', () => goTo(i));
+    progressEl.appendChild(step);
+  });
+  const steps = Array.from(progressEl.children);
+  if (slides.length > 10) progressEl.classList.add('compact');
+
+  function pad(n){ return n.toString().padStart(2,'0'); }
+
+  function render(){
+    slides.forEach((s, i) => s.classList.toggle('active', i === current));
+    steps.forEach((s, i) => s.classList.toggle('active', i === current));
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === slides.length - 1;
+    // scoreboard "match minute" ticks up with each slide, like a match progressing toward the story's climax
+    const minute = Math.round((current / (slides.length - 1)) * 90);
+    clockDisplay.textContent = pad(minute) + "'";
+  }
+
+  function goTo(i){
+    current = Math.max(0, Math.min(slides.length - 1, i));
+  render();
+
+  // auto-hide nav after 2 seconds
+  const navEl = document.querySelector('.nav');
+  let navTimer;
+  function showNav(){
+    navEl.classList.remove('hidden');
+    clearTimeout(navTimer);
+    navTimer = setTimeout(() => { navEl.classList.add('hidden'); }, 2000);
+  }
+  document.addEventListener('mousemove', showNav);
+  document.addEventListener('touchstart', showNav);
+  document.addEventListener('keydown', showNav);
+  showNav();
+
+  // font size controls with auto-hide
+  const fontControlsEl = document.getElementById('fontControls');
+  let fontTimer;
+  let fontScale = 100;
+  function showFontControls(){
+    fontControlsEl.classList.remove('hidden');
+    clearTimeout(fontTimer);
+    fontTimer = setTimeout(() => { fontControlsEl.classList.add('hidden'); }, 2000);
+  }
+  function applyFontScale(){
+    document.querySelectorAll('.slide-inner').forEach(el => {
+      el.style.transform = 'scale(' + (fontScale / 100) + ')';
+      el.style.transformOrigin = 'center top';
+    });
+  }
+  document.getElementById('fontUp').addEventListener('click', () => {
+    fontScale = Math.min(150, fontScale + 10);
+    applyFontScale();
+    showFontControls();
+  });
+  document.getElementById('fontDown').addEventListener('click', () => {
+    fontScale = Math.max(60, fontScale - 10);
+    applyFontScale();
+    showFontControls();
+  });
+  document.addEventListener('mousemove', showFontControls);
+  document.addEventListener('touchstart', showFontControls);
+  document.addEventListener('keydown', showFontControls);
+  showFontControls();
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); goTo(current + 1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(current - 1); }
+  });
+
+  // basic touch swipe
+  let touchStartX = null;
+  document.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
+  document.addEventListener('touchend', (e) => {
+    if (touchStartX === null) return;
+    const diff = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(diff) > 50) { diff < 0 ? goTo(current + 1) : goTo(current - 1); }
+    touchStartX = null;
+  });
+
+  // smooth, debounced wheel navigation (desktop trackpads/mouse wheels)
+  let wheelLocked = false;
+  window.addEventListener('wheel', (e) => {
+    if (wheelLocked) return;
+    if (Math.abs(e.deltaY) < 24) return;
+    wheelLocked = true;
+    e.deltaY > 0 ? goTo(current + 1) : goTo(current - 1);
+    setTimeout(() => { wheelLocked = false; }, 750);
+  }, { passive: true });
+
+  // starfield generator for night slides
+  function scatterStars(id, count){
+    const el = document.getElementById(id);
+    if (!el) return;
+    for (let i = 0; i < count; i++){
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.top = Math.random()*100 + '%';
+      star.style.left = Math.random()*100 + '%';
+      star.style.opacity = (0.2 + Math.random()*0.6).toFixed(2);
+      el.appendChild(star);
+    }
+  }
+  scatterStars('starsField', 60);
+  scatterStars('starsField2', 50);
+  scatterStars('starsField3', 50);
+  scatterStars('starsField4', 60);
+
+  render();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Annonce - Media SDA Ambolokandrina</title>
+<meta name="theme-color" content="#0A0F1E">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;
+  background:#0A0F1E;color:rgba(255,255,255,0.97);
+  min-height:100vh;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+.bg-canvas{
+  position:fixed;inset:0;z-index:0;
+  background:#0A0F1E url('mainbg.png') center/cover fixed;
+}
+.page{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:80px 20px 100px}
+.page h1{font-size:28px;font-weight:800;text-align:center;margin-bottom:4px;color:#fff}
+.page .sub{font-size:14px;color:rgba(255,255,255,.5);text-align:center;margin-bottom:24px;letter-spacing:1px}
+.editor{background:rgba(0,0,0,.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px;margin-bottom:20px}
+.editor label{display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.editor input,.editor textarea{width:100%;padding:12px 16px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:16px;outline:none;transition:border-color .2s;font-family:inherit}
+.editor input:focus,.editor textarea:focus{border-color:#5AC8FA}
+.editor textarea{min-height:80px;resize:vertical}
+.item-row{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+.item-row .item-input{flex:1}
+.item-row .item-type{flex-shrink:0}
+.item-row select{padding:12px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:14px;outline:none;cursor:pointer}
+.item-row select option{background:#0A0F1E;color:#fff}
+.item-row .del-btn{flex-shrink:0;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,59,48,.3);background:rgba(255,59,48,.1);color:#FF3B30;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.item-row .del-btn:hover{background:rgba(255,59,48,.25)}
+.add-btn{width:100%;padding:12px;border-radius:12px;border:1px dashed rgba(255,255,255,.2);background:rgba(255,255,255,.04);color:rgba(255,255,255,.6);font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;margin-bottom:16px}
+.add-btn:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff}
+.go-btn{width:100%;padding:14px;border-radius:14px;border:none;cursor:pointer;background:linear-gradient(135deg,#0A84FF,#5AC8FA);color:#fff;font-size:17px;font-weight:700;letter-spacing:.5px;transition:all .2s;box-shadow:0 4px 20px rgba(10,132,255,.3)}
+.go-btn:hover{transform:scale(1.02);box-shadow:0 6px 28px rgba(10,132,255,.4)}
+.go-btn:active{transform:scale(.97)}
+.btn-row{display:flex;gap:10px;margin-top:12px}
+.btn-row .go-btn{flex:1}
+.btn-half{flex:1;padding:12px;border-radius:14px;border:none;cursor:pointer;font-size:15px;font-weight:700;letter-spacing:.5px;transition:all .2s}
+.btn-half.save{background:linear-gradient(135deg,#34C759,#30D158);color:#fff;box-shadow:0 4px 16px rgba(52,199,89,.3)}
+.btn-half.save:hover{transform:scale(1.02);box-shadow:0 6px 24px rgba(52,199,89,.4)}
+.btn-half.save:active{transform:scale(.97)}
+/* Saved list */
+.saved-wrap{background:rgba(0,0,0,.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:16px 20px;margin-bottom:20px}
+.saved-wrap.hide{display:none}
+.saved-wrap h3{font-size:12px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+.saved-item{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.04);margin-bottom:6px;cursor:pointer;transition:background .2s;border:1px solid rgba(255,255,255,.06)}
+.saved-item:hover{background:rgba(255,255,255,.08)}
+.saved-item .si-title{flex:1;font-size:14px;font-weight:600;color:rgba(255,255,255,.85);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.saved-item .si-del{flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,59,48,.2);background:rgba(255,59,48,.08);color:#FF3B30;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.saved-item .si-del:hover{background:rgba(255,59,48,.25)}
+
+/* Display */
+.display{
+  position:fixed;inset:0;z-index:2000;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:#0A0F1E url('mainbg.png') center/cover fixed;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s ease;
+}
+.display.open{opacity:1;pointer-events:all}
+.display .disp-title{
+  position:absolute;top:40px;left:50%;transform:translateX(-50%);z-index:10;
+  font-size:clamp(28px,5vw,52px);font-weight:900;text-align:center;
+  color:#fff;padding:10px 28px;border-radius:16px;
+  text-shadow:0 4px 32px rgba(0,0,0,.9),0 2px 8px rgba(0,0,0,.8);
+  background:rgba(0,0,0,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.1);
+  max-width:90%;line-height:1.3;
+  transition:opacity .6s ease;
+}
+.display .disp-title.hidden{opacity:0}
+.display .disp-close{
+  position:absolute;top:20px;left:20px;z-index:20;
+  width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.15);
+  background:rgba(0,0,0,.5);backdrop-filter:blur(8px);
+  color:rgba(255,255,255,.7);font-size:22px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .2s;
+}
+.display .disp-close:hover{background:rgba(255,59,48,.4);color:#fff;border-color:rgba(255,59,48,.3)}
+.disp-fs{
+  position:absolute;bottom:30px;right:24px;z-index:20;
+  display:flex;gap:6px;
+}
+.disp-fs button{
+  width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.12);
+  background:rgba(0,0,0,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  color:rgba(255,255,255,.7);font-size:16px;font-weight:800;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .2s;font-family:serif;
+}
+.disp-fs button:hover{background:rgba(255,255,255,.12);color:#fff;transform:scale(1.08)}
+.disp-body{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  padding:100px 24px 40px;
+}
+/* Text/number items */
+.disp-text{
+  font-weight:800;line-height:1.4;
+  text-align:center;color:#fff;max-width:90%;
+  text-shadow:0 4px 40px rgba(0,0,0,.9),0 2px 8px rgba(0,0,0,.8);
+  padding:20px 32px;border-radius:20px;
+  background:rgba(0,0,0,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+/* Image grid */
+.disp-img-grid{
+  display:flex;gap:12px;width:100%;height:100%;align-items:center;justify-content:center;
+  padding:0 12px;
+}
+.disp-img-grid .img-wrap{
+  flex:1;height:80vh;overflow:hidden;border-radius:30px;
+  box-shadow:0 8px 40px rgba(0,0,0,.6);
+}
+.disp-img-grid .img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+/* Mixed: images as background behind text */
+.disp-mixed{
+  position:absolute;inset:0;overflow:hidden;
+}
+.disp-mixed .mix-bg{
+  position:absolute;inset:0;display:flex;gap:8px;padding:8px;
+}
+.disp-mixed .mix-bg .mix-img{
+  flex:1;overflow:hidden;border-radius:30px;box-shadow:0 4px 24px rgba(0,0,0,.5);
+}
+.disp-mixed .mix-bg .mix-img img{width:100%;height:100%;object-fit:cover;display:block}
+.disp-mixed .mix-fg{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  padding:120px 32px 60px;
+}
+.disp-mixed .mix-fg .mix-text{
+  font-weight:800;line-height:1.4;
+  text-align:center;color:#fff;max-width:90%;
+  text-shadow:0 4px 40px rgba(0,0,0,.95),0 2px 8px rgba(0,0,0,.9);
+  background:rgba(0,0,0,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:20px 32px;border-radius:20px;
+}
+
+@media(max-width:500px){
+  .page{padding:60px 14px 80px}
+  .editor{padding:16px;border-radius:16px}
+  .disp-text{padding:14px 20px}
+  .disp-mixed .mix-fg .mix-text{padding:14px 20px}
+  .disp-img-grid .img-wrap{height:60vh;border-radius:20px}
+}
+@media(max-width:420px){
+  .page{padding:50px 10px 70px}
+  .page h1{font-size:24px}
+  .page .sub{font-size:12px}
+  .editor{padding:12px;border-radius:12px}
+  .editor textarea{font-size:14px;padding:10px}
+  .disp-body{padding:80px 14px 30px}
+  .disp-text{padding:12px 14px;font-size:14px}
+  .disp-text .disp-title{font-size:clamp(22px,5vw,36px)}
+  .disp-close{width:40px;height:40px;font-size:18px}
+  .disp-img-grid .img-wrap{height:50vh;border-radius:16px}
+  .mix-fg{padding:80px 16px 40px}
+  .mix-text{font-size:14px;padding:12px 14px}
+  #floatNav a{width:32px;height:32px;font-size:14px}
+}
+@media(max-width:360px){
+  .page{padding:40px 8px 60px}
+  .page h1{font-size:20px}
+  .editor{padding:10px;border-radius:10px}
+  .editor textarea{font-size:13px;padding:8px}
+  .disp-body{padding:60px 10px 20px}
+  .disp-text{padding:10px 10px}
+  .disp-img-grid .img-wrap{height:40vh}
+  .mix-fg{padding:60px 10px 30px}
+  #floatNav{gap:2px;padding:5px 6px}
+  #floatNav a{width:28px;height:28px;font-size:11px}
+}
+</style>
+</head>
+<body>
+<div class="bg-canvas"></div>
+
+<div class="page" id="page">
+  <h1>Fanoratana Filazana Maika</h1>
+  <div class="sub">Amboary ny filazana maika ho an'ny fiangonana</div>
+  <div class="editor">
+    <label>Lohahevitra (Titre)</label>
+    <input type="text" id="titleInput" placeholder="Ohatra: Fivoriana manokana" style="margin-bottom:16px">
+
+    <label>Votoatiny(objet)</label>
+    <div id="itemsList"></div>
+    <button class="add-btn" onclick="addItem()">+ Ajouter des objet</button>
+
+    <div class="btn-row">
+      <button class="btn-half save" onclick="saveAnnounce()">Enregistrer</button>
+      <button class="go-btn" onclick="showAnnounce()">Afficher &#x25B6;</button>
+    </div>
+  </div>
+  <div class="saved-wrap hide" id="savedWrap">
+    <h3>Tahirina</h3>
+    <div id="savedList"></div>
+  </div>
+</div>
+
+<div class="display" id="display">
+  <button class="disp-close" onclick="closeDisp()">&#x2716;</button>
+  <div class="disp-title" id="dispTitle">Titre</div>
+  <div class="disp-body" id="dispBody"></div>
+  <div class="disp-fs">
+    <button onclick="fontDown()">A−</button>
+    <button onclick="fontUp()">A+</button>
+  </div>
+</div>
+
+<script>
+var itemCount=0;
+var _titleTimer=null;
+var _announceId=null;
+var _fsBase=60;
+var _fsStep=4;
+
+try{_fsBase=parseInt(localStorage.getItem('annonceFontSize'))||60}catch(e){}
+
+function addItem(val,typ){
+  var i=itemCount++;
+  var list=document.getElementById('itemsList');
+  var div=document.createElement('div');div.className='item-row';div.id='item'+i;
+  div.innerHTML=
+    '<select class="item-type" id="type'+i+'" onchange="toggleInput('+i+')">'+
+      '<option value="text"'+(typ==='text'?' selected':'')+'>Text</option>'+
+      '<option value="number"'+(typ==='number'?' selected':'')+'>Nombre</option>'+
+      '<option value="image"'+(typ==='image'?' selected':'')+'>Image</option>'+
+    '</select>'+
+    '<div class="item-input" id="inputWrap'+i+'">'+
+      (typ==='image'
+        ?'<input type="text" id="val'+i+'" placeholder="URL de l\'image..." value="'+(val||'')+'">'
+        :'<input type="text" id="val'+i+'" placeholder="Soraty ny text ou nombre..." value="'+(val||'')+'">')+
+    '</div>'+
+    '<button class="del-btn" onclick="delItem('+i+')">&#x2716;</button>';
+  list.appendChild(div);
+}
+
+function toggleInput(i){
+  var t=document.getElementById('type'+i).value;
+  var wrap=document.getElementById('inputWrap'+i);
+  var v=document.getElementById('val'+i).value;
+  wrap.innerHTML=t==='image'
+    ?'<input type="text" id="val'+i+'" placeholder="URL de l\'image..." value="'+(v||'')+'">'
+    :'<input type="text" id="val'+i+'" placeholder="Soraty ny text ou nombre..." value="'+(v||'')+'">';
+}
+
+function delItem(i){
+  var el=document.getElementById('item'+i);
+  if(el)el.remove();
+}
+
+function showAnnounce(){
+  var title=document.getElementById('titleInput').value.trim();
+  if(!title){document.getElementById('titleInput').focus();return}
+  var dt=document.getElementById('dispTitle');
+  dt.textContent=title;
+  dt.classList.remove('hidden');
+  if(_titleTimer)clearTimeout(_titleTimer);
+  _titleTimer=setTimeout(function(){dt.classList.add('hidden')},2000);
+
+  var items=[];
+  var rows=document.querySelectorAll('#itemsList .item-row');
+  for(var r=0;r<rows.length;r++){
+    var id=rows[r].id.replace('item','');
+    var typ=document.getElementById('type'+id).value;
+    var val=document.getElementById('val'+id).value.trim();
+    if(val)items.push({type:typ,value:val});
+  }
+  if(items.length===0)return;
+
+  var body=document.getElementById('dispBody');
+  var hasText=items.some(function(it){return it.type==='text'||it.type==='number'});
+  var images=items.filter(function(it){return it.type==='image'});
+  var texts=items.filter(function(it){return it.type!=='image'});
+
+  if(hasText&&images.length>0){
+    /* Mixed: images in background, text in front */
+    var mixHtml='<div class="disp-mixed"><div class="mix-bg">';
+    for(var i=0;i<images.length;i++){
+      mixHtml+='<div class="mix-img"><img src="'+images[i].value+'" alt="" onerror="this.parentElement.style.display=\'none\'"></div>';
+    }
+    mixHtml+='</div><div class="mix-fg"><div class="mix-text">';
+    for(var i=0;i<texts.length;i++){
+      mixHtml+=(i>0?'<br>':'')+texts[i].value;
+    }
+    mixHtml+='</div></div></div>';
+    body.innerHTML=mixHtml;
+  } else if(!hasText&&images.length>0){
+    /* Images only */
+    if(images.length===1){
+      body.innerHTML='<div style="width:90%;height:80vh;border-radius:30px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.6)"><img src="'+images[0].value+'" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>';
+    } else {
+      var gridHtml='<div class="disp-img-grid">';
+      for(var i=0;i<images.length;i++){
+        gridHtml+='<div class="img-wrap"><img src="'+images[i].value+'" alt="" onerror="this.parentElement.style.display=\'none\'"></div>';
+      }
+      gridHtml+='</div>';
+      body.innerHTML=gridHtml;
+    }
+  } else {
+    /* Text/number only */
+    var txtHtml='<div class="disp-text">';
+    for(var i=0;i<items.length;i++){
+      txtHtml+=(i>0?'<br>':'')+items[i].value;
+    }
+    txtHtml+='</div>';
+    body.innerHTML=txtHtml;
+  }
+
+  applyFontSize();
+  document.getElementById('display').classList.add('open');
+  try{if(document.documentElement.requestFullscreen&&!document.fullscreenElement)document.documentElement.requestFullscreen()}catch(e){}
+}
+
+function closeDisp(){
+  document.getElementById('display').classList.remove('open');
+  try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}
+}
+
+/* ---- Font size controls ---- */
+function applyFontSize(){
+  var s=_fsBase+'px';
+  document.querySelectorAll('.disp-text,.mix-fg .mix-text').forEach(function(el){el.style.fontSize=s});
+  try{localStorage.setItem('annonceFontSize',_fsBase)}catch(e){}
+}
+function fontUp(){_fsBase=Math.min(_fsBase+_fsStep,160);applyFontSize()}
+function fontDown(){_fsBase=Math.max(_fsBase-_fsStep,20);applyFontSize()}
+
+/* ---- Save / Load ---- */
+function getFormData(){
+  var title=document.getElementById('titleInput').value.trim();
+  var items=[];
+  var rows=document.querySelectorAll('#itemsList .item-row');
+  for(var r=0;r<rows.length;r++){
+    var id=rows[r].id.replace('item','');
+    var typ=document.getElementById('type'+id).value;
+    var val=document.getElementById('val'+id).value.trim();
+    if(val)items.push({type:typ,value:val});
+  }
+  return{title:title,items:items};
+}
+
+function loadFormData(data){
+  document.getElementById('titleInput').value=data.title||'';
+  var list=document.getElementById('itemsList');
+  list.innerHTML='';
+  itemCount=0;
+  if(data.items)for(var i=0;i<data.items.length;i++)addItem(data.items[i].value,data.items[i].type);
+  if(data.items.length===0)addItem('','text');
+}
+
+function saveAnnounce(){
+  var data=getFormData();
+  if(!data.title){document.getElementById('titleInput').focus();return}
+  var saved=[];try{saved=JSON.parse(localStorage.getItem('annonces'))||[]}catch(e){}
+  if(_announceId){for(var i=0;i<saved.length;i++){if(saved[i].id===_announceId){saved[i]=data;saved[i].id=_announceId;renderSaved();try{localStorage.setItem('annonces',JSON.stringify(saved))}catch(e){}return}}}
+  var entry={id:Date.now()+'',title:data.title,items:data.items};
+  saved.push(entry);
+  _announceId=entry.id;
+  try{localStorage.setItem('annonces',JSON.stringify(saved))}catch(e){}
+  renderSaved();
+}
+
+function renderSaved(){
+  var wrap=document.getElementById('savedWrap');
+  var list=document.getElementById('savedList');
+  var saved=[];try{saved=JSON.parse(localStorage.getItem('annonces'))||[]}catch(e){}
+  if(saved.length===0){wrap.classList.add('hide');return}
+  wrap.classList.remove('hide');
+  list.innerHTML='';
+  for(var i=0;i<saved.length;i++){
+    (function(item){
+      var d=document.createElement('div');d.className='saved-item';
+      var badge=saved.length===1&&_announceId===item.id?' &#x2714;':'';
+      d.innerHTML='<span class="si-title">'+item.title+badge+'</span><button class="si-del" onclick="event.stopPropagation();deleteSaved(\''+item.id+'\')">&#x2716;</button>';
+      d.addEventListener('click',function(){_announceId=item.id;loadFormData(item);renderSaved()});
+      list.appendChild(d);
+    })(saved[i]);
+  }
+}
+
+function deleteSaved(id){
+  var saved=[];try{saved=JSON.parse(localStorage.getItem('annonces'))||[]}catch(e){}
+  for(var i=0;i<saved.length;i++){if(saved[i].id===id){saved.splice(i,1);break}}
+  if(_announceId===id)_announceId=null;
+  try{localStorage.setItem('annonces',JSON.stringify(saved))}catch(e){}
+  renderSaved();
+}
+
+/* Init saved list */
+renderSaved();
+
+document.addEventListener('keydown',function(e){
+  if(!document.getElementById('display').classList.contains('open'))return;
+  if(e.key==='Escape')closeDisp();
+});
+
+/* Add first item by default */
+addItem('','text');
+</script>
+
+<div id="floatNav">
+  <a href="index.html" title="Fandraisana">🏠</a>
+  <a href="index.html?slideshow=1" class="sabata-link" title="Programa Sabata">▶</a>
+  <a href="sabata_hariva.html" class="sabata-link" title="Sabata Hariva">⏱</a>
+  <a href="baibolyMG_v2.html" title="Baiboly">✝</a>
+  <a href="fihirana_advantista.html" title="Fihirana">🎵</a>
+</div>
+<style>
+#floatNav{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:99999;display:flex;align-items:center;gap:4px;padding:6px 10px;border-radius:30px;background:rgba(10,15,30,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);box-shadow:0 4px 24px rgba(0,0,0,.5);transition:opacity .4s ease,transform .4s ease;opacity:1}
+#floatNav.hide{opacity:0;transform:translateX(-50%) translateY(12px);pointer-events:none}
+#floatNav a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;text-decoration:none;font-size:16px;transition:all .2s;color:rgba(255,255,255,.5);background:transparent}
+#floatNav a:hover{background:rgba(255,255,255,.1);color:rgba(255,255,255,.9);transform:scale(1.1)}
+#floatNav .sabata-link{background:rgba(52,199,89,.15);color:#34C759}
+#floatNav .sabata-link:hover{background:rgba(52,199,89,.3);color:#34C759}
+</style>
+<script>
+(function(){var n=document.getElementById('floatNav'),t=null;function s(){n.classList.remove('hide');if(t)clearTimeout(t);t=setTimeout(function(){n.classList.add('hide')},2000)}document.addEventListener('mousemove',s);document.addEventListener('touchstart',s);document.addEventListener('click',s);s()})();
+</script>
+<script defer src="hira-data.js?v=3"></script>
+<script defer src="bible-data.js?v=3"></script>
+<script defer src="bible-search-engine.js?v=3"></script>
+<script defer src="search-bar.js?v=3"></script>
+<script defer src="projector.js?v=7"></script>
+<script src="alpine.min.js"></script>
+<script src="voice-search.js"></script>
+</body>
+</html>
+

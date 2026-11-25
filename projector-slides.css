@@ -1,0 +1,160 @@
+/* ═══ SDA PROJECTOR — Slide styles (copiés de index.html pour restituer à l'identique) ═══ */
+.slide{
+  position:absolute;inset:0;z-index:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+  opacity:1;padding:40px 24px;pointer-events:none;
+}
+.slide.active{z-index:2;opacity:1;pointer-events:all}
+/* Enter transitions */
+.slide.enter-fade{animation:fadeIn .6s ease both}
+.slide.enter-zoomIn{animation:zoomIn .7s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-zoomOut{animation:zoomOut .7s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-slideLeft{animation:slideInRight .6s ease both}
+.slide.enter-slideRight{animation:slideInLeft .6s ease both}
+.slide.enter-blur{animation:blurIn .7s ease both}
+.slide.enter-rotate{animation:rotateIn .8s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-flip{animation:flipIn .7s ease both}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes zoomIn{from{opacity:0;transform:scale(1.4)}to{opacity:1;transform:scale(1)}}
+@keyframes zoomOut{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(120px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:translateX(0)}}
+@keyframes blurIn{from{opacity:0;filter:blur(24px)}to{opacity:1;filter:blur(0)}}
+@keyframes rotateIn{from{opacity:0;transform:rotate(-12deg) scale(.8)}to{opacity:1;transform:rotate(0) scale(1)}}
+@keyframes flipIn{from{opacity:0;transform:perspective(800px) rotateY(90deg)}to{opacity:1;transform:rotateY(0)}}
+@keyframes textFloat{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(-6px);opacity:0.92}}
+.slide h1{
+  font-size:clamp(52px,8vw,96px);font-weight:900;letter-spacing:-1px;
+  line-height:1.15;margin-bottom:16px;
+  text-shadow:0 4px 32px rgba(0,0,0,.9),0 2px 8px rgba(0,0,0,.8),0 0 80px rgba(0,0,0,.5);
+  background:rgba(0,0,0,.45);padding:10px 28px;border-radius:16px;display:inline-block;
+  -webkit-text-stroke:1.5px rgba(0,0,0,.3);
+  animation:textFloat 3s ease-in-out infinite;color:#ffffff;
+}
+.slide .sub{
+  font-size:clamp(26px,3.5vw,44px);font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;color:#fff;
+  text-shadow:0 3px 20px rgba(0,0,0,.8),0 2px 6px rgba(0,0,0,.7);
+  background:rgba(0,0,0,.4);padding:8px 20px;border-radius:12px;display:inline-block;
+  -webkit-text-stroke:.5px rgba(0,0,0,.2);
+  animation:textFloat 3s ease-in-out 0.3s infinite;
+}
+.slide-deco{
+  position:absolute;top:50%;right:0%;z-index:-1;width:70%;height:70%;
+  transform:translateY(-50%);border-radius:40px;object-fit:cover;opacity:0.7;
+  pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,.3);border:2px solid rgba(255,255,255,.15);
+}
+.slide-deco.full{width:100%;height:100%;right:0;top:0;transform:none;border-radius:0;border:none;opacity:0.5;object-fit:contain}
+.slide-logo{position:absolute;top:16px;right:16px;z-index:6;width:120px;height:120px;border-radius:24px;object-fit:cover;box-shadow:0 2px 12px rgba(0,0,0,.4);border:2px solid rgba(255,255,255,.3)}
+.slide .number{position:absolute;top:20px;right:24px;z-index:5;font-size:15px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,.5);text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.slide-signature{
+  position:absolute;bottom:80px;left:50%;transform:translateX(-50%);z-index:5;text-align:center;
+  font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.92);
+  text-shadow:0 2px 16px rgba(0,0,0,.8);white-space:nowrap;
+  transition:opacity .5s cubic-bezier(0.22,1,0.36,1),transform .5s cubic-bezier(0.22,1,0.36,1);
+  background:rgba(255,255,255,0.07);backdrop-filter:blur(28px) saturate(180%);
+  -webkit-backdrop-filter:blur(28px) saturate(180%);
+  padding:6px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 4px 16px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.1);
+}
+/* Timer */
+.timer{font-size:clamp(72px,14vw,140px);font-weight:800;letter-spacing:6px;font-variant-numeric:tabular-nums;
+  text-shadow:0 4px 40px rgba(0,0,0,.7);margin:12px 0 6px;color:#ffffff;-webkit-text-stroke:2px rgba(0,0,0,.3);transition:transform .15s ease}
+.timer.pop{transform:scale(1.06)}
+.timer-bar-wrap{width:min(300px,70vw);height:6px;background:rgba(255,255,255,.15);border-radius:3px;overflow:hidden;margin:12px auto 0}
+.timer-bar{height:100%;background:linear-gradient(90deg,#0A84FF,#5AC8FA,#34C759);border-radius:999px;width:100%;transition:width 1s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 12px rgba(10,132,255,0.5)}
+
+/* slide-text / content / fs */
+.slide-content{flex-direction:column;align-items:center;justify-content:center;display:flex;width:100%}
+.slide-text{font-size:clamp(24px,3.5vw,44px);font-weight:600;line-height:1.6;text-align:center;color:#fff;
+  text-shadow:0 3px 20px rgba(0,0,0,.8),0 2px 6px rgba(0,0,0,.7);background:rgba(0,0,0,.4);padding:12px 24px;
+  border-radius:12px;display:inline-block;animation:textFloat 3s ease-in-out 0.3s infinite;max-width:90%;white-space:pre-line}
+.slide-fs{position:absolute;bottom:100px;right:24px;display:flex;flex-direction:column;gap:8px;z-index:5}
+
+/* Psalms overlay */
+.psalms-overlay{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;padding:60px 20px 20px;background:rgba(0,0,0,.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.psalms-overlay .h1{font-size:clamp(28px,5vw,48px);font-weight:800;letter-spacing:-.5px;text-align:center;text-shadow:0 2px 24px rgba(0,0,0,.8);color:#fff}
+.psalms-overlay .sub{font-size:clamp(16px,2.5vw,22px);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;text-align:center;margin-bottom:12px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.psalms-search-wrap{position:relative;max-width:500px;width:100%;margin:0 auto 12px}
+.psalms-search-wrap input{width:100%;padding:12px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.1);color:#fff;font-size:16px;outline:none;transition:all .25s;backdrop-filter:blur(4px)}
+.psalms-search-wrap input:focus{border-color:#5AC8FA;background:rgba(255,255,255,.15);box-shadow:0 0 20px rgba(90,200,250,.15)}
+.psalms-search-wrap input::placeholder{color:rgba(255,255,255,.4)}
+.psalms-results{flex:1;overflow-y:auto;max-width:600px;width:100%;margin:0 auto;padding:4px 0}
+.psalms-results::-webkit-scrollbar{width:4px}
+.psalms-results::-webkit-scrollbar-track{background:transparent}
+.psalms-results::-webkit-scrollbar-thumb{background:rgba(255,255,255,.2);border-radius:2px}
+.psalm-result{padding:10px 14px;border-radius:12px;cursor:pointer;transition:all .2s;border:1px solid transparent;margin-bottom:4px}
+.psalm-result:hover,.psalm-result.active{background:rgba(90,200,250,.12);border-color:rgba(90,200,250,.25)}
+.psalm-result .ref{font-size:13px;font-weight:700;color:#5AC8FA;letter-spacing:.5px;margin-bottom:2px}
+.psalm-result .txt{font-size:14px;color:rgba(255,255,255,.85);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.psalm-result .txt b,.psalm-result .txt strong{color:#FFD60A;font-weight:600}
+.psalms-verse-view{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 24px;background:rgba(0,0,0,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.psalms-verse-view .verse-ref{font-size:clamp(18px,3vw,26px);font-weight:800;color:#5AC8FA;letter-spacing:1px;margin-bottom:12px;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.psalms-verse-view .verse-text{font-size:clamp(44px,8vw,72px);font-weight:700;line-height:1.6;text-align:center;max-width:800px;color:#fff;text-shadow:0 4px 32px rgba(0,0,0,.9),0 2px 8px rgba(0,0,0,.8)}
+.psalms-verse-view .verse-nav{display:flex;gap:16px;margin-top:24px;align-items:center}
+.psalms-verse-view .verse-nav button{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-size:18px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.psalms-verse-view .verse-nav button:hover{background:rgba(255,255,255,.18);transform:scale(1.06)}
+.psalms-verse-view .verse-nav button:active{transform:scale(.92)}
+.psalms-verse-view .verse-back{position:absolute;top:16px;left:16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.4);color:rgba(255,255,255,.7);font-size:20px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.psalms-verse-view .verse-back:hover{background:rgba(255,255,255,.1);color:#fff}
+.ps-fs-btns{position:absolute;top:50%;right:16px;z-index:10;display:flex;flex-direction:column;gap:8px;transform:translateY(-50%);transition:opacity .4s ease;opacity:1}
+.ps-fs-btn{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.5);color:#fff;font-size:16px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(8px)}
+.ps-fs-btn:hover{background:rgba(255,255,255,.15);transform:scale(1.08)}
+
+/* Themes */
+.themes-overlay{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 24px;background:rgba(0,0,0,.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.themes-overlay .h1{font-size:clamp(32px,6vw,52px);font-weight:800;letter-spacing:-.5px;text-shadow:0 2px 24px rgba(0,0,0,.8);margin-bottom:4px;color:#fff}
+.themes-overlay .sub{font-size:clamp(16px,2.5vw,22px);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:20px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.themes-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:520px;width:100%}
+.themes-grid.hide{opacity:0;pointer-events:none;transition:opacity .35s ease}
+.theme-opt{flex:1;min-width:180px;max-width:240px;padding:20px 18px;border-radius:22px;cursor:pointer;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);transition:transform .4s cubic-bezier(.34,1.56,.64,1),background .4s,box-shadow .4s,border-color .4s;box-shadow:0 10px 30px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,0.16);text-align:center}
+.theme-opt:hover{background:rgba(90,200,250,.15);border-color:rgba(90,200,250,.5);transform:scale(1.05) translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,0.4),0 0 20px rgba(90,200,250,0.2)}
+.theme-opt:active{transform:scale(.95);transition:transform .08s ease}
+.theme-opt .to-num{display:block;font-size:28px;font-weight:800;color:#5AC8FA;margin-bottom:6px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.theme-opt .to-label{font-size:18px;font-weight:700;color:#ffffff;line-height:1.3;text-shadow:0 2px 8px rgba(0,0,0,.7)}
+.theme-selected{margin-top:16px;padding:14px 24px;border-radius:14px;background:rgba(90,200,250,.1);border:1px solid rgba(90,200,250,.25);text-align:center}
+.theme-selected .ts-label{font-size:clamp(18px,3vw,26px);font-weight:700;color:#5AC8FA;letter-spacing:.5px}
+.theme-selected .ts-change{margin-top:8px;padding:6px 18px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;letter-spacing:1px}
+.theme-selected .ts-change:hover{background:rgba(255,255,255,.15);color:#fff}
+.themes-top{position:absolute;top:16px;left:0;right:0;display:flex;justify-content:center;z-index:5}
+.timer-wrap{position:relative;display:flex;align-items:center;justify-content:center}
+.timer-circle{display:block}
+.tc-text{font-family:inherit;font-variant-numeric:tabular-nums}
+.themes-overlay .timer-bar-wrap{position:absolute;top:106px;left:50%;transform:translateX(-50%);width:min(200px,50vw)}
+
+/* Fihirana */
+.fihirana-overlay{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;padding:60px 24px 90px;background:rgba(0,0,0,.5);backdrop-filter:blur(48px) saturate(200%);-webkit-backdrop-filter:blur(48px) saturate(200%)}
+.fihirana-top{text-align:center;flex-shrink:0}
+.fihirana-top .h1{font-size:clamp(32px,6vw,52px);font-weight:800;letter-spacing:-.5px;text-shadow:0 2px 24px rgba(0,0,0,.8);margin-bottom:4px;color:#fff}
+.fihirana-top .sub{font-size:clamp(16px,2.5vw,22px);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.fihirana-lyrics{flex:1;display:flex;align-items:center;justify-content:center;max-width:800px;width:100%;margin:0 auto;max-height:70vh}
+.fihirana-text{font-size:clamp(32px,5vw,56px);font-weight:700;line-height:1.5;text-align:center;color:#fff;text-shadow:0 4px 32px rgba(0,0,0,.9),0 2px 8px rgba(0,0,0,.8);white-space:pre-line;padding:16px 24px;background:rgba(0,0,0,.3);border-radius:16px;max-width:100%}
+.fihirana-nav{position:absolute;top:50%;right:24px;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;z-index:5}
+.fihirana-info{font-size:14px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:1px;min-width:60px;text-align:center}
+.fs-btn{font-size:15px!important;font-weight:800!important;font-family:serif}
+
+/* Responsive */
+@media(max-width:768px){
+  .slide h1{font-size:clamp(28px,5vw,48px)}
+  .slide .sub{font-size:clamp(18px,2.8vw,30px)}
+  .slide-signature{font-size:clamp(10px,1.8vw,13px);bottom:60px;padding:4px 10px}
+  .slide-logo{width:80px;height:80px;top:10px;right:10px}
+  .slide-text{font-size:clamp(18px,4vw,26px);padding:8px 14px}
+  .fihirana-text{font-size:clamp(22px,5vw,32px);padding:10px 14px}
+  .fihirana-overlay{padding:30px 10px 70px}
+  .theme-opt{min-width:120px;max-width:180px;padding:12px 10px}
+  .themes-overlay{padding:30px 10px}
+}
+@media(max-width:500px){
+  .slide h1{font-size:clamp(22px,6vw,32px);padding:6px 14px}
+  .slide .sub{font-size:clamp(14px,3vw,20px);padding:6px 14px}
+  .slide-text{font-size:clamp(15px,4vw,22px);padding:6px 10px}
+  .slide-signature{font-size:8px;bottom:40px;padding:3px 8px}
+  .slide-logo{display:none}
+  .slide-deco{opacity:0.3}
+  .fihirana-text{font-size:clamp(18px,4.5vw,26px)}
+  .fihirana-overlay{padding:24px 8px 60px}
+  .timer{font-size:clamp(48px,12vw,80px)}
+  .timer-bar-wrap{width:min(160px,60vw)}
+}

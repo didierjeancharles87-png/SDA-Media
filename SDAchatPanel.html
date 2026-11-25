@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Daniel — Mpampianatra Baiboly</title>
+<style>
+  :root {
+    --bg-gradient: linear-gradient(160deg, #1a6fd4 0%, #6b34c9 60%, #9b2fb5 100%);
+    --surface: rgba(255,255,255,0.12);
+    --surface-solid: #ffffff;
+    --bubble-in: #ffffff;
+    --bubble-out: #3478f6;
+    --bubble-out-2: #34c759;
+    --bubble-out-3: #ff9500;
+    --bubble-out-4: #af52de;
+    --text: #111b21;
+    --text-light: rgba(255,255,255,0.75);
+    --text-white: #ffffff;
+    --accent: #3478f6;
+    --green: #34c759;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+    --sat: env(safe-area-inset-top, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+    --sal: env(safe-area-inset-left, 0px);
+    --sar: env(safe-area-inset-right, 0px);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; overscroll-behavior: none; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg-gradient);
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ── Phone frame ─────────────────────────────── */
+  .phone-frame {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 560px) {
+    .phone-frame {
+      padding: 8px;
+    }
+  }
+
+  .app {
+    position: relative;
+    height: 100dvh;
+    width: 100vw;
+    max-width: 100%;
+    background: var(--bg-gradient);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: var(--sat);
+    padding-bottom: var(--sab);
+    padding-left: var(--sal);
+    padding-right: var(--sar);
+  }
+
+  @media (min-width: 560px) {
+    body { background: #0d0d1a; }
+    .phone-frame {
+      background: #1b1b1b;
+      border-radius: 62px;
+      padding: 8px;
+      box-shadow: 0 30px 70px -20px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.05) inset;
+    }
+    .app {
+      width: min(404px, 100vw);
+      height: min(872px, 100dvh);
+      border-radius: 59px;
+    }
+  }
+
+  @media (max-width: 559px) {
+    .phone-frame { background: transparent; padding: 0; border-radius: 0; }
+  }
+
+  /* ── Dynamic Island ──────────────────────────── */
+  .dynamic-island-wrap {
+    display: flex;
+    position: absolute;
+    top: max(var(--sat), clamp(8px, 2.4vh, 16px));
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(64px, 20vw, 95px);
+    height: clamp(22px, 5.4vw, 30px);
+    z-index: 30;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .island-camera {
+    width: clamp(22px, 5.4vw, 30px);
+    height: clamp(22px, 5.4vw, 30px);
+    border-radius: 50%;
+    background: #000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .island-camera .lens {
+    width: clamp(6px, 1.7vw, 9px);
+    height: clamp(6px, 1.7vw, 9px);
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #3a3a3c, #050505 70%);
+  }
+  .island-pill {
+    width: clamp(32px, 9.6vw, 44px);
+    height: clamp(20px, 5vw, 28px);
+    border-radius: 18px;
+    background: #000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+  }
+
+  /* ── Status bar ──────────────────────────────── */
+  .statusbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: max(clamp(6px, 1.6vh, 10px), calc(clamp(22px, 5.4vw, 30px) + clamp(8px, 2.4vh, 16px))) clamp(16px, 6vw, 28px) clamp(2px, 0.8vh, 6px);
+    font-size: clamp(12px, 3.6vw, 15px);
+    font-weight: 600;
+    color: var(--text-white);
+    background: transparent;
+    flex-shrink: 0;
+    min-height: clamp(28px, 5vh, 40px);
+  }
+  .statusbar .icons { display: flex; gap: 5px; align-items: center; }
+  .statusbar svg { width: clamp(13px, 3.8vw, 17px); height: auto; }
+
+  /* ── Screens system ──────────────────────────── */
+  .screens {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .screen { display: none; flex: 1; min-height: 0; flex-direction: column; }
+  .screen.active { display: flex; }
+
+  /* ── MENU SCREEN ─────────────────────────────── */
+  .menu-screen {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: transparent;
+  }
+
+  .menu-hero {
+    padding: clamp(20px, 6vh, 40px) clamp(20px, 6vw, 32px) clamp(16px, 4vh, 24px);
+    text-align: center;
+  }
+
+  .menu-hero .badge {
+    width: clamp(64px, 18vw, 82px);
+    height: clamp(64px, 18vw, 82px);
+    margin: 0 auto clamp(14px, 3.6vh, 18px);
+    border-radius: 26px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(28px, 8vw, 36px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  }
+
+  .menu-hero .greeting {
+    font-size: clamp(22px, 6.4vw, 29px);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+  }
+
+  .menu-hero .subtext {
+    font-size: clamp(13px, 3.6vw, 15px);
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+
+  /* Edit/+ bar like iOS Messages header */
+  .menu-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 clamp(16px, 5vw, 24px) clamp(6px, 1.6vh, 10px);
+  }
+  .menu-topbar .edit-btn {
+    font-size: clamp(14px, 3.8vw, 16px);
+    color: rgba(255,255,255,0.85);
+    background: none;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  .menu-topbar .plus-btn {
+    width: clamp(28px, 7.5vw, 34px);
+    height: clamp(28px, 7.5vw, 34px);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    border: none;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    color: white;
+  }
+  .menu-topbar .plus-btn svg { width: 14px; height: 14px; }
+
+  .menu-title-row {
+    padding: 0 clamp(16px, 5vw, 24px) clamp(14px, 3.5vh, 18px);
+  }
+  .menu-title-row h1 {
+    font-size: clamp(26px, 7.5vw, 34px);
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+  }
+
+  .menu-list {
+    padding: 0 clamp(12px, 3.6vw, 18px) clamp(20px, 5vh, 30px);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  /* iOS-style conversation rows */
+  .menu-item {
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    border-radius: 0;
+    padding: clamp(10px, 2.8vh, 14px) clamp(14px, 3.6vw, 18px);
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 2.8vw, 14px);
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+    transition: background 0.12s ease;
+    text-decoration: none;
+  }
+
+  .menu-item:first-child { border-radius: 14px 14px 0 0; }
+  .menu-item:last-child { border-radius: 0 0 14px 14px; }
+  .menu-list > :only-child { border-radius: 14px; }
+
+  /* Separator line (skip last) */
+  .menu-item + .menu-item {
+    border-top: 0.5px solid rgba(0,0,0,0.08);
+  }
+
+  .menu-item:active { background: rgba(255,255,255,0.75); }
+  .menu-item.disabled { opacity: 0.55; cursor: default; }
+
+  /* Colored avatar circles like iOS Messages */
+  .menu-item .icon-circle {
+    width: clamp(44px, 12vw, 52px);
+    height: clamp(44px, 12vw, 52px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+  }
+  .menu-item .icon-circle svg { width: clamp(20px, 5.4vw, 24px); height: auto; }
+
+  .icon-bg-bot      { background: linear-gradient(135deg, #34c759, #248a3d); }
+  .icon-bg-messenger{ background: linear-gradient(135deg, #007aff, #5856d6); }
+  .icon-bg-group    { background: linear-gradient(135deg, #af52de, #6e40c9); }
+  .icon-bg-whatsapp { background: linear-gradient(135deg, #25d366, #128c7e); }
+
+  .menu-item .item-text { flex: 1; min-width: 0; }
+
+  .item-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 3px;
+  }
+
+  .menu-item .item-title {
+    font-size: clamp(14px, 3.9vw, 16.5px);
+    font-weight: 600;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .item-time {
+    font-size: clamp(11px, 2.8vw, 12.5px);
+    color: #8e8e93;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .menu-item .item-sub {
+    font-size: clamp(12px, 3.2vw, 13.5px);
+    color: #8e8e93;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .menu-item .chevron {
+    flex-shrink: 0;
+    color: #c7c7cc;
+  }
+  .menu-item .chevron svg { width: clamp(7px, 1.8vw, 9px); height: auto; }
+
+  .menu-item .soon-tag {
+    flex-shrink: 0;
+    font-size: clamp(10px, 2.6vw, 11.5px);
+    font-weight: 600;
+    color: #8e8e93;
+    background: rgba(0,0,0,0.06);
+    padding: 3px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  /* Unread dot */
+  .unread-dot {
+    width: clamp(9px, 2.4vw, 11px);
+    height: clamp(9px, 2.4vw, 11px);
+    border-radius: 50%;
+    background: #007aff;
+    flex-shrink: 0;
+    margin-right: 2px;
+  }
+
+  .menu-footer-note {
+    text-align: center;
+    font-size: clamp(11px, 2.8vw, 12.5px);
+    color: var(--text-light);
+    padding: 12px 24px clamp(16px, 4vh, 24px);
+    line-height: 1.5;
+  }
+
+  /* ── CHAT SCREEN ─────────────────────────────── */
+  .chat-header {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, 2vw, 12px);
+    padding: clamp(6px, 1.6vh, 10px) clamp(10px, 3.6vw, 18px) clamp(10px, 2.2vh, 16px);
+    border-bottom: 0.5px solid rgba(255,255,255,0.2);
+    flex-shrink: 0;
+  }
+
+  .chat-header .back {
+    font-size: clamp(16px, 4.6vw, 20px);
+    color: #ffffff;
+    display: flex; align-items: center; gap: 2px;
+    flex-shrink: 0;
+    background: none; border: none; padding: 4px 2px;
+    cursor: pointer; font-family: inherit;
+  }
+  .chat-header .back svg { width: clamp(9px, 2.6vw, 12px); height: auto; }
+  .chat-header .back .count { font-size: clamp(13px, 3.6vw, 16px); margin-left: 2px; }
+
+  .avatar {
+    width: clamp(32px, 9vw, 42px);
+    height: clamp(32px, 9vw, 42px);
+    border-radius: 50%;
+    background: linear-gradient(135deg, #34c759, #248a3d);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 700;
+    font-size: clamp(12px, 3.4vw, 16px);
+    flex-shrink: 0;
+    border: 2px solid rgba(255,255,255,0.4);
+  }
+
+  .chat-header .info { flex: 1; min-width: 0; }
+  .chat-header .name-row { display: flex; align-items: center; gap: 4px; }
+
+  .chat-header .name {
+    font-size: clamp(14px, 4vw, 17px);
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  .verified { width: clamp(12px, 3.4vw, 15px); height: clamp(12px, 3.4vw, 15px); flex-shrink: 0; }
+
+  .chat-header .status {
+    font-size: clamp(11px, 3vw, 13px);
+    color: rgba(255,255,255,0.7);
+  }
+
+  .chat-header .actions {
+    display: flex;
+    gap: clamp(12px, 4vw, 20px);
+    color: rgba(255,255,255,0.9);
+    flex-shrink: 0;
+  }
+  .chat-header .actions svg { width: clamp(16px, 4.6vw, 21px); height: auto; }
+
+  /* ── Chat body ───────────────────────────────── */
+  .chat-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: clamp(10px, 2.4vh, 16px) clamp(8px, 2.8vw, 14px) clamp(6px, 1.6vh, 10px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: transparent;
+  }
+
+  .bubble-row { display: flex; width: 100%; }
+  .bubble-row.out { justify-content: flex-end; }
+  .bubble-row.in  { justify-content: flex-start; }
+
+  .bubble {
+    max-width: min(80%, 460px);
+    border-radius: 18px;
+    font-size: clamp(13.5px, 3.6vw, 15.5px);
+    line-height: 1.45;
+    color: var(--text);
+    position: relative;
+  }
+
+  .bubble.out {
+    background: var(--bubble-out);
+    color: white;
+    padding: clamp(8px, 2vw, 10px) clamp(12px, 3vw, 14px);
+    border-bottom-right-radius: 5px;
+  }
+
+  .bubble.in {
+    background: var(--bubble-in);
+    padding: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+
+  .bubble .timestamp {
+    font-size: clamp(10px, 2.6vw, 12px);
+    color: rgba(255,255,255,0.75);
+    text-align: right;
+    margin-top: 3px;
+    display: flex; justify-content: flex-end; align-items: center; gap: 3px;
+  }
+  .bubble .timestamp svg { width: clamp(12px, 3vw, 14px); height: auto; }
+
+  /* ── Bubble cover image ──────────────────────── */
+  .cover-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background:
+      linear-gradient(180deg, rgba(10,10,40,0.2) 0%, rgba(10,10,40,0.72) 100%),
+      linear-gradient(135deg, #1a3a8f 0%, #6b1d9e 60%, #9b0f7a 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f0e8ff;
+    padding: clamp(18px, 6vw, 32px) clamp(12px, 4vw, 20px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Decorative glow orbs */
+  .cover-img::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(100,80,255,0.35) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cover-img .eyebrow {
+    font-size: clamp(10px, 2.8vw, 13px);
+    letter-spacing: 0.22em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(200,180,255,0.9);
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .cover-img .headline {
+    font-size: clamp(26px, 8vw, 42px);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.0;
+    color: #ffffff;
+    text-shadow: 0 4px 20px rgba(80,0,200,0.6);
+    position: relative;
+  }
+
+  .cover-img .deco {
+    margin-top: 16px;
+    font-size: clamp(10px, 2.4vw, 12px);
+    color: rgba(180,160,255,0.7);
+    letter-spacing: 0.15em;
+    position: relative;
+  }
+
+  /* ── Bot message text ────────────────────────── */
+  .bot-text {
+    padding: clamp(10px, 2.6vw, 14px) clamp(12px, 3.2vw, 16px) 4px;
+    font-size: clamp(13.5px, 3.6vw, 15.5px);
+    line-height: 1.55;
+    color: #1c1c1e;
+  }
+  .bot-text p { margin-bottom: 8px; }
+  .bot-text .emoji-name { font-weight: 600; }
+  .bot-text ul { list-style: none; margin: 6px 0 10px; padding: 0; }
+  .bot-text ul li {
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 5px;
+    color: #3c3c43;
+  }
+  .bot-text ul li::before {
+    content: "•";
+    position: absolute;
+    left: 2px;
+    color: #007aff;
+    font-size: 1.1em;
+  }
+
+  .cta-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: clamp(11px, 2.8vh, 14px) 0;
+    color: #007aff;
+    font-weight: 600;
+    font-size: clamp(13.5px, 3.6vw, 15.5px);
+    border-top: 0.5px solid rgba(0,0,0,0.1);
+    background: #f8f8f8;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: background 0.15s;
+  }
+  .cta-button:active { background: #e5e5ea; }
+
+  /* ── Input bar ───────────────────────────────── */
+  .input-bar {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 0.5px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, 2vw, 10px);
+    padding: clamp(8px, 2vh, 12px) clamp(8px, 2.6vw, 14px);
+    flex-shrink: 0;
+  }
+
+  .input-pill {
+    flex: 1;
+    min-width: 0;
+    background: rgba(255,255,255,0.18);
+    border-radius: 24px;
+    height: clamp(36px, 8vh, 44px);
+    display: flex; align-items: center;
+    padding: 0 clamp(10px, 2.8vw, 14px);
+    gap: 10px;
+    color: rgba(255,255,255,0.55);
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: clamp(13px, 3.4vw, 15px);
+  }
+
+  .send-btn {
+    width: clamp(34px, 9vw, 42px);
+    height: clamp(34px, 9vw, 42px);
+    border-radius: 50%;
+    background: #007aff;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0,122,255,0.5);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+  .send-btn:active { transform: scale(0.93); }
+  .send-btn svg { width: clamp(14px, 4vw, 18px); height: auto; }
+
+  .icon-btn {
+    color: rgba(255,255,255,0.7);
+    flex-shrink: 0;
+    width: clamp(18px, 5vw, 22px);
+    height: auto;
+    cursor: pointer;
+  }
+
+  svg { display: block; }
+
+  /* ── Toast ───────────────────────────────────── */
+  .toast {
+    position: absolute;
+    bottom: clamp(20px, 6vh, 36px);
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: rgba(30,30,40,0.92);
+    backdrop-filter: blur(12px);
+    color: white;
+    font-size: clamp(12.5px, 3.2vw, 14px);
+    padding: 10px 20px;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 50;
+    white-space: nowrap;
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 360px) { .chat-header .actions { gap: 10px; } }
+  @media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto !important; }
+    .toast { transition: opacity 0.01s linear; }
+  }
+</style>
+</head>
+<body>
+
+<div class="phone-frame">
+<div class="app">
+  <div class="dynamic-island-wrap">
+    <div class="island-camera"><div class="lens"></div></div>
+    <div class="island-pill"></div>
+  </div>
+
+  <div class="statusbar">
+    <span>9:41</span>
+    <div class="icons">
+      <svg viewBox="0 0 16 11" fill="currentColor"><rect x="0" y="7" width="2.5" height="4" rx="0.5"/><rect x="4.5" y="5" width="2.5" height="6" rx="0.5"/><rect x="9" y="3" width="2.5" height="8" rx="0.5"/><rect x="13.5" y="0" width="2.5" height="11" rx="0.5"/></svg>
+      <svg viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 11L0 4.2C3.2 1 7.5-0.3 11 1.2c1 .4 2 1 2.9 1.8L7.5 11z" opacity="0.95"/></svg>
+      <svg viewBox="0 0 24 11" fill="none"><rect x="0.5" y="0.5" width="20" height="10" rx="2.5" stroke="currentColor"/><rect x="2" y="2" width="16" height="7" rx="1" fill="currentColor"/><rect x="21.5" y="3.5" width="1.5" height="4" rx="0.7" fill="currentColor"/></svg>
+    </div>
+  </div>
+
+  <div class="screens">
+
+    <!-- ── MENU SCREEN ───────────────────────────── -->
+    <section class="screen menu-screen active" id="screen-menu">
+
+      <div class="menu-topbar">
+        <button class="edit-btn" type="button">Edit</button>
+        <button class="plus-btn" type="button">
+          <svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="menu-title-row">
+        <h1>Messages</h1>
+      </div>
+
+      <div class="menu-list">
+
+        <button class="menu-item" type="button" onclick="goToScreen('screen-chat')">
+          <div class="icon-circle icon-bg-bot">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4Z" stroke="white" stroke-width="1.6"/><circle cx="9" cy="13" r="1.2" fill="white"/><circle cx="15" cy="13" r="1.2" fill="white"/><path d="M9 17h6" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-top-row">
+              <span class="item-title">Daniel</span>
+              <span class="item-time">11:10 AM</span>
+            </div>
+            <div class="item-sub">Mpampianatra Baiboly — Resaka momba ny faminaniana</div>
+          </div>
+          <div class="unread-dot"></div>
+          <div class="chevron"><svg viewBox="0 0 9 15" fill="none"><path d="M1 1l7 6.5L1 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </button>
+
+        <button class="menu-item disabled" type="button" onclick="showToast('Mbola tsy vita — ho avy tsy ho ela')">
+          <div class="icon-circle icon-bg-messenger">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.1 2 11.2c0 2.9 1.5 5.5 3.9 7.2v3.1l3.6-2c.8.2 1.7.3 2.5.3 5.5 0 10-4.1 10-9.6S17.5 2 12 2Z" stroke="white" stroke-width="1.6"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-top-row">
+              <span class="item-title">SDA Ambolokandrina</span>
+              <span class="item-time"></span>
+            </div>
+            <div class="item-sub">Hifandray amin'ny fiangonana</div>
+          </div>
+          <div class="soon-tag">Ho avy</div>
+        </button>
+
+        <a class="menu-item" href="https://c.awr.io/pray-mg" target="_blank" rel="noopener noreferrer">
+          <div class="icon-circle icon-bg-group">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="white" stroke-width="1.6"/><circle cx="17" cy="9" r="2.4" stroke="white" stroke-width="1.6"/><path d="M3 19c0-3 2.5-5 6-5s6 2 6 5" stroke="white" stroke-width="1.6" stroke-linecap="round"/><path d="M15.5 14.3c2.6.4 4.5 2.2 4.5 4.7" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-top-row">
+              <span class="item-title">Vondrona Messenger</span>
+              <span class="item-time"></span>
+            </div>
+            <div class="item-sub">Miditra amin'ny vondrona iombonana</div>
+          </div>
+          <div class="chevron"><svg viewBox="0 0 9 15" fill="none"><path d="M1 1l7 6.5L1 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </a>
+
+        <a class="menu-item" href="https://api.whatsapp.com/send/?phone=%2B15559821938&text=Fampianarana&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+          <div class="icon-circle icon-bg-whatsapp">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2 22l5.1-1.4C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2Z" opacity="0.95"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-top-row">
+              <span class="item-title">Vondrona WhatsApp</span>
+              <span class="item-time"></span>
+            </div>
+            <div class="item-sub">Miditra amin'ny vondrona WhatsApp</div>
+          </div>
+          <div class="chevron"><svg viewBox="0 0 9 15" fill="none"><path d="M1 1l7 6.5L1 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </a>
+
+      </div>
+
+      <div class="menu-footer-note">Safidio ny tsanganasa hijerena hafatra na fampianarana</div>
+    </section>
+
+    <!-- ── CHAT SCREEN ───────────────────────────── -->
+    <section class="screen chat-screen" id="screen-chat">
+      <div class="chat-header">
+        <button class="back" type="button" onclick="goToScreen('screen-menu')" aria-label="Hiverina">
+          <svg viewBox="0 0 11 18" fill="none"><path d="M10 1L1 9L10 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="count">12</span>
+        </button>
+        <div class="avatar">DN</div>
+        <div class="info">
+          <div class="name-row">
+            <span class="name">Daniel</span>
+            <svg class="verified" viewBox="0 0 22 22" fill="none">
+              <path d="M11 0l2.2 1.3 2.5-.5 1.3 2.2 2.5.5.3 2.5 1.7 1.8-1.7 1.8-.3 2.5-2.5.5-1.3 2.2-2.5-.5L11 16l-2.2-1.3-2.5.5-1.3-2.2-2.5-.5-.3-2.5L0.5 9 2.2 7.2l.3-2.5 2.5-.5L6.3 2 8.8 2.5 11 0z" fill="#53bdeb"/>
+              <path d="M6.5 11l2.8 2.8L15.5 7.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="status">en ligne</span>
+        </div>
+        <div class="actions">
+          <svg viewBox="0 0 20 14" fill="currentColor"><rect x="0" y="1" width="13" height="12" rx="2"/><path d="M14.5 4.5l4.5-2.7v8.4l-4.5-2.7V4.5z"/></svg>
+          <svg viewBox="0 0 17 17" fill="currentColor"><path d="M16.7 12c0 .3-.1.6-.4.8l-2.3 2c-.3.2-.6.3-.9.3-3.8-.3-7.5-2.2-9.9-5.4C1 6.3.2 3.3 1.1 1.3 1.3.9 1.7.6 2.1.5l2.7-.5c.5-.1 1 .2 1.2.7l1.4 3.3c.2.4.1.9-.2 1.2L5.8 6.7c.9 1.7 2.2 3 3.9 3.9l1.5-1.4c.3-.3.8-.4 1.2-.2l3.3 1.4c.4.2.7.6.7 1.1l.3.5z"/></svg>
+        </div>
+      </div>
+
+      <div class="chat-body">
+
+        <div class="bubble-row out">
+          <div class="bubble out">
+            Prophecy
+            <div class="timestamp">
+              11:10
+              <svg viewBox="0 0 16 11" fill="none"><path d="M1 5.5L5 9.5L11 1.5" stroke="rgba(255,255,255,0.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 5.5L9 9.5L15 1.5" stroke="rgba(255,255,255,0.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="bubble-row in">
+          <div class="bubble in">
+            <div class="cover-img">
+              <div class="eyebrow">Découvrir la Bible</div>
+              <div class="headline">PROPHÉTIE</div>
+              <div class="deco">✦ ✦ ✦</div>
+            </div>
+            <div class="bot-text">
+              <p>Bienvenue dans <span class="emoji-name">✨ DÉCOUVRIR LA PROPHÉTIE BIBLIQUE ✨</span> !</p>
+              <p>Je suis Daniel 📖, votre instructeur biblique IA.</p>
+              <p>Ensemble, nous allons explorer des réponses qui changent une vie :</p>
+              <ul>
+                <li>Quand le monde va-t-il finir ?</li>
+                <li>Que se passe-t-il après la mort ?</li>
+                <li>Pourquoi le mal existe-t-il ?</li>
+              </ul>
+              <p>Et recevez un certificat ⭐ à la fin des 12 leçons !</p>
+              <p>Touchez le bouton ci-dessous pour commencer 👇</p>
+            </div>
+            <div class="cta-button">Commencer maintenant</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="input-bar">
+        <svg class="icon-btn" viewBox="0 0 22 22" fill="currentColor"><circle cx="11" cy="11" r="10" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="7.5" cy="9" r="1.1"/><circle cx="14.5" cy="9" r="1.1"/><path d="M6.5 13.5c1 1.3 2.6 2 4.5 2s3.5-.7 4.5-2" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>
+        <div class="input-pill">Message</div>
+        <svg class="icon-btn" viewBox="0 0 20 20" fill="currentColor"><path d="M9.5 1.5C5.4 1.5 2 4.9 2 9s3.4 7.5 7.5 7.5S17 13.1 17 9c0-1-.2-1.9-.6-2.8" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/><path d="M9.5 4.8v6.4M9.5 4.8L7 7.3M9.5 4.8L12 7.3" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="icon-btn" viewBox="0 0 20 20" fill="currentColor"><rect x="2" y="3" width="16" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="6.5" cy="7.5" r="1.3"/><path d="M2 13l4.5-4 3 3 4-5 4.5 5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="send-btn">
+          <svg viewBox="0 0 20 20" fill="white"><path d="M2 10l16-8-5 8 5 8z"/></svg>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+</div>
+</div>
+
+<script>
+  function goToScreen(id) {
+    document.querySelectorAll('.screen').forEach(function(el) { el.classList.remove('active'); });
+    document.getElementById(id).classList.add('active');
+    var body = id === 'screen-chat' ? document.querySelector('#screen-chat .chat-body') : null;
+    if (body) body.scrollTop = 0;
+  }
+  var toastTimer = null;
+  function showToast(message) {
+    var toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function() { toast.classList.remove('show'); }, 2200);
+  }
+</script>
+<script defer src="hira-data.js?v=3"></script>
+<script defer src="bible-data.js?v=3"></script>
+<script defer src="bible-search-engine.js?v=3"></script>
+<script defer src="search-bar.js?v=3"></script>
+<script src="alpine.min.js"></script>
+<script src="voice-search.js"></script>
+</body>
+</html>
